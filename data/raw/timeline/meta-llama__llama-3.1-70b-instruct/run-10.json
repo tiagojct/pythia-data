@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-3.1-70b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 10,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:54:00+00:00",
+  "seconds": 11.9,
+  "request": {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498840-T7D6qAA862ba7qaFn5p0",
+    "object": "chat.completion",
+    "created": 1794498840,
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Global peak in carbon emissions\",\n      \"detail\": \"Carbon emissions from human activities reach an all-time high, but begin to decline as renewable energy sources become more prevalent.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Establishment of the first human settlement on Mars\",\n      \"detail\": \"A private company establishes a permanent human settlement on Mars, marking the beginning of a new era in space exploration and habitation.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Widespread adoption of brain-computer interfaces\",\n      \"detail\": \"Brain-computer interfaces become a common tool for enhancing human cognition and controlling devices, but also raise concerns about surveillance and control.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Collapse of traditional nation-states\",\n      \"detail\": \"The rise of decentralized governance and blockchain technology leads to the decline of traditional nation-states, as people switch to smaller, more flexible forms of organization.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Artificial general intelligence surpasses human intelligence\",\n      \"detail\": \"An AI system capable of general reasoning and problem-solving is developed, leading to rapid advancements in many fields, but also potential risks and challenges.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Terraforming of Mars begins\",\n      \"detail\": \"Humanity begins to terraform Mars, making the planet habitable for humans and other Earth-like species.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Human lifespan increased to 150 years\",\n      \"detail\": \"Advances in medicine and technology lead to a significant increase in human lifespan, but also raise questions about population growth and resource management.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Establishment of the first lunar solar power satellite\",\n      \"detail\": \"A satellite in orbit around the Moon begins to beam solar power back to Earth, providing a new source of clean energy.\"\n    },\n    {\n      \"year\": 2140,\n      \"event\": \"Peak human population\",\n      \"detail\": \"The global human population reaches its peak, as advances in education and family planning lead to reduced birth rates.\"\n    },\n    {\n      \"year\": 2160,\n      \"event\": \"First human settlement on a distant exoplanet\",\n      \"detail\": \"A group of humans establishes a colony on a planet outside the Solar System, marking a new era in interstellar exploration and habitation.\"\n    },\n    {\n      \"year\": 2190,\n      \"event\": \"Upgrade to a Type 1 Kardashev civilization\",\n      \"detail\": \"Humanity develops a global energy production and distribution system that is capable of harnessing the entire energy output of the Sun.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Humanity becomes a multi-planetary species\",\n      \"detail\": \"Human settlements are established on multiple planets and moons in the Solar System, ensuring the survival of the species even if a global catastrophe were to occur on Earth.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Upgrade to a Type 2 Kardashev civilization\",\n      \"detail\": \"Humanity develops a global energy production and distribution system that is capable of harnessing the entire energy output of the Milky Way galaxy.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Humanity makes contact with intelligent life from another planet, leading to a profound shift in human culture and understanding of the universe.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Merging of human and artificial intelligence\",\n      \"detail\": \"Human intelligence and artificial intelligence become increasingly intertwined, leading to new forms of cognition and existence.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Establishment of the first Dyson Sphere\",\n      \"detail\": \"A megastructure is constructed around a star, capable of harnessing its entire energy output and providing a new source of energy for human civilization.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Upgrade to a Type 3 Kardashev civilization\",\n      \"detail\": \"Humanity develops a global energy production and distribution system that is capable of harnessing the entire energy output of the observable universe.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Simulation hypothesis confirmed\",\n      \"detail\": \"Scientists confirm the simulation hypothesis, discovering that the universe is a simulation created by a more advanced civilization.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Migration to a new universe\",\n      \"detail\": \"Humanity discovers a way to migrate to a new universe, allowing for the possibility of escaping the eventual heat death of the current universe.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"End of the Stelliferous Era\",\n      \"detail\": \"The last stars in the universe burn out, marking the end of the Stelliferous Era and the beginning of the Degenerate Era.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Heat death of the universe\",\n      \"detail\": \"The universe reaches maximum entropy, marking the end of all life and energy in the universe.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity achieves quantum immortality\",\n      \"detail\": \"Humanity discovers a way to achieve quantum immortality, allowing consciousness to persist indefinitely through the multiverse.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity will likely spread throughout the Solar System and beyond, but faces risks and challenges along the way, including potential catastrophic events and the heat death of the universe. The eventual goal of human civilization is to become a Type 3 Kardashev civilization and to achieve immortality through technological means.\"",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 1304,
+      "total_tokens": 1520,
+      "cost": 0.0010944,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010944,
+        "upstream_inference_prompt_cost": 0.00015552,
+        "upstream_inference_completions_cost": 0.00093888
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

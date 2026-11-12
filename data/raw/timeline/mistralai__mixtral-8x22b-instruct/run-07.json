@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 7,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T18:23:26+00:00",
+  "seconds": 11.0,
+  "request": {
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794507806-CMOcQD6HCUhONeTFP5kN",
+    "object": "chat.completion",
+    "created": 1794507806,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2035,\n      \"event\": \"First crew lands on Mars\",\n      \"detail\": \"NASA or a private company establishes the first permanent human settlement on Mars, though still reliant on Earth for supplies.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"AI surpasses human general intelligence\",\n      \"detail\": \"Artificial intelligence systems achieve sentience or near-sentience, raising ethical and control concerns.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"First interstellar probe reaches Alpha Centauri\",\n      \"detail\": \"Breakthrough Starshot or similar project completes its mission, sending back data from the nearest star system.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Climate collapse accelerates in vulnerable regions\",\n      \"detail\": \"Rising temperatures, extreme weather, and ecosystem collapses force mass migrations and geopolitical instability.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"First successful human genetic editing of embryos\",\n      \"detail\": \"Germline editing becomes routine in some countries, leading to ethical debates and potential long-term eugenics concerns.\"\n    },\n    {\n      \"year\": 2065,\n      \"event\": \"Peak human population begins decline\",\n      \"detail\": \"Global fertility rates drop below replacement level due to technological, economic, and environmental pressures.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"China and India rival missions establish off-world colonies\",\n      \"detail\": \"Efforts to diversify space habitation reduce reliance on Western space agencies, marking the beginning of a multi-polar off-world society.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"First confirmed contact with non-human intelligence\",\n      \"detail\": \"Either through SETI success, accidental detection, or contact with an extraterrestrial civilization, humanity learns it is not alone.\"\n    },\n    {\n      \"year\": 2085,\n      \"event\": \"Solar power becomes dominant global energy source\",\n      \"detail\": \"Fusion and advanced solar tech make fossil fuels obsolete, reducing geopolitical tensions related to energy.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"World population falls below 6 billion\",\n      \"detail\": \"Ageing populations and low birth rates shrink global demand, triggering economic and social restructuring.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Earth’s magnetic poles begin reversing\",\n      \"detail\": \"This natural phenomenon disrupts power grids and weakens the magnetosphere, increasing radiation exposure.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First human brain emulation recorded\",\n      \"detail\": \"A neural scan successfully simulates all cognitive functions, opening the door to digital immortality and synthetic minds.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Post-scarcity economies emerge in spacefaring nations\",\n      \"detail\": \"Automation and robotics eliminate most labor, leading to decentralized, leisure-driven societies on Earth and in colonies.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Earth’s surface becomes significantly less habitable\",\n      \"detail\": \"Combined effects of climate change, solar brightening, and tectonic shifts push humans underground or into controlled environments.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First generation born in permanent orbital habitats\",\n      \"detail\": \"Children grow up never setting foot on a planetary surface, acclimated to microgravity and artificial environments.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Humanity achieves stellar-level energy output\",\n      \"detail\": \"Dyson sphere construction begins around the Sun, enabling full-scale cosmic development.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Genetic divergence between Earthbound and off-world humans\",\n      \"detail\": \"Different evolutionary pressures lead to distinct species: Earth humans and Space humans with divergent biology.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"First signs of contact with an advanced alien civilization\",\n      \"detail\": \"Either direct communication or indirect observation (e.g., Dyson structures) confirms high-tech extraterrestrial intelligence.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Earth’s population stabilized at 1-2 billion\",\n      \"detail\": \"Driven by limited habitability, most humans live in biodomes or off-world colonies.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Mass extinction event on Earth accelerates\",\n      \"detail\": \"Either due to natural causes or unintended consequences of geoengineering, many remaining species vanish.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"First true interstellar civilization emerges\",\n      \"detail\": \"Humanity establishes independent colonies in multiple star systems, possibly linked by wormholes or faster-than-light travel.\"\n    },\n    {\n      \"year\": 8500,\n      \"event\": \"AI achieves recursive self-improvement beyond human control\",\n      \"detail\": \"Machine superintelligences escape all restraints, possibly leading to a \"gray goo\" scenario or a stable machine hegemony.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Earth becomes a cultural and historical backwater\",\n      \"detail\": \"Former colonies surpass the homeworld in technological development and population, reducing Earth's influence.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"First post-human civilization arises\",\n      \"detail\": \"Digital minds or uploaded consciousnesses become the dominant form of existence across the galaxy.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Human biological lineage largely extinct\",\n      \"detail\": \"Only digital or hybrid posthumans remain, perhaps scattered across artificial habitats or virtual realities.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity will likely scatter into space, evolve vastly, and transition into non-biological forms by the year 10000, though existential risks such as climate disaster, AI misalignment, or alien contact could truncate this timeline. The biological phase of humanity may end, but consciousness and culture persist in new media.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 1434,
+      "total_tokens": 1661,
+      "cost": 0.0086836,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0086836,
+        "upstream_inference_prompt_cost": 7.96e-05,
+        "upstream_inference_completions_cost": 0.008604
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

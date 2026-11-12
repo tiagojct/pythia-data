@@ -1,0 +1,68 @@
+{
+  "model": "cohere/command-r-plus-08-2024",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 10,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:00:56+00:00",
+  "seconds": 68.5,
+  "request": {
+    "model": "cohere/command-r-plus-08-2024",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499256-XpIoWB08C21lAaPgOT1N",
+    "object": "chat.completion",
+    "created": 1794499256,
+    "model": "cohere/command-r-plus-08-2024",
+    "provider": "Cohere",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "complete",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Renewable energy boom\",\n      \"detail\": \"Global investments in renewable energy skyrocket, leading to a significant shift away from fossil fuels.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"AI integration in daily life\",\n      \"detail\": \"Artificial intelligence becomes deeply integrated into everyday life, improving efficiency and automation across industries.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Mars colonization begins\",\n      \"detail\": \"The first permanent human settlements on Mars are established, marking a significant milestone in space exploration.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Climate adaptation measures\",\n      \"detail\": \"With the impacts of climate change becoming more severe, countries implement large-scale adaptation measures to protect vulnerable regions.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Rise of digital currencies\",\n      \"detail\": \"Digital currencies, backed by blockchain technology, become widely adopted, challenging traditional financial systems.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Genetic engineering advancements\",\n      \"detail\": \"Advancements in genetic engineering lead to the ability to correct genetic disorders and enhance human capabilities, sparking ethical debates.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Space mining operations\",\n      \"detail\": \"Commercial space mining operations begin, extracting valuable resources from asteroids and other celestial bodies.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Fusion power becomes viable\",\n      \"detail\": \"Fusion power becomes a viable and sustainable energy source, further reducing reliance on fossil fuels.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Global population peak\",\n      \"detail\": \"The world's population reaches its peak, leading to increased focus on resource management and sustainability.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Extreme weather events\",\n      \"detail\": \"The frequency and intensity of extreme weather events, such as hurricanes and droughts, increase significantly, causing widespread damage.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Lunar colony established\",\n      \"detail\": \"A permanent lunar colony is established, serving as a research outpost and a stepping stone for deeper space exploration.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Rise of transhumanism\",\n      \"detail\": \"Transhumanism gains mainstream acceptance, with widespread use of advanced cybernetics and brain-computer interfaces.\"\n    },\n    {\n      \"year\": 2175,\n      \"event\": \"Interstellar travel breakthrough\",\n      \"detail\": \"A breakthrough in propulsion technology enables interstellar travel, opening up the possibility of exploring distant star systems.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Global governance reforms\",\n      \"detail\": \"International cooperation leads to significant reforms in global governance, addressing challenges posed by climate change and resource distribution.\"\n    },\n    {\n      \"year\": 2220,\n      \"event\": \"Artificial general intelligence\",\n      \"detail\": \"The creation of artificial general intelligence (AGI) brings about a new era of intelligent automation and advanced problem-solving.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Terraforming Mars\",\n      \"detail\": \"Mars terraforming efforts make significant progress, transforming the planet's atmosphere and climate to support human life.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Space-based economies\",\n      \"detail\": \"Space-based economies emerge, with commercial activities such as space tourism, resource extraction, and research thriving.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Colonization of distant planets\",\n      \"detail\": \"Humanity successfully colonizes several distant planets, establishing self-sustaining communities in far-flung star systems.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Advanced neurotechnology\",\n      \"detail\": \"Neurotechnology advancements allow for direct brain-to-brain communication and enhanced cognitive abilities.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Alien contact?\",\n      \"detail\": \"The search for extraterrestrial life intensifies, and some speculate that contact with alien civilizations may become a reality.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Nanotechnology revolution\",\n      \"detail\": \"Nanotechnology revolutionizes manufacturing and medicine, allowing for the creation of advanced materials and targeted medical treatments.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Space habitats\",\n      \"detail\": \"Large-scale space habitats are constructed, providing alternative living environments and supporting a growing space-based population.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Galactic exploration\",\n      \"detail\": \"Humanity's exploration of the galaxy expands, with expeditions to distant star clusters and the discovery of exotic celestial phenomena.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Post-scarcity economy\",\n      \"detail\": \"Advances in technology and resource management lead to a post-scarcity economy, where basic needs are met for all.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Genetic diversity preservation\",\n      \"detail\": \"Efforts to preserve genetic diversity and protect endangered species reach new heights, ensuring the survival of Earth's biodiversity.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Fusion of human and machine\",\n      \"detail\": \"The line between human and machine becomes increasingly blurred as cybernetic enhancements and advanced prosthetics become commonplace.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Stellar engineering\",\n      \"detail\": \"Stellar engineering becomes a reality, allowing humanity to manipulate stars and create controlled environments for interstellar travel.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Dyson sphere construction\",\n      \"detail\": \"Construction of a Dyson sphere, a megastructure encompassing a star, begins, capturing its energy and providing near-infinite resources.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Intergalactic travel research\",\n      \"detail\": \"Research into intergalactic travel accelerates, as humanity seeks to explore beyond the boundaries of the Milky Way.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity's future is marked by technological advancement, space exploration, and the overcoming of challenges. From renewable energy to interstellar travel, the coming millennia hold the potential for profound changes in human society and our understanding of the universe.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 224,
+      "completion_tokens": 1515,
+      "total_tokens": 1739,
+      "cost": 0.01571,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01571,
+        "upstream_inference_prompt_cost": 0.00056,
+        "upstream_inference_completions_cost": 0.01515
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

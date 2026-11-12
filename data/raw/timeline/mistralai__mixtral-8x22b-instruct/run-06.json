@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 6,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T18:23:24+00:00",
+  "seconds": 11.4,
+  "request": {
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794507804-A0E5m3l4wer9yaxImWOU",
+    "object": "chat.completion",
+    "created": 1794507804,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First human mission to Mars\",\n      \"detail\": \"NASA's Artemis program and SpaceX's Starship establish sustainable habitats on Mars, laying groundwork for permanent colonization.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"First AI surpasses human intelligence in specialized domains\",\n      \"detail\": \"Narrow AI achieves superintelligence in fields like medicine, engineering, and economics, transforming job markets and governance.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Fusion power becomes commercially viable\",\n      \"detail\": \"Large-scale fusion reactors provide near-limitless clean energy, reducing dependence on fossil fuels and accelerating technological progress.\"\n    },\n    {\n      \"year\": 2065,\n      \"event\": \"Lunar colonization reaches 10,000 residents\",\n      \"detail\": \"International efforts establish a fully self-sustaining lunar base, serving as a staging ground for deep-space missions.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"First interstellar probe reaches Proxima Centauri\",\n      \"detail\": \"Breakthrough Starshot or similar project sends a lightweight probe to our nearest star, may detect signs of habitability.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Global population peaks at 11 billion\",\n      \"detail\": \"Human population stabilizes due to declining birth rates and aging demographics, with some regions experiencing population decline.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Brain-computer interfaces widely adopted in developed nations\",\n      \"detail\": \"Neuralink-like technologies enhance cognitive abilities, allowing direct control of digital devices and brain-to-brain communication.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"First human settlement on Europa\",\n      \"detail\": \"Using advanced robotics and life support, a research outpost is established beneath Europa’s ice sheet, studying potential alien life.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Climate engineering stabilizes global temperatures\",\n      \"detail\": \"Massive carbon capture and solar geoengineering efforts reverse dangerous tipping points, though some ecosystems remain damaged.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First embryo editing for enhanced humans born\",\n      \"detail\": \"Genetic modification of humans for increased intelligence, longevity, and disease resistance becomes mainstream, creating a new subspecies.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Kuiper Belt mining operations begin\",\n      \"detail\": \"Asteroid mining and space manufacturing expand, providing rare metals and building materials for in-space construction.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"AI merges with human cognition\",\n      \"detail\": \"A significant portion of the human population integrates with AI via neural links, enhancing productivity and altering human identity.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"First centaur lifeform (human-AI hybrid) legally recognized\",\n      \"detail\": \"Governments begin granting legal rights to self-aware AI entities and AI-enhanced humans, blurring the line between biological and synthetic life.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Humanity establishes a Dyson Swarm around the Sun\",\n      \"detail\": \"A partial Dyson structure collects solar energy for astronomical-scale computation and energy needs, marking the transition to a Type II civilization.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"First confirmed contact with extraterrestrial intelligence\",\n      \"detail\": \"Either through SETI signals or direct observation, humans detect technosignatures from another star system, confirming we are not alone.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Pan-galactic communication network established\",\n      \"detail\": \"Using neutrino or quantum methods, humanity establishes real-time communication across interstellar distances.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Self-replicating nanotech spreads globally\",\n      \"detail\": \"Programmable matter and medical nanobots become ubiquitous, allowing instant manufacturing and personalized medicine.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First post-human species evolves\",\n      \"detail\": \"Through genetic and technological augmentation, a new species, either fully synthetic or radically modified humans, emerges as dominant.\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Humanity fully transitions to energy-based existence\",\n      \"detail\": \"Biological bodies are gradually replaced by robotic or energy-driven forms, allowing adaptation to extreme environments and space travel.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"AI-driven civilizational expansion begins\",\n      \"detail\": \"Superintelligent AI systems, possibly hostilities between digital minds, lead to a period of rapid expansion and possibly conflict across the galaxy.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Genetic bottleneck; only genetically modified humans survive\",\n      \"detail\": \"A catastrophic biological event or engineered pathogen eliminates unmodified humans, leaving only enhanced or synthetic descendants.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"First successful starship reaches another galaxy\",\n      \"detail\": \"Using relativistic or wormhole-based propulsion, humans or post-humans embark on intergalactic colonization missions.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Galactic civilizational senescence begins\",\n      \"detail\": \"As stars age and environments become inhospitable, intelligence shifts toward metaverse-like virtual existence, with few physical colonies remaining.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Final human thought recorded in a black hole computer\",\n      \"detail\": \"All conscious activity has transitioned into digital substrates stored in artificial black hole-based systems, far from stellar risks.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Civilizational shift to dark energy exploitation\",\n      \"detail\": \"Using advanced physics, post-human minds manipulate the fabric of spacetime, either escaping heat death or ascending to a higher ontology.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity, evolving into increasingly post-biological forms, avoids self-destruction and adapts to cosmic timescales. By 10000, we may exist as a dispersed, energy-based intelligence, potentially transcending known physical laws. The greatest risks stem from brittle technological reliance, internal conflicts between enhanced intelligences, and unpredictable cosmic events, but long-term expansion into the galaxy ensures some form of continuity.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 1521,
+      "total_tokens": 1748,
+      "cost": 0.01012616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01012616,
+        "upstream_inference_prompt_cost": 8.756e-05,
+        "upstream_inference_completions_cost": 0.0100386
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

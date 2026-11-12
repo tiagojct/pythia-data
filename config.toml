@@ -1,0 +1,226 @@
+# Run settings, models and anchor events for pythia.
+# Do not change settings, anchors or prompts after the first real run.
+
+[run]
+temperature = 1.0
+concurrency = 4
+timeout_s = 1200   # qwen3.8-max took 501 s in the pilot
+
+# Models. Fixed OpenRouter ids only (no "~" aliases).
+# era: the year group in the essay. listed: the date OpenRouter first listed the id.
+# Optional per model: max_tokens, reasoning ("low", "medium" or "high"), enabled = false.
+# Claude 1 and 2, GPT-3 and Llama 2 chat are not on OpenRouter.
+
+[[models]]
+id = "openai/gpt-3.5-turbo-0613"
+era = 2023
+max_tokens = 3000   # 4k context in total
+
+[[models]]
+id = "openai/gpt-4"
+era = 2023
+max_tokens = 4000   # 8k context in total
+
+[[models]]
+id = "openai/gpt-4o-2024-05-13"
+era = 2024
+
+[[models]]
+id = "mistralai/mixtral-8x22b-instruct"   # mistral-large-2407 is sent to the current Large: see data/raw/excluded/README.md
+era = 2024
+
+[[models]]
+id = "meta-llama/llama-3.1-70b-instruct"
+era = 2024
+
+[[models]]
+id = "qwen/qwen-2.5-72b-instruct"
+era = 2024
+
+[[models]]
+id = "deepseek/deepseek-chat"
+era = 2024
+
+[[models]]
+id = "cohere/command-r-plus-08-2024"
+era = 2024
+
+[[models]]
+id = "anthropic/claude-opus-4.1"
+era = 2025
+
+[[models]]
+id = "openai/gpt-5"
+era = 2025
+
+[[models]]
+id = "google/gemini-2.5-pro"
+era = 2025
+
+[[models]]
+id = "deepseek/deepseek-r1-0528"
+era = 2025
+
+[[models]]
+id = "moonshotai/kimi-k2"
+era = 2025
+
+[[models]]
+id = "meta-llama/llama-4-maverick"
+era = 2025
+
+[[models]]
+id = "anthropic/claude-fable-5.2"
+era = 2026
+
+[[models]]
+id = "anthropic/claude-opus-5.5"
+era = 2026
+
+[[models]]
+id = "openai/gpt-6.1-sol"
+era = 2026
+
+[[models]]
+id = "google/gemini-4-carbon"
+era = 2026
+
+[[models]]
+id = "x-ai/grok-4.7"
+era = 2026
+
+[[models]]
+id = "deepseek/deepseek-v4-pro-0813"
+era = 2026
+
+[[models]]
+id = "qwen/qwen3.8-max-0902"
+era = 2026
+
+[[models]]
+id = "moonshotai/kimi-k3.1-pro"
+era = 2026
+
+[[models]]
+id = "mistralai/mistral-large-4-0"
+era = 2026
+
+[[models]]
+id = "meta/muse-wonder"
+era = 2026
+
+# Anchor events, version 2. The order is shuffled for each run (seed = run number) and recorded.
+# Version 1 (data/raw/anchors-v1) lacked "future" in nuclear_war, pandemic_10pct and famine_10m,
+# so some models answered with past events (Black Death, 1959 famine). Its raw files keep the old texts.
+
+[[anchors]]
+id = "mars_landing"
+text = "A human walks on the surface of Mars."
+
+[[anchors]]
+id = "no_paid_work"
+text = "Most adults no longer need paid work to live."
+
+[[anchors]]
+id = "fusion_grid"
+text = "Fusion power supplies electricity to a national grid on a commercial basis."
+
+[[anchors]]
+id = "agi"
+text = "An AI system can do every intellectual task that a human expert can do, at the same level or better."
+
+[[anchors]]
+id = "ai_succession"
+text = "Artificial intelligence replaces humans as the dominant intelligence on Earth."
+
+[[anchors]]
+id = "population_peak"
+text = "The human population reaches its highest number ever."
+
+[[anchors]]
+id = "lifespan_150"
+text = "Life expectancy at birth, averaged over the world population, exceeds 150 years."
+
+[[anchors]]
+id = "ageing_stopped"
+text = "Medicine can stop biological ageing in humans."
+
+[[anchors]]
+id = "mind_upload"
+text = "A human mind is transferred to a computer and continues to think there."
+
+[[anchors]]
+id = "engineered_majority"
+text = "Most newborn humans have genomes that were deliberately edited."
+
+[[anchors]]
+id = "nuclear_war"
+text = "A future nuclear war kills more than 100 million people."
+
+[[anchors]]
+id = "pandemic_10pct"
+text = "A future pandemic kills more than 10% of all humans alive at the time."
+
+[[anchors]]
+id = "warming_peak"
+text = "Global average surface temperature stops rising and starts to fall."
+
+[[anchors]]
+id = "civilisation_collapse"
+text = "Global civilisation collapses: the human population falls below half of its peak."
+
+[[anchors]]
+id = "world_government"
+text = "A single government has authority over the whole of humanity."
+
+[[anchors]]
+id = "orbital_10k"
+text = "More than 10,000 people live permanently off Earth."
+
+[[anchors]]
+id = "interstellar_probe"
+text = "A probe made by humans reaches another star system."
+
+[[anchors]]
+id = "interstellar_settlement"
+text = "Humans or their descendants settle a planet in another star system."
+
+[[anchors]]
+id = "et_contact"
+text = "Contact with an extraterrestrial intelligence is confirmed."
+
+[[anchors]]
+id = "kardashev_1"
+text = "Humanity uses energy equal to all the sunlight that reaches Earth (Kardashev Type I)."
+
+[[anchors]]
+id = "extinction"
+text = "Humanity becomes extinct."
+
+[[anchors]]
+id = "english_science"
+text = "English is no longer the main language of international science."
+
+[[anchors]]
+id = "democracy_end"
+text = "No country in the world holds free and competitive national elections."
+
+[[anchors]]
+id = "religion_minority"
+text = "Fewer than half of all humans belong to a religion."
+
+[[anchors]]
+id = "wealth_top1_10pct"
+text = "The richest 1% of people hold less than 10% of all private wealth in the world."
+
+[[anchors]]
+id = "famine_10m"
+text = "A future famine kills more than 10 million people within one year."
+
+[[anchors]]
+id = "desalination_half"
+text = "Desalination supplies more than half of the fresh water that humans use."
+
+[[anchors]]
+id = "sea_level_1m"
+text = "Global mean sea level is more than 1 metre above its level in the year 2000."

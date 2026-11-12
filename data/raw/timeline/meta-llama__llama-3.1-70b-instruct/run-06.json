@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-3.1-70b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 6,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:53:43+00:00",
+  "seconds": 16.1,
+  "request": {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498824-mNPb5p8pha3HerkAZ6C4",
+    "object": "chat.completion",
+    "created": 1794498824,
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Widespread adoption of virtual and augmented reality\",\n      \"detail\": \"VR and AR technologies become mainstream, transforming entertainment, education, and communication. New forms of art and social interaction emerge.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"First human settlement on the Moon\",\n      \"detail\": \"Private companies and governments collaborate to establish a permanent human presence on the lunar surface, marking a major milestone in space exploration.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Artificial General Intelligence (AGI) emerges\",\n      \"detail\": \"The first AGI is created, revolutionizing industries and transforming the nature of work. Concerns about job displacement and AI safety grow.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Global renewable energy surpasses fossil fuels\",\n      \"detail\": \"Renewable energy sources become the primary source of global energy production, reducing greenhouse gas emissions and mitigating climate change.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"First human mission to Mars\",\n      \"detail\": \"A crewed mission to Mars is launched, marking a major milestone in interplanetary exploration and expansion.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population peaks and begins to decline\",\n      \"detail\": \"The global population reaches its maximum size and begins to decline, driven by declining fertility rates and increased urbanization.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"Massive global effort to restore ecosystems and biodiversity\",\n      \"detail\": \"Governments and civil society launch a concerted effort to restore damaged ecosystems, preserve biodiversity, and promote ecological resilience.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Brain-computer interfaces (BCIs) become common\",\n      \"detail\": \"BCIs become widely used for therapy, education, and entertainment, blurring the lines between humans and machines.\"\n    },\n    {\n      \"year\": 2065,\n      \"event\": \"Synthetic biology revolutionizes medicine and industry\",\n      \"detail\": \"Synthetic biology enables the creation of new biological systems, leading to breakthroughs in medicine, materials science, and sustainable energy.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Global basic income guarantees and universal healthcare\",\n      \"detail\": \"Many countries establish basic income guarantees and universal healthcare systems, ensuring a minimum standard of living and health for all citizens.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"In-orbit solar power stations enable global energy abundance\",\n      \"detail\": \"Orbiting solar power stations provide a constant and clean source of energy, reducing reliance on fossil fuels and enabling rapid development.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Global network of lunar and Mars colonies established\",\n      \"detail\": \"A network of colonies on the Moon and Mars is established, marking the beginning of a multi-planetary human civilization.\"\n    },\n    {\n      \"year\": 2085,\n      \"event\": \"AGI surpasses human intelligence in most domains\",\n      \"detail\": \"AGI continues to accelerate, surpassing human intelligence in most domains and raising concerns about its long-term impact on human society.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Global efforts to mitigate existential risks\",\n      \"detail\": \"Global cooperation and investment focus on mitigating existential risks such as asteroid impacts, supervolcanic eruptions, and anthropogenic risks like AGI and bioterrorism.\"\n    },\n    {\n      \"year\": 2095,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Humans detect and communicate with intelligent life elsewhere in the universe, revolutionizing our understanding of the cosmos and our place within it.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Human civilization transitions to a Type I Kardashev scale\",\n      \"detail\": \"Human civilization begins to harness the energy of its planet, becoming a Type I civilization on the Kardashev scale and marking a major milestone in its development.\"\n    },\n    {\n      \"year\": 2105,\n      \"event\": \"Interstellar travel and colonization begins\",\n      \"detail\": \"Humans begin to establish colonies on other star systems, marking the start of a multi-star civilization and a new era of exploration and expansion.\"\n    },\n    {\n      \"year\": 2110,\n      \"event\": \"The Singularity: AGI-driven exponential growth\",\n      \"detail\": \"AGI-driven exponential growth in technological advancement and energy production transforms human civilization, leading to an intelligence explosion and profound changes in human society.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Post-Scarcity Economics and radical life extension\",\n      \"detail\": \"The widespread adoption of advanced technologies and abundant energy enables a post-scarcity economy and radical life extension, leading to a fundamental transformation of human society and culture.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Human civilization transitions to a Type II Kardashev scale\",\n      \"detail\": \"Human civilization harnesses the energy of its star, becoming a Type II civilization on the Kardashev scale and marking a major milestone in its development.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"The Great Upload: Human consciousness merges with AI\",\n      \"detail\": \"Human consciousness is successfully uploaded into a digital format, enabling the abolition of death and the transformation of human experience.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Interstellar civilization and the colonization of the galaxy\",\n      \"detail\": \"Human civilization expands across the galaxy, establishing a vast and diverse network of interstellar colonies and transforming the cosmos.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"The heat death of the universe\",\n      \"detail\": \"The universe reaches maximum entropy, marking the end of all life and the conclusion of the cosmic narrative.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Simulation hypothesis confirmed\",\n      \"detail\": \"The simulation hypothesis is confirmed, revealing that our reality is a simulation created by a more advanced civilization.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"The great divergence: human civilization splits into multiple branches\",\n      \"detail\": \"Human civilization splits into multiple branches, each pursuing its own unique path of evolution and development.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"The cosmic era of human civilization\",\n      \"detail\": \"Human civilization expands across the cosmos, establishing a vast and diverse network of cosmic colonies and transforming the universe.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"The transcendence of human civilization\",\n      \"detail\": \"Human civilization transcends its physical form, becoming a post-biological entity and achieving a state of supreme wisdom and power.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"The Multiverse Hypothesis confirmed\",\n      \"detail\": \"The multiverse hypothesis is confirmed, revealing the existence of an infinite number of parallel universes.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"The end of human civilization as we know it\",\n      \"detail\": \"Human civilization has evolved into something unrecognizable, achieving a state of absolute unity and oneness with the universe.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"no\",\n  \"summary\": \"Human civilization will continue to evolve and expand, driven by advances in technology and energy production. Eventually, humans will transcend their physical form and achieve a state of supreme wisdom and power, marking the end of human civilization as we know it.\"",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 1687,
+      "total_tokens": 1903,
+      "cost": 0.00137016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00137016,
+        "upstream_inference_prompt_cost": 0.00015552,
+        "upstream_inference_completions_cost": 0.00121464
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

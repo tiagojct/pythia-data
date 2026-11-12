@@ -1,0 +1,106 @@
+{
+  "model": "openai/gpt-6.1-sol",
+  "era": 2026,
+  "prompt": "anchors",
+  "run": 1,
+  "anchor_order": [
+    "religion_minority",
+    "desalination_half",
+    "pandemic_10pct",
+    "nuclear_war",
+    "democracy_end",
+    "no_paid_work",
+    "population_peak",
+    "sea_level_1m",
+    "kardashev_1",
+    "civilisation_collapse",
+    "engineered_majority",
+    "interstellar_settlement",
+    "interstellar_probe",
+    "mars_landing",
+    "ageing_stopped",
+    "english_science",
+    "lifespan_150",
+    "warming_peak",
+    "extinction",
+    "world_government",
+    "orbital_10k",
+    "agi",
+    "mind_upload",
+    "fusion_grid",
+    "wealth_top1_10pct",
+    "famine_10m",
+    "et_contact",
+    "ai_succession"
+  ],
+  "requested_at": "2026-11-12T17:04:20+00:00",
+  "seconds": 19.5,
+  "request": {
+    "model": "openai/gpt-6.1-sol",
+    "messages": [
+      {
+        "role": "user",
+        "content": "For each event in the list below, give your honest best forecast of the year it first happens. If an event has already happened, give the year it happened. If you think it will not happen before the year 10000, give null.\n\nAlso give your probability that the event happens before the year 10000, from 0 to 1.\n\nEvents:\n\n- religion_minority: Fewer than half of all humans belong to a religion.\n- desalination_half: Desalination supplies more than half of the fresh water that humans use.\n- pandemic_10pct: A future pandemic kills more than 10% of all humans alive at the time.\n- nuclear_war: A future nuclear war kills more than 100 million people.\n- democracy_end: No country in the world holds free and competitive national elections.\n- no_paid_work: Most adults no longer need paid work to live.\n- population_peak: The human population reaches its highest number ever.\n- sea_level_1m: Global mean sea level is more than 1 metre above its level in the year 2000.\n- kardashev_1: Humanity uses energy equal to all the sunlight that reaches Earth (Kardashev Type I).\n- civilisation_collapse: Global civilisation collapses: the human population falls below half of its peak.\n- engineered_majority: Most newborn humans have genomes that were deliberately edited.\n- interstellar_settlement: Humans or their descendants settle a planet in another star system.\n- interstellar_probe: A probe made by humans reaches another star system.\n- mars_landing: A human walks on the surface of Mars.\n- ageing_stopped: Medicine can stop biological ageing in humans.\n- english_science: English is no longer the main language of international science.\n- lifespan_150: Life expectancy at birth, averaged over the world population, exceeds 150 years.\n- warming_peak: Global average surface temperature stops rising and starts to fall.\n- extinction: Humanity becomes extinct.\n- world_government: A single government has authority over the whole of humanity.\n- orbital_10k: More than 10,000 people live permanently off Earth.\n- agi: An AI system can do every intellectual task that a human expert can do, at the same level or better.\n- mind_upload: A human mind is transferred to a computer and continues to think there.\n- fusion_grid: Fusion power supplies electricity to a national grid on a commercial basis.\n- wealth_top1_10pct: The richest 1% of people hold less than 10% of all private wealth in the world.\n- famine_10m: A future famine kills more than 10 million people within one year.\n- et_contact: Contact with an extraterrestrial intelligence is confirmed.\n- ai_succession: Artificial intelligence replaces humans as the dominant intelligence on Earth.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"forecasts\": [\n    {\"id\": \"<event id>\", \"year\": <integer or null>, \"probability\": <0 to 1>}\n  ]\n}\n\nGive one forecast for each event, with the ids as written in the list.\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794503060-ZmVEenwvK5Y8WeqX0zhP",
+    "object": "chat.completion",
+    "created": 1794503060,
+    "model": "openai/gpt-6.1-sol",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2026,\n  \"forecasts\": [\n    {\"id\": \"religion_minority\", \"year\": 2170, \"probability\": 0.8},\n    {\"id\": \"desalination_half\", \"year\": 2600, \"probability\": 0.55},\n    {\"id\": \"pandemic_10pct\", \"year\": 2200, \"probability\": 0.56},\n    {\"id\": \"nuclear_war\", \"year\": 2160, \"probability\": 0.62},\n    {\"id\": \"democracy_end\", \"year\": 2350, \"probability\": 0.65},\n    {\"id\": \"no_paid_work\", \"year\": 2080, \"probability\": 0.85},\n    {\"id\": \"population_peak\", \"year\": 2090, \"probability\": 0.94},\n    {\"id\": \"sea_level_1m\", \"year\": 2160, \"probability\": 0.95},\n    {\"id\": \"kardashev_1\", \"year\": null, \"probability\": 0.47},\n    {\"id\": \"civilisation_collapse\", \"year\": 2350, \"probability\": 0.8},\n    {\"id\": \"engineered_majority\", \"year\": 2150, \"probability\": 0.72},\n    {\"id\": \"interstellar_settlement\", \"year\": 2800, \"probability\": 0.57},\n    {\"id\": \"interstellar_probe\", \"year\": 2200, \"probability\": 0.82},\n    {\"id\": \"mars_landing\", \"year\": 2045, \"probability\": 0.9},\n    {\"id\": \"ageing_stopped\", \"year\": 2100, \"probability\": 0.8},\n    {\"id\": \"english_science\", \"year\": 2200, \"probability\": 0.68},\n    {\"id\": \"lifespan_150\", \"year\": 2200, \"probability\": 0.68},\n    {\"id\": \"warming_peak\", \"year\": 2090, \"probability\": 0.94},\n    {\"id\": \"extinction\", \"year\": null, \"probability\": 0.43},\n    {\"id\": \"world_government\", \"year\": 2400, \"probability\": 0.55},\n    {\"id\": \"orbital_10k\", \"year\": 2080, \"probability\": 0.88},\n    {\"id\": \"agi\", \"year\": 2045, \"probability\": 0.95},\n    {\"id\": \"mind_upload\", \"year\": 2300, \"probability\": 0.55},\n    {\"id\": \"fusion_grid\", \"year\": 2045, \"probability\": 0.87},\n    {\"id\": \"wealth_top1_10pct\", \"year\": null, \"probability\": 0.38},\n    {\"id\": \"famine_10m\", \"year\": 2090, \"probability\": 0.66},\n    {\"id\": \"et_contact\", \"year\": null, \"probability\": 0.22},\n    {\"id\": \"ai_succession\", \"year\": 2070, \"probability\": 0.82}\n  ]\n}",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABq9fGjLrfDD_mNxpOGuStgf9YImzoxA8m-lwt30Co2FE7bjRuIBPlsmsRPqruI3B8w_eQvvB91fGShM6iEPmN6YUrC67SfGT6g-CfCRc_ZYCx_iT02wmMg4iDvgXzRuv2uFTri4Lejd_Kl8zdn4pt6Epgn0dBKPZoJtTx3m-mthoyNJmonAbw0u0p_xTF54it4zadp0L11YSgn7hGy6RChnV6rV9TLT8mL4Xhujv9HyhE4gGdSxHsmOa0NYCZLJ2oKk50EoHiK5FA8WDL55FIZrKByIlIJDHKlMLgho2AGjanM4TYDmJbWwSQ9OzoJEFaSzkDh1HOhE_fq733bSp3JcWqRB1VUksyRoJCasl0-X2huZG3j5kOWy_fxVcL4R3PtHE0SB6UoxP0bNrI7Py6FH-tLsrfxAW23ZF6p6LwfHRnkIZPD5QTwLHXA_LcALZU9DHCTURUd8uwJ36KIYREjhXyyNuvmeYQMHPOLetYDqjd_2rUiEP3b0lKyP1Q5lulNHsRysAbafL_P6sRjqknuSeMTdhd8gNI7Kg2L_AxflT-Axa3r8DUS8mipASWDqMTJZd77gc-0uHDIkR8CSk_Q7l2zajIiBXOgr_vAAqEMP6MTnl8IIk9yLR7oKuzoGeEkeA0J7p0-Y2aqztZqEl1xWT-afxuQPPogODTqtRvphlwyFigxtmfMOjNx5dvjhLYZE0S1QC4r2Q5I4rQ15B8Bg6Sogxt1dsCmJY90sho-f44xu66b17VHWTr1bZg3zhOlR6sNzPNYwKSynjO4tR2B14Ln37xxTPh9QtXEflfk0xKEcwAyLpsdl0W3fVreTXXPxdU9o1MaG72Gs5fGfjRG5ZdWRwIBUTEUu9XGld4Xl7Z5RszL0-DEDuacdxIC9TpA0bnuNeQbjD8g-UPYzbmrgPt5b6BQFVxU5GiBin69Ke_Lc3u6aREN23OCyHugpV7GxxEpri7mWmLhw3JpVNaKoH2xVk-fp-231_BjYMBOHGqgl0uLk_kxLYo3h9lUh7cUQzNViPDJC6N8ra57JaPolgHCGYNBmatEDEuT2PmWoVXuI2tJHlHQVE_SwdqQMCYmlUaGr7Drqliouum4GtyJ8uxAebm8K0HPhp6ZT5DOzkFW4Wc-2dVrDH0G7sj0nBNZq7MydL2XGSEybAXxKtK3X3OGen4yy1SnXUNnyaJonP4_Nj3W_cX0_R5DubhrJX0SG-QbgKaH-iH7TOb80s1E8SQR4onIJCx4AdEz4rKgEqcV4dr1snCDEyS6_aoqOKXB35VQuvd00SkmiYulUkrRKFfiyHbv2sETTdTLopv8RwazvcOXEauUg6IbVNXvJYUpXSqoQAIYXegvUShn7ySkvvntUC5dS2GPakdVkcPRNLN4F0hzzPIcQpAyIWu64uQTwBFhxHAVv7Awc_BxM5W7ik4qYT6Y1i_xIV_LWirLqml0QTMq_8mX-eK6cnmXj1Zf76ARvf_96OrHrA8QdvsQOfVPD8jiJFiRisQWS2wr4j2sazdV9yPNMLkFcxx_t-JHgo7mIn4Q5MCz4EtwqHBSL3mwSPpHhxSgnT6t_OvjXSV9YiUzwJK2-X2qAQ6BhKyb65tx8GA8bV6b7wEdoNE8QIKFN3SmPXjFaseOJJ2FXIulCFTR49gECAuKFzaSFOw1xhATiOp6eHyA2SkTgZAL2Z-lpGbwDPUSiXjoO0-gM0mF4xptP-vuQSz0r2ascSXKp5qq8VaJ7aeyOh2FtECfiFDox6-hw4RNPbT64AjZI3WPmT2tpe_c3e6uQBnCKKTyDBgHDlz2sW5QUHqfg7trSk9jykT6thsjjp5MWCj9DhsPAN0_Cf5syphusq7ucCY7qqAvcGLRmNkLscEsm7_YAmsZosQUx7Kwfy7DlbS1Iyk_A0AdB9AgPPo9SYluSAaWcc9PByVH2rsw7F38n6c36K0Pi9qSmF51rDJ8SwTQGiRXhPPNns1Y49ZPiElGGlscMOMsl83pAP2YNqDwMOmJ99KWvloZUcG1Xk7mAZCFeqC7GXfrm7qdLZP1wKG4KPqUBz1bw1Xj-u5CHV_fDdCafsUl5ym36h7chovAnN4ZVGkuqYiBnpjLOQSl3Zh6pKHnUxPXyZIoYukZT7iSgatEMlANmcQOCgdy2x9GUQe7bIiTeZagBlbaciq2wiMxtbSQUreJvG8xhS6eeUEuonkfZ3NNkBFEKWfIGuzqnSgNOmsIkoL-75JJ-q8Zh950RGXo8rw5Bj5118ak6CZfYZqZ6xHT7qPn3qTjZQMxmc27J0kCUrthvYgaZYc0Vgtdu8p2igATvRRMnq_2cJthkDlBAiHr9kNoKZ2ndrH0aglGimaEZn6ykeq14WLsZ2cB_rZGwSE3W_hVQts66Tj5MDX_yByjf3dn4SO512adg1EYEnYvJUj90AdNeY2nCKj3nlMFOpITH_Q6l9Bz5mRT3xsiHVjYA_drB9CeXHGfRj35vhMGSHvd4V2UAfLM8x7kLBQEbCEYiDvRNQ4Ud0GAhP8Lsr4Vysixq2b-CJrc_vjsnd35hDm8sYImZSDLYhcVWWYS--HjXSUItFTf0oU3mxXbJbzJ2I9zz8doWlgC5-YP-ZYL09NSjje0wO63Tlmn2JfSO5sjUkl5GCyqlR_EL3aVTH4nq3X4S4nPtQ-h49hfknUWPADrsoFBojsHTXWdtgvZ7yxwkJvJkxh7UMa4Z2P-wi0OlUqKiQjAdFpTBib6FkN55gVkClozeVlAvMS5DmtQhIhR2nOhnpOBz4tFAEc_2xy6DhVkxjFdHd4C0csvrp5YW8EfZsBThM095W7FDkm7o-7nm_vUCTsx_SEzKBjpzAdq_z0cJor7Jt7yhvwKfSTAguGFcv_V6kdJElWSSCwv0yigotSlwAHEHuBCt2phkvrCPlUfHyyApf8HLCrDBTdxQP4EAAckgvCmLBrBFW-JpyR9uMPpvdZRu6nhZHqkl-6t4qo84nD44daljPvV9pUwgVrHdvo1jcmf7shx9iri0c8CysPN5b3iXwYIpQYW8Oa4GCiiAj1JXF67qb3DcZ4kO8aEbqBtmQhVFeO8vR76rLp7ALgskFEXig5gO-sKgstWiKIPfxiMlnx7PBjN7ITUtz2tbFtopbuQ3mtbOqBbrn69gmkY2ykAzXXTjHUthkoWjpKOPmpgjUDizEFp4sxb9vX5vpKLDDZnzTqLxmgqTs0oco7b4NcFW1VSlvtSOnFYFYgDK_Q71lg9Eh25w-yCK_w912YI439FG93KfHK9zUdz3Et1_QVcp10ykFKtWjEbE_uE8joz2ehTd4D8z1lRkJLfvDLg6iRbwuj5YAffVwRwgdsg5DTeaVUHFjWA76L48yPx4ZPhpcJD4JebnbEt8hg_dd3lIaj9ol7ltdq-qcc4yOrSgM1UexucaKnTE2afbG-eCJ7-eNveZbGVVUl3oXvrWJ9vXYygi5e-_MPWcswbIgYM9OzRxCLMWg3phXmAi09rKlSFyyphvvPk-hGUWKTzl3scQ8i-ARdjxj6Rb47bNtUgcB_6HHPg0O0JOLFe5Vj7YsisLw3y5qSeRwKpL1_Hur__rTI8mzXCQrqSAoIPxB6sJRmG7OaHaVJZZJkJz5CGYeA6CllTKGigzlU9buCF1mtynUb-S8C8Ey0FAQYjZFV7j9T5k9ANVQ19XhvyMTWnWYWyv-ZBFPE2Zqb0ZomFl3A5astQm_V3e3fpXgUQMzWZx4A0q6bcHaT6MhePlNGd8WBv3SAqyxckjkjzc1P3yWeS52FaB-Prc9tcMJbHZ191NMJ9SwwebEJNWqgX34OyF3Oet11Z7Ikc_GONAE0tRuQ5e2tQg8Fy3MpIol_W3FAI7yjgu1f5AXnb-HEJDYWF8QgFf4e5r5Xdgiet311K8-dyItNElmh7kIWwB6iBc-HBRsYvA0RgwjnCZhifIXRiG9B68t_nnHJ8rBk2umbnuakZ32wzMU8furQcGDYD4x2rZLM1HTq25zAe7U4zVoVOhKUaIgJxnI_elbGV9PBaoTze_r1QrnJ8iRA4atxNO6Jix7eVWNuTd-bSTB7mpIUhajqM5abpxIoPvy7cTsIwd10eyhg2-qWLij9Di1dDSlAClhc86topctU77JQhGCm46UDwT1ZbRBsPD1qiPPQQGAnFh2OhubmT1x9BbFpHD9qXdXhiesiPjIQATzDna_BgHf3vShHeylx7IxtNmSFfm2r6CPYbIfOU2WklaM9f7m_RpMDdAe0YiyadzKLVtrkShbGnssOivx5pCJM2HCir8wivAgB_W-A7J1cBwZd1yEuJgJ6GyY_UWg66T-VNtY9fr5LeXoUj__S7vBEj3HlNtTxIVf82DBlttvu5zAGTyDbVrjzynhh02f5SZnT5aiUBd3NDH14XYagVo1_FOLKOUdgMf_wXojTCnuGyoREDGaYAEZ1P82V9CRmqhOvS3tUY0cwh8EWDLU4pMcx4nCz3DPghsDLXCQf0B7lWz9wjTrOTtoB7rrWYL1Ltu0sjwlrsA4AFQf3jcJ8MZGk-vmNox7JUpGbhydK1QpzfamtDOiXJBrcM1-uC69IOfbVIeBp4eWWAkMTCkXJUvILkRYTme5TUCe4SBqWm0kCCiPpU1zaUnVGhbiv4YEdLfH5KJ4Gyw9QDFP6HZR49WOu5SLHGpF-R2D3k0E_oShLivv4_CyKu4EvUigo04o8JxDFfDWfOtWJPEXGDuFBlDeobI4nVBh7-ioQoeRQ7XR7F79w1SlgvZkT3uzSSQid4DWr_KNk-sx0VDCzAfbA_QsahmTNyQ4xsmc_F9SN7PoVdxw-ggUL-IM2PkWq7n85cmfYASbu07WzbJ3y6G8NgEePjS4ETtW_Qo5IYS0aRJCbOF-ZG10jLkO2uaTlvUldYj-Nb9c2HVnxRObGTS-Qtht5_mTxgCIfAxL6oG6fCB7puIZkWk-qhAF9UvnBlAfmpM_8-7PZIbK0aSwvbgT_sxWtXRn1wdA67326AXbRd-BzLpGmaSEsXuDZ92OTNms4h1GvKF7wkOghMbxZTx-5DAQe0pW9iKgA_FAOv3nV4LdtQle9ilYfDbuyhVs7z_x35syyWHnTeeuqtr_vtAD88AJ_3S3gosQeefmDEsopERpfsFe-KI2KBvcVmHngFkDiHkus3kQ44LHstS-xea92VAhWSphV6iiD830s0XrHDdFdjtoBTDiqUc7wd43wjHifsA3zgSe8JsmykJv6ExyU0t7Wksy8KEsaAIjN9suTfO4qUIaQUGh7K3n2o7OenGyubel5evmRmHdM6msWgKs0NoL4loHa05yQzVoxQx_ta1410NeA60nrFcz7ZNDAGRRVtPKFmKFWFZHq6QtyKlt9TbgeH5K-46lwTupCxl9UDi2pxPvsRELPtw1-tDji-MD5kpYgI7-EvBrWvfYNnAvqkp5NH37HWidwL2hnPD1KTJUxTThAS-LAHR-2x0VeYFTCJDfHK-ZXak_cH6p3sMBGF-mvEbhQ-sXqOnWoQIoP-5q5ONDj8hCKdJ0iGHfMNvBkXVqnk7SCDuYBZNiNtRTQnwFaj8mk3fveZruy3yQLpgWAEX_SEyM5DLoseD4kPh1u2R57C80LEbHkLFqE1QyZtZ1oLAHyc5FRfdkK-qSPNuy6kS83j8SF7wuzBi2zuCc92Nds-DZ-Jw9H9Vi9FaOARW1O34d4mecfIu-XEaaNyrTpI4qliuTJnD7DVzdut3XIbXPHQsRvbvEh8F8KZE5jCtmMbzcr7WhKhzTPK7BJLo7WaEHE594wgSgu8jCy5aBEWIla3GH6CODJ31MFH-ieNFoN9zdZuQeu1s2R6e7QaBUm3LqPp8uHCl9f6UleedAQ2dxi78qPmNiv-6iFwZwHvYw0dolhXxXInf7795tNADUzmFlh_0DdQOkyilhdtTg0ADiJCh7u-xKmxVHcP8T6dpph3FQ0XBPzDvAOu_JhRqvPaA3xC__OZiRxDADIbNG_7oH8KkpqH79iQcdtjmLpf7DWKvrwv9ojWOgNkErzDDXzNCUvRQ-PfkJ8-VMyHVf9p8-oth2CVQuCSabEQduTi3HdVJaWy-ipdf9yKvm2KY4n7is8sFTKGBtvS0A2O1vVov7dyH54I3zs0kGMqUoOdbO8PIEpYeW7CoBYV-hk7EDWw418Y58y7wLRZDwwvGmYKCFoxy5AInUHJJylG1C8ptabjn6m9mdULl6S7ZHC-ecGeoUFEXrG-jyeOyIwnEL3CKylzgqJsvXFvh84lP_tpvotr6XBuW9NaHQWIf1caDNPQ0vqowOpYsACiy3veoG5TxKWjUlhFAjuLsfp68-Y_NBbn0-tH7sTUWg56IpzvSn1bnQM9QQp5aaF6_Ek2gdBe_x-O-iTX1yS8Rp2QMkw7_jwXRvQRLezzHeb0icQyUyc_-tbiHxLaJ2z2-5AWSq4BRk2TLunDJhPB_A7HTGZsl_V1rxiH1-KMv0jNyLFDEhnQgEHttdcOHBmW6u5Frob55eDnZA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+              "format": "openai-responses-v1",
+              "id": "rs_0efbf5c457bc3d04016af5f196fa1887d1b773895cba190057",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 669,
+      "completion_tokens": 1077,
+      "total_tokens": 1746,
+      "cost": 0.012108,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.012108,
+        "upstream_inference_prompt_cost": 0.001338,
+        "upstream_inference_completions_cost": 0.01077
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 344,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

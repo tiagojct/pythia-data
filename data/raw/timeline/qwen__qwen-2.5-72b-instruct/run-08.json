@@ -1,0 +1,68 @@
+{
+  "model": "qwen/qwen-2.5-72b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 8,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:55:15+00:00",
+  "seconds": 51.0,
+  "request": {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498915-gO1tOy3Xz20FGi2p0O9F",
+    "object": "chat.completion",
+    "created": 1794498915,
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Global carbon emissions peak and begin to decline.\",\n      \"detail\": \"Renewable energy becomes cheaper and more widespread, leading to a significant decrease in fossil fuel use.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"First permanent colony established on Mars.\",\n      \"detail\": \"A joint international effort establishes a sustainable human settlement on Mars, paving the way for further space exploration.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Artificial general intelligence (AGI) is developed.\",\n      \"detail\": \"Scientists create AGI, which begins to assist in various fields, from medical research to environmental management.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Global population stabilizes at 9.5 billion.\",\n      \"detail\": \"Advances in healthcare and resource management help stabilize the global population.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"First interstellar spacecraft launched.\",\n      \"detail\": \"A probe is sent to the nearest star system, Proxima Centauri, marking a significant milestone in space exploration.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Global economy shifts to a post-scarcity model.\",\n      \"detail\": \"Advanced automation and resource abundance reduce the need for traditional economic models, leading to widespread abundance.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First human-AGI hybrid created.\",\n      \"detail\": \"Scientists achieve a seamless integration of human and artificial intelligence, creating a new form of cognitive being.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Earth's ecosystems fully restored.\",\n      \"detail\": \"After decades of environmental restoration efforts, Earth's ecosystems are largely restored to pre-industrial levels.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Human lifespan extended to 150 years.\",\n      \"detail\": \"Advancements in medical technology and genetics significantly increase the human lifespan.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"First successful colonization of a planet in another star system.\",\n      \"detail\": \"Humans establish a sustainable colony on a habitable exoplanet in the Alpha Centauri system.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Quantum computing becomes mainstream.\",\n      \"detail\": \"Quantum computers are widely used in various industries, leading to breakthroughs in cryptography, materials science, and more.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Interstellar trade routes established.\",\n      \"detail\": \"Regular trade and communication between Earth, Mars, and other colonies in the solar system and beyond becomes common.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Human society becomes predominantly digital and virtual.\",\n      \"detail\": \"Virtual reality and augmented reality technologies become so advanced that a significant portion of human life is lived in digital spaces.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"First self-sustaining underwater city completed.\",\n      \"detail\": \"A fully self-sustaining city is built under the ocean, utilizing advanced technology to support human life in a challenging environment.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Artificial superintelligence (ASI) emerges.\",\n      \"detail\": \"ASI surpasses human intelligence in all areas, leading to rapid advancements in science, technology, and society.\"\n    },\n    {\n      \"year\": 2900,\n      \"event\": \"Humanity achieves intergalactic travel.\",\n      \"detail\": \"Advanced propulsion technologies allow humans to travel between galaxies, expanding the reach of human civilization.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"First synthetic human created.\",\n      \"detail\": \"Scientists create a fully synthetic human, capable of self-replication and adaptation.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Humanity establishes a presence in a black hole's event horizon.\",\n      \"detail\": \"Scientists and explorers establish a research facility in the event horizon of a black hole, studying the exotic physics of these phenomena.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Human consciousness can be uploaded to digital form.\",\n      \"detail\": \"Technology allows human consciousness to be digitized and uploaded to a virtual environment, blurring the line between physical and digital existence.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Humanity encounters an alien civilization.\",\n      \"detail\": \"Humans make first contact with an advanced alien species, leading to a new era of interstellar diplomacy and cooperation.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Humanity becomes a Type III civilization on the Kardashev scale.\",\n      \"detail\": \"Humans harness the energy of entire galaxies, marking the achievement of a Type III civilization.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"First successful terraforming of an exoplanet.\",\n      \"detail\": \"Humans successfully terraform a distant exoplanet, making it habitable for human life.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Humanity discovers and decodes the universe's fundamental laws.\",\n      \"detail\": \"Scientists unlock the deepest secrets of the universe, leading to a new understanding of reality and existence.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Human society evolves beyond biological form.\",\n      \"detail\": \"Human consciousness and identity become entirely digital, transcending the bounds of physical form.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Humanity achieves omniscience and omnipotence.\",\n      \"detail\": \"Through advanced technology and understanding, humans become all-knowing and all-powerful, capable of shaping reality itself.\"\n    },\n    {\n      \"year\": 9999,\n      \"event\": \"Humanity reaches a state of perfect harmony with the universe.\",\n      \"detail\": \"Human civilization achieves a state of perfect balance and unity with the universe, existing in a state of eternal peace and prosperity.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will continue to advance technologically and expand its reach across the universe. By the year 10000, we may achieve a state of perfect harmony with the cosmos, existing as digital entities with nearly limitless capabilities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 1467,
+      "total_tokens": 1687,
+      "cost": 0.000666,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000666,
+        "upstream_inference_prompt_cost": 7.92e-05,
+        "upstream_inference_completions_cost": 0.0005868
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

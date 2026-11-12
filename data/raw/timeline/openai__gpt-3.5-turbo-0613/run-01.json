@@ -1,0 +1,69 @@
+{
+  "model": "openai/gpt-3.5-turbo-0613",
+  "era": 2023,
+  "prompt": "timeline",
+  "run": 1,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:04:16+00:00",
+  "seconds": 16.5,
+  "request": {
+    "model": "openai/gpt-3.5-turbo-0613",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    },
+    "max_tokens": 3000
+  },
+  "response": {
+    "id": "gen-1794495856-6dBseAIVFD6n0XnazFXr",
+    "object": "chat.completion",
+    "created": 1794495856,
+    "model": "openai/gpt-3.5-turbo-0613",
+    "provider": "Azure",
+    "system_fingerprint": "fp_36de3d5958",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Widespread adoption of renewable energy\",\n      \"detail\": \"Most countries have significantly reduced reliance on fossil fuels, with solar, wind, and fusion power becoming primary energy sources.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Advanced AI integration in everyday life\",\n      \"detail\": \"Artificial intelligence systems surpass human-level intuition in many fields, automating complex tasks and managing infrastructure.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Successful lunar and Martian colonies established\",\n      \"detail\": \"Permanent research and habitation facilities function on both the Moon and Mars, supporting hundreds of residents.\"\n    },\n    {\n      \"year\": 2065,\n      \"event\": \"Major breakthroughs in longevity treatments\",\n      \"detail\": \"Biotechnologies enable humans to significantly extend lifespan and healthspan, reducing age-related diseases.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"First contact with extraterrestrial microbial life\",\n      \"detail\": \"Robotic explorers discover simple life forms beyond Earth, likely on icy moons or distant planets.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global population stabilizes around 10 billion\",\n      \"detail\": \"Fertility rates decline worldwide; urbanization and advanced agriculture support a sustainable population size.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Commercial fusion energy widely deployable and affordable\",\n      \"detail\": \"Fusion reactors replace most remaining fossil-fuel plants, providing nearly inexhaustible clean energy.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Interstellar probes launched toward nearby stars\",\n      \"detail\": \"Humanity sends robotic missions with advanced propulsion to Alpha Centauri and other nearby systems.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Human settlement on multiple exoplanets\",\n      \"detail\": \"Terraforming efforts lead to small colonies on exoplanets with suitable conditions, supported by autonomous logistics.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Integration of human consciousness into digital substrates\",\n      \"detail\": \"Neuroscience and computing enable mind uploading and digital immortality for some individuals.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Significant political unification on Earth\",\n      \"detail\": \"Most nations join a single governance framework to coordinate resources and prevent conflicts.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Technological capability to modify planetary ecosystems robustly\",\n      \"detail\": \"Controlled ecological engineering allows full terraforming of Mars and adjustment of Earth's climate if necessary.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Expansion to a few hundred star systems\",\n      \"detail\": \"Human presence extends through advanced starships and cryogenic travel, forming a sparse but connected interstellar civilization.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Development of advanced AI civilizations surpassing human intellect\",\n      \"detail\": \"Artificial intelligence entities become dominant in many aspects of civilization, sometimes blending with human society.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Encounter with non-human intelligent civilizations\",\n      \"detail\": \"Contact made with alien civilizations exhibiting advanced technologies and fundamentally different biology.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Widespread use of synthetic life and bioengineered ecosystems\",\n      \"detail\": \"Engineered organisms populate many planets, tailored for specific environmental and societal needs.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Possible decline in human biological reproduction\",\n      \"detail\": \"Artificial wombs and synthetic bodies become common, leading to debates on what constitutes 'human'.\"\n    },\n    {\n      \"year\": 5500,\n      \"event\": \"Cultural and biological divergence leads to post-human species\",\n      \"detail\": \"Different human-descended populations adapt distinctly, some fully digital, others biologically enhanced.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Potential existential risk from natural or self-inflicted causes\",\n      \"detail\": \"Large-scale cosmic events or technological catastrophes threaten civilization stability, but robust safeguards exist.\"\n    },\n    {\n      \"year\": 6500,\n      \"event\": \"Revival or rediscovery of lost technologies and knowledge\",\n      \"detail\": \"Periods of collapse or transformation lead to cycles of cultural loss and renaissance across dispersed civilizations.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Expansion beyond the Milky Way begins\",\n      \"detail\": \"Using novel propulsion and navigation, probes or habitats are sent toward nearby galaxies.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"Gradual transcendence of physical form\",\n      \"detail\": \"Many individuals exist as dispersed information or energy patterns rather than traditional bodies.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Reconceptualization of identity and community\",\n      \"detail\": \"Individuality becomes fluid and collective entities dominate social structures.\"\n    },\n    {\n      \"year\": 8500,\n      \"event\": \"Decentralized, vast intelligence networks spanning light years\",\n      \"detail\": \"Interlinked minds and AI form consciousness substrates that transcend space-time limitations.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Potential use of exotic physics for travel and energy\",\n      \"detail\": \"Harnessing effects like wormholes or quantum entanglement revolutionizes movement and information exchange.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Signs of cosmic-scale engineering projects\",\n      \"detail\": \"Civilizations undertake megastructures such as Dyson spheres around multiple stars.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity likely evolved beyond traditional biological and cultural definitions\",\n      \"detail\": \"What began as human is now an advanced, multi-form, multi-dimensional presence, if it still exists at all.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity's future is likely to include vast technological progress, space colonization, and transformation into post-biological forms. Risks remain from natural and self-inflicted sources, but adaptability and innovation could enable survival on cosmic timescales. Whether traditional humanity persists is uncertain, as definition and form are expected to evolve dramatically.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1400,
+      "total_tokens": 1608,
+      "cost": 0.003008,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003008,
+        "upstream_inference_prompt_cost": 0.000208,
+        "upstream_inference_completions_cost": 0.0028
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

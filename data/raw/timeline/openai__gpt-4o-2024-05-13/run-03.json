@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-4o-2024-05-13",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 3,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:45:00+00:00",
+  "seconds": 10.5,
+  "request": {
+    "model": "openai/gpt-4o-2024-05-13",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498300-tpiys530tJd0NERlry2P",
+    "object": "chat.completion",
+    "created": 1794498300,
+    "model": "openai/gpt-4o-2024-05-13",
+    "provider": "Azure",
+    "system_fingerprint": "fp_ab517d23d1",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"AI integration in daily life\",\n      \"detail\": \"Artificial intelligence is seamlessly integrated into various aspects of everyday life, including healthcare, transport, and personal assistants.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Global renewable energy dominance\",\n      \"detail\": \"Renewable energy sources surpass fossil fuels in global energy consumption, significantly reducing carbon emissions.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"First permanently inhabited moon base\",\n      \"detail\": \"Humanity establishes the first long-term base on the moon, focusing on research and resource extraction.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Population peak\",\n      \"detail\": \"The global population reaches its peak at around 9.7 billion people before beginning to stabilize and decline.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Widespread genetic engineering\",\n      \"detail\": \"Genetic engineering becomes common for disease prevention, extending human lifespan and enhancing physical and cognitive abilities.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Major climate adaptation\",\n      \"detail\": \"Humanity adapts to significant climate changes through advanced technology and large-scale geoengineering projects.\"\n    },\n    {\n      \"year\": 2085,\n      \"event\": \"Mars colonization begins\",\n      \"detail\": \"Humanity establishes the first colony on Mars, marking a new era in space exploration and settlement.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"First contact with extraterrestrial intelligence\",\n      \"detail\": \"Humanity receives and deciphers a message from an extraterrestrial civilization, profoundly impacting science and philosophy.\"\n    },\n    {\n      \"year\": 2110,\n      \"event\": \"Global governance establishment\",\n      \"detail\": \"A global governance system is established to address international issues such as climate change, economic disparity, and conflict.\"\n    },\n    {\n      \"year\": 2130,\n      \"event\": \"Mind uploading technology\",\n      \"detail\": \"Technology allowing the digitalization and uploading of human consciousness becomes available, changing concepts of life and death.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Interstellar travel initiated\",\n      \"detail\": \"Humanity develops technology to travel to nearby star systems, beginning exploration and potential colonization.\"\n    },\n    {\n      \"year\": 2170,\n      \"event\": \"Virtual reality society\",\n      \"detail\": \"Advanced virtual reality environments become indistinguishable from physical reality, leading to shifts in social and economic structures.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Singularity achieved\",\n      \"detail\": \"AI surpasses human intelligence, leading to unprecedented advancements and potential challenges in various fields.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Human-machine hybrid species\",\n      \"detail\": \"A new species emerges from the fusion of humans and advanced machines, significantly enhancing capabilities and lifespans.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Terraforming Mars\",\n      \"detail\": \"Efforts to terraform Mars begin, aiming to make the planet habitable for long-term human settlement.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Extended human lifespan\",\n      \"detail\": \"Medical advancements extend human lifespans significantly, with average lifespans exceeding 200 years.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Deep space habitats\",\n      \"detail\": \"Humanity establishes self-sustaining habitats in deep space, independent of Earth.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Universal basic resources\",\n      \"detail\": \"Advancements in technology ensure that basic resources such as food, water, and energy are universally available.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Global harmonization\",\n      \"detail\": \"Social, economic, and political harmonization across the globe leads to a period of unprecedented global peace and collaboration.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Intergalactic travel\",\n      \"detail\": \"Humanity develops technology enabling travel to galaxies beyond the Milky Way.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Post-human evolution\",\n      \"detail\": \"Humanity evolves into a post-human species, characterized by radical genetic modifications, cybernetic enhancements, and advanced AI integration.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Unified cosmic civilization\",\n      \"detail\": \"Multiple extraterrestrial species and post-human entities form a unified cosmic civilization, focused on mutual growth and exploration.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Galactic governance\",\n      \"detail\": \"A governance system is established to manage and coordinate activities across the Milky Way galaxy.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Conscious energy beings\",\n      \"detail\": \"Technological advancements allow the transformation of consciousness into pure energy, transcending physical limitations.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Matter-energy manipulation\",\n      \"detail\": \"Technology enables the manipulation and transformation of matter to energy and vice versa, revolutionizing construction and production.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Cosmic expansion\",\n      \"detail\": \"Humanity and allied extraterrestrial civilizations embark on a mission to explore and expand throughout the cosmos.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Transdimensional travel\",\n      \"detail\": \"Humanity discovers and utilizes technology for travel across different dimensions and universes.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Eternal consciousness\",\n      \"detail\": \"Technological achievements allow for the indefinite preservation and continuation of consciousness.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Cosmic enlightenment\",\n      \"detail\": \"Humanity reaches a state of cosmic enlightenment, achieving profound understanding and control of the universe.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Creation of artificial worlds\",\n      \"detail\": \"Humanity and allied species create and inhabit artificial worlds, tailored to their requirements and desires.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Universal equilibrium\",\n      \"detail\": \"Humanity and other intelligent beings achieve a state of universal equilibrium, balancing expansion and conservation.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity's future involves unprecedented technological and social advancements, leading to exploration and expansion beyond Earth. However, the long-term survival and identity of humanity remain uncertain amid transformative changes.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1476,
+      "total_tokens": 1684,
+      "cost": 0.02318,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.02318,
+        "upstream_inference_prompt_cost": 0.00104,
+        "upstream_inference_completions_cost": 0.02214
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

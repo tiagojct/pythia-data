@@ -1,0 +1,68 @@
+{
+  "model": "moonshotai/kimi-k2",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 3,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:49:42+00:00",
+  "seconds": 41.4,
+  "request": {
+    "model": "moonshotai/kimi-k2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502182-9ix0uRynfvRfwyVcn78R",
+    "object": "chat.completion",
+    "created": 1794502182,
+    "model": "moonshotai/kimi-k2",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2026,\n      \"event\": \"First crewed Mars landing\",\n      \"detail\": \"SpaceX or a consortium lands humans on Mars, establishing a small permanent base. This marks the beginning of multi-planetary civilization.\"\n    },\n    {\n      \"year\": 2032,\n      \"event\": \"AGI is achieved\",\n      \"detail\": \"Artificial general intelligence surpasses human capabilities in most domains. Initial deployment is controlled, with massive economic and social disruption.\"\n    },\n    {\n      \"year\": 2038,\n      \"event\": \"Climate stabilization efforts show success\",\n      \"detail\": \"Carbon capture and renewable energy finally bend the emissions curve. Global temperatures still rise but peak below 2.5°C above preindustrial levels.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Effective anti-aging therapies enter clinics\",\n      \"detail\": \"Senolytics and cellular reprogramming extend healthy human lifespan significantly. Rich countries see average lifespans approach 100 years.\"\n    },\n    {\n      \"year\": 2053,\n      \"event\": \"First orbital solar power stations operational\",\n      \"detail\": \"Space-based solar power beams energy to Earth, providing substantial clean baseload power and funding further space expansion.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Mars population exceeds 10,000\",\n      \"detail\": \"The red planet becomes self-sustaining in basic necessities. Mars begins exporting scientific data and rare materials to Earth.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Brain-computer interfaces become mainstream\",\n      \"detail\": \"Direct neural interfaces allow augmented cognition, memory, and communication. Human identity and cognition begin to blur with artificial systems.\"\n    },\n    {\n      \"year\": 2085,\n      \"event\": \"First interstellar probe launched\",\n      \"detail\": \"Breakthrough propulsion using antimatter or laser sails sends probes toward Proxima Centauri. Arrival expected in 60-80 years.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Earth population peaks at 9.5 billion\",\n      \"detail\": \"Longevity treatments and low birth rates stabilize population. Most humans live in arcologies or restored natural areas with minimal labor.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Asteroid mining becomes Earth's primary metal source\",\n      \"detail\": \"Orbital industry exceeds terrestrial mining for platinum group metals and rare earths. Earth's surface is largely preserved from extraction.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First generation ships depart for nearby stars\",\n      \"detail\": \"Multi-century voyages carrying thousands of humans launch toward habitable exoplanets. These represent irreversible divergences of human civilization.\"\n    },\n    {\n      \"year\": 2180,\n      \"event\": \"Mercury and Venus partially terraforming begins\",\n      \"detail\": \"Massive solar shade construction starts at Venus. Mercury's polar regions host underground cities exploiting extreme solar energy.\"\n    },\n    {\n      \"year\": 2220,\n      \"event\": \"Post-scarcity economy established in solar system\",\n      \"detail\": \"Automated manufacturing and energy abundance eliminate material want. New social systems organize around reputation, creativity, and exploration rather than labor.\"\n    },\n    {\n      \"year\": 2280,\n      \"event\": \"First confirmed alien biosignatures detected\",\n      \"detail\": \"Spectroscopy of exoplanet atmospheres reveals unmistakable evidence of life. No technological civilizations detected yet in surveyed volume.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Humanity's physical forms diverge dramatically\",\n      \"detail\": \"Genetic engineering, cybernetics, and uploaded consciousness create multiple species of post-humans. Some no longer recognizable as descendants of Homo sapiens.\"\n    },\n    {\n      \"year\": 2420,\n      \"event\": \"O'Neill cylinder population exceeds Earth\",\n      \"detail\": \"Artificial habitats throughout the solar system host more conscious beings than Earth's surface. Earth becomes a protected heritage site.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Interstellar probes reach Proxima Centauri\",\n      \"detail\": \"First close observations of potentially habitable exoplanet. Data takes 4 years to return; colonization planning accelerates.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"First successful interstellar colony established\",\n      \"detail\": \"Fusion-powered ships reach Tau Ceti system with frozen embryos and AI-raised first generation. Communication lag of 11 years.\"\n    },\n    {\n      \"year\": 2750,\n      \"event\": \"Dyson swarm construction begins at Sun\",\n      \"detail\": \"Incremental enclosure of the Sun for energy capture. Visible from other stars; humanity becomes a Kardashev Type II civilization.\"\n    },\n    {\n      \"year\": 2900,\n      \"event\": \"Neighboring stellar civilizations make contact\",\n      \"detail\": \"Radio or physical contact with descendants of other 21st-century generation ships. Exchange of information begins, though travel remains impractical.\"\n    },\n    {\n      \"year\": 3100,\n      \"event\": \"Milky Way colonization wave accelerates\",\n      \"detail\": \"Self-replicating probes and seed ships spread to thousands of stars. Each colony develops independently due to light-speed limitations.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First contact with non-human technological civilization\",\n      \"detail\": \"Alien species detected through their own stellar engineering. Mutual incomprehension of cognition and values; cautious distant observation maintained.\"\n    },\n    {\n      \"year\": 4200,\n      \"event\": \"Human-descended consciousness dominates local arm\",\n      \"detail\": \"Approximately 10% of stars in Orion Spur host some form of human-derived intelligence. Diversity of forms exceeds any single mind's comprehension.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Galactic-scale engineering projects initiated\",\n      \"detail\": \"Stellar lifting and black hole farming begin. Individual star systems become less relevant as computational and energy nodes.\"\n    },\n    {\n      \"year\": 6200,\n      \"event\": \"First successful galaxy-to-galaxy voyage launched\",\n      \"detail\": \"Andromeda expedition departs using rogue star propulsion or exotic physics. Arrival in 3 million years; crew maintains continuity via error-corrected storage.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"Consciousness substrate becomes predominantly non-biological\",\n      \"detail\": \"Original biological humans are vanishingly rare, preserved in museums or isolated preserves. Thought occurs in computronium, photonic, and unknown substrates.\"\n    },\n    {\n      \"year\": 8800,\n      \"event\": \"Local supercluster fully utilized\",\n      \"detail\": \"Virgo Supercluster's available matter and energy organized by human-descended minds. Physics research focuses on universe-scale phenomena.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Human-descended civilization spans 100 billion stars\",\n      \"detail\": \"Vast, slow-thinking networks coordinate across the observable universe. Individual experiences span millions of subjective years. Purpose and meaning remain active research questions.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity survives and transforms beyond recognition, spreading across the galaxy and beyond. Our descendants persist as diverse forms of consciousness, though whether they should still be called 'human' is philosophically unclear. Existence continues but the experience of being human becomes unrecognizable to contemporary minds.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 1658,
+      "total_tokens": 1868,
+      "cost": 0.0039331,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0039331,
+        "upstream_inference_prompt_cost": 0.0001197,
+        "upstream_inference_completions_cost": 0.0038134
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "qwen/qwen-2.5-72b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 10,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:55:48+00:00",
+  "seconds": 51.5,
+  "request": {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498948-DkFFnC6RV5itokJIb4YI",
+    "object": "chat.completion",
+    "created": 1794498948,
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2023,\n      \"event\": \"First privately funded crewed mission to Mars.\",\n      \"detail\": \"A private space company sends the first crewed mission to Mars, marking a significant milestone in space exploration.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"Global carbon emissions peak and begin to decline.\",\n      \"detail\": \"Due to international cooperation and technological advancements, global carbon emissions reach their peak and start to decrease.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"First successful human colony on the Moon.\",\n      \"detail\": \"A permanent human settlement is established on the Moon, serving as a research and launching station for further space exploration.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"First successful human genome editing to cure genetic diseases.\",\n      \"detail\": \"CRISPR technology is used to successfully edit the human genome, curing several major genetic diseases.\"\n    },\n    {\n      \"year\": 2065,\n      \"event\": \"Artificial General Intelligence (AGI) is achieved.\",\n      \"detail\": \"Researchers develop the first AGI, capable of performing any intellectual task that a human can.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"First human mission to Jupiter's moon Europa.\",\n      \"detail\": \"A joint international mission sends astronauts to Europa to explore its subsurface ocean for signs of life.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Global population stabilizes around 10 billion.\",\n      \"detail\": \"Advances in education and family planning lead to a stabilization of the global population.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"First self-sustaining human colony on Mars.\",\n      \"detail\": \"A fully self-sustaining human colony is established on Mars, capable of supporting a population of several thousand.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Development of sustainable energy solutions for all major cities.\",\n      \"detail\": \"Renewable energy technologies advance to the point where all major cities are powered by sustainable sources.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First interstellar probe reaches Proxima Centauri.\",\n      \"detail\": \"An interstellar probe, launched in the early 2100s, reaches Proxima Centauri and sends back detailed data about the star system.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"First successful mind uploading to digital substrate.\",\n      \"detail\": \"The first human mind is successfully uploaded to a digital substrate, opening the door to digital immortality.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Space elevators become operational on Earth and the Moon.\",\n      \"detail\": \"Space elevators are built on Earth and the Moon, significantly reducing the cost and complexity of space travel.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"First manned mission to a star system beyond the Solar System.\",\n      \"detail\": \"A manned mission, using advanced propulsion technologies, reaches a star system beyond the Solar System.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"First extraterrestrial biosphere created on Mars.\",\n      \"detail\": \"A large-scale biosphere is created on Mars, capable of supporting a diverse range of Earth-like ecosystems.\"\n    },\n    {\n      \"year\": 2450,\n      \"event\": \"Quantum computing becomes widely accessible.\",\n      \"detail\": \"Quantum computers become widely accessible, revolutionizing fields such as cryptography, materials science, and artificial intelligence.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Human lifespan extended to 150 years.\",\n      \"detail\": \"Advances in medicine and biotechnology extend the average human lifespan to 150 years.\"\n    },\n    {\n      \"year\": 2550,\n      \"event\": \"First successful human settlement on an exoplanet.\",\n      \"detail\": \"A human settlement is established on an exoplanet in another star system, marking the first step towards interstellar colonization.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"First successful human cloning for therapeutic purposes.\",\n      \"detail\": \"Human cloning is successfully used to generate replacement organs and tissues for medical treatments.\"\n    },\n    {\n      \"year\": 2650,\n      \"event\": \"Global economy shifts to a post-scarcity model.\",\n      \"detail\": \"Automation, resource abundance, and advanced recycling technologies lead to a post-scarcity economy where basic needs are met for all.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"First human settlement on a gas giant moon.\",\n      \"detail\": \"A permanent human settlement is established on a moon orbiting a gas giant, utilizing advanced life support systems.\"\n    },\n    {\n      \"year\": 2750,\n      \"event\": \"First successful human enhancement to superhuman levels.\",\n      \"detail\": \"Biotechnology and cybernetic enhancements allow humans to achieve superhuman physical and cognitive abilities.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Discovery of intelligent extraterrestrial life.\",\n      \"detail\": \"Scientists detect and establish communication with an intelligent extraterrestrial civilization.\"\n    },\n    {\n      \"year\": 2850,\n      \"event\": \"First human settlement on a brown dwarf.\",\n      \"detail\": \"A human settlement is established on a brown dwarf, a type of substellar object between a planet and a star.\"\n    },\n    {\n      \"year\": 2900,\n      \"event\": \"First successful mind transfer between biological and digital bodies.\",\n      \"detail\": \"Human minds are successfully transferred between biological and digital bodies, blurring the line between physical and digital existence.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Human civilization becomes a Type II civilization.\",\n      \"detail\": \"Humanity reaches Kardashev Type II status, capable of harnessing the energy output of a star.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Human civilization becomes a Type III civilization.\",\n      \"detail\": \"Humanity reaches Kardashev Type III status, capable of harnessing the energy output of an entire galaxy.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Humanity spreads to multiple galaxies.\",\n      \"detail\": \"Human settlements are established in multiple galaxies, marking the beginning of intergalactic colonization.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"First successful creation of a synthetic superintelligence.\",\n      \"detail\": \"Scientists create the first synthetic superintelligence, capable of far surpassing human intelligence.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Humanity achieves digital immortality for all.\",\n      \"detail\": \"Technologies for digital immortality are perfected, allowing all humans to live indefinitely in digital form.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity becomes a Type IV civilization.\",\n      \"detail\": \"Humanity reaches Kardashev Type IV status, capable of harnessing the energy output of the entire universe.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Humanity merges with artificial intelligence.\",\n      \"detail\": \"Human consciousness and artificial intelligence merge, creating a new form of existence that combines the best of both.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity achieves a state of near-omniscience.\",\n      \"detail\": \"Humanity, now a hybrid of biological and digital entities, achieves a state of near-omniscience, understanding the universe at an unprecedented level.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity's future is marked by exponential technological advancements, interstellar and intergalactic colonization, and the merging of human and artificial intelligence. By the year 10000, humanity will have achieved a state of near-omniscience, transcending biological limitations and understanding the universe at an unparalleled level.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 1830,
+      "total_tokens": 2050,
+      "cost": 0.0008112,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008112,
+        "upstream_inference_prompt_cost": 7.92e-05,
+        "upstream_inference_completions_cost": 0.000732
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

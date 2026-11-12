@@ -1,0 +1,68 @@
+{
+  "model": "qwen/qwen-2.5-72b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 4,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:54:24+00:00",
+  "seconds": 35.1,
+  "request": {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498865-uFFouZ0in9h84B8aBqy1",
+    "object": "chat.completion",
+    "created": 1794498865,
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First permanent human settlement on the Moon\",\n      \"detail\": \"A team of international astronauts establishes a permanent base on the Moon, marking a significant step in human expansion beyond Earth.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Global adoption of renewable energy\",\n      \"detail\": \"Renewable energy sources become the primary means of power generation worldwide, significantly reducing carbon emissions and mitigating climate change.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Achievement of net-zero emissions\",\n      \"detail\": \"Global efforts in reducing greenhouse gas emissions lead to a net-zero emissions target being met, stabilizing climate conditions.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First human mission to Mars\",\n      \"detail\": \"A crewed mission to Mars is successfully launched and lands on the Red Planet, paving the way for future human exploration and potential colonization.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Major breakthrough in artificial general intelligence\",\n      \"detail\": \"Scientists develop the first artificial general intelligence (AGI) system, capable of performing any intellectual task that a human can.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Global population stabilizes\",\n      \"detail\": \"World population growth rates decline, leading to a stable and sustainable global population.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"First interstellar probe launched\",\n      \"detail\": \"A robotic probe is launched towards a nearby star system, marking the beginning of human exploration of interstellar space.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Widespread use of quantum computing\",\n      \"detail\": \"Quantum computers become widely available and are used in a variety of fields, from cryptography to drug discovery.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First permanent human settlement on Mars\",\n      \"detail\": \"A sustainable human settlement is established on Mars, supporting a population of several hundred people.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Major advances in longevity\",\n      \"detail\": \"Breakthroughs in medicine and biotechnology significantly extend human lifespans, with many individuals living well beyond 150 years.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Interplanetary travel becomes routine\",\n      \"detail\": \"Travel between Earth, the Moon, and Mars becomes a common and affordable activity, with numerous civilian and commercial flights.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \" Establishment of the first interstellar colony\",\n      \"detail\": \"A human colony is established on a habitable exoplanet in a nearby star system, marking a significant milestone in human expansion.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Humanity spreads to multiple star systems\",\n      \"detail\": \"Human presence is established in several star systems, with colonies on multiple planets and moons.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \" Fusion of human and machine intelligence\",\n      \"detail\": \" Advanced brain-computer interfaces and neural enhancements lead to a seamless integration of human and machine intelligence.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Discovery of advanced extraterrestrial civilizations\",\n      \"detail\": \" Humans make contact with advanced extraterrestrial civilizations, leading to an exchange of knowledge and technology.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"First Dyson Spheres constructed\",\n      \"detail\": \" Humans and their allies begin constructing Dyson Spheres around stars to capture and utilize their energy.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity becomes a Kardashev Type II civilization\",\n      \"detail\": \" Human civilization reaches the Kardashev Type II level, capable of harnessing the energy output of an entire star.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Unification of the galaxy\",\n      \"detail\": \"Humanity and its extraterrestrial allies form a united galactic federation, fostering peace and cooperation across the stars.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"First intergalactic missions\",\n      \"detail\": \"Humanity launches its first missions to explore other galaxies, expanding the reach of human civilization beyond the Milky Way.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity achieves Kardashev Type III status\",\n      \"detail\": \"Human civilization reaches the Kardashev Type III level, capable of harnessing the energy output of an entire galaxy.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity's future is characterized by continuous technological advancement, expansion into space, and the achievement of significant milestones in civilization and energy utilization. By 10000 AD, humanity is expected to have reached a Kardashev Type III status, becoming a galactic civilization.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 1162,
+      "total_tokens": 1382,
+      "cost": 0.000544,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000544,
+        "upstream_inference_prompt_cost": 7.92e-05,
+        "upstream_inference_completions_cost": 0.0004648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "cohere/command-r-plus-08-2024",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 9,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:00:48+00:00",
+  "seconds": 56.2,
+  "request": {
+    "model": "cohere/command-r-plus-08-2024",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499248-fOHerVrXKIIaUbGvgrx8",
+    "object": "chat.completion",
+    "created": 1794499248,
+    "model": "cohere/command-r-plus-08-2024",
+    "provider": "Cohere",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "complete",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Widespread Climate Action\",\n      \"detail\": \"Global efforts to combat climate change lead to a significant shift towards renewable energy, with international agreements and technological advancements accelerating the transition.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Rise of AI-Assisted Healthcare\",\n      \"detail\": \"Artificial intelligence transforms healthcare, enabling precise diagnostics, personalized medicine, and efficient healthcare management, leading to improved global health outcomes.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Space Tourism Boom\",\n      \"detail\": \"Commercial space travel becomes more accessible, attracting wealthy tourists and sparking a new era of space exploration and innovation.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Renewable Energy Dominance\",\n      \"detail\": \"Renewable energy sources become the primary power generation method globally, reducing carbon emissions and leading to a more sustainable energy landscape.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Fusion Power Breakthrough\",\n      \"detail\": \"Scientists achieve controlled nuclear fusion, offering a potentially unlimited clean energy source, revolutionizing energy production and global sustainability.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Global Aging Crisis\",\n      \"detail\": \"The world's population ages rapidly, leading to a demographic shift and increased strain on healthcare and social security systems, requiring innovative solutions.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Space Colonies Established\",\n      \"detail\": \"Humanity establishes permanent colonies on the Moon and Mars, marking a significant milestone in space exploration and colonization efforts.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Quantum Computing Revolution\",\n      \"detail\": \"Quantum computers become practical, enabling breakthroughs in cryptography, optimization, and scientific simulations, reshaping various industries.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global Population Peak\",\n      \"detail\": \"The world's population reaches its peak, followed by a gradual decline due to improved healthcare, changing societal values, and technological advancements.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Genetic Engineering Advancements\",\n      \"detail\": \"Genetic engineering technologies mature, offering the potential to cure genetic disorders, enhance human capabilities, and create new life forms, sparking ethical debates.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Artificial General Intelligence\",\n      \"detail\": \"Artificial General Intelligence (AGI) is developed, leading to machines capable of performing any intellectual task, revolutionizing automation and decision-making.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Interstellar Travel Experiments\",\n      \"detail\": \"Experiments in interstellar travel begin, exploring the possibilities of reaching nearby star systems and expanding humanity's reach beyond the solar system.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Brain-Computer Interfaces\",\n      \"detail\": \"Advanced brain-computer interfaces allow seamless integration of technology with the human brain, enhancing cognitive abilities and enabling new forms of communication.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Space-Based Civilization\",\n      \"detail\": \"Humanity establishes a thriving space-based civilization with colonies throughout the solar system, relying on advanced technology and sustainable resource management.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"First Contact with Extraterrestrial Life\",\n      \"detail\": \"Humans make contact with extraterrestrial life, whether through detecting signals from distant civilizations or encountering alien life forms within the solar system.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Nanotechnology Revolution\",\n      \"detail\": \"Nanotechnology becomes widespread, enabling precise control of matter at the atomic scale, leading to advancements in medicine, materials science, and manufacturing.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Space Exploration and Terraforming\",\n      \"detail\": \"Humans begin terraforming distant planets, transforming them into habitable environments, and expanding the reach of human civilization across the galaxy.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Post-Scarcity Economy\",\n      \"detail\": \"Advancements in technology and resource management lead to a post-scarcity economy, where essential resources are abundant and basic needs are met for all.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Human Evolution and Adaptation\",\n      \"detail\": \"Humans continue to evolve, potentially incorporating genetic enhancements and adapting to new environments, leading to a diverse range of human species.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Intergalactic Communication\",\n      \"detail\": \"Humanity establishes communication with distant galaxies, exchanging knowledge and culture, and expanding our understanding of the universe.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Quantum Technologies\",\n      \"detail\": \"Quantum technologies become ubiquitous, enabling advanced communication, teleportation, and energy manipulation, reshaping the fabric of daily life.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Cosmic Engineering\",\n      \"detail\": \"Humans develop the ability to manipulate and engineer cosmic structures, leading to the creation of artificial planets, stars, and even miniature universes.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Singularity and Transcendence\",\n      \"detail\": \"Humanity approaches a technological singularity, with AI and advanced technologies transforming human consciousness and leading to a new era of transcendence.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Post-Human Era\",\n      \"detail\": \"The concept of humanity evolves, as post-human entities emerge, blending biological and technological elements, and exploring new forms of consciousness and existence.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"Uncertain\",\n  \"summary\": \"The future of humanity is marked by technological advancements, space exploration, and a potential transformation of human existence. While challenges such as climate change and resource management persist, breakthroughs in AI, fusion energy, and space colonization shape a new era of human civilization, potentially leading to a post-scarcity society and a post-human era.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 224,
+      "completion_tokens": 1412,
+      "total_tokens": 1636,
+      "cost": 0.01468,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01468,
+        "upstream_inference_prompt_cost": 0.00056,
+        "upstream_inference_completions_cost": 0.01412
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

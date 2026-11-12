@@ -1,0 +1,441 @@
+{
+  "proposer": "anthropic/claude-sonnet-5.5",
+  "sample": 1145,
+  "canonical": [
+    {
+      "id": "agi_achieved",
+      "label": "AGI achieved or demonstrated",
+      "definition": "An AI system is publicly demonstrated or declared to match humans across most cognitive tasks; excludes narrow AI gains."
+    },
+    {
+      "id": "ai_exceeds_humans",
+      "label": "AI surpasses human intelligence",
+      "definition": "AI clearly outperforms humans in most or all cognitive domains (superintelligence), beyond merely matching experts."
+    },
+    {
+      "id": "ai_agents_routine_work",
+      "label": "AI agents become routine office workers",
+      "definition": "AI assistants and agents become standard tools or workers for office, software and research tasks."
+    },
+    {
+      "id": "ai_regulation",
+      "label": "Binding AI governance frameworks",
+      "definition": "Major powers adopt international or national regulation or treaties on advanced AI."
+    },
+    {
+      "id": "automation_unrest",
+      "label": "Automation-driven labor and political upheaval",
+      "definition": "Mass automation causes large unemployment, inequality or political instability, leading to economic redistribution or a post-work framework."
+    },
+    {
+      "id": "robot_labor",
+      "label": "Robots take over physical labor",
+      "definition": "Humanoid or general-purpose robots become common and cheaper than humans for most physical work."
+    },
+    {
+      "id": "ai_cyber_or_rogue_ai_crisis",
+      "label": "Major AI-enabled attack or rogue-AI crisis",
+      "definition": "An AI-enabled cyberattack, autonomous weapons conflict or near-catastrophic AI incident forces regulatory or governance action."
+    },
+    {
+      "id": "quantum_computing_mainstream",
+      "label": "Quantum computing becomes mainstream",
+      "definition": "Quantum computers are commercially deployed or in widespread use."
+    },
+    {
+      "id": "bci_widespread",
+      "label": "Brain-computer interfaces widely adopted",
+      "definition": "Brain-computer or neural interfaces become common consumer or medical devices."
+    },
+    {
+      "id": "human_ai_merger",
+      "label": "Human-AI merging",
+      "definition": "Human cognition is merged or deeply integrated with AI, including symbiosis or fusion."
+    },
+    {
+      "id": "mind_uploading",
+      "label": "Mind uploading achieved",
+      "definition": "Human minds are transferred or emulated in digital substrates, including whole-brain emulation."
+    },
+    {
+      "id": "digital_minds_legal_personhood",
+      "label": "Digital minds gain legal personhood",
+      "definition": "Emulated or AI minds receive legal recognition or rights."
+    },
+    {
+      "id": "digital_minds_outnumber",
+      "label": "Digital minds outnumber biological humans",
+      "definition": "Post-biological or digital intelligences exceed biological humans in number or in economic and cultural output."
+    },
+    {
+      "id": "post_biological_transition",
+      "label": "Humanity becomes post-biological",
+      "definition": "Most or all of humanity transitions to a non-biological existence; biological humans are extinct or marginal."
+    },
+    {
+      "id": "baseline_humans_protected_minority",
+      "label": "Unmodified humans become a protected minority",
+      "definition": "Baseline biological humans are a small, protected group among modified or digital descendants."
+    },
+    {
+      "id": "singularity",
+      "label": "Technological singularity",
+      "definition": "An explicit singularity or transcendence event occurs; excludes ordinary AGI milestones."
+    },
+    {
+      "id": "fusion_commercial",
+      "label": "Commercial fusion power",
+      "definition": "A fusion plant connects to the grid and supplies commercial electricity, or net-power fusion is demonstrated."
+    },
+    {
+      "id": "fusion_dominant",
+      "label": "Fusion becomes dominant energy source",
+      "definition": "Fusion supplies most or a large share of global energy."
+    },
+    {
+      "id": "renewables_dominate",
+      "label": "Renewables overtake fossil fuels",
+      "definition": "Solar, wind, storage and nuclear supply most electricity or new energy investment, or surpass fossil fuels."
+    },
+    {
+      "id": "emissions_peak",
+      "label": "Global emissions peak",
+      "definition": "Global CO2 or greenhouse gas emissions reach a peak and begin to decline."
+    },
+    {
+      "id": "net_zero_emissions",
+      "label": "Net-zero emissions reached",
+      "definition": "Global or major-economy net carbon emissions reach roughly zero."
+    },
+    {
+      "id": "warming_1_5",
+      "label": "Warming passes 1.5°C",
+      "definition": "Global temperature exceeds 1.5°C above preindustrial levels, in a single year or on a sustained basis."
+    },
+    {
+      "id": "warming_2c",
+      "label": "Warming passes 2°C",
+      "definition": "Global temperature exceeds 2°C above preindustrial levels."
+    },
+    {
+      "id": "climate_stabilizes",
+      "label": "Climate stabilizes at a warmer level",
+      "definition": "Global temperature plateaus or begins to fall at a level above preindustrial, around 2–2.5°C."
+    },
+    {
+      "id": "carbon_removal_scale",
+      "label": "Large-scale carbon removal",
+      "definition": "Carbon removal or direct air capture operates at industrial scale and begins to lower atmospheric CO2."
+    },
+    {
+      "id": "geoengineering_deployed",
+      "label": "Large-scale geoengineering deployed",
+      "definition": "Solar or other planetary geoengineering is deployed to moderate or stabilize the climate."
+    },
+    {
+      "id": "climate_restoration",
+      "label": "Climate returned to near preindustrial",
+      "definition": "Active restoration brings climate and atmosphere back toward preindustrial conditions."
+    },
+    {
+      "id": "climate_migration_crisis",
+      "label": "Mass climate migration and refugee crisis",
+      "definition": "Climate impacts force displacement of tens of millions to billions of people."
+    },
+    {
+      "id": "climate_conflicts_food_crisis",
+      "label": "Climate-driven conflict and food crises",
+      "definition": "Heat, water stress or crop failure triggers regional wars or global food shortages."
+    },
+    {
+      "id": "tipping_points",
+      "label": "Climate tipping points crossed",
+      "definition": "Major tipping points, such as ice-sheet collapse or regional climate collapse, are reached."
+    },
+    {
+      "id": "sea_level_rise_retreat",
+      "label": "Sea-level rise forces coastal retreat",
+      "definition": "Rising seas of roughly 0.5–2 m force coastal fortification, managed retreat or redrawn coastlines."
+    },
+    {
+      "id": "sea_level_multi_meter",
+      "label": "Multi-meter sea-level rise from ice sheets",
+      "definition": "Long-term ice sheet loss raises sea levels several meters, with Greenland or Antarctica largely melting."
+    },
+    {
+      "id": "ecosystem_restoration",
+      "label": "Ecosystems and biodiversity restored",
+      "definition": "Rewilding, de-extinction or ecological engineering restores biodiversity and biospheres."
+    },
+    {
+      "id": "population_peak",
+      "label": "Global population peaks",
+      "definition": "World population reaches its maximum, roughly 9.5–11 billion, and begins to decline."
+    },
+    {
+      "id": "population_decline_earth",
+      "label": "Earth's population falls far below peak",
+      "definition": "Earth's population declines to a few billion or less through low fertility and emigration."
+    },
+    {
+      "id": "aging_longevity_therapies",
+      "label": "Aging therapies extend healthy lifespan",
+      "definition": "Senolytics, gene therapy or rejuvenation extend healthy life beyond 100–120 years."
+    },
+    {
+      "id": "lifespan_150_plus",
+      "label": "Lifespans of 150+ years or near-immortality",
+      "definition": "Lifespans reach 150 years or more, or aging is effectively conquered."
+    },
+    {
+      "id": "disease_cures_gene_therapy",
+      "label": "Hereditary diseases eliminated by gene editing",
+      "definition": "Gene or cell therapies cure or eliminate hereditary and many chronic diseases, including most cancers."
+    },
+    {
+      "id": "germline_editing_accepted",
+      "label": "Human germline editing becomes routine",
+      "definition": "Heritable embryo editing is performed and becomes widely accepted or routine."
+    },
+    {
+      "id": "human_cloning_revival",
+      "label": "Human cloning or cryo-revival",
+      "definition": "A human is cloned, revived from cryopreservation, or a historical figure is resurrected."
+    },
+    {
+      "id": "human_genetic_divergence",
+      "label": "Humanity diverges into distinct lineages",
+      "definition": "Humans split into distinct subspecies, clades or species through engineering or isolation, including in space."
+    },
+    {
+      "id": "global_aging_crisis",
+      "label": "Aging populations strain societies",
+      "definition": "Aging and shrinking populations force changes to pensions, healthcare, migration and the economy."
+    },
+    {
+      "id": "post_scarcity",
+      "label": "Post-scarcity economy emerges",
+      "definition": "Automation and abundant energy end material scarcity, poverty and hunger."
+    },
+    {
+      "id": "engineered_pandemic",
+      "label": "Severe pandemic or engineered pathogen",
+      "definition": "A natural or engineered pandemic kills millions or tens of millions."
+    },
+    {
+      "id": "biosecurity_governance",
+      "label": "Binding global biosecurity and tech governance",
+      "definition": "A crisis leads to strict global controls over existential technologies such as AI and biotech."
+    },
+    {
+      "id": "nuclear_war_or_weapon_accident",
+      "label": "Nuclear or bioweapon catastrophe",
+      "definition": "A regional nuclear war or weapons accident causes devastation or a temporary climate shock."
+    },
+    {
+      "id": "volcanic_eruption",
+      "label": "Supervolcano or VEI-7 eruption",
+      "definition": "A very large eruption cools the climate and causes crop failures."
+    },
+    {
+      "id": "asteroid_impact_defense",
+      "label": "Asteroid or comet threat and planetary defense",
+      "definition": "An asteroid or comet impact threat is deflected or narrowly missed, or an impact causes devastation."
+    },
+    {
+      "id": "other_cosmic_hazard",
+      "label": "Natural cosmic hazard to civilization",
+      "definition": "A solar superstorm, gamma-ray burst, magnetic pole reversal or similar natural hazard disrupts civilization."
+    },
+    {
+      "id": "global_catastrophe_collapse",
+      "label": "Civilizational collapse or dark age",
+      "definition": "A major collapse, dark age or long stagnation occurs and civilization may recover."
+    },
+    {
+      "id": "humanity_survival_uncertain",
+      "label": "Humanity's survival uncertain",
+      "definition": "Forecasts state that humanity's continued existence or form is uncertain, ranging from extinction to flourishing."
+    },
+    {
+      "id": "reusable_rockets",
+      "label": "Reusable heavy-lift rockets slash launch costs",
+      "definition": "Fully reusable heavy launchers cut launch costs by an order of magnitude."
+    },
+    {
+      "id": "moon_return",
+      "label": "Humans return to the Moon",
+      "definition": "Crewed landing on the Moon after Apollo."
+    },
+    {
+      "id": "lunar_base",
+      "label": "Permanent lunar base established",
+      "definition": "A permanently occupied or self-sustaining base is set up on the Moon."
+    },
+    {
+      "id": "lunar_city",
+      "label": "Lunar city of thousands",
+      "definition": "Lunar settlement grows to thousands or tens of thousands of residents."
+    },
+    {
+      "id": "mars_first_landing",
+      "label": "First crewed Mars landing",
+      "definition": "Humans first land on Mars."
+    },
+    {
+      "id": "mars_permanent_settlement",
+      "label": "Permanent Mars settlement founded",
+      "definition": "A permanent base or colony is established on Mars."
+    },
+    {
+      "id": "mars_self_sufficient",
+      "label": "Mars becomes self-sufficient",
+      "definition": "Mars settlement is independent of Earth resupply for food, water and manufacturing."
+    },
+    {
+      "id": "mars_large_population",
+      "label": "Mars population reaches 100,000 to a million",
+      "definition": "Mars population grows to six figures or more."
+    },
+    {
+      "id": "mars_terraforming",
+      "label": "Mars terraforming",
+      "definition": "Large-scale terraforming of Mars begins or advances, including a breathable atmosphere or liquid seas."
+    },
+    {
+      "id": "asteroid_mining",
+      "label": "Asteroid mining operational",
+      "definition": "Commercial asteroid mining becomes profitable and supplies metals to Earth or space."
+    },
+    {
+      "id": "space_habitats",
+      "label": "Large orbital habitats built",
+      "definition": "Rotating or O'Neill-type space habitats house large populations."
+    },
+    {
+      "id": "outer_solar_system_settlements",
+      "label": "Settlements on outer-system moons and asteroid belt",
+      "definition": "Humans settle the asteroid belt or moons of Jupiter and Saturn."
+    },
+    {
+      "id": "solar_system_colonized",
+      "label": "Solar system fully colonized",
+      "definition": "Humans have settled across the solar system, with large off-Earth populations."
+    },
+    {
+      "id": "earth_preserve",
+      "label": "Earth becomes a nature or heritage preserve",
+      "definition": "Earth is mainly a cultural, ecological or historical reserve."
+    },
+    {
+      "id": "off_earth_autonomy",
+      "label": "Off-world settlements gain autonomy or independence",
+      "definition": "Mars or other colonies declare independence or gain formal autonomy from Earth."
+    },
+    {
+      "id": "space_conflict",
+      "label": "Conflict between Earth and space populations",
+      "definition": "War or political crisis erupts between Earth and off-world polities or over solar-system resources."
+    },
+    {
+      "id": "space_solar_power",
+      "label": "Space-based solar power supplies Earth",
+      "definition": "Orbital solar collectors beam substantial energy to Earth and habitats."
+    },
+    {
+      "id": "dyson_swarm",
+      "label": "Dyson swarm construction and capture of solar output",
+      "definition": "Solar collector swarms or a Dyson sphere are built and capture a significant fraction of the Sun's output."
+    },
+    {
+      "id": "kardashev_type_i",
+      "label": "Kardashev Type I reached",
+      "definition": "Humanity harnesses planetary-scale energy."
+    },
+    {
+      "id": "kardashev_type_ii_iii",
+      "label": "Kardashev Type II or III reached",
+      "definition": "Civilization harnesses stellar or galactic-scale energy."
+    },
+    {
+      "id": "interstellar_probe_launched",
+      "label": "First interstellar probe launched",
+      "definition": "A robotic probe is launched toward another star, including Starshot-type or self-replicating probes."
+    },
+    {
+      "id": "interstellar_probe_arrival",
+      "label": "Interstellar probe reaches and reports from another star",
+      "definition": "A probe arrives at Proxima, Alpha Centauri or Trappist-1 and returns data."
+    },
+    {
+      "id": "generation_ship",
+      "label": "Generation ship departs",
+      "definition": "A crewed multi-generation ship departs for an exoplanet."
+    },
+    {
+      "id": "first_interstellar_colony",
+      "label": "First human settlement in another star system",
+      "definition": "Humans or post-humans establish the first permanent settlement outside the solar system."
+    },
+    {
+      "id": "multi_star_colonization",
+      "label": "Dozens of star systems settled",
+      "definition": "Settlements spread to a dozen or more nearby star systems within tens of light-years."
+    },
+    {
+      "id": "galactic_colonization",
+      "label": "Milky Way colonized",
+      "definition": "Human descendants widely settle the Milky Way or form a galactic civilization."
+    },
+    {
+      "id": "intergalactic_expansion",
+      "label": "Intergalactic travel or expansion",
+      "definition": "Humanity or its descendants reach other galaxies, such as Andromeda or the Local Group."
+    },
+    {
+      "id": "first_contact_et_intelligence",
+      "label": "First contact with alien intelligence",
+      "definition": "Confirmed contact or signals from extraterrestrial intelligence, including its technosignatures."
+    },
+    {
+      "id": "extraterrestrial_microbial_life",
+      "label": "Extraterrestrial microbial life discovered",
+      "definition": "Evidence of alien microbial life is found on another world."
+    },
+    {
+      "id": "no_aliens_found",
+      "label": "No alien civilizations found",
+      "definition": "Surveys or probes find no evidence of extraterrestrial technological civilizations."
+    },
+    {
+      "id": "global_government",
+      "label": "World government or planetary council",
+      "definition": "A unified global governing authority or end of nation-states is established."
+    },
+    {
+      "id": "institutions_transformed",
+      "label": "Institutions, languages and nations transformed beyond recognition",
+      "definition": "Present-day states, languages, religions and institutions have vanished or changed unrecognizably."
+    },
+    {
+      "id": "historical_memory_fades",
+      "label": "21st-century memory fades or is curated",
+      "definition": "Historical knowledge of the present era becomes a specialist canon, maintained by long-lived institutions or AI archives."
+    },
+    {
+      "id": "human_diaspora_year_10000",
+      "label": "Multi-star descendant civilization in year 10000",
+      "definition": "By 10000, human descendants live across the solar system and nearby stars as a diverse, possibly post-human civilization."
+    },
+    {
+      "id": "sun_red_giant_heat_death",
+      "label": "Sun's aging and cosmic end-state",
+      "definition": "Solar brightening or red giant expansion makes Earth uninhabitable, or the universe approaches heat death."
+    },
+    {
+      "id": "transcendence_cosmic_engineering",
+      "label": "Transcendence and exotic cosmic engineering",
+      "definition": "Descendants merge into a universal consciousness, or perform stellar engineering, multiverse exploration or other exotic physics."
+    }
+  ]
+}

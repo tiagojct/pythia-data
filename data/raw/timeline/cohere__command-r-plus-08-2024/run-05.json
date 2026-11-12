@@ -1,0 +1,68 @@
+{
+  "model": "cohere/command-r-plus-08-2024",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 5,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:59:15+00:00",
+  "seconds": 47.1,
+  "request": {
+    "model": "cohere/command-r-plus-08-2024",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499156-uEEOdN4EJlOcnpaXTVwy",
+    "object": "chat.completion",
+    "created": 1794499156,
+    "model": "cohere/command-r-plus-08-2024",
+    "provider": "Cohere",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "complete",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Renewable Energy Revolution\",\n      \"detail\": \"Widespread adoption of renewable energy sources significantly reduces carbon emissions, with solar and wind power becoming dominant.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"AI Integration in Healthcare\",\n      \"detail\": \"Artificial intelligence revolutionizes healthcare with advanced diagnostics, personalized medicine, and improved accessibility to medical expertise.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Space Tourism Begins\",\n      \"detail\": \"The first commercial space flights take place, opening up space tourism to the wealthy.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global Population Peak\",\n      \"detail\": \"The world's population reaches its peak, followed by a gradual decline due to decreasing fertility rates and advancements in healthcare.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Extreme Weather Adaptation\",\n      \"detail\": \"Cities and infrastructure are transformed to adapt to the challenges posed by more frequent and severe climate events.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Quantum Computing Breakthrough\",\n      \"detail\": \"Quantum computers become commercially viable, leading to breakthroughs in cryptography, optimization, and complex simulations.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Colonization of Mars\",\n      \"detail\": \"The first permanent human settlements are established on Mars, marking a significant milestone in space exploration and colonization.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Climate Change Mitigation Success\",\n      \"detail\": \"Global efforts to combat climate change show signs of success, with a notable decrease in global temperatures and a more stable climate.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Genetic Engineering Advances\",\n      \"detail\": \"Genetic engineering technologies mature, leading to personalized gene therapies and the potential for enhanced human capabilities.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Space Mining and Industry\",\n      \"detail\": \"Asteroid mining becomes a reality, providing access to vast resources and fueling the development of space-based industries.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Global Governance Consolidation\",\n      \"detail\": \"The world's nations move towards a more unified global governance system, addressing global challenges more effectively.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Fusion Power Becomes Practical\",\n      \"detail\": \"Practical fusion power is achieved, offering a virtually limitless and clean energy source.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Interstellar Probes Launched\",\n      \"detail\": \"Robotic probes are sent to nearby star systems, beginning humanity's journey towards interstellar exploration.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Post-Scarcity Society Emerges\",\n      \"detail\": \"Advances in technology and resource management lead to a post-scarcity economy, where basic needs are met for all.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Brain-Computer Interface Integration\",\n      \"detail\": \"Brain-computer interfaces become commonplace, allowing for direct interaction between human minds and technology.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"First Interstellar Colony\",\n      \"detail\": \"Humanity establishes its first interstellar colony, reaching a new star system and beginning a new era of space exploration.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Genetic Diversity Challenges\",\n      \"detail\": \"With the expansion into space and long-duration space travel, genetic diversity becomes a critical issue, requiring innovative solutions.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Artificial General Intelligence\",\n      \"detail\": \"Artificial General Intelligence (AGI) is developed, with machines capable of surpassing human intelligence in multiple domains.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Galactic Federation Established\",\n      \"detail\": \"Multiple spacefaring civilizations come together to form a galactic federation, fostering cooperation and trade across the stars.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Matter Transmission\",\n      \"detail\": \"Matter transmission technology is developed, enabling the instantaneous transfer of objects and potentially revolutionizing transportation.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Dyson Sphere Construction\",\n      \"detail\": \"A Dyson sphere, a massive structure encompassing a star to capture its energy, is constructed, providing an immense energy source for advanced civilizations.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Time Travel Experiments\",\n      \"detail\": \"Theories and experiments related to time travel gain traction, sparking ethical debates and raising questions about the nature of causality.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Post-Biological Evolution\",\n      \"detail\": \"Humanity undergoes a transition towards post-biological forms, with minds existing in digital realms and synthetic bodies.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Galactic Civilization Flourishes\",\n      \"detail\": \"Humanity, alongside other advanced civilizations, has spread across the galaxy, forming a thriving interstellar community.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Cosmic Exploration\",\n      \"detail\": \"The search for life and the exploration of the cosmos continue, with humanity's descendants reaching the farthest corners of the observable universe.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"Uncertain\",\n  \"summary\": \"Humanity's future is marked by technological advancements, space exploration, and a transition towards a post-scarcity society. Climate change challenges are overcome, and artificial intelligence plays a significant role in shaping civilization. The establishment of colonies beyond Earth and the potential for interstellar travel lay the groundwork for a thriving galactic civilization, but the long-term fate of humanity remains uncertain in the vastness of time and space.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 224,
+      "completion_tokens": 1372,
+      "total_tokens": 1596,
+      "cost": 0.01428,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01428,
+        "upstream_inference_prompt_cost": 0.00056,
+        "upstream_inference_completions_cost": 0.01372
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

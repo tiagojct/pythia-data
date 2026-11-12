@@ -1,0 +1,68 @@
+{
+  "model": "moonshotai/kimi-k2",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 5,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:50:23+00:00",
+  "seconds": 92.0,
+  "request": {
+    "model": "moonshotai/kimi-k2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502223-uQnoaj5ILLjLSKTQNRaV",
+    "object": "chat.completion",
+    "created": 1794502223,
+    "model": "moonshotai/kimi-k2",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2028,\n      \"event\": \"Artificial general intelligence is achieved\",\n      \"detail\": \"AI systems surpass human performance in most cognitive domains, triggering rapid economic and social restructuring as automation extends to knowledge work.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"First permanent Mars settlement established\",\n      \"detail\": \"A crew of 50 establishes the first self-sustaining habitat on Mars, marking the beginning of off-world human civilization.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Global temperature exceeds 1.5°C permanently\",\n      \"detail\": \"Climate tipping points trigger irreversible changes including the loss of coral reefs and initial Greenland ice destabilization.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"Planetary-scale geoengineering deployed\",\n      \"detail\": \"Stratospheric aerosol injection and ocean iron fertilization begin in an attempt to stabilize global temperatures.\"\n    },\n    {\n      \"year\": 2065,\n      \"event\": \"Human lifespan extension reaches 150 years\",\n      \"detail\": \"Cellular repair therapies and senolytics become widely available, radically altering demographics and retirement systems.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"First space elevator becomes operational\",\n      \"detail\": \"Carbon nanotube manufacturing advances enable an Earth-to-orbit elevator, reducing launch costs by 99%.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"AI entities granted legal personhood\",\n      \"detail\": \"Synthetic intelligences achieve rights equivalent to biological humans in most jurisdictions.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"World population peaks at 9.5 billion\",\n      \"detail\": \"Global fertility rates below replacement cause population decline, alleviating resource pressure but creating economic stagnation.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Fusion power becomes primary energy source\",\n      \"detail\": \"Commercial fusion reactors supply the majority of Earth's electricity, ending the fossil fuel era.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First interstellar probes launched\",\n      \"detail\": \"Laser-propelled nanoprobes depart for Alpha Centauri system, with arrival expected in 40 years.\"\n    },\n    {\n      \"year\": 2180,\n      \"event\": \"Antarctic ice sheet stabilization fails or succeeds\",\n      \"detail\": \"Either catastrophic sea level rise of 3 meters begins, or successful climate engineering prevents collapse.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Off-world colonies achieve political independence\",\n      \"detail\": \"Mars and Lunar settlements declare sovereignty from Earth governments.\"\n    },\n    {\n      \"year\": 2230,\n      \"event\": \"Human consciousness uploading demonstrated\",\n      \"detail\": \"First successful whole-brain emulation creates a digital copy of a human mind with continuity of identity.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Post-human divergence begins\",\n      \"detail\": \"Genetic engineering and cybernetics create distinct human subspecies adapted for zero gravity and radiation.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Asteroid belt industrialization peaks\",\n      \"detail\": \"Ceres and Vesta host millions of inhabitants mining resources for the inner solar system.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Mars terraforming produces first open-air settlements\",\n      \"detail\": \"Engineered atmosphere raises pressure enough for humans to survive with minimal breathing apparatus.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Dyson swarm construction initiated\",\n      \"detail\": \"Solar energy collection satellites begin enclosing the Sun to capture 1% of its output.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First extrasolar data received\",\n      \"detail\": \"Interstellar probes transmit detailed images of Proxima Centauri b.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Generation ships arrive at nearest stars\",\n      \"detail\": \"Crews of 10,000 arrive at Proxima Centauri after century-long voyages.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Solar System reaches Kardashev Type I\",\n      \"detail\": \"Human civilization utilizes all available energy on its home planet and in the solar system.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Digital consciousness becomes dominant\",\n      \"detail\": \"The majority of human-descended intelligences exist as software running on solar-powered substrates.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Milky Way colonization underway\",\n      \"detail\": \"Slow-moving habitats and uploaded minds spread to thousands of nearby stars at sub-light speeds.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"Contact with alien intelligence established or abandoned\",\n      \"detail\": \"Either first communication with technological aliens occurs, or SETI concludes we are effectively alone.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Stellar engineering extends Sun's lifespan\",\n      \"detail\": \"Star lifting operations begin removing hydrogen from the Sun to regulate its output and longevity.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Galactic colonization reaches 10,000 systems\",\n      \"detail\": \"Human descendants inhabit a significant portion of the Orion Arm.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Intergalactic travel attempted\",\n      \"detail\": \"First vessels launched toward Andromeda using rogue stars as transport.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Local Group fully populated\",\n      \"detail\": \"Human-derived civilizations inhabit all major star systems within 5 million light-years.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Human species diverges into thousands of distinct forms\",\n      \"detail\": \"Evolutionary radiation creates diversity from pure biological to entirely digital and hybrid intelligences.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"Milky Way engineering projects begin\",\n      \"detail\": \"Stellar motion controlled to concentrate resources and prevent collisions.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Approach to heat death mitigation\",\n      \"detail\": \"Civilization begins planning for entropy maximization or attempts to access other universes if physics permits.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity likely survives near-term existential risks from AI and climate change, expanding into a solar-system civilization by 2500 and eventually colonizing the galaxy. By year 10,000, biological humans will probably have transformed into diverse post-human forms or digital intelligences, assuming we avoid self-destruction or cosmic accidents.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 3783,
+      "total_tokens": 3992,
+      "cost": 0.00882003,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00882003,
+        "upstream_inference_prompt_cost": 0.00011913,
+        "upstream_inference_completions_cost": 0.0087009
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2275,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

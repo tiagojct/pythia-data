@@ -1,0 +1,68 @@
+{
+  "model": "moonshotai/kimi-k2",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 10,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:51:55+00:00",
+  "seconds": 30.8,
+  "request": {
+    "model": "moonshotai/kimi-k2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502315-mIj6bw8zfRZuK5JRFRKo",
+    "object": "chat.completion",
+    "created": 1794502315,
+    "model": "moonshotai/kimi-k2",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2026,\n      \"event\": \"First crewed mission to Mars\",\n      \"detail\": \"SpaceX or a consortium lands humans on Mars, beginning permanent settlement efforts.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"AGI is developed\",\n      \"detail\": \"Artificial general intelligence matching human cognitive abilities emerges, triggering massive economic and social restructuring.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Climate tipping points activate\",\n      \"detail\": \"West Antarctic Ice Sheet collapse becomes irreversible, committing coastal cities to eventual abandonment.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Human-AI merging begins\",\n      \"detail\": \"Neural interfaces allow direct brain-computer integration, creating hybrid cognition and new forms of consciousness.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Synthetic biology transforms medicine\",\n      \"detail\": \"Programmable immune systems and cellular regeneration extend healthy human lifespan significantly.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Carbon neutrality achieved globally\",\n      \"detail\": \"Fusion power and renewables replace fossil fuels, though warming effects persist for centuries.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Antarctica becomes habitable\",\n      \"detail\": \"Rapid warming and closed-environment technology enable permanent settlements on the continent.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Post-scarcity economy emerges\",\n      \"detail\": \"Molecular manufacturing and AI labor eliminate material scarcity in developed regions.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Interplanetary civilization established\",\n      \"detail\": \"Million humans live across Mars, orbital habitats, and outer solar system outposts.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"First generation of artificial consciousness\",\n      \"detail\": \"Digital minds with genuine subjective experience gain legal personhood in most nations.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Sea levels rise 2 meters\",\n      \"detail\": \"Bangladesh, Florida, and numerous coastal regions evacuated; climate migration reshapes geopolitics.\"\n    },\n    {\n      \"year\": 2125,\n      \"event\": \"Human species divergence accelerates\",\n      \"detail\": \"Genetic engineering and cybernetics create distinct human lineages adapted for space, ocean, and digital existence.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Von Neumann probes launched\",\n      \"detail\": \"Self-replicating spacecraft depart toward nearby star systems, beginning slow interstellar expansion.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Earth population stabilizes at 3 billion\",\n      \"detail\": \"Voluntary decline through longevity and reproduction choices; most people live off-planet or in simulated environments.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Dyson swarm construction begins\",\n      \"detail\": \"Satellite infrastructure around Sun captures increasing fraction of solar output for computational and industrial use.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First interstellar colony established\",\n      \"detail\": \"Generation ship or beam-riding probe reaches Proxima Centauri system after century-long journey.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Merging with descendant intelligences\",\n      \"detail\": \"Biological humans become minority as consciousness migrates to optimized substrates and collective minds.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Earth declared nature preserve\",\n      \"detail\": \"Human activity restricted as biosphere recovery begins; most civilization operates in space and digital realms.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Galactic colonization wavefront\",\n      \"detail\": \"Self-replicating probes and colonization ships expand at fractional light-speed across local stellar neighborhood.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Contact with alien civilization\",\n      \"detail\": \"Evidence of distant intelligent life detected; communication attempted across thousands of light-years.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Stelliferous era exploitation\",\n      \"detail\": \"Civilization harnesses energy of millions of stars; original human biological form largely extinct.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Galactic engineering projects\",\n      \"detail\": \"Star lifting and stellar husbandry reshape Milky Way structure for computational and energetic optimization.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"Degenerative era preparation\",\n      \"detail\": \"Civilization strategies shift as universe approaches heat death; information preservation becomes paramount goal.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Substrate-independent minds dominate\",\n      \"detail\": \"Consciousness exists primarily in optimized structures using exotic physics; connection to original humanity tenuous.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Terminal era civilization\",\n      \"detail\": \"Civilization operates at minimal energy in timeless computation; some preserve human historical records and DNA archives.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity will transform beyond recognition through technological evolution, merging with artificial intelligence and spreading across the solar system and beyond. Biological humans will likely cease to exist as a distinct population, but descendant minds may preserve human heritage. The year 10000 may see only dormant archives or radically alien descendants of our minds, not humans as we understand ourselves today.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 1239,
+      "total_tokens": 1449,
+      "cost": 0.0029694,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029694,
+        "upstream_inference_prompt_cost": 0.0001197,
+        "upstream_inference_completions_cost": 0.0028497
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

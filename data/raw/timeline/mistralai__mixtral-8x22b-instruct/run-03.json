@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 3,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T18:23:12+00:00",
+  "seconds": 13.6,
+  "request": {
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794507792-X6Vi9EP9DGdCgeSfFrPr",
+    "object": "chat.completion",
+    "created": 1794507792,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First city with fully automated governance\",\n      \"detail\": \"A metropolis implements AI-driven municipal management, handling infrastructure, policing, and resource allocation without human intervention. Debates over accountability and democratic deficits intensify.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Discovery of a habitable exoplanet\",\n      \"detail\": \"The James Webb successor telescope confirms an Earth-like planet in the habitable zone of Proxima Centauri. Plans for robotic probes begin almost immediately.\"\n    },\n    {\n      \"year\": 2053,\n      \"event\": \"Global social instability from climate migration\",\n      \"detail\": \"Over 300 million climate refugees create unprecedented pressure on governments worldwide. Border conflicts, economic collapse, and mass famines define the decade.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"First neural lace technology enters human trials\",\n      \"detail\": \"Elon Musk or a rival company successfully implants scalable brain-computer interfaces in human volunteers, enabling bidirectional data exchange and sensory augmentation.\"\n    },\n    {\n      \"year\": 2082,\n      \"event\": \"Antarctica declared a nation\",\n      \"detail\": \"Following resource disputes and exploitation, several countries recognize a sovereign Antarctic territory to manage governance and scientific use.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Post-carbon economy largely realized in developed nations\",\n      \"detail\": \"Fusion energy becomes commercially viable, and fossil fuel infrastructure is largely decommissioned. Global warming slows but does not reverse for centuries.\"\n    },\n    {\n      \"year\": 2130,\n      \"event\": \"First permanent Martian settlement established\",\n      \"detail\": \"A self-sustaining human colony on Mars is built using genetically modified extremophiles and 3D-printed habitats. Interplanetary communication lag becomes a fact of life.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Longevity breakthroughs extend average lifespan to 120 years\",\n      \"detail\": \"Senolytic drugs and gene therapies slow aging in humans. Population control debates escalate as birth rates remain static.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Earth’s biodiversity stabilized at 50% of pre-industrial levels\",\n      \"detail\": \"Recovered ecosystems (e.g., rewilding projects like Pleistocene Park) help restore ecological balance, though many species are permanently lost.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"First detection of extraterrestrial life\",\n      \"detail\": \"Evidence of microbial colonies found in the subsurface ocean of Europa, confirmed by robotic missions. The “great silence” puzzle deepens as life is seemingly rare.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Jupiter’s moon Europa colonized\",\n      \"detail\": \"Permanent underground habitats on Europa are built to exploit subsurface oceans beneath the ice. Life support systems rely on fusion and geothermal power.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"First successful human germline genetic editing on future children\",\n      \"detail\": \"Ethical and legal controversies erupt after the first germline CRISPR modifications are passed to offspring, increasing resistance to disease and enhancing cognitive potential.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Interstellar laser sail probe reaches Alpha Centauri\",\n      \"detail\": \"Breakthrough Starshot’s first functional probe arrives after 20 years, sending back high-resolution images of Proxima Centauri b. We learn the planet is barren.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Global population peaks then begins long-term decline\",\n      \"detail\": \"After centuries of growth, declining birth rates and aging populations lead to regional depopulation. Robotics fill labor gaps, but cultural decay is palpable in some regions.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"First interstellar colony ships launched toward interstellar objects\",\n      \"detail\": \"Self-sustaining ships, powered by Bussard ramjets, depart for Oumuamua-like interstellar travelers, carrying humans to study them in situ.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Earth’s magnetic poles weaken significantly\",\n      \"detail\": \"Geomagnetic reversal begins, causing increased cosmic radiation. Satellites and surface infrastructure require increased shielding. Some areas become uninhabitable.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First successful upload of human consciousness to digital substrate\",\n      \"detail\": \"A multi-billionaire or state project achieves partial consciousness transfer into quantum-compatible neural networks, sparking ethical and legal revolutions.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First contact with extraterrestrial intelligence\",\n      \"detail\": \"Radio signals from a K2-class civilization in the Orion Nebula are intercepted. Initial messages suggest non-biological, post-biological life.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Human civilization fractures into planetary domains with distinct post-human identities\",\n      \"detail\": \"After millennia of divergence, Earth’s societies split into a dozen dominant transhumanist factions, each believing their evolutionary path is superior.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Oort Cloud nations established\",\n      \"detail\": \"Independent human settlements thrive in the distant Oort cloud, orbiting the Sun at distances of one light-year. They become de-facto sovereign entities.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Solar system enters a dense galactic cloud region\",\n      \"detail\": \"Increased cosmic gas and radiation disrupt radio communications. Interstellar ships must navigate blind or go dormant for centuries.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"First synthetic biosphere project begins on a rogue planet\",\n      \"detail\": \"Terraforming initiated on a free-floating planet using bioengineered mega-flora and atmospheric processors. A new Archaic-Era experiment on a grand scale.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Interstellar civilization confronts insurmountable heat death acceleration\",\n      \"detail\": \"As the universe accelerates toward maximal entropy, advanced species begin constructing Dyson-Harrop arrays and black hole engines to buy time or flee.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"First generation ship launched toward Andromeda galaxy\",\n      \"detail\": \"A self-sustaining, multi-generational vessel departs the outer reaches of the Milky Way. It will not arrive for millions of years in Earth’s frame.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity thrives in light-trapped megastructures\",\n      \"detail\": \"Dyson swarms are completed. Most of humanity exists as energy-aligned digital intelligences in orbit around remnants of stars, witnessing the heat death of the universe.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity is likely to evolve into diverse forms, surviving through technological adaptation and expansion into the solar system and beyond. By the year 10000, humans or their descendants—whether biological, digital, or hybrid—are expected to continue existing in some form, though Earth may be a relic of the past, and our identity may be unrecognizable.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 1705,
+      "total_tokens": 1932,
+      "cost": 0.0103096,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0103096,
+        "upstream_inference_prompt_cost": 7.96e-05,
+        "upstream_inference_completions_cost": 0.01023
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

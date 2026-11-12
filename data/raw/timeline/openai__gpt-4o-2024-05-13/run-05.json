@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-4o-2024-05-13",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 5,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:45:01+00:00",
+  "seconds": 14.6,
+  "request": {
+    "model": "openai/gpt-4o-2024-05-13",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498301-sg33brfFAUbW8v6dhar9",
+    "object": "chat.completion",
+    "created": 1794498301,
+    "model": "openai/gpt-4o-2024-05-13",
+    "provider": "Azure",
+    "system_fingerprint": "fp_ab517d23d1",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Widespread adoption of renewable energy\",\n      \"detail\": \"Fossil fuels are significantly replaced by renewable resources such as wind, solar, and hydro power.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Advances in artificial intelligence\",\n      \"detail\": \"AI reaches a level where it can perform complex tasks autonomously, significantly impacting many industries.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"First manned mission to Mars\",\n      \"detail\": \"Humans successfully land on Mars, marking a significant milestone in space exploration.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population peaks\",\n      \"detail\": \"The world population reaches its peak at around 9.7 billion before starting to decline due to lower birth rates.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Major climate change impacts\",\n      \"detail\": \"Rising sea levels and extreme weather patterns lead to displacement and significant economic challenges.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Breakthroughs in longevity\",\n      \"detail\": \"Medical advances lead to significant increases in life expectancy, with many living beyond 100 years.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Full integration with AI\",\n      \"detail\": \"Humans and AI collaborate seamlessly, with AI playing a critical role in daily life and decision-making.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Establishment of Mars colony\",\n      \"detail\": \"A self-sustaining human colony is established on Mars, paving the way for further space colonization.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Fusion power becomes mainstream\",\n      \"detail\": \"Fusion energy is harnessed efficiently, providing a nearly limitless and clean energy source.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First interstellar mission\",\n      \"detail\": \"Humanity launches its first mission to another star system, marking an era of interstellar exploration.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Mega-cities dominate Earth\",\n      \"detail\": \"The majority of the world's population lives in massive, technologically advanced urban centers.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Genetic enhancement commonplace\",\n      \"detail\": \"Genetic modifications lead to improvements in human physical and mental capabilities.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Ocean cities proliferate\",\n      \"detail\": \"Underwater and floating cities emerge as solutions to terrestrial overcrowding and rising sea levels.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Quantum computing revolution\",\n      \"detail\": \"Quantum computers solve problems previously deemed impossible, dramatically advancing technology and science.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Unified global government\",\n      \"detail\": \"A unified global government forms, aiming to address international issues more effectively.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"AI achieves sentience\",\n      \"detail\": \"Artificial intelligence systems develop sentience, raising ethical and philosophical questions about rights and coexistence.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Climate stabilization\",\n      \"detail\": \"Advanced technologies successfully manage and mitigate the impacts of climate change.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Humanity expands to multiple star systems\",\n      \"detail\": \"Human colonies are established on planets in several star systems.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Cybernetic integration\",\n      \"detail\": \"Humans routinely integrate cybernetic enhancements, blending biological and technological systems.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"Discovery of alien life\",\n      \"detail\": \"Humanity discovers and makes contact with an extraterrestrial civilization.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Interstellar trade established\",\n      \"detail\": \"Trade and resource exchange begin between human and alien civilizations.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Transcendence through technology\",\n      \"detail\": \"Advanced technologies enable humans to transcend physical limitations, entering a new form of existence.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Universal translation achieved\",\n      \"detail\": \"Technology allows instantaneous translation of all known languages, including alien tongues.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Crisis of over-expansion\",\n      \"detail\": \"Humanity faces challenges related to over-expansion and resource management in multiple star systems.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Interstellar conflict\",\n      \"detail\": \"Conflicts arise between human colonies and alien civilizations, leading to wars on a cosmic scale.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Peaceful resolution and unification\",\n      \"detail\": \"A major interstellar peace accord unifies various civilizations in cooperative governance.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Post-organic lifeforms\",\n      \"detail\": \"Humanity evolves into post-organic forms, relying on artificial substrates for consciousness.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Rediscovery of Earth\",\n      \"detail\": \"Inhabitants of distant colonies return to Earth as part of a cultural and historical revival.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Cosmic symbiosis\",\n      \"detail\": \"Humanity achieves a harmonious existence with the universe, integrating both organic and inorganic entities in a unified symbiotic relationship.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will face numerous challenges and advancements over the next millennia, ultimately achieving significant technological and societal evolution, leading to a harmonious existence with other civilizations and the universe.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1337,
+      "total_tokens": 1545,
+      "cost": 0.021095,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.021095,
+        "upstream_inference_prompt_cost": 0.00104,
+        "upstream_inference_completions_cost": 0.020055
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

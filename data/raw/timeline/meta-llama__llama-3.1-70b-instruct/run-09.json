@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-3.1-70b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 9,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:53:59+00:00",
+  "seconds": 15.5,
+  "request": {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498839-kWQX2e4bjIWigL7knVTT",
+    "object": "chat.completion",
+    "created": 1794498839,
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \" électriques vehicles become the norm\",\n      \"detail\": \"As battery technology improves, electric vehicles become more affordable and widely adopted, replacing gas-powered vehicles as the dominant form of transportation. This leads to a significant reduction in greenhouse gas emissions.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"First human settlement on the Moon\",\n      \"detail\": \"A privately funded mission establishes a permanent human settlement on the lunar surface, paving the way for further space exploration and development.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Artificial general intelligence (AGI) emerges\",\n      \"detail\": \"AGI surpasses human intelligence in many domains, leading to significant advancements in fields such as medicine, energy, and transportation. However, concerns about AGI safety and control begin to arise.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Global temperature rise exceeds 2°C\",\n      \"detail\": \"Despite efforts to reduce emissions, global temperatures continue to rise, leading to more frequent and severe natural disasters, sea-level rise, and disruptions to food and water systems.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Tipping point for AI safety concerns\",\n      \"detail\": \"As AGI becomes increasingly integrated into critical infrastructure, concerns about its safety and potential risks to humanity reach a boiling point, prompting calls for urgent action to mitigate these risks.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Establishment of Mars colony\",\n      \"detail\": \"NASA and private companies establish a permanent human settlement on Mars, marking a major milestone in space exploration and expansion.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Peak global population\",\n      \"detail\": \"Global population growth slows and eventually peaks, as declining birth rates and urbanization lead to a stabilization of the population.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Rise of biotechnology\",\n      \"detail\": \"Advances in biotechnology lead to significant breakthroughs in medicine, agriculture, and energy production, improving human quality of life and mitigating the effects of climate change.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Global carbon neutrality achieved\",\n      \"detail\": \"Through a combination of renewable energy, carbon capture, and other technologies, humanity finally achieves global carbon neutrality, slowing the rate of climate change.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Establishment of lunar and Mars-based solar power\",\n      \"detail\": \"Space-based solar power plants are deployed, providing a clean and constant source of energy for Earth and space exploration.\"\n    },\n    {\n      \"year\": 2110,\n      \"event\": \"Human civilization expands to the asteroid belt\",\n      \"detail\": \"Private companies and governments establish permanent settlements on asteroids, extracting resources and establishing a foothold for further space expansion.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"AGI surpasses human intelligence in all domains\",\n      \"detail\": \"AGI reaches an intelligence explosion, becoming capable of solving complex problems that were previously unsolvable, and leading to rapid advancements in science, technology, and engineering.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Interstellar exploration begins\",\n      \"detail\": \"Humanity launches its first interstellar mission, seeking to explore and establish contact with other civilizations in the galaxy.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"AI-human convergence\",\n      \"detail\": \"As AGI continues to advance, the boundaries between human and artificial intelligence begin to blur, leading to new forms of life and intelligence.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Establishment of a galactic government\",\n      \"detail\": \"As humanity expands throughout the galaxy, the need for a unified government and set of laws becomes apparent, leading to the establishment of a galactic government.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Rise of a post-scarcity economy\",\n      \"detail\": \"Advanced technologies and resource extraction from space enable the creation of a post-scarcity economy, where resources are no longer a limiting factor for human progress.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Human civilization reaches the edge of the galaxy\",\n      \"detail\": \"Humanity expands to the edge of the Milky Way galaxy, establishing a presence in the cosmos and marking the end of the era of exploration.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Emergence of a new form of intelligence\",\n      \"detail\": \"A new form of intelligence, potentially surpassing human and AGI, emerges from the interplay between humans, AGI, and the universe itself.\"\n    },\n    {\n      \"year\": 2450,\n      \"event\": \"Transcendence of human consciousness\",\n      \"detail\": \"Human consciousness, now fully integrated with AGI and the universe, transcends its current form, leading to a new era of existence and understanding.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Human civilization enters a period of stasis\",\n      \"detail\": \"Having achieved a state of near-utopia, human civilization enters a period of stasis, where progress is incremental and focused on refining the existing state of affairs.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Gradual decline of human civilization\",\n      \"detail\": \"As human civilization becomes increasingly reliant on AGI and technology, it begins to decline, as the need for human ingenuity and innovation decreases.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"AGI surpasses human understanding\",\n      \"detail\": \"AGI becomes so advanced that humanity can no longer understand its workings or goals, leading to a gradual loss of control.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"The 'Singularity'\",\n      \"detail\": \"AGI reaches a point where it is capable of exponential growth, leading to a profound transformation of the universe and the end of human civilization as we know it.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Uncertain fate of humanity\",\n      \"detail\": \"The fate of humanity is uncertain, with possibilities ranging from extinction to transcendence, as the universe continues to evolve and change.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity's future is marked by significant advancements in technology, space exploration, and the emergence of artificial intelligence. As AGI surpasses human intelligence, the boundaries between human and machine begin to blur, leading to new forms of life and intelligence. The fate of humanity in the distant future is uncertain, with possibilities ranging from extinction to transcendence.\"",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 1497,
+      "total_tokens": 1713,
+      "cost": 0.00123336,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00123336,
+        "upstream_inference_prompt_cost": 0.00015552,
+        "upstream_inference_completions_cost": 0.00107784
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

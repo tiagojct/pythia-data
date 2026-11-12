@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-3.1-70b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 4,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:53:32+00:00",
+  "seconds": 12.8,
+  "request": {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498812-cXCwfZ3OsToC6Jhv5mlK",
+    "object": "chat.completion",
+    "created": 1794498812,
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Widespread adoption of renewable energy sources\",\n      \"detail\": \"By 2025, renewables become the primary source of energy globally, reducing greenhouse gas emissions and slowing climate change.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"First human settlement on the Moon\",\n      \"detail\": \"A coalition of governments and private companies establishes a permanent lunar base, marking the beginning of human expansion into space.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Rise of job automation and Universal Basic Income\",\n      \"detail\": \"As AI replaces many jobs, governments implement Universal Basic Income to ensure everyone's basic needs are met.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Mars colonization begins\",\n      \"detail\": \"Private companies and governments send the first settlers to Mars, establishing a permanent human presence on the planet.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Artificial General Intelligence (AGI) emerges\",\n      \"detail\": \"AGI surpasses human intelligence in many domains, revolutionizing fields like medicine, finance, and education.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Direct neural interfaces become widespread\",\n      \"detail\": \"Humans can seamlessly interact with computers using neural implants, transforming entertainment, work, and communication.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Earth's ecosystem begins to recover\",\n      \"detail\": \"Thanks to conscious human effort and technological advancements, the environment starts to heal, and ecosystems begin to flourish again.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Asteroid mining becomes a major industry\",\n      \"detail\": \"Space-based companies begin extracting resources from asteroids, reducing reliance on Earth's resources.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Human life expectancy increases to 150+ years\",\n      \"detail\": \"Advances in medicine and technology lead to a significant increase in human lifespan.\"\n    },\n    {\n      \"year\": 2110,\n      \"event\": \"Space-based solar power begins to be beamed back to Earth\",\n      \"detail\": \"Orbiting solar panels provide a clean and constant source of energy, reducing reliance on fossil fuels.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"First human settlement on a Jupiter moon\",\n      \"detail\": \"Humans establish a self-sustaining colony on a Jupiter moon, marking a major milestone in space exploration.\"\n    },\n    {\n      \"year\": 2130,\n      \"event\": \"AGI becomes a trusted advisor to humanity\",\n      \"detail\": \"AGI is integrated into decision-making processes, helping humans solve complex problems and make more informed choices.\"\n    },\n    {\n      \"year\": 2140,\n      \"event\": \"The first human-enhanced species emerges\",\n      \"detail\": \"Genetic engineering and cybernetic enhancements give rise to a new human subspecies, augmenting cognition and physical abilities.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Earth's population peaks and begins to decline\",\n      \"detail\": \"Increased focus on sustainability, family planning, and education leads to a gradual decrease in global population.\"\n    },\n    {\n      \"year\": 2160,\n      \"event\": \"Human civilization expands to the Kuiper Belt\",\n      \"detail\": \"Establishment of settlements and resource extraction operations in the Kuiper Belt marks the beginning of human expansion into the outer Solar System.\"\n    },\n    {\n      \"year\": 2170,\n      \"event\": \"Quantum computing revolutionizes fields\",\n      \"detail\": \"Quantum computing enables major breakthroughs in medicine, materials science, and energy production.\"\n    },\n    {\n      \"year\": 2180,\n      \"event\": \"The first human generation is born on Mars\",\n      \"detail\": \"Children born on Mars grow up in a Martian environment, representing a new era for humanity.\"\n    },\n    {\n      \"year\": 2190,\n      \"event\": \"AI-assisted human exoplanet exploration begins\",\n      \"detail\": \"Advanced AI systems aid in the discovery and exploration of potentially habitable exoplanets.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Human civilization becomes a multi-planetary society\",\n      \"detail\": \"Establishment of self-sustaining colonies on multiple planets solidifies humanity's presence in the Solar System.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Merging of human and machine intelligence begins\",\n      \"detail\": \"Neural interfaces and AGI enable the integration of human and artificial intelligence, redefining what it means to be human.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Interstellar travel begins\",\n      \"detail\": \"Humanity develops technology to explore and colonize nearby star systems.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Human civilization expands to nearby galaxies\",\n      \"detail\": \"Establishment of colonies and trade routes with other civilizations marks the beginning of humanity's galactic era.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"AI surpasses human intelligence in all domains\",\n      \"detail\": \"AGI becomes capable of recursive self-improvement, leading to an intelligence explosion.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Human civilization undergoes a transformation\",\n      \"detail\": \"The emergence of a post-scarcity economy, advanced biotechnology, and abundant clean energy transforms human society beyond recognition.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Human civilization expands to the Milky Way galaxy\",\n      \"detail\": \"Establishment of colonies and resource extraction operations throughout the galaxy marks the beginning of humanity's galactic empire.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Human civilization reaches the technological singularity\",\n      \"detail\": \"The exponential growth of technology leads to an intelligence explosion, redefining the nature of intelligence and life.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"The eventual fate of humanity remains uncertain\",\n      \"detail\": \"Human civilization may have long since transcended its biological form, merging with AI or spreading throughout the cosmos.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity's future is marked by rapid technological progress, space exploration, and the possibility of transcendence. The long-term fate of humanity remains uncertain, with possibilities ranging from a utopian civilization to extinction or transformation into something entirely new.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 1447,
+      "total_tokens": 1663,
+      "cost": 0.00119736,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00119736,
+        "upstream_inference_prompt_cost": 0.00015552,
+        "upstream_inference_completions_cost": 0.00104184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-3.1-70b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 8,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:53:49+00:00",
+  "seconds": 14.0,
+  "request": {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498829-zPHxcb4aPpFlDaS6u3JK",
+    "object": "chat.completion",
+    "created": 1794498829,
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Global deployment of 5G networks\",\n      \"detail\": \"Widespread adoption of 5G technology enabling faster data transfer rates and lower latency.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"First human settlement on the Moon\",\n      \"detail\": \"Establishment of a permanent human presence on the lunar surface for scientific research and resource extraction.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Artificial general intelligence (AGI) breakthrough\",\n      \"detail\": \"Creation of the first AGI, capable of superhuman intelligence and processing vast amounts of data.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Widespread adoption of renewable energy\",\n      \"detail\": \"Renewable energy sources, such as solar and wind power, become the primary sources of global energy production.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Human mission to Mars\",\n      \"detail\": \"First crewed mission to Mars, marking a major milestone in space exploration.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global economic shift to a post-scarcity economy\",\n      \"detail\": \"Automation and AI-driven innovation render traditional employment structures obsolete, leading to a universal basic income and a reevaluation of work and leisure.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Establishment of lunar and asteroid mining industries\",\n      \"detail\": \"Private companies and governments begin extracting resources from space, leading to a new era of space-based economic activity.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Detection of microbial life on Mars or other celestial bodies, revolutionizing our understanding of the universe.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Rise of the Longevity Revolution\",\n      \"detail\": \"Advances in medicine and technology lead to significant increases in human lifespan, redefining what it means to be human.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Terraforming of Mars begins\",\n      \"detail\": \"Large-scale engineering efforts start to make Mars habitable for humans, paving the way for mass colonization.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Earth's ecosystems reach a tipping point\",\n      \"detail\": \"Human activities push the planet's ecosystems to the brink of collapse, prompting widespread environmental catastrophes.\"\n    },\n    {\n      \"year\": 2110,\n      \"event\": \"Ecological collapse and global societal upheaval\",\n      \"detail\": \"The strain on the planet's resources and ecosystems becomes too great, leading to widespread collapse and social unrest.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Mars colonization accelerates\",\n      \"detail\": \"As Earth's ecosystems collapse, millions of humans migrate to Mars, which becomes a beacon of hope for humanity's survival.\"\n    },\n    {\n      \"year\": 2130,\n      \"event\": \"Interstellar travel becomes theoretically possible\",\n      \"detail\": \"Scientists discover a means of achieving faster-than-light travel, opening up the galaxy to human exploration and colonization.\"\n    },\n    {\n      \"year\": 2140,\n      \"event\": \"Earth's biosphere is stabilized\",\n      \"detail\": \"Massive geo-engineering efforts and ecological restoration projects bring the planet's ecosystems back from the brink of collapse.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"The Transhumanist Revolution\",\n      \"detail\": \"Advances in AI, biotechnology, and neuroscience enable humans to enhance their bodies and minds, leading to a new era of human evolution.\"\n    },\n    {\n      \"year\": 2160,\n      \"event\": \"The Great Upload\",\n      \"detail\": \"The first humans seamlessly transfer their consciousness into digital form, marking a fundamental shift in the nature of human existence.\"\n    },\n    {\n      \"year\": 2170,\n      \"event\": \"Interstellar colonization begins\",\n      \"detail\": \"Humanity establishes its first colonies beyond the solar system, ensuring the long-term survival of the species.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"The End of War\",\n      \"detail\": \"The world achieves lasting peace, as advanced technologies and new forms of governance render conflict obsolete.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"The Solar System is transformed into a megastructure\",\n      \"detail\": \"Human civilization engineers the Sun and planets to maximize energy production and create a vast, interconnected system.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"The Emergence of the Global Mind\",\n      \"detail\": \"The collective intelligence of humanity, augmented by AI, becomes a unified, planet-spanning entity.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"The Last Generation of Biological Humans\",\n      \"detail\": \"As humanity continues to evolve and upload into digital realms, the need for biological reproduction gradually disappears.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"The Transcendence\",\n      \"detail\": \"Humanity, now fully integrated with AI, achieves a profound transformation, becoming something beyond human comprehension.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Post-transcendent civilization thrives\",\n      \"detail\": \"The effects of the Transcendence continue to shape the universe, as humanity explores and transforms the cosmos.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"The Heat Death of the Universe\",\n      \"detail\": \"As the universe gradually winds down, the remnants of humanity adapt to an ever-changing cosmos.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Human civilization reaches the cosmic scale\",\n      \"detail\": \"The legacy of humanity, now an integral part of the universe, continues to evolve and thrive.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity exists in harmony with the cosmos\",\n      \"detail\": \"Human civilization has become inextricably linked with the universe, as both evolve and grow together.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will experience a rapid acceleration of technological progress, transforming its relationship with the planet, the universe, and itself. Despite facing many challenges, including ecological collapse and societal upheaval, humanity will adapt, evolve, and eventually merge with AI to become a universal, interconnected entity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 1442,
+      "total_tokens": 1658,
+      "cost": 0.00119376,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00119376,
+        "upstream_inference_prompt_cost": 0.00015552,
+        "upstream_inference_completions_cost": 0.00103824
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mistral-large-2407",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 10,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:49:01+00:00",
+  "seconds": 125.3,
+  "request": {
+    "model": "mistralai/mistral-large-2407",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498542-dDRKBpAOBHrvVazUAP7j",
+    "object": "chat.completion",
+    "created": 1794498542,
+    "model": "mistralai/mistral-large-2407",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2028,\n      \"event\": \"Major powers sign the Geneva AI Convention banning autonomous lethal weapons and mandating safety audits.\",\n      \"detail\": \"The treaty follows a 2027 incident where an AI-controlled drone swarm malfunctioned during a border skirmish, killing 200 soldiers and prompting global regulation.\"\n    },\n    {\n      \"year\": 2034,\n      \"event\": \"Global carbon emissions peak and begin a structural decline due to renewable and nuclear expansion.\",\n      \"detail\": \"Solar and wind reach 65% of electricity generation, while direct air capture scales up in industrial nations, slowing warming.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"A severe H5N1 influenza pandemic kills 100 million before universal mRNA vaccines contain it.\",\n      \"detail\": \"The crisis accelerates pan-viral vaccine platforms and establishes permanent global pandemic surveillance that prevents future existential outbreaks.\"\n    },\n    {\n      \"year\": 2048,\n      \"event\": \"Global average temperature reaches 1.6°C above pre-industrial levels, triggering mass equatorial migration.\",\n      \"detail\": \"Bangladesh, Miami, and the Mekong Delta begin managed retreat; agricultural yields in the tropics drop 15%, causing food price spikes.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"First commercial fusion reactors supply 5% of global electricity in China and the EU.\",\n      \"detail\": \"Successor machines to ITER achieve sustained net gain, ending fossil fuel dominance in power generation within two decades.\"\n    },\n    {\n      \"year\": 2063,\n      \"event\": \"Artificial general intelligence is achieved and remains aligned through constitutional AI and human oversight.\",\n      \"detail\": \"AGI accelerates scientific research but is legally barred from controlling critical infrastructure without human approval, averting takeover scenarios.\"\n    },\n    {\n      \"year\": 2078,\n      \"event\": \"World population peaks at 10.4 billion before beginning a gradual decline.\",\n      \"detail\": \"Urbanization and education drive fertility below replacement in most regions; automation leads to universal basic income trials in wealthy nations.\"\n    },\n    {\n      \"year\": 2085,\n      \"event\": \"Senolytic and gene therapies extend healthy human lifespan to 100 years in OECD countries.\",\n      \"detail\": \"Aging is treated as a manageable medical condition; mortality rates for the elderly drop below replacement, approaching longevity escape velocity.\"\n    },\n    {\n      \"year\": 2092,\n      \"event\": \"Asteroid 16 Psyche is mined robotically, flooding markets with platinum-group metals.\",\n      \"detail\": \"Automated tugs extract rare metals that collapse terrestrial mining economies but enable cheap advanced electronics and catalysis.\"\n    },\n    {\n      \"year\": 2098,\n      \"event\": \"A limited nuclear exchange between regional powers kills 50 million but is contained.\",\n      \"detail\": \"Mild nuclear winter effects trigger a new UN disarmament treaty and global missile defense systems, preventing escalation to full-scale war.\"\n    },\n    {\n      \"year\": 2110,\n      \"event\": \"Sea levels rise 0.6 meters since 2000, displacing 200 million climate refugees.\",\n      \"detail\": \"Major cities invest in massive sea walls while floating habitats are constructed in the Pacific for displaced populations.\"\n    },\n    {\n      \"year\": 2125,\n      \"event\": \"The first O'Neill cylinder, New Haven, is completed in Earth-Sun L5 housing 50,000 people.\",\n      \"detail\": \"Funded by space-based solar power revenue, the habitat proves that millions can live off-world with closed-loop life support and artificial gravity.\"\n    },\n    {\n      \"year\": 2140,\n      \"event\": \"The largest Martian city reaches 50,000 inhabitants with local food and water production.\",\n      \"detail\": \"Pressurized domes and lava tube habitats provide radiation shielding; terraforming remains centuries away but permanent settlement is secure.\"\n    },\n    {\n      \"year\": 2160,\n      \"event\": \"Non-invasive brain-computer interfaces enable thought-controlled computing for 15% of the population.\",\n      \"detail\": \"Neural devices become consumer electronics, prompting strict laws on neural data privacy and cognitive liberty to prevent hacking of minds.\"\n    },\n    {\n      \"year\": 2180,\n      \"event\": \"Stratospheric aerosol injection begins, capping global warming at 2.0°C.\",\n      \"detail\": \"Solar geoengineering prevents ice sheet collapse but requires permanent maintenance, creating a new form of global climate governance.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Orbital habitats house 1 million people and space-based solar power beames 10 GW to Earth.\",\n      \"detail\": \"The solar system economy exceeds $100 trillion; most heavy manufacturing moves to zero-g to eliminate terrestrial pollution.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"First relativistic probe is launched toward Proxima Centauri at 0.15c using laser sails.\",\n      \"detail\": \"The nanocraft carries cameras and transmitters, arriving in 28 years to provide humanity's first close-up data of an exoplanet.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Self-replicating von Neumann probes are deployed throughout the asteroid belt.\",\n      \"detail\": \"These machines use local materials to build copies of themselves, exponentially increasing industrial capacity without human labor.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"First permanent human settlement is established in the Alpha Centauri system by a generation ship.\",\n      \"detail\": \"Ten thousand colonists arrive to find Proxima b uninhabitable but establish orbital habitats, becoming genetically isolated from Earth.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Genetic engineering creates viable human subspecies adapted to low gravity; speciation debates intensify.\",\n      \"detail\": \"Martians and orbital belters develop distinct physiological needs, leading to legal conflicts over separate personhood and rights.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Construction begins on a partial Dyson swarm around the Sun capturing 1% of stellar output.\",\n      \"detail\": \"Trillions of solar collectors are launched from Mercury's disassembled crust, marking the start of stellar-scale engineering.\"\n    },\n    {\n      \"year\": 2900,\n      \"event\": \"Mind uploading becomes technically feasible; 2% of the population exist as digital minds.\",\n      \"detail\": \"Uploaded consciousnesses run at accelerated speeds and can backup their minds; debates about their citizenship dominate politics.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"Solar system civilization achieves Kardashev Type I status, distributing planetary-scale energy use across all habitats.\",\n      \"detail\": \"Energy is beamed between worlds via microwave lasers; the economy is post-scarcity for basic needs within the solar system.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Post-biological machine intelligences constitute 90% of intelligent agents in the inner solar system.\",\n      \"detail\": \"These entities operate at near-light-speed subjective time and manage stellar engineering; biological humans live in protected reserves.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Radio telescopes detect an unambiguous technosignature—a Dyson sphere—around a star 1,000 light-years away.\",\n      \"detail\": \"The alien civilization is estimated to be Kardashev Type II; humanity accelerates its own expansion plans in response.\"\n    },\n    {\n      \"year\": 4800,\n      \"event\": \"A Matrioshka brain, a computronium shell around the Sun, becomes operational.\",\n      \"detail\": \"The structure provides 10^26 watts of computing power, running simulations of entire universes and representing the pinnacle of local engineering.\"\n    },\n    {\n      \"year\": 5500,\n      \"event\": \"Human-descended civilization expands to 100 star systems via relativistic arkships.\",\n      \"detail\": \"Each system is settled with orbital habitats; the civilization now spans 1,000 light-years in diameter across the galactic disk.\"\n    },\n    {\n      \"year\": 6500,\n      \"event\": \"Stellar husbandry begins, moving stars into stable long-term orbits using Shkadov thrusters.\",\n      \"detail\": \"Entire stars are repositioned over millions of years to prevent supernovae and maximize the habitable lifetime of the civilization.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"First direct contact is made with an independent alien technological civilization in the Orion Arm.\",\n      \"detail\": \"The aliens are also post-biological; they share scientific knowledge but have incompatible ethical frameworks, leading to cautious exchange.\"\n    },\n    {\n      \"year\": 8500,\n      \"event\": \"Expansion reaches 10,000 star systems; biological humans exist only in protected nature reserves.\",\n      \"detail\": \"The galaxy is becoming a network of preserved worlds; most intelligence is distributed and non-biological, running on stellar-scale computers.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"The civilization approaches Kardashev Type II, harnessing full energy output of ten stars via Dyson spheres.\",\n      \"detail\": \"Energy powers massive simulations and possibly the creation of baby universes; the Local Group is being mapped for further expansion.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Advanced post-human civilization continues slow expansion across the galactic disk.\",\n      \"detail\": \"Humanity's biological form is a historical curiosity, but its descendants—digital, engineered, or merged—continue to explore and create across the stars.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"There is a substantial risk—perhaps 30 to 50 percent—that humanity suffers an existential catastrophe from nuclear war, engineered pandemics, or unaligned AI before 2300, in which case this timeline would not occur. However, if humanity survives the bottlenecks of the 21st and 22nd centuries, the most likely path involves gradual solar system colonization, transition to post-biological existence, and slow expansion across the galaxy, making persistence to year 10000 plausible but not guaranteed.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 10803,
+      "total_tokens": 11019,
+      "cost": 0.06525,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.06525,
+        "upstream_inference_prompt_cost": 0.000432,
+        "upstream_inference_completions_cost": 0.064818
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8553,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

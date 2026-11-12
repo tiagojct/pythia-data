@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-4o-2024-05-13",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 6,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:45:09+00:00",
+  "seconds": 9.6,
+  "request": {
+    "model": "openai/gpt-4o-2024-05-13",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498309-mCPPQrSKPdusoCm6PaAp",
+    "object": "chat.completion",
+    "created": 1794498309,
+    "model": "openai/gpt-4o-2024-05-13",
+    "provider": "Azure",
+    "system_fingerprint": "fp_2ae17412cf",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Breakthrough in quantum computing\",\n      \"detail\": \"Quantum computers become commercially viable, revolutionizing many industries including cryptography, medicine, and climatology.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"Global climate change agreements enforced\",\n      \"detail\": \"Nations come together to enforce strict regulations on carbon emissions, resulting in a significant slowdown of global warming.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"First human lands on Mars\",\n      \"detail\": \"NASA, along with international partners, successfully lands the first human on Mars, marking the beginning of interplanetary exploration.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"AI surpasses human intelligence\",\n      \"detail\": \"Artificial General Intelligence (AGI) is achieved and begins to outperform humans in all cognitive tasks.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global energy transition complete\",\n      \"detail\": \"The world shifts to 100% renewable and clean energy sources, significantly reducing pollution and dependency on fossil fuels.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Cure for most cancers found\",\n      \"detail\": \"Medical advancements lead to effective treatments that can cure the majority of cancers, greatly increasing human life expectancy.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Permanent lunar base established\",\n      \"detail\": \"A self-sustaining base is established on the Moon, serving as a hub for further space exploration and research.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Global population stabilization\",\n      \"detail\": \"Due to advances in healthcare, education, and family planning, the global population stabilizes around 10 billion.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Human lifespan exceeds 150 years\",\n      \"detail\": \"Advances in genetics, nanotechnology, and biomedicine allow for significant life extension, with many living well beyond 150 years.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Colonization of Mars initiated\",\n      \"detail\": \"Large-scale colonization of Mars begins, with multiple settlements being established and thousands of people migrating to the planet.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Interstellar travel first achieved\",\n      \"detail\": \"Humanity successfully sends a manned mission to a nearby star system, paving the way for future interstellar travel.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Humanity confirms the existence of extraterrestrial life, leading to profound changes in science, philosophy, and society.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Global government established\",\n      \"detail\": \"A unified global government is formed, ensuring more efficient and peaceful governance across the world.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Mind uploading becomes reality\",\n      \"detail\": \"Technological advancements allow humans to upload their consciousness to digital platforms, achieving a form of digital immortality.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Fusion power becomes mainstream\",\n      \"detail\": \"Fusion energy becomes the dominant power source, providing nearly limitless, clean energy to humanity.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Human-AI symbiosis achieved\",\n      \"detail\": \"Humans and AI fully integrate, creating a symbiotic relationship that enhances capabilities and solves complex global problems.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Dyson swarm construction begins\",\n      \"detail\": \"Construction of a Dyson swarm around the Sun begins, harnessing its energy output on an unprecedented scale.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Earth's environment fully restored\",\n      \"detail\": \"Earth's biosphere is fully restored to a state of equilibrium, with advanced technologies reversing most of the damage caused by past human activity.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Significant extraterrestrial presence\",\n      \"detail\": \"Humanity establishes colonies and research stations on multiple celestial bodies within and beyond our solar system.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Human biology significantly altered\",\n      \"detail\": \"Genetic engineering and cybernetic enhancements lead to new forms of human existence, with capabilities far beyond current biological limits.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Galactic exploration begins\",\n      \"detail\": \"Technological advancements allow humanity to explore and settle in distant parts of the galaxy.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Artificial habitats in space proliferate\",\n      \"detail\": \"Massive artificial habitats and space stations become common, supporting large populations in space.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Universal translator developed\",\n      \"detail\": \"A universal translation device is created, facilitating communication with any extraterrestrial civilizations encountered.\"\n    },\n    {\n      \"year\": 8500,\n      \"event\": \"Post-scarcity economy achieved\",\n      \"detail\": \"Advanced automation and resource management technologies create a post-scarcity economy, eliminating poverty and resource conflicts.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity forms cosmic alliances\",\n      \"detail\": \"Human civilization becomes part of a larger network of intelligent species, forming alliances to share knowledge and resources.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity reaches Kardashev Type III\",\n      \"detail\": \"Human civilization reaches Kardashev Type III level, harnessing energy on a galactic scale and becoming a prominent force in the cosmos.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will continue to advance technologically and socially, achieving milestones in space exploration, AI, and energy. By 10000, humanity will reach a Kardashev Type III civilization, existing as a powerful and advanced species in the cosmos.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1354,
+      "total_tokens": 1562,
+      "cost": 0.02135,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.02135,
+        "upstream_inference_prompt_cost": 0.00104,
+        "upstream_inference_completions_cost": 0.02031
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

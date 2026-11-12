@@ -1,0 +1,68 @@
+{
+  "model": "deepseek/deepseek-chat",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 4,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:57:09+00:00",
+  "seconds": 33.6,
+  "request": {
+    "model": "deepseek/deepseek-chat",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499029-MPWVQoQxhpDzrbaOSdeB",
+    "object": "chat.completion",
+    "created": 1794499029,
+    "model": "deepseek/deepseek-chat",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First manned mission to Mars\",\n      \"detail\": \"NASA and SpaceX collaborate to land humans on Mars, establishing a temporary research station.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"AI surpasses human intelligence\",\n      \"detail\": \"Artificial General Intelligence (AGI) is achieved, leading to rapid technological advancements and societal changes.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population peaks at 10 billion\",\n      \"detail\": \"Population growth stabilizes as birth rates decline globally, leading to demographic shifts and economic impacts.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First human settlement on the Moon\",\n      \"detail\": \"A permanent lunar base is established by a coalition of international space agencies and private companies.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Major breakthrough in fusion energy\",\n      \"detail\": \"Controlled nuclear fusion becomes a viable energy source, reducing reliance on fossil fuels and mitigating climate change.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Extensive use of gene editing in humans\",\n      \"detail\": \"CRISPR and other gene-editing technologies are widely used to eliminate genetic diseases and enhance human capabilities.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"First successful human hibernation\",\n      \"detail\": \"Scientists achieve induced hibernation in humans, paving the way for long-duration space travel.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Completion of space-based solar power stations\",\n      \"detail\": \"Orbiting solar power stations provide a significant portion of Earth's energy needs, reducing environmental impact.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First interstellar probe launched\",\n      \"detail\": \"A probe equipped with advanced propulsion systems is sent to explore a nearby star system, targeting Proxima Centauri.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Global unification of political systems\",\n      \"detail\": \"Political systems converge into a unified global governance structure to address transnational challenges effectively.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Establishment of Martian colonies\",\n      \"detail\": \"Self-sustaining colonies on Mars become a reality, with millions of people living and working on the planet.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First contact with extraterrestrial intelligence\",\n      \"detail\": \"Humanity receives a confirmed signal from an intelligent extraterrestrial civilization, sparking global excitement and debate.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Development of warp drive technology\",\n      \"detail\": \"Breakthroughs in physics lead to the creation of warp drive, enabling faster-than-light travel and exploration of distant star systems.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Human lifespan significantly extended\",\n      \"detail\": \"Advances in biotechnology and medicine allow humans to live healthy lives well beyond 150 years.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First interstellar colony established\",\n      \"detail\": \"Humans establish a colony on a planet outside the solar system, marking the beginning of interstellar human civilization.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Humanity becomes a Type I civilization\",\n      \"detail\": \"Humanity harnesses the total energy output of its planet, achieving status as a Type I civilization on the Kardashev scale.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Humanity becomes a Type II civilization\",\n      \"detail\": \"Humanity harnesses the total energy output of its star, achieving status as a Type II civilization on the Kardashev scale.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"First megastructure completed\",\n      \"detail\": \"A Dyson sphere or similar megastructure is completed around a star, providing vast energy resources for humanity.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Human consciousness uploaded to digital substrates\",\n      \"detail\": \"Advances in neuroscience allow for the transfer of human consciousness to digital substrates, enabling immortality and new forms of existence.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity becomes a Type III civilization\",\n      \"detail\": \"Humanity harnesses the total energy output of its galaxy, achieving status as a Type III civilization on the Kardashev scale.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"First intergalactic voyage\",\n      \"detail\": \"Humanity sends exploratory missions to neighboring galaxies, expanding the reach of human civilization.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Creation of artificial universes\",\n      \"detail\": \"Humanity develops the technology to create and simulate entire universes, exploring new realms of existence.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity achieves transcendence\",\n      \"detail\": \"Humanity transcends physical form and evolves into a post-biological, multidimensional existence, achieving ultimate knowledge and power.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will likely continue to evolve and expand, overcoming challenges such as climate change, resource limitations, and existential risks. Through technological and biological advancements, humanity may eventually achieve a state of transcendence, becoming a multidimensional, post-biological civilization.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1213,
+      "total_tokens": 1421,
+      "cost": 0.00114613,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00114613,
+        "upstream_inference_prompt_cost": 6.656e-05,
+        "upstream_inference_completions_cost": 0.00107957
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

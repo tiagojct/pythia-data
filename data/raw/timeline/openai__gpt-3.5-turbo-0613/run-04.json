@@ -1,0 +1,69 @@
+{
+  "model": "openai/gpt-3.5-turbo-0613",
+  "era": 2023,
+  "prompt": "timeline",
+  "run": 4,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:43:34+00:00",
+  "seconds": 9.5,
+  "request": {
+    "model": "openai/gpt-3.5-turbo-0613",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    },
+    "max_tokens": 3000
+  },
+  "response": {
+    "id": "gen-1794498214-zdX0wLyWpNh64AtBarRO",
+    "object": "chat.completion",
+    "created": 1794498214,
+    "model": "openai/gpt-3.5-turbo-0613",
+    "provider": "Azure",
+    "system_fingerprint": "fp_36de3d5958",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Global renewable energy surpasses fossil fuels\",\n      \"detail\": \"Clean energy technologies become dominant, reducing global carbon emissions significantly.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Significant progress in AI governance frameworks\",\n      \"detail\": \"International agreements and regulations start effectively managing AI's risks and ethical concerns.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"First permanent lunar base established\",\n      \"detail\": \"Human presence on the moon becomes continuous, supporting research and mining operations.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Fusion energy becomes commercially viable\",\n      \"detail\": \"Fusion reactors provide large-scale clean energy, transforming global power infrastructure.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Breakthroughs in human biological enhancements\",\n      \"detail\": \"Advanced gene editing and neural interfaces enhance human physical and cognitive abilities.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Climate stabilization efforts achieve partial success\",\n      \"detail\": \"Global temperatures stabilize but remain significantly higher than pre-industrial levels with frequent extreme weather.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Mars colonization becomes self-sustaining\",\n      \"detail\": \"Mars colonies develop independent agriculture, infrastructure, and governance systems.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Artificial general intelligence routinely supports human decision-making\",\n      \"detail\": \"AGI systems assist worldwide governance, science, and daily life without overriding human control.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Significant decline of Earth's biodiversity\",\n      \"detail\": \"Mass extinction events and habitat loss reshape ecosystems; synthetic biology efforts partially restore environments.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Contact with extraterrestrial microbial life confirmed\",\n      \"detail\": \"A remote planetary probe finds microbial life, confirming that life exists beyond Earth.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Advanced spacefaring civilizations emerge within the Solar System\",\n      \"detail\": \"Human outposts exist on multiple planets and moons, interconnected by fast travel technologies.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Development of reliable brain-computer merging technologies\",\n      \"detail\": \"Humans can transfer a significant portion of consciousness to digital substrates, blending biology and machine.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Earth's environment partially terraformed and stabilized\",\n      \"detail\": \"Geoengineering combined with ecological management restores habitability and reverses some climate damage.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Interstellar probe mission launches to neighboring star systems\",\n      \"detail\": \"Humanity begins exploration beyond the Solar System, sending probes and potentially crewed missions.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Significant fraction of humanity exists as digital or hybrid beings\",\n      \"detail\": \"Uploading consciousness and synthetic bodies become an option, altering definitions of human identity.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Expansion into multiple star systems with self-sustaining colonies\",\n      \"detail\": \"Humanity becomes a multi-stellar species, connected loosely by communication networks with long latency.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Advanced AI-driven social systems reduce conflict globally\",\n      \"detail\": \"Most human societies are governed with AI support that minimizes violence and inefficiency.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Potential risks from poorly understood cosmic phenomena arise\",\n      \"detail\": \"Long-term cosmic events or technological accidents threaten local habitats but are mostly mitigated.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Widespread use of synthetic biology to adapt human life to various environments\",\n      \"detail\": \"Humans alter their biology radically to live on exoplanets and in artificial habitats.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Expansion stalls due to resource and communication limitations\",\n      \"detail\": \"Interstellar travel slows due to immense distances; colonies become increasingly isolated.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Possible emergence of post-human civilizations\",\n      \"detail\": \"Entities evolved or created from current humanity may be unrecognizable by today's standards.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Earth no longer primary habitat for most of humanity\",\n      \"detail\": \"Earth is preserved as a cultural and historical site; most humans live in engineered or extraterrestrial environments.\"\n    },\n    {\n      \"year\": 9999,\n      \"event\": \"Uncertainty about humanity's continuity amid cosmic-scale risks\",\n      \"detail\": \"Civilizations face challenges from cosmic events, internal evolution, or possible transcendence, making the future unpredictable.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity is likely to achieve remarkable technological and societal advancements, including space colonization and integration with technology, but faces persistent challenges from ecological, cosmic, and existential risks. Whether humanity survives in recognizable form by the year 10000 depends on managing these threats and our capacity for adaptation, which remains uncertain.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1179,
+      "total_tokens": 1387,
+      "cost": 0.002566,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002566,
+        "upstream_inference_prompt_cost": 0.000208,
+        "upstream_inference_completions_cost": 0.002358
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

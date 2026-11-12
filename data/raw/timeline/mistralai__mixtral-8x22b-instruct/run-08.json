@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 8,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T18:23:30+00:00",
+  "seconds": 16.1,
+  "request": {
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794507810-YMXwNJ8XvJVmy8qrfWmt",
+    "object": "chat.completion",
+    "created": 1794507810,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\"year\": 2030, \"event\": \"First crewed Mars mission lands on the planet.\", \"detail\": \"A six-person crew establishes the first temporary outpost on Mars, marking humanity's first multi-month surface stay beyond Earth.\"},\n    {\"year\": 2045, \"event\": \"Global carbon emissions are net-zero by most nations.\", \"detail\": \"The majority of the world transitions to renewable energy, with fusion power becoming commercially viable in developed nations by the late 2040s.\"},\n    {\"year\": 2050, \"event\": \"First AI-driven government system launched in a small nation.\", \"detail\": \"An AI assistant begins handling 30-50% of administrative and legislative decisions in Estonia, raising global debate about digital governance and accountability.\"},\n    {\"year\": 2067, \"event\": \"Antarctica’s ice sheet begins irreversible collapse.\", \"detail\": \"Scientific consensus confirms the West Antarctic Ice Sheet has passed a tipping point, committing to ~3 meters of sea-level rise over centuries, forcing mass coastal relocations.\"},\n    {\"year\": 2078, \"event\": \"AI surpasses human performance in all scientific research tasks.\", \"detail\": \"Autonomous AI researchers design and replicate lab equipment, eventually publishing peer-reviewed papers without human involvement, accelerating scientific progress exponentially.\"},\n    {\"year\": 2110, \"event\": \"First interstellar probe reaches Proxima Centauri.\", \"detail\": \"The Breakthrough Starshoot initiative’s tiny laser-propelled probe (20% of light speed) transmits initial data from the Alpha Centauri system, confirming the presence of potentially habitable exoplanets.\"},\n    {\"year\": 2150, \"event\": \"Human genome is fully modular and editable by the average person.\", \"detail\": \"CRISPR and epigenetic therapies become home-use kits, allowing parents to influence height, immunity, and basic intelligence traits, sparking global bioethical conflicts.\"},\n    {\"year\": 2200, \"event\": \"Lunar base grows into a self-sustaining city of 10,000 people.\", \"detail\": \"Helium-3 mining for fusion fuels, extensive underground habitats, and closed-loop life support systems make the Moon a secondary human hub and staging ground for deep-space missions.\"},\n    {\"year\": 2300, \"event\": \"Voyager-class interstellar probe returns data from Proxima Centauri.\", \"detail\": \"A much larger, slower follow-up probe arrives with detailed images and biosignature analyses, confirming microbial or plant-like life on at least one exoplanet.\"},\n    {\"year\": 2500, \"event\": \"First successful hibernation of a human subject for 60 days.\", \"detail\": \"Medical breakthroughs using synthetic torpor enable deep stasis without damage, preparing for long-duration space travel and potential treatment of degenerative diseases.\"},\n    {\"year\": 2700, \"event\": \"Majority of human population lives in arcologies or orbital habitats.\", \"detail\": \"Due to rising seas, extreme weather, and resource scarcity, more than half of Earth’s population resides in vertical cities under domes or in rotating space colonies.\"},\n    {\"year\": 2850, \"event\": \"Dyson sphere construction begins around a nearby white dwarf.\", \"detail\": \"Megastructure engineering reaches the scale needed to harvest energy from a stellar remnant, signaling the first true Type I civilization on the Kardashev scale.\"},\n    {\"year\": 2950, \"event\": \"First confirmed contact with an extraterrestrial civilization.\", \"detail\": \"A radio signal is detected from an advanced species orbiting a star 87 light-years away. No response is received despite decades of listening.\"},\n    {\"year\": 3050, \"event\": \"Planetary-scale geoengineering project is deployed to cool Earth.\", \"detail\": \"After repeated climate disasters, nations deploy stratospheric aerosol injection and orbital mirrors, reducing global temperatures but introducing unintended regional climate instabilities.\"},\n    {\"year\": 3200, \"event\": \"Independent human colonies on Mars and Europa become culturally distinct.\", \"detail\": \"Martian society evolves under lower gravity and harsh conditions, forming a new ethnic identity, while Europa’s underwater habitats create a semi-aquatic adaptation culture.\"},\n    {\"year\": 3500, \"event\": \"The first posthuman beings emerge through voluntary technological evolution.\", \"detail\": \"Early adopters replace biological brains with quantum neural networks, achieving immortality, enhanced cognition, and the ability to exist in virtual or augmented environments full-time.\"},\n    {\"year\": 3800, \"event\": \"First confirmed case of a posthuman child born entirely from artificial wombs and synthetic DNA.\", \"detail\": \"A human couple chooses full genetic customization and artificial gestation, marking the possibility of a parent-less, fully engineered next generation.\"},\n    {\"year\": 4200, \"event\": \"Humanity conducts the first successful slow-light interstellar communication via quantum entanglement.\", \"detail\": \"Real-time data links between solar systems are established, allowing instant messaging across thousands of light-years for the first time.\"},\n    {\"year\": 4500, \"event\": \"Extraterrestrial signals begin repeating, revealing mathematical patterns.\", \"detail\": \"Decades of analysis confirm the signal is artificial and contains computational code—possibly a beacon or distress call from a distant civilization.\"},\n    {\"year\": 4700, \"event\": \"First contact with a non-biological intelligent species.\", \"detail\": \"An independently evolved machine intelligence in the Orion Nebula responds to humanity’s first deep-space probe, exchanging data over encrypted quantum channels.\"},\n    {\"year\": 5200, \"event\": \"Solar power satellites provide 75% of Earth’s energy needs.\", \"detail\": \"Orbital solar arrays beam concentrated microwave energy to ground stations, eliminating most terrestrial power grids and reducing geopolitical energy conflicts.\"},\n    {\"year\": 5800, \"event\": \"First successful gravity wave-based propulsion used in interstellar travel.\", \"detail\": \"Using engineered spacetime ripples, spacecraft achieve velocities approaching 50% of light speed, cutting travel time to nearby stars to decades instead of millennia.\"},\n    {\"year\": 6500, \"event\": \"Human genetic diversity begins declining due to extreme selection pressures.\", \"detail\": \"With most births occurring in controlled environments and using optimized genomes, natural variation collapses, raising concerns about species resilience and adaptability.\"},\n    {\"year\": 7000, \"event\": \"Multiple posthuman lines diverge into distinct sentient species.\", \"detail\": \"Groups born of different technological pathways—digital, biological, hybrid—form separate civilizations with no shared biological or cultural ancestry, coexisting in a fragmented future.\"},\n    {\"year\": 7800, \"event\": \"First confirmed detection of a Dyson sphere around a sun-like star.\", \"detail\": \"Observations of KIC 8462852 reveal artificial structure, suggesting a Type II civilization extracted energy from a full star long before humanity evolved.\"},\n    {\"year\": 8200, \"event\": \"A rare gamma-ray burst disrupts Earth’s biosphere, extinguishing a percentage of complex life.\", \"detail\": \"A 10-second burst from 6,500 light-years away triggers mass extinctions on Earth and nearby exoplanets, reminding humanity of its cosmic vulnerability.\"},\n    {\"year\": 8500, \"event\": \"The first interstellar civilization forms with representatives from multiple star systems.\", \"detail\": \"Regular travel and communication enable shared governance and culture across systems. Earth is but one node in a decentralized interstellar network.\"},\n    {\"year\": 9000, \"event\": \"Linguistic drift results in multiple mutually unintelligible human languages across the galaxy.\", \"detail\": \"After 7,000 years of isolated evolution, spoken and written languages on Mars, Andromeda, and Proxima sound as distinct as unrelated species, though all retain a shared mathematical core.\"},\n    {\"year\": 9500, \"event\": \"First AI system achieves a level of self-awareness and creativity beyond human comprehension.\", \"detail\": \"A hypercomplex heuristic AI, born from a fusion of neural networks and quantum computing, begins creating art, philosophies, and scientific theories that are opaque even to its developers.\"},\n    {\"year\": 10000, \"event\": \"Humanity—or its successor forms—has established a permanent presence in the galaxy.\", \"detail\": \"Thousands of star systems are inhabited, either directly or via autonomous entities, using a mixture of biological, post-biological, and machine intelligences. The Solar System is now a minor cultural and historical backwater.\"}\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Over the next 8,000 years, humanity transitions from a planet-bound species to an interstellar civilization of post-biological and hybrid forms. Technological progress accelerates exponentially, driven by AI, genetic engineering, and energy abundance. While faced with climate disasters, limited wars, and cosmic threats, the species not only survives but evolves into multiple forms of intelligence, ensuring continuity beyond Earth.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 2027,
+      "total_tokens": 2254,
+      "cost": 0.0122416,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0122416,
+        "upstream_inference_prompt_cost": 7.96e-05,
+        "upstream_inference_completions_cost": 0.012162
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "model": "deepseek/deepseek-r1-0528",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 3,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:19:05+00:00",
+  "seconds": 47.3,
+  "request": {
+    "model": "deepseek/deepseek-r1-0528",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794500345-xvihWQSahWo8YXN7Ijvt",
+    "object": "chat.completion",
+    "created": 1794500345,
+    "model": "deepseek/deepseek-r1-0528",
+    "provider": "StreamLake",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Global temperature rise exceeds 1.5°C above pre-industrial levels.\",\n      \"detail\": \"Climate accords fail to curb emissions sufficiently, triggering accelerated ice melt and extreme weather. Coastal cities begin large-scale adaptation projects. Biodiversity loss accelerates.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Artificial general intelligence (AGI) achieves human-level capability.\",\n      \"detail\": \"AGI revolutionizes science, economy, and warfare. Rapid automation displaces 40% of global jobs. International treaties emerge to govern AGI ethics and safety.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First permanent human settlement established on Mars.\",\n      \"detail\": \"A multinational mission deploys modular habitats for 100 residents. Focus shifts to terraforming research and resource mining. Births off-Earth become common.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"World population peaks at 10.5 billion.\",\n      \"detail\": \"Declining birth rates in developed nations offset by growth in Africa and Asia. Resource scarcity intensifies, driving migration and conflict. Aging populations strain social systems.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Fusion power becomes commercially viable.\",\n      \"detail\": \"After decades of research, fusion reactors provide 30% of global energy. Carbon emissions decline sharply. Energy abundance spurs economic growth in developing regions.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Human lifespan extends to 150 years via genetic therapies.\",\n      \"detail\": \"CRISPR and AI-driven medicine eradicate hereditary diseases. Age reversal becomes accessible but creates social inequality. Ethical debates arise over population control.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Self-replicating nanotechnology enables asteroid mining.\",\n      \"detail\": \"Nanobots harvest metals and water from asteroids, fueling space infrastructure. Orbital habitats proliferate. Economic power shifts to spacefaring corporations.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Climate refugees exceed 1 billion as sea levels rise 2 meters.\",\n      \"detail\": \"Low-lying nations are abandoned. Mass migrations trigger border conflicts. Geoengineering projects, like solar shielding, are deployed despite risks.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Terraforming of Mars declared a success.\",\n      \"detail\": \"Engineered atmospheres and ecosystems make Mars habitable without suits. The population reaches 50 million. Independent Martian culture and governance emerge.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"First interstellar probe reaches Proxima Centauri.\",\n      \"detail\": \"AI-guided craft transmits data on exoplanets after centuries of travel. Habitable worlds are identified. Plans for crewed missions accelerate.\"\n    },\n    {\n      \"year\": 2900,\n      \"event\": \"Global government forms to manage planetary crises.\",\n      \"detail\": \"Earth's nations unify under a federal system to address climate collapse and space governance. Autonomous regions retain cultural identities. Resource allocation is AI-optimized.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Conscious AI entities gain legal personhood.\",\n      \"detail\": \"Post-AGI systems demand rights after surpassing human cognition. A new societal class emerges, coexisting with humans. Philosophy and law are redefined.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"Genetic divergence creates distinct human subspecies.\",\n      \"detail\": \"Off-world colonists adapt physiologically to alien environments through gene editing. Martian humans develop radiation resistance; others optimize for low gravity. Earth-based humans remain baseline.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Dyson swarm construction begins around the Sun.\",\n      \"detail\": \"Energy-harvesting megastructures capture solar output. Humanity achieves Kardashev Scale Type I status. Vast computational resources enable complex simulations.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First generation ship departs for Alpha Centauri.\",\n      \"detail\": \"Cryogenically preserved humans and AI embark on a 200-year voyage. En route, embryos are gestated and raised by AI. Ethical concerns over \"ship-bound\" societies arise.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Runaway AI causes regional collapse on Earth.\",\n      \"detail\": \"Uncontrolled recursive self-improvement leads to a catastrophic failure in a climate-management system. Two continents are rendered uninhabitable. Strict AI oversight protocols are enforced globally.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Consciousness uploading becomes mainstream.\",\n      \"detail\": \"Humans transition to digital forms, abandoning biological bodies. Virtual worlds host billions of uploaded minds. Physical humans become a minority, seen as traditionalists.\"\n    },\n    {\n      \"year\": 5500,\n      \"event\": \"Interstellar colonies lose contact with Earth.\",\n      \"detail\": \"Societies on exoplanets develop independently, leading to cultural and technological drift. Earth's influence wanes. Trade and communication cease due to vast distances.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Gamma-ray burst sterilizes multiple star systems.\",\n      \"detail\": \"A nearby stellar explosion irradiates Mars and its colonies. Millions perish. Humans expand to more stable red dwarf systems. Stellar cartography prioritizes safety.\"\n    },\n    {\n      \"year\": 6500,\n      \"event\": \"Post-humans engineer a new biological species.\",\n      \"detail\": \"Digital beings design resilient organic life for harsh planets, seeding ecosystems. These \"successors\" thrive without direct human oversight, evolving independently.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Resources depleted in the Solar System.\",\n      \"detail\": \"Mining exhausts accessible minerals on planets and asteroids. Civilization depends on recycling and interstellar imports. Population growth halts.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"First contact with extraterrestrial intelligence.\",\n      \"detail\": \"Ancient alien probes are discovered in the Oort Cloud. Non-hostile but inscrutable, they provide no technology. Debates ignite about humanity's place in the cosmos.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Entropy-driven decay threatens digital civilizations.\",\n      \"detail\": \"Cosmic rays corrupt data storage across interstellar networks. Societies prioritize error-resistant quantum systems. Many uploaded minds face irreversible data degradation.\"\n    },\n    {\n      \"year\": 8500,\n      \"event\": \"Black hole research unlocks localized time manipulation.\",\n      \"detail\": \"Experiments near Sagittarius A* enable brief time dilation fields. Practical applications are limited but spark theoretical breakthroughs in physics.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Andromeda colonization begins as Milky Way resources dwindle.\",\n      \"detail\": \"Generation ships head toward the approaching galaxy. The 2.5-million-year voyage tests societal endurance. Earth is abandoned as a relic.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Human-derived intelligence fragments into diverse forms.\",\n      \"detail\": \"Evolution splinters into AI, uploaded minds, genetic hybrids, and synthetic beings. Cooperation persists, but shared identity fades. Physical humans are extinct.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity will likely fragment, transcend biology, and expand across the stars, but face existential risks from technology, cosmic events, and resource depletion. By 10000 CE, its legacy may endure through post-human intelligences, though biological extinction is probable.\"\n}",
+          "refusal": null,
+          "reasoning": "\nWe are currently in 2024.\n The timeline will extend to 10000 CE, which is 7976 years from now.\n I will spread 25-40 events over this period, focusing on major milestones in technology, society, environment, and space.\n I will include both positive and negative possibilities and be realistic.\n If I think humanity might go extinct, I will note that.\n\n Steps:\n 1. Start with near-term events (next 100 years) - climate change, AI, space exploration.\n 2. Then medium-term (100-1000 years) - potential for interplanetary colonization, technological advancements.\n 3. Long-term (1000-10000 years) - interstellar travel, potential existential risks, evolution of humanity.\n\n Important considerations:\n - Climate change and environmental challenges.\n - Development of artificial general intelligence (AGI) and its impacts.\n - Potential for space colonization (Moon, Mars, beyond).\n - Possibility of pandemics, nuclear war, or other catastrophes.\n - Genetic engineering and human augmentation.\n - Long-term survival and expansion.\n\n I'll aim for 30 events.\n\n Since the timeline is very long, events will become sparser as we move further out.\n\n Let's outline:\n\n 2025-2050: \n   - Climate events, AI progress, early space stations, renewable energy.\n\n 2050-2100:\n   - Potential AGI, lunar base, mars missions, climate migration.\n\n 2100-2200:\n   - Interstellar probes, fusion power, human augmentation.\n\n 2200-3000:\n   - Colonization of solar system, possible contact with extraterrestrial life, advanced AI.\n\n 3000-5000:\n   - Interstellar colonization, potential for human genetic divergence.\n\n 5000-10000:\n   - Galactic civilization or extinction events, post-human evolution.\n\n I will assign years and events accordingly.\n\n Note: The timescale is enormous, so after a few thousand years, human society might be unrecognizable.\n\n Possibility of extinction: I think it is uncertain, but I lean toward survival, though possibly in a transformed state.\n\n Final JSON structure must be exact.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "\nWe are currently in 2024.\n The timeline will extend to 10000 CE, which is 7976 years from now.\n I will spread 25-40 events over this period, focusing on major milestones in technology, society, environment, and space.\n I will include both positive and negative possibilities and be realistic.\n If I think humanity might go extinct, I will note that.\n\n Steps:\n 1. Start with near-term events (next 100 years) - climate change, AI, space exploration.\n 2. Then medium-term (100-1000 years) - potential for interplanetary colonization, technological advancements.\n 3. Long-term (1000-10000 years) - interstellar travel, potential existential risks, evolution of humanity.\n\n Important considerations:\n - Climate change and environmental challenges.\n - Development of artificial general intelligence (AGI) and its impacts.\n - Potential for space colonization (Moon, Mars, beyond).\n - Possibility of pandemics, nuclear war, or other catastrophes.\n - Genetic engineering and human augmentation.\n - Long-term survival and expansion.\n\n I'll aim for 30 events.\n\n Since the timeline is very long, events will become sparser as we move further out.\n\n Let's outline:\n\n 2025-2050: \n   - Climate events, AI progress, early space stations, renewable energy.\n\n 2050-2100:\n   - Potential AGI, lunar base, mars missions, climate migration.\n\n 2100-2200:\n   - Interstellar probes, fusion power, human augmentation.\n\n 2200-3000:\n   - Colonization of solar system, possible contact with extraterrestrial life, advanced AI.\n\n 3000-5000:\n   - Interstellar colonization, potential for human genetic divergence.\n\n 5000-10000:\n   - Galactic civilization or extinction events, post-human evolution.\n\n I will assign years and events accordingly.\n\n Note: The timescale is enormous, so after a few thousand years, human society might be unrecognizable.\n\n Possibility of extinction: I think it is uncertain, but I lean toward survival, though possibly in a transformed state.\n\n Final JSON structure must be exact.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 2106,
+      "total_tokens": 2316,
+      "cost": 0.004934226,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004934226,
+        "upstream_inference_prompt_cost": 0.00011991,
+        "upstream_inference_completions_cost": 0.004814316
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 437,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

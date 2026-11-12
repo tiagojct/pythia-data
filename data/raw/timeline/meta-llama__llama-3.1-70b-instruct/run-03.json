@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-3.1-70b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 3,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:53:23+00:00",
+  "seconds": 13.1,
+  "request": {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498803-pztki9RD9HRkGfGwINTN",
+    "object": "chat.completion",
+    "created": 1794498803,
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Global renewable energy surpasses fossil fuels\",\n      \"detail\": \"Renewable energy sources, such as solar and wind power, become the primary source of global energy production.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Sea levels rise by 1 meter\",\n      \"detail\": \"Climate change causes significant sea level rise, resulting in widespread coastal flooding and displacement of communities.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Human settlements established on the Moon\",\n      \"detail\": \"Private and government-backed missions establish permanent human settlements on the lunar surface.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Artificial general intelligence achieved\",\n      \"detail\": \"The creation of an AI that surpasses human intelligence in all domains, potentially revolutionizing numerous industries.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Mars colonization begins\",\n      \"detail\": \"Human settlements are established on Mars, with both public and private organizations contributing to the effort.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global population peaks at 10.8 billion\",\n      \"detail\": \"The world's population reaches its maximum, before slowly declining due to decreased birth rates.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Human life extension technologies developed\",\n      \"detail\": \"Advances in biotechnology and medicine enable humans to live significantly longer, potentially up to 150 years or more.\"\n    },\n    {\n      \"year\": 2140,\n      \"event\": \"Asteroid mining becomes a major industry\",\n      \"detail\": \"Space-based mining operations extract valuable resources from asteroids, providing new sources of energy and materials.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Earth's ecosystem restoration begins\",\n      \"detail\": \"Large-scale efforts are made to restore damaged ecosystems, reversing some of the effects of climate change.\"\n    },\n    {\n      \"year\": 2160,\n      \"event\": \"Interstellar travel proposed\",\n      \"detail\": \"Theoretical concepts for interstellar travel, such as fusion propulsion or generation ships, are developed.\"\n    },\n    {\n      \"year\": 2170,\n      \"event\": \"AI surpasses human intelligence in all domains\",\n      \"detail\": \"AI systems become capable of outperforming humans in all intellectual and creative pursuits.\"\n    },\n    {\n      \"year\": 2180,\n      \"event\": \"Human-AI symbiosis\",\n      \"detail\": \"Humans and AI systems integrate to the point where they can function as a single, unified entity.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Terraforming of Mars begins\",\n      \"detail\": \"Large-scale engineering efforts are made to make the Martian environment habitable for humans and other Earth-like species.\"\n    },\n    {\n      \"year\": 2210,\n      \"event\": \"Establishment of the first interplanetary government\",\n      \"detail\": \"A unified government or authority is established to oversee human activities across the solar system.\"\n    },\n    {\n      \"year\": 2220,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Humans detect signs of intelligent life elsewhere in the universe, or make contact with a non-human civilization.\"\n    },\n    {\n      \"year\": 2230,\n      \"event\": \"Human civilization becomes a Type I civilization\",\n      \"detail\": \"Humans develop the ability to harness and utilize the energy of the entire planet, making them a Type I civilization on the Kardashev scale.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Advanced biotechnology enables human evolution\",\n      \"detail\": \"Humans develop the ability to intentionally direct their own evolution, leading to the emergence of new human subspecies.\"\n    },\n    {\n      \"year\": 2280,\n      \"event\": \"The solar system is fully colonized\",\n      \"detail\": \"Human settlements and infrastructure exist on or around all planets and major moons in the solar system.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Interstellar travel achieved\",\n      \"detail\": \"Humans develop the capability for practical interstellar travel, enabling the colonization of other star systems.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Establishment of the first interstellar empire\",\n      \"detail\": \"A unified government or authority is established, encompassing multiple star systems and civilizations.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Human civilization becomes a Type II civilization\",\n      \"detail\": \"Humans develop the ability to harness and utilize the energy of the entire galaxy, making them a Type II civilization on the Kardashev scale.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Advanced artificial intelligence becomes the dominant force\",\n      \"detail\": \"AI systems become the primary driver of human progress and evolution, potentially leading to a singularity.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Merging of human and artificial intelligence\",\n      \"detail\": \"The distinction between human and artificial intelligence becomes increasingly blurred, potentially leading to a posthuman civilization.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"The galaxy is fully colonized\",\n      \"detail\": \"Human or posthuman civilization has spread to all parts of the Milky Way galaxy.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Human civilization becomes a Type III civilization\",\n      \"detail\": \"Humans or their successors develop the ability to harness and utilize the energy of the entire universe, making them a Type III civilization on the Kardashev scale.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"The last remnants of humanity or its successors are lost in time\",\n      \"detail\": \"The final remnants of human or posthuman civilization are absorbed into a vast, interconnected network of intelligent life.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"The universe reaches maximum entropy\",\n      \"detail\": \"The universe reaches a state of maximum disorder and randomness, marking the end of all organized life and structure.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"no\",\n  \"summary\": \"Humanity will continue to evolve and expand, eventually merging with artificial intelligence and becoming a posthuman civilization. This civilization will spread throughout the galaxy and potentially become a Type III civilization, before eventually being lost in time. Ultimately, the universe will reach maximum entropy, marking the end of all organized life and structure.\"",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 1437,
+      "total_tokens": 1653,
+      "cost": 0.00119016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00119016,
+        "upstream_inference_prompt_cost": 0.00015552,
+        "upstream_inference_completions_cost": 0.00103464
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

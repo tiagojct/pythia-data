@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-4-maverick",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 9,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:55:49+00:00",
+  "seconds": 20.3,
+  "request": {
+    "model": "meta-llama/llama-4-maverick",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502550-U8O9zvqVcZJNTQ9qAKC4",
+    "object": "chat.completion",
+    "created": 1794502550,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "Parasail",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Widespread adoption of renewable energy sources\",\n      \"detail\": \"Solar and wind power become the primary sources of energy globally, reducing reliance on fossil fuels and mitigating climate change.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"First human settlement on Mars established\",\n      \"detail\": \"NASA and private space companies successfully establish a sustainable human presence on Mars, marking a major milestone in space exploration.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population peaks at 9.7 billion\",\n      \"detail\": \"The world population reaches its peak, after which it begins to decline due to decreasing fertility rates and urbanization.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Development of advanced climate engineering technologies\",\n      \"detail\": \"Large-scale geoengineering projects are initiated to mitigate the effects of climate change, including carbon capture and solar radiation management.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Major breakthroughs in artificial general intelligence\",\n      \"detail\": \"The development of AGI revolutionizes numerous industries, including healthcare, finance, and education, but also raises significant societal and ethical concerns.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global average temperature rise limited to 2°C\",\n      \"detail\": \"Concerted international efforts and technological advancements successfully limit global warming to 2°C above pre-industrial levels, avoiding the most catastrophic effects of climate change.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Establishment of the first lunar city\",\n      \"detail\": \"A self-sustaining city is established on the Moon, marking a significant step in the expansion of human civilization into the solar system.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Merging of human and machine intelligence\",\n      \"detail\": \"The development of brain-computer interfaces and neural implants enables humans to seamlessly integrate with AI systems, enhancing cognitive abilities and redefining human identity.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Humanity becomes a multi-planetary species\",\n      \"detail\": \"With the establishment of thriving colonies on Mars, the Moon, and other planets, humanity becomes a truly multi-planetary species, ensuring its survival even if one planet becomes uninhabitable.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Interstellar travel becomes possible\",\n      \"detail\": \"The development of advanced propulsion technologies enables humanity to explore and settle other star systems, expanding the scope of human civilization.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Global unified governance established\",\n      \"detail\": \"A unified global governance system is established, facilitating cooperation and coordination among humanity's diverse planetary settlements and civilizations.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Encounter with extraterrestrial life\",\n      \"detail\": \"Humanity encounters evidence of extraterrestrial life, either directly or indirectly, prompting a reevaluation of its place in the universe and its cosmic responsibilities.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Post-scarcity economics becomes the norm\",\n      \"detail\": \"The widespread adoption of advanced technologies, including AI and robotics, enables the production of abundant resources, rendering traditional concepts of work and scarcity obsolete.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Human civilization expands into the outer solar system\",\n      \"detail\": \"Humanity establishes thriving settlements and industries in the outer solar system, including the Kuiper Belt and the Oort Cloud.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"The Great Upload\",\n      \"detail\": \"Humanity achieves the ability to upload human consciousness into virtual environments, allowing for a new form of existence and potentially rendering biological bodies obsolete.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"The Solar System becomes a single, integrated economic zone\",\n      \"detail\": \"The various human settlements and industries throughout the Solar System are integrated into a single, cohesive economic system, facilitating trade and cooperation.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Humanity becomes a Type 1 civilization on the Kardashev scale\",\n      \"detail\": \"Humanity achieves the ability to harness and utilize the entirety of the energy resources available on Earth and in the Solar System, marking a significant milestone in its technological development.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"The first Dyson Sphere is constructed\",\n      \"detail\": \"Humanity constructs a Dyson Sphere or similar megastructure around the Sun, enabling the capture and utilization of a significant portion of the star's energy output.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Humanity colonizes other star systems\",\n      \"detail\": \"Humanity establishes thriving colonies in other star systems, marking a significant expansion of its presence in the galaxy.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"The universe becomes a vast, interconnected network of human civilization\",\n      \"detail\": \"Humanity's expansion into the galaxy and beyond enables the creation of a vast, interconnected network of civilizations, facilitating cooperation and the exchange of ideas.\"\n    },\n    {\n      \"year\": 5500,\n      \"event\": \"The Fermi Paradox is resolved\",\n      \"detail\": \"Humanity encounters evidence of other intelligent civilizations, or determines the reason for the apparent absence of such civilizations, resolving the Fermi Paradox.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Humanity achieves immortality through technological means\",\n      \"detail\": \"Advances in medicine, AI, and other technologies enable humanity to achieve a state of effective immortality, either through the transfer of consciousness or other means.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"The universe undergoes a significant transformation\",\n      \"detail\": \"A major cosmological event, such as a gamma-ray burst or a nearby supernova, has a profound impact on human civilization and its presence in the universe.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Humanity becomes a Type 3 civilization on the Kardashev scale\",\n      \"detail\": \"Humanity achieves the ability to harness and utilize the energy resources of the entire galaxy, marking a significant milestone in its technological development.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"The nature of reality is redefined through scientific discovery\",\n      \"detail\": \"Advances in physics and cosmology enable humanity to gain a deeper understanding of the fundamental nature of reality, potentially revealing new aspects of the universe and its workings.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity has become a galactic civilization\",\n      \"detail\": \"Humanity has expanded to become a widespread presence throughout the galaxy, with a diverse range of cultures, civilizations, and forms of existence.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will continue to evolve and expand, becoming a multi-planetary and eventually a galactic civilization. It will face numerous challenges and undergo significant transformations, but is likely to persist and thrive in some form.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 1577,
+      "total_tokens": 1788,
+      "cost": 0.00161341,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00161341,
+        "upstream_inference_prompt_cost": 3.641e-05,
+        "upstream_inference_completions_cost": 0.001577
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

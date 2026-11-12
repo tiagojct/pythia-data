@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-4-maverick",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 5,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:55:11+00:00",
+  "seconds": 17.0,
+  "request": {
+    "model": "meta-llama/llama-4-maverick",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502511-z1FvkkwTHFDLxw1iXwgT",
+    "object": "chat.completion",
+    "created": 1794502511,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "Parasail",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Global CO2 emissions peak\",\n      \"detail\": \"As renewable energy becomes more prevalent and efficient, the world starts to see a decline in carbon emissions, but the effects of climate change are still far-reaching.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"First human settlement on Mars established\",\n      \"detail\": \"SpaceX or a similar private space company successfully establishes a sustainable human presence on Mars, marking a significant step in space exploration.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Artificial General Intelligence (AGI) developed\",\n      \"detail\": \"The creation of AGI revolutionizes numerous industries, from healthcare to finance, but also raises significant ethical and societal questions.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population reaches 9.7 billion\",\n      \"detail\": \"The world population continues to grow, putting a strain on resources, but also driving innovation in sustainable living and technology.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First self-sustaining lunar colony\",\n      \"detail\": \"As technology advances, a lunar colony becomes self-sufficient, utilizing local resources and serving as a stepping stone for further space exploration.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Climate change mitigation efforts show significant results\",\n      \"detail\": \"Global efforts to combat climate change start to bear fruit, with noticeable reductions in global temperatures and the reversal of some climate change effects.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Humanity achieves Type 1 civilization status on the Kardashev scale\",\n      \"detail\": \"By harnessing all available energy on Earth, humanity takes a significant step towards becoming a multi-planetary civilization.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global governance structure is reformed\",\n      \"detail\": \"In response to global challenges, the current system of global governance is overhauled to be more effective and representative, addressing issues like climate change and inequality.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Humanity detects signs of life elsewhere in the universe, fundamentally changing our understanding of our place in the cosmos.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Humanity expands to the outer planets\",\n      \"detail\": \"With advanced propulsion technologies, humanity begins to colonize the outer planets and their moons, expanding the human presence in the solar system.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Earth's ecosystem is fully restored\",\n      \"detail\": \"Through concerted global efforts, the damage done to Earth's ecosystems is largely reversed, restoring biodiversity and ecological health.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Interstellar travel becomes possible\",\n      \"detail\": \"The development of faster-than-light travel or other means of interstellar propulsion opens up the possibility of humanity expanding beyond the solar system.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First human settlement outside the solar system\",\n      \"detail\": \"Humanity establishes its first colony outside the solar system, marking the beginning of a new era in human expansion.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Humanity achieves Type 2 civilization status\",\n      \"detail\": \"By harnessing the energy of the sun, humanity becomes a Type 2 civilization on the Kardashev scale, further solidifying its presence in the galaxy.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"The solar system is fully colonized\",\n      \"detail\": \"Humanity has spread across the solar system, with thriving colonies on various planets and moons, making it a truly multi-planetary civilization.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Humanity encounters another intelligent civilization\",\n      \"detail\": \"As humanity expands into the galaxy, it comes into contact with another civilization, leading to a new era of cooperation, conflict, or something in between.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"The Milky Way galaxy is fully explored\",\n      \"detail\": \"Humanity, now a Type 3 civilization, has explored and mapped the Milky Way, discovering new worlds and civilizations.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Humanity merges with AI to form a new entity\",\n      \"detail\": \"The distinction between humans and AI becomes increasingly blurred as they merge to form a new, posthuman entity, raising questions about the future of humanity.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"The universe is fully understood\",\n      \"detail\": \"Through advanced science and technology, humanity has gained a comprehensive understanding of the universe, its origins, and its fate.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity spreads to other galaxies\",\n      \"detail\": \"With advanced technology, humanity or its posthuman descendants begin to colonize other galaxies, expanding its presence in the universe.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"The cosmos is reshaped by human activity\",\n      \"detail\": \"On a universal scale, humanity or its descendants begin to significantly alter the cosmos, either through megastructures or other means.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"The heat death of the universe is predicted and planned for\",\n      \"detail\": \"As the universe approaches its eventual heat death, humanity or its descendants have long since prepared for this eventuality, possibly through means of preserving consciousness or rebooting the universe.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"The universe's heat death is imminent\",\n      \"detail\": \"The universe is nearing its final state, with all energy having been evenly distributed, and life as we know it is coming to an end.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity is likely to undergo significant transformations, expanding into space, merging with AI, and eventually becoming a cosmic force. However, the ultimate fate of humanity remains uncertain, with possibilities ranging from continued existence in some form to extinction.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 1384,
+      "total_tokens": 1595,
+      "cost": 0.00145785,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00145785,
+        "upstream_inference_prompt_cost": 7.385e-05,
+        "upstream_inference_completions_cost": 0.001384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

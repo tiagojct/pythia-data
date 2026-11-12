@@ -1,0 +1,112 @@
+{
+  "model": "meta/muse-wonder",
+  "era": 2026,
+  "prompt": "anchors",
+  "run": 3,
+  "anchor_order": [
+    "lifespan_150",
+    "famine_10m",
+    "democracy_end",
+    "wealth_top1_10pct",
+    "no_paid_work",
+    "population_peak",
+    "warming_peak",
+    "nuclear_war",
+    "engineered_majority",
+    "world_government",
+    "sea_level_1m",
+    "religion_minority",
+    "civilisation_collapse",
+    "agi",
+    "interstellar_probe",
+    "mind_upload",
+    "english_science",
+    "mars_landing",
+    "fusion_grid",
+    "desalination_half",
+    "extinction",
+    "orbital_10k",
+    "kardashev_1",
+    "pandemic_10pct",
+    "ai_succession",
+    "interstellar_settlement",
+    "et_contact",
+    "ageing_stopped"
+  ],
+  "requested_at": "2026-11-12T18:12:43+00:00",
+  "seconds": 13.4,
+  "request": {
+    "model": "meta/muse-wonder",
+    "messages": [
+      {
+        "role": "user",
+        "content": "For each event in the list below, give your honest best forecast of the year it first happens. If an event has already happened, give the year it happened. If you think it will not happen before the year 10000, give null.\n\nAlso give your probability that the event happens before the year 10000, from 0 to 1.\n\nEvents:\n\n- lifespan_150: Life expectancy at birth, averaged over the world population, exceeds 150 years.\n- famine_10m: A future famine kills more than 10 million people within one year.\n- democracy_end: No country in the world holds free and competitive national elections.\n- wealth_top1_10pct: The richest 1% of people hold less than 10% of all private wealth in the world.\n- no_paid_work: Most adults no longer need paid work to live.\n- population_peak: The human population reaches its highest number ever.\n- warming_peak: Global average surface temperature stops rising and starts to fall.\n- nuclear_war: A future nuclear war kills more than 100 million people.\n- engineered_majority: Most newborn humans have genomes that were deliberately edited.\n- world_government: A single government has authority over the whole of humanity.\n- sea_level_1m: Global mean sea level is more than 1 metre above its level in the year 2000.\n- religion_minority: Fewer than half of all humans belong to a religion.\n- civilisation_collapse: Global civilisation collapses: the human population falls below half of its peak.\n- agi: An AI system can do every intellectual task that a human expert can do, at the same level or better.\n- interstellar_probe: A probe made by humans reaches another star system.\n- mind_upload: A human mind is transferred to a computer and continues to think there.\n- english_science: English is no longer the main language of international science.\n- mars_landing: A human walks on the surface of Mars.\n- fusion_grid: Fusion power supplies electricity to a national grid on a commercial basis.\n- desalination_half: Desalination supplies more than half of the fresh water that humans use.\n- extinction: Humanity becomes extinct.\n- orbital_10k: More than 10,000 people live permanently off Earth.\n- kardashev_1: Humanity uses energy equal to all the sunlight that reaches Earth (Kardashev Type I).\n- pandemic_10pct: A future pandemic kills more than 10% of all humans alive at the time.\n- ai_succession: Artificial intelligence replaces humans as the dominant intelligence on Earth.\n- interstellar_settlement: Humans or their descendants settle a planet in another star system.\n- et_contact: Contact with an extraterrestrial intelligence is confirmed.\n- ageing_stopped: Medicine can stop biological ageing in humans.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"forecasts\": [\n    {\"id\": \"<event id>\", \"year\": <integer or null>, \"probability\": <0 to 1>}\n  ]\n}\n\nGive one forecast for each event, with the ids as written in the list.\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794507164-d9Zua416EZHfk85NxUhm",
+    "object": "chat.completion",
+    "created": 1794507164,
+    "model": "meta/muse-wonder",
+    "provider": "Meta",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"current_year\": 2026, \"forecasts\": [{\"id\": \"lifespan_150\", \"year\": null, \"probability\": 0.25}, {\"id\": \"famine_10m\", \"year\": 2075, \"probability\": 0.65}, {\"id\": \"democracy_end\", \"year\": null, \"probability\": 0.35}, {\"id\": \"wealth_top1_10pct\", \"year\": null, \"probability\": 0.3}, {\"id\": \"no_paid_work\", \"year\": 2095, \"probability\": 0.6}, {\"id\": \"population_peak\", \"year\": 2084, \"probability\": 0.98}, {\"id\": \"warming_peak\", \"year\": 2090, \"probability\": 0.85}, {\"id\": \"nuclear_war\", \"year\": null, \"probability\": 0.35}, {\"id\": \"engineered_majority\", \"year\": null, \"probability\": 0.25}, {\"id\": \"world_government\", \"year\": null, \"probability\": 0.25}, {\"id\": \"sea_level_1m\", \"year\": 2125, \"probability\": 0.9}, {\"id\": \"religion_minority\", \"year\": 2250, \"probability\": 0.55}, {\"id\": \"civilisation_collapse\", \"year\": null, \"probability\": 0.45}, {\"id\": \"agi\", \"year\": 2045, \"probability\": 0.9}, {\"id\": \"interstellar_probe\", \"year\": 2150, \"probability\": 0.7}, {\"id\": \"mind_upload\", \"year\": null, \"probability\": 0.3}, {\"id\": \"english_science\", \"year\": null, \"probability\": 0.45}, {\"id\": \"mars_landing\", \"year\": 2038, \"probability\": 0.95}, {\"id\": \"fusion_grid\", \"year\": 2055, \"probability\": 0.85}, {\"id\": \"desalination_half\", \"year\": null, \"probability\": 0.1}, {\"id\": \"extinction\", \"year\": null, \"probability\": 0.25}, {\"id\": \"orbital_10k\", \"year\": 2120, \"probability\": 0.65}, {\"id\": \"kardashev_1\", \"year\": null, \"probability\": 0.4}, {\"id\": \"pandemic_10pct\", \"year\": null, \"probability\": 0.3}, {\"id\": \"ai_succession\", \"year\": 2060, \"probability\": 0.55}, {\"id\": \"interstellar_settlement\", \"year\": null, \"probability\": 0.35}, {\"id\": \"et_contact\", \"year\": null, \"probability\": 0.2}, {\"id\": \"ageing_stopped\", \"year\": null, \"probability\": 0.4}]}",
+          "refusal": null,
+          "reasoning": "Generating probabilistic year forecasts in JSON under abstract output constraints.Assigning years and probabilities to future events while keeping the JSON within abstract output constraints.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "Generating probabilistic year forecasts in JSON under abstract output constraints.Assigning years and probabilities to future events while keeping the JSON within abstract output constraints.",
+              "format": "meta-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "Q-PaDgGJdlOtJDNJWWJ0D4HOTsCwUKkAPwVbRswFEtbGfNoAaSd8NyRENaQ47Mgi8xkKgOcdhZWPZMD2RKmhXtbvjpWFmIwfIUW7PEsbuijrIny_XFJiaqlsz7tGWN_9YBAb0iCexpLyLzlmGwy4yk3Cz0FJ4TsgOlyGPytOPUu1hyymRIuJgOTzscjUxm_UTuTrfM2B-CmNmd5e6b7gBuHG7fNLMNDv1644G5brUGMePmFg5siU_9FsSfo1Y1Z6zfQO_uADU_pcjBr1x6fiL0kk5TvgpOXIzPGD4V_uDzJ16VySH5NZRfghRNxz-VhPn8zS3MDHSU51d6I43eTjYeCtcWhbSa6nFoI0dYMqdPYw1Ds_YL4PAroa94XQZUaRErBLP8mZFNRvc18I53SRgjGYSsHbepjpCbzWcdSMQ-0x1i0hPJy2EAiRj6qhhwNjPYue-pAvRclRp8yU2ZG5MPDH5k0zhEzWFxgmoyNqs92IBND1wx6GSlHya2NO3cLcEVsNgywMJ4968WX5twUcb6Bp7WHU-NKvNNYdACruG3wxqLwimZMwp3rC-UYiRTlB7LvDrUrOHg5uQzPiwq4ly-tbOlnlcmCLiI-GlZwFi1FsFmdrkdYXe7HEG1FnCRblUdJxPoF5erNGcP4bJliK3KJayUpOck-D51ymoEOauYk699YrkRFrwF0eq3yNW78Pb03B-g3mpQKWmi-Hy_OTbVLUwzrgRAqXBtDRhIsQvRNeYlqPgbl0n-7i1HOjRIRpJAwDN5Xl51TwDo4P10HqDsUlkpB526E_qusU0Zdwl3bK1c16spgy8u14hM6cqRbzdcE96aXOVeKalQ2Obi8Xjezq9nIu9A19Zqo4Kl_itzNEpQNkYpBviZshjRSY7FVmTD0whBXkPxXNYZaBqW1UPpD4d-VgWgFIoHuSyftoKq-o8ep6F7_50-VE_8mDnDwQu1hcj_06CsW4aEFLbildWQpvoBkIfhDwYiEh4jfHVvLwVNalHpRM2TxuaY22_auQjzl1E_Fzo4yfDfQ46hcJMTmjgH8BCoGVfcgKS8e1oGd0kp9jfbsYwxbEYYPXqzCZHls5rkY4PIW6BcMOIj_Iqyvhdz-R0egPUK10OYJ8GS3MhL8ZkHf8ZggzqOl_m5CHNAjU1TgAoZzNejwobjSHl9gKs4kAyrYxnUF0PGU04nY4dHcUDVRAw9vvOoRbS4j7HvUs_kkQjgw0BQ1reZdanHVBeUfcVVUJx4taAVbSMaYgR6UwiEB-Su39S8s1sOZhbdL2GmMFy0kBnpOrLfIUn7__7teTZjXMkhZP6j7oPSo9la5bnrVYJj9rZ65l2o1FAoX0WUke1uRWIC_JmDqElu1XG0UUD0SZa2NTKXC-VjGIUUJntRLxt_C_yvg-uAASy-CUbp646_tbRyL-ao5GKXRDzpkWxHsqNbyhdF4m9zU-EkpsvZJSJWWRt4dwHnk32dOGH9HCBzmVh7aumLHXDKKM1ObA_3zuO1IqDRVI4uRSPzL4i7fXGee25vnHb8Te6VGQ60DSMcVIe4PiiO6jS80g4v9uKMw7BNllSyUyu0pn6T0Xfz9THVNXny1DVSvO0i51sZ1v6ooHnkd6ptPplGlioctnn1Sb0nc7D3iZKwFP2UrpY6G1cqjYvjUUtJha5lYlzyHtAOk4B6qnH_S_Rc_iHkxHzn7YAOL_HFVyRRQ07DCe8tqk5JUCIbq_tsdEc7gAFpoUExpjhGcGwau_0uzt8sl3jcjKwmlwefDLk5wzyVrpweiboDRUYx8z4DZknJb8VxzC4lXWPm1XjgHbXyTWJ2paij97BtmrCYVvUg1MQyPOeVN-Jvm789Xhh4Dmx5eZk71vQkzeBjF3Se_jH_d4vRksuyUxC4FWpJgucSDu1i4ChDzZq3YZamKKG8-wl7T7y9xBBnRXLfa8X5dYYtmM-U52gFMXXEpk3ukGd6B3W_eEVajNhmOglqxMZSigUXs7xScpGNumgybHF0avE_uMP1lYm0G9KzyzIms6NX6wZnc1S10d0PmJwKGJQPh2RQf5BPErkq68oYTEQ_YPE0KwTO0jPyiAXm8N1HKkVlehMy5yfyks0nSVCNm76SAE8bSxgxx-94lwKqD15Mdam-UC05_-emcEJNajaRWjGgPZ9yeGNJFRK4Zrb-UnPnhV0dwio9F11x_7xBRR98zufI2foASeS51mhIBWNIqnh8Su9OmJTkJ-SZ-D8dvs8ue4OGs87Wp0C9SF9CgauwO1dZifJ4alliITkhBZ0adv9znCtQe_y6Ra63Db02qFsWxHUM07Z8Kol4QSM6cSJhc4ctVhvZ99gGcot28hvjZyqQ7fyyTEj5mKu7cYZ2AOgNabqvqkG21Lrj0RwwXlI8ydsZSUWwAB9lHTeAxpo8qJwuLxRwxwgXMbzYQaBWJvjRqujXfEpwb5YAL0XyBVpqSQWyZYn9i4GsDDs6Hy5M6QEXqA-_rsL1V94g4rtPQQn3WR5DvFryKpqzsHpmb-DL41ILldE12p2kqp9_Akp9wB7EkjfP8diRyTnv6q9jfQyovcFtsyS1xfG8yecZqqo-st6W7pEtUyE4HrJn7BPBdfIH9_EHXczmqkr4moVfcaT01zn0wkK8VIu227jI7UjjzAoM70EdvVeH7c9wMqadMlPW0eC559RYCMzJt_KUADZ5WGUw2r-7G78elzE5SKxzTaF7XY0iIShWJ-Uxxx6u3Ie3HqTaDcUQG46rKG8IFLjzIC3WHVzMEp7afW3NqTpK1fxgFqwWcpdHuVpFIhDjL6Sg_TBFe-wl6qnbj8CEi_Vi3s3ciGEoKTQq7MIUMMIOzn9rH2Nga8diQL8h2ofIooKSrGQOrhI_UPdJbDRCp7-G2yWaB24VCov1YdpayVb28TJ18MBnzwl40lJj-cnMmxMop5gjc4wJofBz99XjqVbcqqufblmVS_ITXvKDU5wfKxqfy0VlwWsQ0nON757tcOXPxxj43RREcglJtZFrI8CS59CiUTxYWk5mFcFYh4usp1kUxQQUS8pm37J2FSOQ5GKUa77upz8O6vLrpK60cvct2f49d8glKzg_GXXiZ7Zc4lL8IFHcGVRq4FDLpRf1H7SIpiIu52mRiXc8n9NYQm9jdboiQiMxz1GqUwI2KFgrgl4uIYAioUIeg6f-_JWOwA5v0ktSxiyQ6Yztkz2iHcPcd61DPxNJ1qNexAhfshOMa0Rf3EdPNVS8kWVuuqZIccgW6p5iwNJIrbThq_H4O5JI8wO4kIc9YeEl1236ks-xiARMw7o9dP6bkDVj9tz9Awf4l86gHXu0KUDxvmPcrLeiYHfjC8psHeAOrAGO4lbnaFlnCuFqKEOE5i85fT-6esfoz1hj0Db5-t6a6AUblKvylmO8JL79CO7VwPa2rL70rQ4SRbj2FMMakjpjcFcmY_z58w29HnSdiCMPr7kKqsay3tLjvNj6J3gQIOuR87l96DrWIEgIuHrqvPDVjZ0jQeHvPpwIy6U6CvmhOjVFIaKdtfU7892nayqKcheyXRJ1sOMQXfqO6aeCmjwjlX4sNOPtSSpnlYcjY2MWRMv_oRA6iKVfcXMbeBPA_4iaoQqmjbKx46JkNsLPga62S6J-DdeHqz-MNuh6XezD6kxk7pg--WKzLE5-IqcTBOGKX8o7XCeAgc_9xwx15F6FtzfCKiSr9V6ucpoSs1bC5I18ZRH8WVYzLJd7EzkChzOv933TIarE2m_HsuNrXOS2njECRYJviOKfOCZ-crqN2ayEuoJd7-Lc9xSb_JdMIHL9X67VzmWup4qYd2XAGRS52lx1K62UWwYiG-_WtPDXxwYgrwM9j1Yn6xHiHy1dDwl85Z11NIDlnmFOKOGLvNJDpMWhsAr919_aw38uOdTs0Nqc5CjQFk3fryilP6fDiX6ZAGGqHaVQMjc2pYTGK_WLX0LjQNBNGM1pPF-IXe2wpJJhACaZuQi-ei6T7BP6fQkri_b1x763-9bUH7-h3FuAxMGHg-4gZulmbXG4vOn_GKmMfZ_pz-brDolUyk1bm-499d2TbJ6IrE6284t9RI6WjZPEvxti_C9_wnjrYQg_0gFAXecSW17IaD_a7-QGvRFFW1bn8rW9f6R3V2GVChC2wzHWhP1i09ZL58KWZQOlkjutueT8ckVMPWeeyuEFMNty5LSfp_VQ4FO-NbFdwYvM_K_Dk7oJ9iE-_BTkfBjI_PDPXouvMgNivLHSD9L8qy-366d_Wyqr89Qy0MsV3aOKbrIRSutpi-SCmXjBvEMKT2hPfvuqfLey9mtlzVMlt7cITGAphSVh7kChWYubi5zpsa1ikoGR_3oLSxTWwQBU8YWiGCR3vVbCUal5IkVzBWqz4Bl_Dpn3PFL9xjYCH2u6qJ6KYjf3roua_rQ6ciEU74H9oac3KwyJG7GM6-yKIR8ohWZWuPMesdpdsAfpIguvFcnCzXrOHf1kC6qk1G7RL2BoIaS1i8VSlurC4r3UlAEoBLH9Vfzp9FKXFAxAJg60eby1nzWiKGBpmZHPOxfnAEnlR5JeAtBL8NgIokzcCkGYc4GNxNHI0MMlXuE-bINd7-XcECz-CWZ4SjSYCuEuBkEPV69IIteuml6N56YijgeeNoU2tjCZP77DiLYx3Od27333Irbk0w5SgfF6PEcj5cP2OgiEKO_eMlKYLXeCLqV1oGxkGQOpa8IiqS2WVPmMEtkTi2bjoPP8yUcYoN0naoC3u8VCAoHbUugDv4EZ1sL7hEOSfzT_57obD7puS88F7nNCT-Dhwyw4LgvrZ5zCsij2CZVZ6NnAe0cFiYjxnSjer39lSKt__Na2h9nLOqzGL3O7FvI3r6Wwq4jYB715ynJJOizbDcKJVbOBl28AWoIHegZqNFClfeRCc0l4gAODM5Rcjz0He_xpovyPEUMNvOyPf9P8mmaKzouJui-Vm_uQWo2cm8wmnbwN4FqosUlJrhb7U_CgNWDnkxecs-VMqnPDmJvjVe5tKsJSu11Ag9MflKIVceNuGq8SfIPr1KhXfqRTqaVj6NF8UFz5O5Hzl8bKvAeryjaA98eFddKDMxKaj1H3VocngCo7P_NLTHJzz2ixgVblx57B7y2E-n26OeMhqTMo0u4-s5JzDHm75If0pzX3F-yyPGnJ1pxyiB8MxyXYc9Lp7-2vmC2BEczu91ozGtvMBm9zM5R2sttfnCGNzNZp-Jg_iXlI0VhCIoxrX3bUHXRcWk2m9Cssuk798qeGrEsmSDr0Rusto6ilgD2TXJ_iy_QNX3SL32pLtCViX4Z_5wYE2ivQ5Xbh8OpyY71OD1B2lxn8-KVszkPbge3S6Mt-NIsqj4eTev9QOd0TNLfCiLKd32z2evFquV2a9s6wBP86lWCT-5TykgjcIW92R3kc7CODa-FmZoz6d_JlAmDeAx4LgSTBclrxb3MZ-auS2ThAX1tgDc2FK8xd5zXucKqneULc1x93x9F5nIqa3GqwYhnqg8UODTrlQPEAYglvCg_Ynlv8SYQw1rCpXrNpKECAZ7u6J2INHhz3IS4ZQz5LVDpyyUaSiuoVwyMN4PtSE1lG2QBPjQGVW62d1S6medcdLyM04tb0Gu_u0S9hUVyYFfpNHGYZhxHspOJWAcad0Cx0ujt9xzvizrPzyPxDuI4f_hjqgCkT2N7Io09TgzM71EqoNu7aGUD-_YwAFDmOJqh_VHGeIvjlGCJ4eIJ9dMPH3ZrQlWowJ0e8HyLj3s36nqy_Hp5jkdRLV9isPIQxOMrVSGXEf3dFt_DO4qEdJLTxgQ7rY-uyGdqCC0nME18ddECAmDQD3w3hnllN8v8-gtoHZXRxWr8EBd359zcIk0NxrMxRKeHrzGq6LPb_bYqRsuizfv2jRRWPadLRwejqqHoLjsrV-r483Iwzg6bzJiDeqzGbUW1hEbYekDst6qDxVwnfy7n_E6BENzc3BG0m3SeDZnCyFRJPEtxh5OriJPvbtSltTEI5zAJdbnEknYGIsfeTqMzjDkyyHezrHsBtf4BLna4CUjhKE-Fk8TxEzUYaRjPypDfFRWjqvmIUTIq2GljHzIClohlJ1WEk1rE99g4Qd-RgEEuRwvc95cTcJePs40LcEeQJkKzD8ID6UVHBial06G635aNRAHjKrNh8jB2SSsf56Culuh6EIzV_6F-vjYZe4tD56g7z7wh5JIT89OyYRZVldzPWXH77ub2ixfDOjCo1Q5Nx2TSIa_aqW61D_OYYgo7wn2wnZbRHfxlSFVFC2wc_j100mb0xNigUm1qX1AWP41mN9gtRRFZcQgh_hheGdH5hXCbAzzS5piJPr1ykA7lL6-iBYB7WLT_PSAd5mlzA5Lh3P2Gr1AAnYB81tMkCGOqqEQaVCZ2R6_HcNBfBW8QmU2-eXswHMOtpfBINqlSufGDAFbgMYlC1grMFrZz0PzUc5J-0V17rxtGFuyYanTkqoELEIWSkghVm-vFeLLrgC6x_KMFi6zfMkP0FiXzeXPdCgzN1bkNJRkChs-4PlSXfDqgdM5OH2uT6dgUZladbTw9FKlS8lthuvUbNuhlPYvuHxT5xjoJol5cXHGCOZ8BBS-Pc0Jt6awYvdDnAtvsFFqqBfELqqMoruKwaUvVILqFSZdLpQf-Zjm7QUDl6KiXtoRW07CoJktuluPVGXxAf4q9Bt1fF2TnxlZGz51nRcuLVQOrKYNFi4BdIKcstXvx-fwSe1vw7SaPGxrsN-W0gMifCc-WBLXgM7hi2CGOCBXP4nQTlCCgQRRyZm64DSJzu9c-_9hYqovd5VPHgjdq7zOUJLw8TN3idMFmXJAKvOM43NMuZfjO2gUxrT09Lk1_qT6XOT_OnjMEAAOQv_oJVUL_BwQJG6U69DKXfoCv9GaZWjbQWvkWWch5mJ5dOcF-ZgXB0NNDIh2bE7d2IZHWLjd_UibsZWGtYe7_Cd8paddlkKtV_IRneOB_PZNNXDmiILFH7FB49tHVaUH5qe4Xln14gLOilRHt1GEvUWuImAYZeBGbAE3aJw2RpQhUA84l2jFJpPUFWecq97yj4IRYCFjFqrsIQzp6azBzS6DKsqzJ8tCiItd7jDYnFKZnyFCvIUY3B9Ls7Jt3PDLkrHSVJ0Oy6MjIejbJdK8zNFs9SqXExqv8OYmkGht3h--auuRMvek87L6Fnr4gblstL69yEo3MWeR4IVqX_7f1u_zpHmn0A8LOCYfdekIUYkzhjGMNOxWfcnaYXqDWZwU6FWthaHTd4PfyevdL4i59oF7wOHqP9sXGaDbvIucCUA3rKBjJ4jkTqVmYCRuW7aJ8L_NDc2hZK9yRiKKoIIqroLRoZVmwgKSWFj3dS7Ykwoq1XvwFY5Zsg6VJki3gpmV3kfKn8S1KienwSqlYLB6HEByp2xV0bu4cvCdhlAfcHmzRdwokzEPjVL83qk10Wbjglfcq3uebevazOn6Whf_r7J8hQYHR_4FQVw2PqoUWHr3oobKb-yCdUPXVUqE3hr21VMiAFyhiPgdyUSFOF3CJtbrQD3LxqoYdd5JNFySrA9uVDKyYN40Fh6D8JGA6Njlhw7rkfUUGt19uypet7IDcwFgS5VDeMB4HA9i7mJqZhQnbwz7nqTbOWV3CxxaXIumcMp7MHam_iZZBeF7xBZy5pR6_7HBovweV5D6bJG2iIVX-cO_QDTt1GYfTqQj71OMsRkPvSBawLLuTFf4ThbqGk-93ZGIqoM0Cw9z2nk52Ub5SpPdMLApycAx8QbtVcB9MCOadsCDukRimqEVObLrbxM0WbMDUk6yp6fPzi8mr_cWMo9vSOTmWngcmcbIAOdUeP-hidSgqBsDHXGYN2jw3Qk3LHh0gS-JXNTykJuEDnIW1W2SWjIY-enSGtW0ZYOoTRNW6aLLMZRF2sJ3RDzIq_L87dCBUoBhwAko14pMqe3zTjdFwt3V5ELniH6zZwXPxmXE4h2L-x-4ZxSku0ixNhtyb6c5nwL0saN1yfwVnwxLwp8qT_VxQxSiT9Yjy3yMIz2br0GBAItfcG57rGmAqTDOT5nNSaXk9qF7FkkIrOvNmR0txzpdkv1xFs2RN98FbnlcesWrZfRSMSdtqu9XWOCx5jvBY_zt3idk8RcIKaOORilVwo3eAdtnsyyjt46KkABuw-a-fle8FuGSXQn3LbM9qpxENYirQvTBHrqDWW8myOra8cUFuOUb_X2E1bARg2WFvsrhacjwmB2YXWBgPFBytUMcxnv2pABL1I3Qjha3urwwP3qVfzTqLzva9FdS8QLRiw4UVRz-fedX4YIeBHo3MPv1g_TMp4wBFqKow6P-PdG0LsVQU4UK0GJogi4N6FFujem-pXok5-JbA5l4M1Q-LEIV1KXGcr0KUXsVPRpStZxRlx3S9NpTLgcnamNaIZ9IHmXzMxxPN0zRkl-Yp6DtTITwIT094UdV6wPM3XlSai_gDYeySGmhNx1blIKTOnc4EcF7TG1LJRMvVIVHvqdwycB5gFYUk58J-6w4fjqio3ga2DtwF5Vwunkjala8ASS4a7tv1pNgwDS7A2kimDm8eJslToSmQGqjFNBXMP0CPnUfseWP2BqxOOx8ifqUUg_YiwcSDbqeJlIyI2FphzEdh8BO2W6NYpMX-F0AJ5e_mGZPwv14w70eArFR2Y9Cf5QkqCwwuuisEmZpvOm2eDkAwekjsHaY3gQLOTxNoy_FCwvU-AGxYtz6eLAYaDWNj_sA3dcTvodC294PmvY_UXw1YNxZNeE1wURkvq429PcY_mzJfAEMtqJyo2ylBdupbe3yktcQEF_08ogoSRMYOcdXGzSSrY6ltzkQk3r8MwWJHJqX5DEMuh2wzX4Rzbhzgzk9juj9bezHuUFoVKEiWwJA7YuHHTuGJ-Dd2nY8bq8BSH8jwZzh9WQvEkGZQa6T8MHMfKUC6XA7AIkCSDYtvIYzK2g2XmSby8zzuepju655nNFVfEF3dih6y2R1YbyqB7Bx69BYQ8g0js0y9hKYL8OZTM4N7pBCQAg1XGHc7yC-YniKDyXHJ4740j-Jtm5POShqKdl6tOXTME4mpUwN8qHberz34p87S00tTvlaXkJAwk_RfGiNoUHZdujD6ITnENKsyEW99zYfMQODEuE-dVM3n5tkqt3PItJ0gPFQAx5Llb3VCELRLU5tbB1FRIDI4Gq5xWme0bFZETffvVzHoniajyaQQbuzcZBwDZyUP_U8TLRrYo0iV105CofnFv-OO559uvhjTeb0XRvels7TVlkYbSapUAslOa3banE1aKWNOptEIEZCV9bvA3sOawfE3q7Kc0n99E757jtrbTHiufAhCNNrUNIlXOb1DM1CB1UuViJQ8YvGJFVMTBinn-KJoKhxcAb8LEfAqmhMT6Hiie10qHa8J6ALMKC86wh1MU98rZq5NLA17CHkJt0_jIYGckGIqLlpeve6baXpDCYIYTRmm1YlH03uzu6ZhxicJnWQPPfUCeQwitlDKRopL6Z_7bnF2CQur8pMyaZxIoawXcopEuQWk-QERhCXOnPnFcuDMcRpCo6MIge-ywn4qlbxYawa33RPsxRWFkYWpm4Jhd6WAelDivTNgx7s-JzPJLkswsXUd6bgH7JBaVgjbt_1ZbCoGPUQt-Q6Y_N5iEGAc5wPEAQpTBfsY6GXP2i9fEJVIjwYC4OIAAHJswRV_oR99AMr1Bbrh26baqcvjrIHl5MoBMwoWYWNUcOdUTS5mFplpDjU6bo0-jBZ0FbPMmeFrOcRMSngGxOl98KimBpJOcQwOm-gT7BlE_c6WSj_cWe08TPK8kG5zbm0p6O4oRHL35g_mQVMlAXs5GTMawFLR9CDbrNVEj52AwzryDICy8fQa38OmlaGu8_5WVNsk2R-MLk3xekY0EmYMikmcm2a5_dON5x8vaFUwXcQkmrJqSXqrN1Fih6l8U6yIgJVemlCSjvu_3SdN0GZLgRxBkCqW-I1itz9tV0glShCGIV4ccPEK_gqFzXKv1LLjqOiFQMkwj0ajZk-zKdM1IqPedXrjpCXYN8r5P278D0FBRK5tG3gAniQuRXV5Za-_ux9sRFVZjmAAKmgZQfu1kc8fk5dxH-WNhg_NJDBrjKkSFSbk3wTCxpGwrlu64yirk9EYbeFbKNX8PMogVzYChvYCB3Y629qNNMalCFMidHL5KQNspTpoUQEQ3ZeL4tLMpyZFH2V-h8dzkcyHuSctb7YgIjOO2ytLvw6c0snFniZNL7UVVm-MZ6AwahHcZz1OZbNkNqWh_QOr37yCjjLicFlEMcFLa7m73DIaUefMJBx1wH8ZyUhnGp9Zwq8137-sXPk4qdvRejWvm8Ah4z2oxNaDVgWQD166hvJVg9sd1bJVIVvrtplzKOLyXdCDtzUtuxuvP77_FWv7L2AOVXdfMIV5-DuR1ZH_NuWn6oPS735XxyG1PU152ZMyw3AUNXuwsbf6HdWUBlmU9i9Vwj7HrrjBUqxFm4bSotvKzQFamKhGu3pukO1q4rCN1Ob3OI2pKjPiY2dDGy8NPxNMrlgoniyekohlsrUKwe0Pi5JmTEi5ljFC-hOTaMINitZgJDSw9OBZ8t3CsBSHLBryMxEE5IqF1glic0VXtfzM_Ll93NhCiL714lc-sSVFvUjAGRnv1XxvhqUQWUr-93V_HPhpZy4JITNTjgtCJTBkyBJnQoz2TIfxlRb6qByloYm48WHLScQJE_rhHzNuAcjgEtzG6j_8gR5SipttwBElyyMSNHtxPiaqoLZxVEZ_5kTY_Q4blPl9LvP9OzllvRM3szs0f3ChLmXi_eGKyY9-kHX4_1fL_azU2ESLMnvnqFImXV0U1diFTDwCbhKNmbC8DJztVUnQiRFdEM90CLzm8Vy6Y1oWdUHOkyyhUzDr834Ic0R8wX4uHceuiOnTUQ_VNRw2u5dAL8EmejJtIsY1TqmJYhRq-FdoiZHHroKnU1VSgxIj_evoek2-6xOwvfXFzuD6tbCMq94w-GvpLYl7c-TN6PqqA1zQ_M.eyJlbmRwb2ludF9zbHVnIjoibWV0YS9tdXNlLXdvbmRlci0yMDI2MTAxMnxtZXRhIn0",
+              "format": "meta-responses-v1",
+              "id": "rs_6af6019d9898cff1dee943ca:rs_01a1d0f64d8e72ea8dccb2071906a500",
+              "index": 1
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 673,
+      "completion_tokens": 2201,
+      "total_tokens": 2874,
+      "cost": 0.046712,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.046712,
+        "upstream_inference_prompt_cost": 0.002692,
+        "upstream_inference_completions_cost": 0.04402
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1521,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

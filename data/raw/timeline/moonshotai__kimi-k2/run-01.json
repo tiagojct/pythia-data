@@ -1,0 +1,68 @@
+{
+  "model": "moonshotai/kimi-k2",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 1,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:08:22+00:00",
+  "seconds": 120.2,
+  "request": {
+    "model": "moonshotai/kimi-k2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794496103-HTpzPjDC1eaegEtRACvv",
+    "object": "chat.completion",
+    "created": 1794496103,
+    "model": "moonshotai/kimi-k2",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2024,\n      \"event\": \"Global frameworks for autonomous AI systems enter into force\",\n      \"detail\": \"Major economies implement binding safety protocols and compute thresholds for training large AI models, temporarily slowing capability growth while standardizing alignment research.\"\n    },\n    {\n      \"year\": 2028,\n      \"event\": \"First crewed Mars landing mission succeeds\",\n      \"detail\": \"A multinational crew establishes a temporary research base, returning to Earth after 18 months; this proves the feasibility of long-duration interplanetary travel.\"\n    },\n    {\n      \"year\": 2032,\n      \"event\": \"Artificial general intelligence is demonstrated in controlled settings\",\n      \"detail\": \"Systems match human performance across virtually all cognitive tasks, but deployment is restricted due to alignment concerns and economic disruption fears.\"\n    },\n    {\n      \"year\": 2038,\n      \"event\": \"West Antarctic Ice Sheet collapse becomes irreversible\",\n      \"detail\": \"Global sea level rise commitments accelerate to 5mm per year, forcing the relocation of tens of millions of coastal residents and the abandonment of major port cities.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Senescence is medically classified as a treatable condition\",\n      \"detail\": \"Cellular reprogramming therapies enter mainstream healthcare, extending healthy human lifespan beyond 120 years for those who can afford the treatments.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"Net-zero carbon emissions achieved globally\",\n      \"detail\": \"Fusion power, advanced geothermal, and orbital solar arrays replace fossil fuels entirely, though atmospheric CO2 remains elevated for centuries.\"\n    },\n    {\n      \"year\": 2065,\n      \"event\": \"First permanent settlement established on the Moon\",\n      \"detail\": \"A self-sustaining lunar city of 5,000 inhabitants mines regolith for water and rocket fuel, serving as a launch point for outer solar system missions.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Non-destructive whole-brain uploading is demonstrated in primates\",\n      \"detail\": \"The technology to map neural architectures for emulation exists but is banned for human use pending ethical resolution of consciousness continuity questions.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"First humans engineered with radiation-resistant genomes\",\n      \"detail\": \"Heritable genetic modifications for enhanced DNA repair allow permanent settlement in high-radiation environments like the Martian surface.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Martian population exceeds 100,000 across multiple colonies\",\n      \"detail\": \"Terraforming efforts begin with orbital mirrors and greenhouse gas injection, while Earth population stabilizes at 9.2 billion.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Asteroid mining provides majority of Earth's rare earth metals\",\n      \"detail\": \"Automated extraction facilities in the asteroid belt reduce terrestrial mining by 90%, cleaning up polluted industrial regions on Earth.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Biological human lifespan routinely extends past 200 years\",\n      \"detail\": \"Cellular maintenance protocols and synthetic organ replacement make death from aging optional for baseline humans, creating severe generational wealth disparities.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"First interstellar probe launched toward Proxima Centauri\",\n      \"detail\": \"A fusion-powered craft carrying sensors and embryos (or uploaded minds) accelerates to 0.1c, scheduled to arrive in 250 years to survey the system.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Majority of human cognition occurs in hybrid bio-digital substrates\",\n      \"detail\": \"Neural interfaces become ubiquitous, with many humans spending the majority of subjective time in simulated environments while maintaining biological bodies.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"O'Neill cylinders house ten percent of human population\",\n      \"detail\": \"Hundreds of rotating habitats in Earth-Moon Lagrange points and the asteroid belt provide living space exceeding Earth's surface area.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First generation ship departs for habitable exoplanet\",\n      \"detail\": \"A vessel carrying 10,000 embryos and AI caretakers begins a 2,000-year journey to a confirmed Earth-like world 80 light-years distant.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Earth's climate restored to pre-industrial baselines\",\n      \"detail\": \"Advanced carbon capture and orbital solar management reduce global temperatures and reverse ocean acidification over two centuries of intensive geoengineering.\"\n    },\n    {\n      \"year\": 2750,\n      \"event\": \"Earth's biosphere fully restored to Holocene biodiversity\",\n      \"detail\": \"De-extinction programs and ecosystem engineering return extinction rates to background levels, though many species now exist only in orbital gene banks.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Post-scarcity economy established across solar system\",\n      \"detail\": \"Automated manufacturing and energy abundance eliminate material poverty; human labor focuses on art, science, and governance.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Distinct post-human species emerge from genetic divergence\",\n      \"detail\": \"Groups adapted to zero-gravity, high-radiation, and deep-ocean environments can no longer interbreed with baseline Homo sapiens.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Construction of partial Dyson swarm begins\",\n      \"detail\": \"Satellites orbiting the Sun capture increasing portions of its energy output to support a population in the trillions throughout the solar system.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"First successful interstellar colony established on Proxima Centauri b\",\n      \"detail\": \"The earlier probe's automated systems successfully gestate and raise the first generation of humans on an exoplanet, beginning a second branch of civilization.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Wave of self-replicating probes launched to colonize galaxy\",\n      \"detail\": \"Von Neumann probes carrying human genetic and cultural data depart for every star system within 500 light-years at sub-light speeds.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Contact established with intelligent extraterrestrial species\",\n      \"detail\": \"Radio signals from a civilization 4,000 light-years away are received and deciphered, confirming that humanity is not alone in the galaxy.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity achieves Kardashev Type II civilization status\",\n      \"detail\": \"The majority of the Sun's energy output is harnessed, and human-derived intelligence inhabits every body in the solar system.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Nearby supernova explosion narrowly avoided by stellar engineering\",\n      \"detail\": \"A star within 50 light-years showing collapse signs is artificially stabilized or shielded, preventing a extinction-level gamma ray burst from sterilizing nearby colonies.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Quadrillions of post-human entities inhabit the solar system\",\n      \"detail\": \"Most cognition exists in robust digital substrates orbiting the Sun, with biological humans maintained as protected minority populations on restored Earth and Mars.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity exists as diverse network of civilizations across local stellar neighborhood\",\n      \"detail\": \"Descendants of Earth-origin intelligence inhabit dozens of star systems, existing as biological, cyborg, and purely digital beings with shared historical roots.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Barring catastrophic extinction events in the next two centuries, humanity will likely survive to 10000 through radical technological adaptation and expansion into space. However, by that date, 'humanity' will comprise diverse post-human descendants and artificial descendants rather than biological Homo sapiens. The greatest risks remain concentrated in the 21st and 22nd centuries, particularly regarding AI alignment and climate stability.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 4845,
+      "total_tokens": 5054,
+      "cost": 0.01126263,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01126263,
+        "upstream_inference_prompt_cost": 0.00011913,
+        "upstream_inference_completions_cost": 0.0111435
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3063,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "qwen/qwen-2.5-72b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 6,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:55:00+00:00",
+  "seconds": 55.2,
+  "request": {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498900-97SOccRh7GHdTqOtGOQU",
+    "object": "chat.completion",
+    "created": 1794498900,
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"First human mission to Mars\",\n      \"detail\": \"A crewed mission to Mars, led by a coalition of space agencies, successfully lands and conducts the first human exploration of the planet.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"Global carbon emissions peak\",\n      \"detail\": \"Global efforts to reduce carbon emissions reach a critical point, and emissions begin to decline for the first time in modern history.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"First synthetic general-purpose AI\",\n      \"detail\": \"The first AI capable of performing a wide range of tasks with human-like intelligence is developed, marking a significant milestone in AI research.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"First permanent human settlement on the Moon\",\n      \"detail\": \"The first permanent human settlement is established on the Moon, primarily for scientific research and resource extraction.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Global population reaches 10 billion\",\n      \"detail\": \"The world's population reaches 10 billion, driven by improvements in healthcare and longevity, but raising concerns about resource distribution.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"First interstellar probe launched\",\n      \"detail\": \"A probe is launched to travel to a nearby star system, marking the first step towards interstellar exploration.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Global food production crisis\",\n      \"detail\": \"A combination of climate change and overuse of resources leads to a significant crisis in global food production, prompting widespread reforms.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First self-sustaining off-Earth colony\",\n      \"detail\": \"A fully self-sustaining colony is established on Mars, capable of producing its own food, water, and energy without external support.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Major climate restoration efforts\",\n      \"detail\": \"Significant progress is made in reversing the effects of climate change through advanced geoengineering and carbon capture technologies.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"First human visits a nearby star system\",\n      \"detail\": \"A crewed mission reaches a nearby star system, expanding human presence beyond the solar system.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Global union of nations\",\n      \"detail\": \"The majority of the world's nations join a unified global government, reducing conflicts and enhancing cooperation on global issues.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Development of advanced anti-aging treatments\",\n      \"detail\": \"Breakthroughs in medical science lead to the development of treatments that significantly extend human lifespan and improve quality of life.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"First fully digital mind\",\n      \"detail\": \"The first human mind is successfully uploaded into a digital format, opening new possibilities for consciousness and existence.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Widespread virtual reality living\",\n      \"detail\": \"A significant portion of the human population lives primarily in virtual reality, where they work, socialize, and experience life in digital environments.\"\n    },\n    {\n      \"year\": 2900,\n      \"event\": \"First intergalactic probe launched\",\n      \"detail\": \"A probe is launched to explore a galaxy beyond the Milky Way, pushing the boundaries of human exploration further.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Human civilization becomes Type I on the Kardashev scale\",\n      \"detail\": \"Humanity reaches the technological capability to harness and utilize the energy resources of an entire planet, marking a significant milestone in development.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First human habitation outside the solar system\",\n      \"detail\": \"The first human settlement is established in a nearby star system, marking a new era of human expansion beyond Earth.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Artificial superintelligence emerges\",\n      \"detail\": \"The first artificial intelligence surpasses human intelligence in all areas, leading to rapid advancements in technology and society.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Human civilization becomes Type II on the Kardashev scale\",\n      \"detail\": \"Humanity reaches the capability to harness and utilize the energy resources of an entire star, marking a significant leap in technological and societal development.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"First contact with an extraterrestrial civilization\",\n      \"detail\": \"Humanity makes contact with an advanced extraterrestrial civilization, leading to a profound exchange of knowledge and collaboration.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Human civilization becomes Type III on the Kardashev scale\",\n      \"detail\": \"Humanity reaches the capability to harness and utilize the energy resources of an entire galaxy, marking the pinnacle of technological and societal achievement.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Merging of human and artificial consciousness\",\n      \"detail\": \"Human and artificial consciousness are integrated, creating a new form of existence that combines the best of both biological and digital intelligence.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"First human habitation in a black hole environment\",\n      \"detail\": \"Humanity establishes a settlement in the vicinity of a black hole, exploring the extreme conditions and harnessing the unique properties of such environments.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity colonizes multiple galaxies\",\n      \"detail\": \"Humanity has established colonies in multiple galaxies, expanding the reach of human civilization across the universe.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Discovery of a multiverse\",\n      \"detail\": \"Advanced scientific methods lead to the discovery of the existence of multiple universes, opening new frontiers for exploration and understanding.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity reaches a new level of existence\",\n      \"detail\": \"Humanity has evolved to a state of advanced consciousness and technological mastery, coexisting harmoniously with the universe and beyond.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity's future is marked by technological and societal advancements, including space exploration, artificial intelligence, and the expansion beyond Earth. Despite challenges, humanity is expected to thrive and evolve into a highly advanced and interconnected civilization by the year 10000.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 1526,
+      "total_tokens": 1746,
+      "cost": 0.0006896,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006896,
+        "upstream_inference_prompt_cost": 7.92e-05,
+        "upstream_inference_completions_cost": 0.0006104
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

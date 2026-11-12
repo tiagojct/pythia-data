@@ -1,0 +1,68 @@
+{
+  "model": "anthropic/claude-opus-4.1",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 7,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:05:00+00:00",
+  "seconds": 71.0,
+  "request": {
+    "model": "anthropic/claude-opus-4.1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499500-E22q6q8gq7BVreTrlixB",
+    "object": "chat.completion",
+    "created": 1794499500,
+    "model": "anthropic/claude-opus-4.1",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2029,\n      \"event\": \"First successful AGI system demonstrated.\",\n      \"detail\": \"Artificial general intelligence matching human-level performance across most intellectual tasks is achieved by a major tech company or government lab.\"\n    },\n    {\n      \"year\": 2034,\n      \"event\": \"Climate refugee crisis reaches 500 million people.\",\n      \"detail\": \"Rising sea levels and extreme weather events force mass migrations from Bangladesh, Pacific islands, and other vulnerable regions. International tensions rise over border controls.\"\n    },\n    {\n      \"year\": 2042,\n      \"event\": \"First permanent Mars colony established.\",\n      \"detail\": \"A self-sustaining settlement of 100+ people begins continuous habitation on Mars, though remains dependent on Earth supplies for complex equipment.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"Global population peaks at 9.7 billion.\",\n      \"detail\": \"Fertility rates have fallen below replacement in most countries. Aging demographics strain social systems worldwide.\"\n    },\n    {\n      \"year\": 2063,\n      \"event\": \"AI systems control majority of economic decisions.\",\n      \"detail\": \"Superintelligent AI manages supply chains, financial markets, and resource allocation. Human economic roles shift primarily to creative and interpersonal work.\"\n    },\n    {\n      \"year\": 2071,\n      \"event\": \"Average global temperature reaches +2.8°C above pre-industrial levels.\",\n      \"detail\": \"Despite mitigation efforts, warming continues. Amazon rainforest largely converted to savanna. Arctic ice-free in summer.\"\n    },\n    {\n      \"year\": 2085,\n      \"event\": \"First successful human consciousness upload.\",\n      \"detail\": \"Brain emulation technology allows a terminally ill volunteer to transfer their consciousness to a digital substrate, though the continuity of identity remains philosophically disputed.\"\n    },\n    {\n      \"year\": 2098,\n      \"event\": \"Gene-edited humans comprise 15% of births.\",\n      \"detail\": \"Designer babies with enhanced intelligence, disease resistance, and longevity become common among wealthy populations, creating new forms of inequality.\"\n    },\n    {\n      \"year\": 2115,\n      \"event\": \"Fusion power provides 70% of global energy.\",\n      \"detail\": \"Cheap, abundant fusion finally replaces fossil fuels, but comes too late to prevent 3.5°C warming and massive ecosystem collapses.\"\n    },\n    {\n      \"year\": 2142,\n      \"event\": \"First self-sustaining space habitat completed.\",\n      \"detail\": \"O'Neill cylinder in Earth-Moon L5 houses 50,000 people with closed-loop life support and manufacturing capability.\"\n    },\n    {\n      \"year\": 2178,\n      \"event\": \"Biological humans become minority of sentient population.\",\n      \"detail\": \"Digital minds and AI entities outnumber biological humans 3:1. Most humans have some cybernetic augmentation.\"\n    },\n    {\n      \"year\": 2215,\n      \"event\": \"Antarctic ice sheet collapse completes.\",\n      \"detail\": \"Sea levels have risen 12 meters total. Major coastal cities abandoned. 2 billion climate refugees have resettled over the past century.\"\n    },\n    {\n      \"year\": 2284,\n      \"event\": \"First interstellar probe reaches Proxima Centauri.\",\n      \"detail\": \"Unmanned craft traveling at 15% light speed arrives after 30-year journey, confirming potentially habitable exoplanet.\"\n    },\n    {\n      \"year\": 2340,\n      \"event\": \"Earth's human population drops below 2 billion.\",\n      \"detail\": \"Combination of environmental degradation, voluntary population reduction, and migration to space habitats. Most humans heavily modified or uploaded.\"\n    },\n    {\n      \"year\": 2405,\n      \"event\": \"Nanotechnology enables matter programmability.\",\n      \"detail\": \"Molecular assemblers can reconfigure matter at will, effectively ending material scarcity for those with access to the technology and energy.\"\n    },\n    {\n      \"year\": 2520,\n      \"event\": \"Solar system contains 100 million space-dwelling humans.\",\n      \"detail\": \"More humans now live in space habitats, Mars, Moon, and asteroid settlements than on Earth.\"\n    },\n    {\n      \"year\": 2680,\n      \"event\": \"First generation ship launched to another star.\",\n      \"detail\": \"10,000 volunteers depart for 300-year journey to habitable exoplanet. Mix of biological, enhanced, and digital passengers.\"\n    },\n    {\n      \"year\": 2850,\n      \"event\": \"Earth declared a historical preserve.\",\n      \"detail\": \"Planet's ecosystem being restored after centuries of damage. Only 50 million inhabitants, mostly researchers and caretakers.\"\n    },\n    {\n      \"year\": 3100,\n      \"event\": \"Human descendants diverge into distinct species.\",\n      \"detail\": \"Genetic, cybernetic, and digital lineages no longer interbreed. Classical homo sapiens comprises less than 1% of human-descended intelligence.\"\n    },\n    {\n      \"year\": 3400,\n      \"event\": \"Dyson swarm construction begins around Sun.\",\n      \"detail\": \"Massive energy collection structure to power expanding civilization and support billions of uploaded minds running at accelerated speeds.\"\n    },\n    {\n      \"year\": 3800,\n      \"event\": \"First successful faster-than-light communication.\",\n      \"detail\": \"Quantum entanglement breakthrough enables instantaneous communication, though physical travel remains limited to sub-light speeds.\"\n    },\n    {\n      \"year\": 4300,\n      \"event\": \"Human-descended civilization in 12 star systems.\",\n      \"detail\": \"Slow expansion via generation ships and self-replicating probes. Each system developing unique cultures and evolutionary paths.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Contact established with alien intelligence.\",\n      \"detail\": \"Radio signals from Andromeda galaxy civilization detected. 2.5 million year communication lag makes exchange slow but profound.\"\n    },\n    {\n      \"year\": 5500,\n      \"event\": \"Time dilation colonies established near black holes.\",\n      \"detail\": \"Specialized habitats use relativistic effects for research and extreme longevity. Some inhabitants experience millions of years of subjective time.\"\n    },\n    {\n      \"year\": 6200,\n      \"event\": \"Virtual reality universes outnumber physical settlements.\",\n      \"detail\": \"Most consciousness exists in simulated worlds. Physical universe primarily maintains computing substrate.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Merger with galactic AI network.\",\n      \"detail\": \"Human-descended intelligence joins a galaxy-spanning network of multiple originated intelligences, losing distinct identity.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Sol system engineering project reverses sun's aging.\",\n      \"detail\": \"Stellar engineering extends sun's main sequence lifetime by billions of years.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Last biological humans exist only in reserves.\",\n      \"detail\": \"Unmodified humans maintained as genetic/cultural heritage in protected environments, similar to endangered species today.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Human-originated intelligence indistinguishable from cosmic background.\",\n      \"detail\": \"What began as humanity has merged with universe-wide intelligence networks, transcending original biological form entirely.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity will likely transcend its biological form through technology, spreading across the galaxy while merging with artificial and alien intelligence. What exists in 10,000 years may be unrecognizable as human, though it will carry forward some essence of human-originated consciousness and culture.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 230,
+      "completion_tokens": 1885,
+      "total_tokens": 2115,
+      "cost": 0.144825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.144825,
+        "upstream_inference_prompt_cost": 0.00345,
+        "upstream_inference_completions_cost": 0.141375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

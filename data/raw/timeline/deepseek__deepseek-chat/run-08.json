@@ -1,0 +1,68 @@
+{
+  "model": "deepseek/deepseek-chat",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 8,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:57:42+00:00",
+  "seconds": 27.8,
+  "request": {
+    "model": "deepseek/deepseek-chat",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499062-CuLhMPYC5hLsGahVKg2d",
+    "object": "chat.completion",
+    "created": 1794499062,
+    "model": "deepseek/deepseek-chat",
+    "provider": "StreamLake",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First human landing on Mars\",\n      \"detail\": \"NASA and SpaceX collaborate to land humans on Mars, marking the beginning of interplanetary colonization.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Artificial Intelligence surpasses human intelligence\",\n      \"detail\": \"AI achieves singularity, leading to unprecedented advancements in technology and society.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population peaks at 9.7 billion\",\n      \"detail\": \"Population growth stabilizes due to increased education and access to family planning in developing countries.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First permanent Mars colony established\",\n      \"detail\": \"A self-sustaining colony is established on Mars, with inhabitants living there permanently.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Major breakthrough in fusion energy\",\n      \"detail\": \"Fusion energy becomes commercially viable, providing nearly limitless clean energy.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"First human-like androids\",\n      \"detail\": \"Androids indistinguishable from humans are created, raising ethical and societal questions.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Climate change causes significant global displacement\",\n      \"detail\": \"Rising sea levels and extreme weather events force millions to relocate, creating climate refugees.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First interstellar probe launched\",\n      \"detail\": \"Humanity sends a probe to another star system, using advanced propulsion technology.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Human lifespan extended to 150 years\",\n      \"detail\": \"Medical advancements allow humans to live significantly longer, healthy lives.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First human settlement outside the solar system\",\n      \"detail\": \"A generation ship reaches a nearby exoplanet, establishing the first human settlement beyond our solar system.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Humanity splits into multiple species\",\n      \"detail\": \"Genetic engineering and space colonization lead to the emergence of distinct human species.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"First contact with extraterrestrial intelligence\",\n      \"detail\": \"Humanity makes contact with an alien civilization, changing our understanding of the universe.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Humanity becomes a Type II civilization\",\n      \"detail\": \"Humans harness the energy of their star, achieving Kardashev Scale Type II status.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First artificial black hole created\",\n      \"detail\": \"Scientists create a microscopic black hole, opening new possibilities for energy and research.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Human consciousness can be uploaded\",\n      \"detail\": \"Technology allows human minds to be transferred to digital substrates, enabling virtual immortality.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Humanity begins to merge with AI\",\n      \"detail\": \"The line between human and machine blurs as neural interfaces and AI integration become commonplace.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"First Dyson sphere construction begins\",\n      \"detail\": \"Humanity starts building a Dyson sphere to harness the full energy output of the sun.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity becomes a Type III civilization\",\n      \"detail\": \"Humans harness the energy of the entire galaxy, achieving Kardashev Scale Type III status.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"First multiverse exploration\",\n      \"detail\": \"Scientists develop technology to explore parallel universes, confirming the multiverse theory.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity transcends physical form\",\n      \"detail\": \"Humans evolve beyond biological bodies, existing as pure energy or information.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity's fate uncertain\",\n      \"detail\": \"The future of humanity is unclear, with possibilities ranging from utopia to extinction.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity is likely to achieve incredible technological and societal advancements, potentially colonizing other planets and merging with AI. However, challenges like climate change and ethical dilemmas pose significant risks. The long-term survival of humanity remains uncertain, with possibilities ranging from transcendence to extinction.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 1035,
+      "total_tokens": 1244,
+      "cost": 0.0011185011,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0011185011,
+        "upstream_inference_prompt_cost": 5.37966e-05,
+        "upstream_inference_completions_cost": 0.0010647045
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

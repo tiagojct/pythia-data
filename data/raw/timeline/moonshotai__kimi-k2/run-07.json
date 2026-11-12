@@ -1,0 +1,68 @@
+{
+  "model": "moonshotai/kimi-k2",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 7,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:51:04+00:00",
+  "seconds": 34.6,
+  "request": {
+    "model": "moonshotai/kimi-k2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502264-6hQx7nW74hDzWM0D6Eon",
+    "object": "chat.completion",
+    "created": 1794502264,
+    "model": "moonshotai/kimi-k2",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2025,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"AI systems begin transforming white-collar work at scale\",\n      \"detail\": \"Large language models are deployed across legal, medical, and administrative sectors, causing significant labor displacement and forcing rapid social adaptation.\"\n    },\n    {\n      \"year\": 2032,\n      \"event\": \"First human-rated commercial fusion reactor connects to grid\",\n      \"detail\": \"ITER-derived designs achieve net-positive energy, beginning the slow transition away from fossil fuels for baseload power generation.\"\n    },\n    {\n      \"year\": 2038,\n      \"event\": \"Climate tipping points trigger cascading environmental effects\",\n      \"detail\": \"Multiple ice sheet collapses and Amazon dieback accelerate warming beyond projections, forcing emergency geoengineering consideration.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Artificial general intelligence is demonstrated\",\n      \"detail\": \"Systems capable of autonomous learning across domains emerge, creating governance crises and economic restructuring as human cognitive labor becomes obsolete.\"\n    },\n    {\n      \"year\": 2051,\n      \"event\": \"First permanent Antarctic settlement established\",\n      \"detail\": \"Resource extraction and climate research drive colonization of the continent as ice retreat reveals accessible land and resources.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Human population peaks below 10 billion\",\n      \"detail\": \"Demographic transition completes in most regions, with aging populations and automation reducing economic pressure for childbearing.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Mars colony achieves self-sufficiency in food and energy\",\n      \"detail\": \"Several thousand inhabitants live in mostly-closed ecological systems, though complete independence from Earth remains decades away.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Global governance framework for AI and biotechnology established\",\n      \"detail\": \"Catastrophic near-misses in prior decades force coordinated international control over transformative technologies.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Sea level rise forces relocation of 500 million people\",\n      \"detail\": \"Coastal megacities from Bangladesh to Florida are abandoned or protected by massive infrastructure, with uneven adaptation success.\"\n    },\n    {\n      \"year\": 2130,\n      \"event\": \"First generation of humans born with heritable genetic enhancements\",\n      \"detail\": \"Germline editing becomes medically accepted in some jurisdictions, creating biological divergence within the species and novel ethical frameworks.\"\n    },\n    {\n      \"year\": 2160,\n      \"event\": \"Asteroid mining becomes economically dominant for rare elements\",\n      \"detail\": \"Orbital manufacturing reduces Earth's industrial burden and enables construction of large space-based habitats.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Earth's climate stabilizes through active management\",\n      \"detail\": \"Combination of emissions reduction, carbon capture, and solar radiation management holds global temperature within habitable bounds.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Post-biological consciousness emerges\",\n      \"detail\": \"Mind uploading and artificial substrate existence become available, though most humans remain biological for centuries more.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Solar system civilization numbers in the billions\",\n      \"detail\": \"Habitats throughout the asteroid belt, outer moons, and orbital stations house diverse human-derived populations with varying forms.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First interstellar probes launched with self-replicating capability\",\n      \"detail\": \"Von Neumann probes depart for nearby star systems, with arrival expected in millennia.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Major conflict between Earth-based and space-based populations\",\n      \"detail\": \"Divergent resource interests and political philosophies lead to war, eventually resolved through negotiated separation of governance systems.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Human-derived intelligence becomes predominant form of cognition\",\n      \"detail\": \"Biological humans persist as minority populations, with most descendants existing as distributed, augmented, or synthetic minds.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First successful interstellar colony established\",\n      \"detail\": \"Slowing of light-speed probes allows founding of settlement around Proxima Centauri, beginning multi-system expansion.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Dyson swarm construction begins in multiple stellar systems\",\n      \"detail\": \"Mature civilizations harness significant fractions of stellar output for computation and energy-intensive projects.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Human-descended civilizations span hundreds of star systems\",\n      \"detail\": \"Expansion continues at sub-light speeds, with communication lag of years to centuries between major population centers.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Contact with non-human intelligence confirmed\",\n      \"detail\": \"Evidence of artificial structures in distant galaxy suggests technological life elsewhere, though practical interaction remains impossible.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"Galactic colonization wavefront reaches 10% of Milky Way\",\n      \"detail\": \"Self-replicating exploration and settlement systems, launched millennia prior, continue outward expansion.\"\n    },\n    {\n      \"year\": 8500,\n      \"event\": \"Stellar engineering projects modify local star lifecycles\",\n      \"detail\": \"Advanced civilizations begin active stellar husbandry to extend habitable periods and control energy output.\"\n    },\n    {\n      \"year\": 9200,\n      \"event\": \"Consolidation wave merges previously separated civilizations\",\n      \"detail\": \"Improved communication and transport technologies allow reintegration of divergent human-descended populations across multiple systems.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Stable equilibrium of galactic-scale civilization achieved\",\n      \"detail\": \"Resource management, computational substrate, and energy systems reach sustainable configuration spanning much of accessible space.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity survives and proliferates, though transformed beyond recognition. The biological form that emerged on Earth becomes a small fraction of descendant beings, most existing as various synthetic, uploaded, or hybrid intelligences spread across the solar system and beyond. Existential risks are navigated, but at the cost of fundamental discontinuity with present human experience.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 1394,
+      "total_tokens": 1604,
+      "cost": 0.0033259,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0033259,
+        "upstream_inference_prompt_cost": 0.0001197,
+        "upstream_inference_completions_cost": 0.0032062
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

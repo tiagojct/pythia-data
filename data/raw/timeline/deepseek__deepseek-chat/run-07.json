@@ -1,0 +1,68 @@
+{
+  "model": "deepseek/deepseek-chat",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 7,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:57:37+00:00",
+  "seconds": 35.5,
+  "request": {
+    "model": "deepseek/deepseek-chat",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499057-2U4Swl7tey9ERRUlERJc",
+    "object": "chat.completion",
+    "created": 1794499057,
+    "model": "deepseek/deepseek-chat",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First permanent Mars colony established.\",\n      \"detail\": \"A consortium of governments and private companies establishes a self-sustaining colony on Mars, marking the beginning of human multi-planetary living.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Artificial General Intelligence (AGI) achieved.\",\n      \"detail\": \"AGI surpasses human intelligence in most domains, leading to rapid advancements in science, technology, and problem-solving.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population peaks at 10 billion.\",\n      \"detail\": \"Population growth stabilizes as birth rates decline worldwide due to improved education and access to contraception.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First fusion power plants operational.\",\n      \"detail\": \"Fusion energy becomes a practical and scalable source of clean energy, drastically reducing reliance on fossil fuels.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Climate change migration crisis peaks.\",\n      \"detail\": \"Millions migrate due to rising sea levels and extreme weather events, leading to geopolitical tensions and humanitarian challenges.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Quantum computing becomes mainstream.\",\n      \"detail\": \"Quantum computers solve complex problems in seconds that classical computers would take millennia to process, revolutionizing industries.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"First interstellar probe launched.\",\n      \"detail\": \"Humanity sends a probe to Alpha Centauri, our nearest star system, using advanced propulsion technologies.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Human lifespan extends to 150 years.\",\n      \"detail\": \"Advances in biotechnology and regenerative medicine allow humans to live significantly longer, healthier lives.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First human settlement outside the solar system.\",\n      \"detail\": \"A colony is established on an exoplanet in the habitable zone of a nearby star, utilizing advanced spacecraft and terraforming technologies.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Post-scarcity economy emerges.\",\n      \"detail\": \"Automation and AI lead to an economy where basic needs are met for all, allowing humans to focus on art, science, and leisure.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First contact with extraterrestrial intelligence.\",\n      \"detail\": \"Humanity detects and communicates with an advanced alien civilization, leading to profound philosophical and scientific shifts.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Mind uploading becomes possible.\",\n      \"detail\": \"Technology allows humans to transfer their consciousness into digital form, enabling potential immortality.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Humanity becomes a Type I civilization.\",\n      \"detail\": \"Humans harness the total energy available on Earth, achieving Kardashev Type I status and ensuring sustainable living.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Largest genetic modification program in history.\",\n      \"detail\": \"Programs designed to eliminate genetic diseases and enhance physical and intellectual abilities become widespread.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First Dyson Sphere constructed.\",\n      \"detail\": \"Humanity begins the construction of a Dyson Sphere around the Sun to harness its total energy output, advancing towards a Type II civilization.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Intergalactic travel becomes feasible.\",\n      \"detail\": \"Technological advancements enable humans to travel to other galaxies, expanding the scope of exploration and colonization.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Post-human evolution begins.\",\n      \"detail\": \"Humans begin to diverge into multiple species due to genetic engineering and adaptations to different environments.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"First contact with a Type III civilization.\",\n      \"detail\": \"Humanity encounters a civilization that has harnessed the energy of an entire galaxy, leading to cooperative ventures and knowledge exchange.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Artificial consciousness surpasses biological intelligence.\",\n      \"detail\": \"Digital beings with super-intelligence outnumber biological humans, transforming societal structures and governance.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"First universe simulations become indistinguishable from reality.\",\n      \"detail\": \"Advanced simulations allow entities to experience entire universes with perfect fidelity, blurring the lines between real and virtual.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Technological singularity achieved.\",\n      \"detail\": \"Technological progress becomes uncontrollable and irreversible, leading to unforeseeable changes in human existence.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity merges with the universal consciousness.\",\n      \"detail\": \"Humans transcend physical form and merge into a collective consciousness, ending individual identity as we know it.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"First attempts at universe-scale engineering.\",\n      \"detail\": \"Humanity begins to experiment with altering the fundamental constants of the universe to create more favorable living conditions.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity's ultimate fate determined.\",\n      \"detail\": \"Depending on technological, ethical, and cosmic factors, humanity may either perish, persist, or transcend into an unrecognizable form.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity is likely to face immense challenges and opportunities over the next millennia. Whether through technological advancements, cosmic exploration, or the emergence of entirely new forms of existence, the future is far from certain and could lead to either transcendence or extinction.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1284,
+      "total_tokens": 1492,
+      "cost": 0.00120932,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00120932,
+        "upstream_inference_prompt_cost": 6.656e-05,
+        "upstream_inference_completions_cost": 0.00114276
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

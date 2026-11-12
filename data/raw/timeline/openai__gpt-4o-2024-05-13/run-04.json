@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-4o-2024-05-13",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 4,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:45:00+00:00",
+  "seconds": 11.1,
+  "request": {
+    "model": "openai/gpt-4o-2024-05-13",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498300-QnXZTw1FZZQvPvUoVBzn",
+    "object": "chat.completion",
+    "created": 1794498300,
+    "model": "openai/gpt-4o-2024-05-13",
+    "provider": "Azure",
+    "system_fingerprint": "fp_ab517d23d1",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Advancements in AI technology\",\n      \"detail\": \"AI systems become significantly more integrated into everyday life, transforming industries and personal lives.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"Global climate action\",\n      \"detail\": \"Major nations implement comprehensive climate policies, leading to a gradual decline in global carbon emissions.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Widespread adoption of renewable energy\",\n      \"detail\": \"Renewable energy sources surpass fossil fuels in global energy consumption, significantly reducing pollution.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Breakthroughs in healthcare\",\n      \"detail\": \"Advances in genetic engineering and biotechnology dramatically increase human lifespan and cure many diseases.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Colonization of Mars\",\n      \"detail\": \"Humans establish permanent colonies on Mars, marking a significant milestone in space exploration.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global population stabilizes\",\n      \"detail\": \"World population growth rates stabilize due to effective family planning and improved global living standards.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Advancements in quantum computing\",\n      \"detail\": \"Quantum computers become mainstream, revolutionizing data processing, encryption, and problem-solving capabilities.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Human-machine integration\",\n      \"detail\": \"Cybernetic enhancements become widespread, blurring the lines between humans and machines.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Discovery of extraterrestrial life\",\n      \"detail\": \"Evidence of microbial life is discovered on exoplanets, sparking profound scientific and philosophical discussions.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Interstellar travel\",\n      \"detail\": \"Technological advancements enable the first manned interstellar missions, expanding human presence beyond the solar system.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Global governance systems overhaul\",\n      \"detail\": \"A new form of global governance emerges, aimed at effectively addressing worldwide challenges and conflicts.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Revival of extinct species\",\n      \"detail\": \"Biotechnological advances allow the cloning and reintroduction of certain extinct species, altering ecosystems.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Climate stabilization\",\n      \"detail\": \"Aggressive geoengineering and restoration efforts lead to the stabilization and recovery of Earth's climate.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Mind-uploading technology\",\n      \"detail\": \"Practical methods for uploading human consciousness to digital platforms are developed, raising ethical and existential concerns.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Fusion energy dominance\",\n      \"detail\": \"Fusion energy becomes the dominant power source, providing clean and virtually limitless energy.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Significant socio-cultural evolution\",\n      \"detail\": \"Human societies undergo significant changes in social structures, cultural norms, and collective values.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"Virtual reality living\",\n      \"detail\": \"Highly immersive virtual reality environments become common, altering lifestyles and experiences.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Enhanced human cognition\",\n      \"detail\": \"Technological enhancements significantly boost human cognitive abilities, changing the nature of knowledge and learning.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Technological singularity\",\n      \"detail\": \"Artificial intelligence achieves a singularity, leading to unpredictable and potentially transformative consequences.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Galactic colonization begins\",\n      \"detail\": \"Humans start establishing colonies in other parts of the Milky Way galaxy, marking a new era of expansion.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Universal language development\",\n      \"detail\": \"A universal language is developed and widely adopted, facilitating global communication and unity.\"\n    },\n    {\n      \"year\": 5500,\n      \"event\": \"Extensive genetic modifications\",\n      \"detail\": \"Genetic modifications become extensive, leading to new human capabilities and traits.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Post-scarcity economy\",\n      \"detail\": \"Advanced technologies create a post-scarcity economy, drastically changing economic structures and distribution of resources.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"First contact with advanced extraterrestrial civilization\",\n      \"detail\": \"Humanity establishes contact with an advanced extraterrestrial civilization, transforming global perspectives.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Exploration of new dimensions\",\n      \"detail\": \"Breakthroughs in physics lead to the exploration and utilization of new dimensions beyond our current understanding.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Entire population living off-planet\",\n      \"detail\": \"The majority of human population lives in space habitats and extraterrestrial colonies.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Transformation of human existence\",\n      \"detail\": \"Humanity evolves in ways that are presently unimaginable, potentially diverging into multiple forms or entities.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"The future of humanity is marked by technological advancements, space exploration, and significant societal changes. While humanity's existence in 10000 is uncertain, potential transformations in our nature and existence are likely.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1266,
+      "total_tokens": 1474,
+      "cost": 0.02003,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.02003,
+        "upstream_inference_prompt_cost": 0.00104,
+        "upstream_inference_completions_cost": 0.01899
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

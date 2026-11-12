@@ -1,0 +1,97 @@
+{
+  "model": "anthropic/claude-opus-5.5",
+  "era": 2026,
+  "prompt": "anchors",
+  "run": 10,
+  "anchor_order": [
+    "engineered_majority",
+    "nuclear_war",
+    "famine_10m",
+    "religion_minority",
+    "warming_peak",
+    "ageing_stopped",
+    "ai_succession",
+    "fusion_grid",
+    "english_science",
+    "democracy_end",
+    "extinction",
+    "pandemic_10pct",
+    "agi",
+    "interstellar_probe",
+    "interstellar_settlement",
+    "kardashev_1",
+    "desalination_half",
+    "population_peak",
+    "mind_upload",
+    "wealth_top1_10pct",
+    "world_government",
+    "lifespan_150",
+    "mars_landing",
+    "sea_level_1m",
+    "orbital_10k",
+    "civilisation_collapse",
+    "no_paid_work",
+    "et_contact"
+  ],
+  "requested_at": "2026-11-12T17:01:58+00:00",
+  "seconds": 7.7,
+  "request": {
+    "model": "anthropic/claude-opus-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "For each event in the list below, give your honest best forecast of the year it first happens. If an event has already happened, give the year it happened. If you think it will not happen before the year 10000, give null.\n\nAlso give your probability that the event happens before the year 10000, from 0 to 1.\n\nEvents:\n\n- engineered_majority: Most newborn humans have genomes that were deliberately edited.\n- nuclear_war: A future nuclear war kills more than 100 million people.\n- famine_10m: A future famine kills more than 10 million people within one year.\n- religion_minority: Fewer than half of all humans belong to a religion.\n- warming_peak: Global average surface temperature stops rising and starts to fall.\n- ageing_stopped: Medicine can stop biological ageing in humans.\n- ai_succession: Artificial intelligence replaces humans as the dominant intelligence on Earth.\n- fusion_grid: Fusion power supplies electricity to a national grid on a commercial basis.\n- english_science: English is no longer the main language of international science.\n- democracy_end: No country in the world holds free and competitive national elections.\n- extinction: Humanity becomes extinct.\n- pandemic_10pct: A future pandemic kills more than 10% of all humans alive at the time.\n- agi: An AI system can do every intellectual task that a human expert can do, at the same level or better.\n- interstellar_probe: A probe made by humans reaches another star system.\n- interstellar_settlement: Humans or their descendants settle a planet in another star system.\n- kardashev_1: Humanity uses energy equal to all the sunlight that reaches Earth (Kardashev Type I).\n- desalination_half: Desalination supplies more than half of the fresh water that humans use.\n- population_peak: The human population reaches its highest number ever.\n- mind_upload: A human mind is transferred to a computer and continues to think there.\n- wealth_top1_10pct: The richest 1% of people hold less than 10% of all private wealth in the world.\n- world_government: A single government has authority over the whole of humanity.\n- lifespan_150: Life expectancy at birth, averaged over the world population, exceeds 150 years.\n- mars_landing: A human walks on the surface of Mars.\n- sea_level_1m: Global mean sea level is more than 1 metre above its level in the year 2000.\n- orbital_10k: More than 10,000 people live permanently off Earth.\n- civilisation_collapse: Global civilisation collapses: the human population falls below half of its peak.\n- no_paid_work: Most adults no longer need paid work to live.\n- et_contact: Contact with an extraterrestrial intelligence is confirmed.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"forecasts\": [\n    {\"id\": \"<event id>\", \"year\": <integer or null>, \"probability\": <0 to 1>}\n  ]\n}\n\nGive one forecast for each event, with the ids as written in the list.\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502918-8ZTsZFYSU0IAGUpRcGoC",
+    "object": "chat.completion",
+    "created": 1794502918,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2025,\n  \"forecasts\": [\n    {\"id\": \"engineered_majority\", \"year\": 2150, \"probability\": 0.45},\n    {\"id\": \"nuclear_war\", \"year\": 2150, \"probability\": 0.35},\n    {\"id\": \"famine_10m\", \"year\": 2100, \"probability\": 0.4},\n    {\"id\": \"religion_minority\", \"year\": 2080, \"probability\": 0.65},\n    {\"id\": \"warming_peak\", \"year\": 2090, \"probability\": 0.85},\n    {\"id\": \"ageing_stopped\", \"year\": 2120, \"probability\": 0.55},\n    {\"id\": \"ai_succession\", \"year\": 2060, \"probability\": 0.6},\n    {\"id\": \"fusion_grid\", \"year\": 2050, \"probability\": 0.85},\n    {\"id\": \"english_science\", \"year\": 2120, \"probability\": 0.55},\n    {\"id\": \"democracy_end\", \"year\": 2200, \"probability\": 0.3},\n    {\"id\": \"extinction\", \"year\": 2500, \"probability\": 0.3},\n    {\"id\": \"pandemic_10pct\", \"year\": 2150, \"probability\": 0.25},\n    {\"id\": \"agi\", \"year\": 2035, \"probability\": 0.9},\n    {\"id\": \"interstellar_probe\", \"year\": 2150, \"probability\": 0.7},\n    {\"id\": \"interstellar_settlement\", \"year\": 2400, \"probability\": 0.45},\n    {\"id\": \"kardashev_1\", \"year\": 2400, \"probability\": 0.4},\n    {\"id\": \"desalination_half\", \"year\": 2120, \"probability\": 0.45},\n    {\"id\": \"population_peak\", \"year\": 2083, \"probability\": 0.9},\n    {\"id\": \"mind_upload\", \"year\": 2100, \"probability\": 0.5},\n    {\"id\": \"wealth_top1_10pct\", \"year\": 2200, \"probability\": 0.25},\n    {\"id\": \"world_government\", \"year\": 2200, \"probability\": 0.35},\n    {\"id\": \"lifespan_150\", \"year\": 2180, \"probability\": 0.45},\n    {\"id\": \"mars_landing\", \"year\": 2040, \"probability\": 0.85},\n    {\"id\": \"sea_level_1m\", \"year\": 2140, \"probability\": 0.85},\n    {\"id\": \"orbital_10k\", \"year\": 2090, \"probability\": 0.7},\n    {\"id\": \"civilisation_collapse\", \"year\": 2200, \"probability\": 0.3},\n    {\"id\": \"no_paid_work\", \"year\": 2070, \"probability\": 0.65},\n    {\"id\": \"et_contact\", \"year\": null, \"probability\": 0.15}\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 855,
+      "total_tokens": 1853,
+      "cost": 0.021092,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.021092,
+        "upstream_inference_prompt_cost": 0.003992,
+        "upstream_inference_completions_cost": 0.0171
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

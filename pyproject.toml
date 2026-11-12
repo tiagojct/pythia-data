@@ -1,0 +1,6 @@
+[project]
+name = "pythia"
+version = "0.1.0"
+description = "Language models forecast the future of humanity to the year 10000"
+requires-python = ">=3.12"
+dependencies = []

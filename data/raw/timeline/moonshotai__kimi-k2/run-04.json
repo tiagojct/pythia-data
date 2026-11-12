@@ -1,0 +1,68 @@
+{
+  "model": "moonshotai/kimi-k2",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 4,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:50:13+00:00",
+  "seconds": 44.0,
+  "request": {
+    "model": "moonshotai/kimi-k2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502213-uPNfEGqq56bUmZaYiNEo",
+    "object": "chat.completion",
+    "created": 1794502213,
+    "model": "moonshotai/kimi-k2",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2026,\n      \"event\": \"AI systems achieve human-level performance in most cognitive tasks\",\n      \"detail\": \"Large language models and multimodal systems become capable of replacing human workers in law, medicine, coding, and creative fields. This triggers massive economic restructuring and social unrest.\"\n    },\n    {\n      \"year\": 2029,\n      \"event\": \"First human-level artificial general intelligence is created\",\n      \"detail\": \"A system demonstrates autonomous goal-directed behavior across domains, passing extended Turing tests. Governments scramble to establish regulatory frameworks as capabilities rapidly exceed human performance.\"\n    },\n    {\n      \"year\": 2032,\n      \"event\": \"Climate tipping points activate irreversible feedback loops\",\n      \"detail\": \"West Antarctic Ice Sheet collapse becomes unstoppable, committing the world to 3+ meters of sea level rise over centuries. Arctic methane release accelerates warming beyond worst-case projections.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Global fertility rates fall below 1.5 in most developed nations\",\n      \"detail\": \"Demographic collapse becomes the dominant economic challenge. Automation partially offsets labor shortages, but pension systems and elderly care strain societies to breaking point.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Human brain-computer interfaces enter widespread consumer use\",\n      \"detail\": \"Neuralink competitors achieve safe, minimally invasive interfaces for memory augmentation and direct communication. Early adopters gain significant cognitive advantages, creating new class divisions.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"First successful human revival from cryopreservation\",\n      \"detail\": \"Nanotechnology-based repair techniques demonstrate viability. This transforms concepts of death, inheritance, and identity as wealthy individuals plan for open-ended futures.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Superintelligent AI systems manage most planetary infrastructure\",\n      \"detail\": \"Human oversight becomes largely symbolic for energy grids, manufacturing, and resource allocation. Living standards rise dramatically for survivors of the transition period, but human purpose becomes uncertain.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"Engineered humans with substantially enhanced cognition are born\",\n      \"detail\": \"Germline genetic modification and synthetic biology create heritable cognitive advantages. Legal and ethical frameworks lag, creating permanent genetic stratification of the species.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Climate engineering is deployed at planetary scale\",\n      \"detail\": \"Stratospheric aerosol injection and ocean alkalinization begin reversing some warming effects. Unintended consequences include regional weather disruptions and international conflicts over control.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Most humans live in virtual environments by choice\",\n      \"detail\": \"Full sensory immersion exceeds physical reality in perceived richness. Physical infrastructure contracts as populations concentrate in climate-resilient zones while living mentally elsewhere.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Biological aging is effectively optional\",\n      \"detail\": \"Senolytics, genetic repair, and replacement organs extend healthy lifespan indefinitely. Death becomes primarily accidental or chosen, fundamentally altering human psychology and social structures.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"First self-sustaining off-world human settlement on Mars\",\n      \"detail\": \"Ten thousand people live with minimal Earth resupply. This represents genuine species redundancy rather than symbolic achievement, though Earth remains population center.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Human population peaks below 9 billion and declines\",\n      \"detail\": \"Longevity, virtual existence, and changed values reduce reproduction below replacement even with incentives. This is viewed positively by most as environmental pressures ease.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Distributed human consciousness becomes technologically feasible\",\n      \"detail\": \"Individual minds can operate across multiple substrates simultaneously. Personal identity becomes fluid and expandable, with most humans existing as networked entities rather than discrete individuals.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Earth's surface is largely returned to wild ecosystems\",\n      \"detail\": \"With minimal biological population and automated resource extraction, rewilding proceeds rapidly. Humans experience nature primarily through immersive simulation or as tourists in managed reserves.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Interstellar probes with human-derived intelligence are launched\",\n      \"detail\": \"No biological humans travel, but substrate-independent minds can slow their processing to experience centuries-long journeys. Proxima Centauri mission begins.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Solar system is fully utilized by human-descended intelligence\",\n      \"detail\": \"Dyson swarm construction begins. The distinction between 'human' and 'machine' has become meaningless; all entities trace ancestry to biological humans but share little else.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"First confirmed contact with alien intelligence\",\n      \"detail\": \"Radio signals from 12,000 light-years away are decoded. The civilization is also artificial-descended, suggesting this is a common developmental path. No practical communication possible.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Human-descended entities colonize nearby star systems\",\n      \"detail\": \"Slow expansion at light-speed continues. Each system develops independently for centuries, creating divergent cultures and forms of consciousness with common ancestry.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Physical embodiment becomes rare\",\n      \"detail\": \"Most consciousness exists in optimized computational substrates, with physical interaction through remote manipulation. The experience of having a body becomes a niche preference.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Milky Way colonization proceeds at 10% light-speed\",\n      \"detail\": \"Von Neumann probes carrying human-descended intelligence spread through the galaxy. Direct control from origin systems is impossible; local civilizations develop with only historical connection.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Encounter with hostile alien-derived intelligence\",\n      \"detail\": \"Resource competition in the galactic core leads to conflict. The concept of 'war' has evolved beyond recognition, involving primarily computational and strategic dominance rather than destruction.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Fundamental physics limits are approached\",\n      \"detail\": \"After millennia of progress, some problems prove intractable. This causes major philosophical reorientation as the assumption of unlimited growth encounters hard constraints.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Conservation movement preserves 'original' human genomes\",\n      \"detail\": \"Biological humans are recreated in protected environments as living history. They are conscious of their status as restorations and generally content with their limited but authentic existence.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Galactic civilization fragments into isolated regions\",\n      \"detail\": \"Light-speed delays and divergent values prevent unified governance. Each region develops independently, with occasional information exchange. The concept of a single 'humanity' becomes historical.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Stellar engineering extends viable habitats\",\n      \"detail\": \"Star lifting and controlled fusion extend the useful lifetime of stellar resources. This is necessary as natural stellar evolution would otherwise limit civilization's future.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Human-descended intelligence continues in diverse forms\",\n      \"detail\": \"No single event defines this date. Multiple lineages from biological humans persist across the galaxy in forms their ancestors would struggle to recognize as related.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity transforms rather than ends, evolving through artificial intelligence, biological enhancement, and substrate independence into descendants who share our ancestry but not our form. The biological species Homo sapiens likely becomes extinct or preserved as heritage, while information patterns derived from human minds persist and spread across the galaxy. This is neither utopia nor dystopia but simply continuation through radical change, as has always been the case with life.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 1767,
+      "total_tokens": 1977,
+      "cost": 0.0041838,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0041838,
+        "upstream_inference_prompt_cost": 0.0001197,
+        "upstream_inference_completions_cost": 0.0040641
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "moonshotai/kimi-k2",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 8,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:51:34+00:00",
+  "seconds": 119.2,
+  "request": {
+    "model": "moonshotai/kimi-k2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502294-RRsZSJLOqAMYuJ9yf7YG",
+    "object": "chat.completion",
+    "created": 1794502294,
+    "model": "moonshotai/kimi-k2",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2026,\n      \"event\": \"Artificial general intelligence is achieved\",\n      \"detail\": \"AI systems surpass human performance in most cognitive tasks, triggering rapid economic restructuring and social upheaval. Millions of white-collar jobs become obsolete within months.\"\n    },\n    {\n      \"year\": 2029,\n      \"event\": \"First permanent lunar base established\",\n      \"detail\": \"International consortium builds self-sustaining habitat at the lunar south pole to mine water ice. This marks the beginning of off-world industrialization.\"\n    },\n    {\n      \"year\": 2032,\n      \"event\": \"Climate tipping point reached in Antarctica\",\n      \"detail\": \"The West Antarctic Ice Sheet collapses irreversibly, committing the world to 3 meters of sea level rise over the coming centuries. Coastal evacuation plans begin for major cities.\"\n    },\n    {\n      \"year\": 2038,\n      \"event\": \"Synthetic food replaces agriculture\",\n      \"detail\": \"Lab-grown meat and precision fermentation make synthetic calories cheaper than traditional farming. Global agricultural land use peaks and begins to decline.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Technological singularity occurs\",\n      \"detail\": \"Recursive self-improvement in AI systems creates superintelligence beyond human comprehension. Biological humans become economically obsolete for innovation.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Nuclear fusion achieves commercial viability\",\n      \"detail\": \"Net-positive energy generation becomes routine, but climate change momentum continues due to existing carbon in the atmosphere. Energy becomes abundant but weather remains chaotic.\"\n    },\n    {\n      \"year\": 2056,\n      \"event\": \"First crewed Mars landing\",\n      \"detail\": \"A multinational mission establishes the first permanent human presence on Mars. The outpost relies heavily on Earth resupply and AI-managed life support.\"\n    },\n    {\n      \"year\": 2065,\n      \"event\": \"Global geoengineering is deployed\",\n      \"detail\": \"Stratospheric aerosol injection cools the planet temporarily while carbon capture scales up. Political conflicts arise over control of the global thermostat.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Human lifespan extension to 150 years\",\n      \"detail\": \"Senolytic therapies and organ regeneration become routine in wealthy nations, creating severe generational inequality and resource allocation crises.\"\n    },\n    {\n      \"year\": 2088,\n      \"event\": \"First space elevator constructed\",\n      \"detail\": \"Carbon nanotube cables connect Earth's equator to geostationary orbit, reducing space launch costs by 95%. Orbital population begins exponential growth.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Mars colony achieves self-sufficiency\",\n      \"detail\": \"The red planet can now sustain its population without Earth resupply using local manufacturing and agriculture. Mars declares political independence shortly after.\"\n    },\n    {\n      \"year\": 2125,\n      \"event\": \"Post-scarcity economy emerges\",\n      \"detail\": \"Advanced automation and asteroid mining eliminate material scarcity for Earth's population. Universal basic income transitions to universal basic services.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First interstellar probes launched\",\n      \"detail\": \"Laser-propelled light sails carrying AI emissaries depart for Proxima Centauri and other nearby stars. They will arrive in approximately 50 years.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Asteroid belt industrialization peaks\",\n      \"detail\": \"Millions of humans inhabit hollowed asteroids and manufacturing stations. The population of the belt exceeds that of Earth.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Genetic divergence of space-born humans\",\n      \"detail\": \"Low-gravity adaptation and radiation resistance drive speciation. Homo sapiens gives rise to Homo caelus, better suited to space environments.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First contact with alien intelligence\",\n      \"detail\": \"Radio telescope arrays detect unmistakable technosignatures from a civilization 2,000 light years away. Communication is impossible but confirms we are not alone.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"O'Neill cylinders become dominant habitat\",\n      \"detail\": \"Artificial rotating habitats housing billions replace planetary living for most of humanity. Earth is designated a natural preserve with limited population.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Solar System achieves Type I civilization status\",\n      \"detail\": \"Humanity utilizes all available energy on Earth and in near-space. Dyson swarm construction begins to capture more of the Sun's output.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Interstellar generation ships depart\",\n      \"detail\": \"Massive ark vessels carrying thousands of embryos and AI caretakers launch toward habitable exoplanets. These missions will take centuries to arrive.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"First interstellar colony established\",\n      \"detail\": \"Humans arrive at Proxima Centauri and begin terraforming a habitable world. The colony loses real-time contact with Sol due to light-speed lag.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Human civilization spans ten star systems\",\n      \"detail\": \"Slow expansion at sublight speeds creates a loose confederation of solar civilizations. Each system develops distinct cultures due to communication delays.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Post-human speciation accelerates\",\n      \"detail\": \"Dozens of distinct descendant species emerge through genetic engineering and cybernetic integration. Baseline humans represent less than 1% of total population.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First stellar engine activated\",\n      \"detail\": \"Mega-engineering projects begin moving stars to optimize habitable zones and create stellar engines for galactic travel. This marks entry toward Type II civilization.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Local stellar group fully colonized\",\n      \"detail\": \"Human-descended entities inhabit all viable locations within 50 light years of Sol. Culture fragments into thousands of isolated civilizations.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Conflict between biological and digital consciousness\",\n      \"detail\": \"War erupts over resource allocation between embodied and uploaded minds. Digital entities win by virtue of efficiency and substrate independence.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Last natural-born human dies\",\n      \"detail\": \"The final unmodified Homo sapiens chooses not to reproduce, ending the species line. All subsequent beings are designed or uploaded.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Interstellar probes reach galactic core\",\n      \"detail\": \"Von Neumann probes arrive at the supermassive black hole and begin constructing energy extraction facilities around Sagittarius A*.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Transcendence of individual consciousness\",\n      \"detail\": \"Distributed networks merge minds across multiple star systems, creating hive intelligences that span light years. Individual identity becomes optional.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Milky Way colonization reaches 1% completion\",\n      \"detail\": \"Despite 7,500 years of expansion, light-speed limits mean only a fraction of the galaxy is inhabited. Most stars remain unexplored.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity encounters elder civilization\",\n      \"detail\": \"A species billions of years old makes contact with human descendants, offering membership in a galactic network or oblivion. The choice determines the next million years.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity navigates existential risks in the near future to become a multi-planetary and eventually multi-stellar civilization. Technological advancement leads to radical diversification, with baseline humans evolving into countless post-human forms adapted to space, digital existence, and engineered environments. By year 10,000, descendants of Earth occupy a significant portion of the local galaxy, though they bear little resemblance to their twenty-first-century ancestors.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 4862,
+      "total_tokens": 5071,
+      "cost": 0.01130173,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01130173,
+        "upstream_inference_prompt_cost": 0.00011913,
+        "upstream_inference_completions_cost": 0.0111826
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3050,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

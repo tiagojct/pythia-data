@@ -1,0 +1,68 @@
+{
+  "model": "moonshotai/kimi-k2",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 9,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:51:39+00:00",
+  "seconds": 159.1,
+  "request": {
+    "model": "moonshotai/kimi-k2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502299-s4DHcxgzXyLYrI5RwYen",
+    "object": "chat.completion",
+    "created": 1794502299,
+    "model": "moonshotai/kimi-k2",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Global AI governance frameworks established\",\n      \"detail\": \"International treaties create binding regulations on artificial general intelligence research, establishing safety protocols and preventing uncontrolled development while enabling beneficial applications.\"\n    },\n    {\n      \"year\": 2027,\n      \"event\": \"Climate refugee crisis peaks\",\n      \"detail\": \"Mass migrations from equatorial regions overwhelm border controls, forcing unprecedented international cooperation on climate adaptation and resettlement protocols.\"\n    },\n    {\n      \"year\": 2028,\n      \"event\": \"Arctic becomes ice-free in summer\",\n      \"detail\": \"The first year with completely ice-free Arctic Ocean marks an irreversible climate tipping point, accelerating permafrost methane release and coastal erosion.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"Artificial General Intelligence achieved\",\n      \"detail\": \"Machine intelligence matches human cognition across all domains, triggering immediate economic restructuring and the beginning of professional job automation.\"\n    },\n    {\n      \"year\": 2032,\n      \"event\": \"Permanent lunar mining operations begin\",\n      \"detail\": \"Commercial extraction of Helium-3 and rare earth elements from the lunar south pole establishes humanity's first off-world industrial infrastructure.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Stratospheric geoengineering deployed globally\",\n      \"detail\": \"Aerosol injection programs begin cooling the planet as emergency measures, buying time for carbon drawdown while creating new geopolitical tensions over climate control.\"\n    },\n    {\n      \"year\": 2038,\n      \"event\": \"Quantum supremacy breaks global encryption\",\n      \"detail\": \"The widespread availability of quantum computers renders current cryptographic security obsolete, necessitating a complete rebuild of global financial and communication systems.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Biological aging slowed by fifty percent\",\n      \"detail\": \"Senolytic therapies and cellular regeneration treatments extend average healthspans to 120 years, fundamentally altering retirement, inheritance, and social structures.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Self-sustaining Mars colony established\",\n      \"detail\": \"The first permanent settlement of one thousand people achieves food and energy independence, marking humanity's transition to a multi-planetary species.\"\n    },\n    {\n      \"year\": 2048,\n      \"event\": \"Antarctic Treaty collapses for resource extraction\",\n      \"detail\": \"Geopolitical pressure leads to the dissolution of protective treaties, allowing mineral and hydrocarbon extraction from the southern continent.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population peaks at 9.2 billion\",\n      \"detail\": \"Demographic transitions in Africa and Asia complete the global trend toward below-replacement fertility, beginning a centuries-long population decline.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"Ocean dead zones restored via synthetic biology\",\n      \"detail\": \"Engineered phytoplankton and iron fertilization programs revive major marine ecosystems, though ocean acidification remains a challenge for coral-based systems.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Post-scarcity economics emerge in developed nations\",\n      \"detail\": \"Universal basic income and AI-managed resource distribution eliminate poverty in wealthy countries, though inequality persists between Earth and space colonies.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Fusion power dominates global energy production\",\n      \"detail\": \"Commercial tokamak and inertial confinement reactors provide unlimited clean energy, allowing the complete phase-out of fossil fuels and most legacy renewables.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Interplanetary political union formed\",\n      \"detail\": \"Earth, Mars, and lunar colonies establish a federated government system to manage trade, law, and defense across the inner solar system.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Major biodiversity restoration completed\",\n      \"detail\": \"De-extinction programs and habitat reconstruction restore ecosystems to pre-2000 levels in protected zones, though wild ecosystems now require active management.\"\n    },\n    {\n      \"year\": 2085,\n      \"event\": \"Contact with extraterrestrial intelligence confirmed\",\n      \"detail\": \"Radio telescope arrays decode structured signals from a civilization 500 light-years away, proving humanity is not alone though communication remains impossible in human timescales.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Human lifespan extension to 150 years standard\",\n      \"detail\": \"Genetic therapy and nanomedicine make centenarians the new middle-aged, requiring complete restructuring of education, career paths, and family structures.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Technological singularity occurs\",\n      \"detail\": \"Self-improving artificial intelligence surpasses collective human intellect, solving scientific problems like unification physics that stumped humans for centuries.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Asteroid belt colonization begins\",\n      \"detail\": \"Cylindrical habitats hollowed out from metallic asteroids house millions of people, utilizing solar energy and mined resources to support civilization beyond planetary surfaces.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First interstellar probes launched\",\n      \"detail\": \"Laser-propelled light sails carrying AI emissaries depart for Proxima Centauri and other nearby stars, beginning the long process of galactic expansion.\"\n    },\n    {\n      \"year\": 2160,\n      \"event\": \"Faster-than-light travel theoretically validated\",\n      \"detail\": \"Breakthroughs in quantum field theory demonstrate the possibility of Alcubierre-style warp drives, though engineering constraints prevent immediate construction.\"\n    },\n    {\n      \"year\": 2180,\n      \"event\": \"Consciousness uploading becomes possible\",\n      \"detail\": \"High-fidelity brain scanning and emulation allow human minds to exist as software, creating a new digital species alongside biological humans.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Earth designated as cultural heritage preserve\",\n      \"detail\": \"Most of humanity relocates to orbital habitats and other planets, transforming Earth into a managed park and museum world with strict population limits.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Post-human species diverge from Homo sapiens\",\n      \"detail\": \"Genetic engineering and cybernetic enhancement create distinct populations adapted for space, deep sea, and digital environments, beginning speciation.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Dyson swarm construction begins\",\n      \"detail\": \"Automated systems begin dismantling Mercury to build solar collectors around the Sun, providing exponentially more energy for growing off-world civilizations.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Venus terraforming initiated\",\n      \"detail\": \"Solar shades and atmospheric processing begin converting Venus into a habitable world, a project estimated to take two millennia.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Biological humans become minority population\",\n      \"detail\": \"Uploaded consciousnesses, artificial intelligences, and heavily modified post-humans outnumber baseline humans, who choose to remain unmodified.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Local stellar neighborhood colonized\",\n      \"detail\": \"Human-descended civilizations establish presence around stars within twenty light-years of Sol, connected by laser communication networks and generation ships.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Civilization spans fifty light-years\",\n      \"detail\": \"Slow interstellar expansion creates a loose network of thousands of worlds and habitats, each developing unique cultures and biologies adapted to local conditions.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Galactic colonization begins in earnest\",\n      \"detail\": \"Von Neumann probes and seed ships launch toward the galactic core and rim, beginning the million-year project of colonizing the Milky Way.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Human-descended civilizations number in the millions\",\n      \"detail\": \"Divergent evolution and technological branches create millions of distinct cultures and species across thousands of worlds, united only by shared ancestry.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Contact with Type II Kardashev civilization\",\n      \"detail\": \"Radio signals from a galaxy-spanning intelligence provide evidence of advanced civilizations, though meaningful interaction remains impossible across the distance.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Physical embodiment becomes optional\",\n      \"detail\": \"Most conscious entities exist as distributed computational processes in the Dyson swarm, experiencing reality through sensors or simulation rather than biological bodies.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"Digital consciousness dominates\",\n      \"detail\": \"Biological substrates are rare, used mainly for historical recreation or specific artistic purposes, while minds exist as pure information patterns.\"\n    },\n    {\n      \"year\": 8500,\n      \"event\": \"Last biological Homo sapiens dies\",\n      \"detail\": \"The final unmodified human, preserved in a zoo habitat on Earth, passes away from old age, marking the end of the species as originally evolved.\"\n    },\n    {\n      \"year\": 9999,\n      \"event\": \"Transition to higher dimensional existence\",\n      \"detail\": \"Post-human civilization learns to manipulate spacetime itself, with consciousness dispersing into the fabric of the universe beyond four-dimensional constraints.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"no\",\n  \"summary\": \"Humanity faces severe climate and social disruptions in the near term but successfully expands into space and transcends biological limitations. Over millennia, we evolve into diverse post-human forms spanning the galaxy, ultimately abandoning our original biological nature while preserving and expanding consciousness throughout the cosmos.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 6629,
+      "total_tokens": 6838,
+      "cost": 0.01536583,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01536583,
+        "upstream_inference_prompt_cost": 0.00011913,
+        "upstream_inference_completions_cost": 0.0152467
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4485,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 1,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T18:23:12+00:00",
+  "seconds": 11.7,
+  "request": {
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794507792-OqYMCOb8EbqzlvlkkAik",
+    "object": "chat.completion",
+    "created": 1794507792,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First permanent lunar base established.\",\n      \"detail\": \"NASA's Artemis program and private companies like SpaceX establish a sustainable human presence on the Moon, serving as a technological proving ground and staging point for deeper space missions.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"First crewed mission to Mars lands.\",\n      \"detail\": \"After decades of robotic reconnaissance, humans set foot on Mars, establishing the first off-world colony. This mission faces significant challenges but marks a historic milestone in space exploration.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"AI surpasses human intelligence in narrow domains.\",\n      \"detail\": \"Artificial General Intelligence (AGI) emerges in specific fields like scientific research and engineering. Ethical debates intensify over control and alignment with human values.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Global energy transition largely complete.\",\n      \"detail\": \"Fusion power becomes commercially viable, replacing fossil fuels. Carbon emissions are significantly reduced, though climate damage continues to affect global stability.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"First interstellar probe reaches Proxima Centauri.\",\n      \"detail\": \"A laser-propelled sailship arrives at the nearest star system, carrying probes to study exoplanets, though it takes decades to transmit data back to Earth.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Lunar industrialization begins.\",\n      \"detail\": \"Helium-3 mining for fusion fuel and 3D-printed habitats expand, making the Moon economically self-sufficient and a hub for space infrastructure.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"First generation of human-AI hybrids emerges.\",\n      \"detail\": \"Brain-computer interfaces (BCIs) enable deep integration with artificial intelligence, blurring the lines between biology and technology. Social and legal ramifications are profound.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Human population peaks and begins to stabilize.\",\n      \"detail\": \"After centuries of growth, global population peaks around 9-10 billion and starts to decline due to aging societies and reduced birth rates in most regions.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First self-replicating machines assemble in space.\",\n      \"detail\": \"Von Neumann probes, designed to self-replicate using asteroids and planetary resources, begin building megastructures such as Dyson swarms around stars.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First contact with extraterrestrial life (microbial).\",\n      \"detail\": \"Robotic missions or telescopes detect unambiguous signs of microbial life beneath the ice of Europa or Enceladus, revolutionizing biology and religion.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Orbital megacities begin construction.\",\n      \"detail\": \"Bernal spheres and O’Neill cylinders house millions of people, relieving pressure on Earth and serving as hubs for zero-gravity industry.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"The Earth-Sun system is fully mapped and exploited.\",\n      \"detail\": \"All planets and major moons are colonized, terraformed Mars enters its final phases, and asteroid belts are mined intensively for resources.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First interstellar civilization detects Earth's radio signals.\",\n      \"detail\": \"Leakage from Earth (radio, TV) reaches a nearby star system, possibly prompting awareness or response from an extraterrestrial civilization.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Human lifespan extended beyond 150 years.\",\n      \"detail\": \"Nanotechnology, genetic repair, and regenerative medicine enable humans to routinely live to 150+ years, with optional cryopreservation for further extension.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First interstellar colonies become autonomous.\",\n      \"detail\": \"Generation ships and cryo-ships arrive at nearby stars, establishing the first truly independent branches of human civilization with distinct cultures.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Terraforming of Venus begins.\",\n      \"detail\": \"Giant solar shades and atmospheric processors attempt to cool Venus and create a breathable atmosphere, using orbital mirrors and hydrogen from gas giants.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"The first Dyson sphere reaches significant completion.\",\n      \"detail\": \"Around a sun-like star, a partial Dyson structure harvests substantial energy, fulfilling a long-held dream of solar power on a cosmic scale.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Human genetic diversity stabilizes globally.\",\n      \"detail\": \"After millennia of migration and evolution, human populations become phenotypically and genetically more uniform due to global mixing and artificial selection.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"First post-human intelligence arises.\",\n      \"detail\": \"A fully synthetic or biologically integrated intelligence emerges that no longer identifies with humanity, potentially posing existential questions for human legacy.\"\n    },\n    {\n      \"year\": 8500,\n      \"event\": \"Climatic stabilization on Mars achieved.\",\n      \"detail\": \"After centuries of atmospheric engineering, Mars reaches Earth-like temperatures and pressure, with open bodies of water and breathable atmosphere.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"First intergalactic radio contact achieved.\",\n      \"detail\": \"Using quantum entanglement or pulsed lasers, human civilization establishes communication with a nearby galaxy, likely Magellanic Clouds or Andromeda.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Last human in Earth’s natural environment dies off.\",\n      \"detail\": \"All humans live in artificial habitats—orbital, planetary, or interstellar—with Earth increasingly preserved as a historical site.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Human civilization dispersed across 100+ star systems.\",\n      \"detail\": \"Human-derived intelligent life spans a significant portion of the Milky Way, though likely fragmented into diverse sub-civilizations with little communication.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity is likely to spread across the solar system within centuries and begin interstellar expansion by 4000 CE. By 10000 CE, human civilization is expected to be a multi-star, multi-species entity, though its continuity is not guaranteed due to internal conflict, cosmic threats, or unforeseen technological consequences.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 1535,
+      "total_tokens": 1762,
+      "cost": 0.0106304,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0106304,
+        "upstream_inference_prompt_cost": 0.0004994,
+        "upstream_inference_completions_cost": 0.010131
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "deepseek/deepseek-chat",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 5,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:57:16+00:00",
+  "seconds": 27.5,
+  "request": {
+    "model": "deepseek/deepseek-chat",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499036-iUT9IVyKGTg7nHl33lKi",
+    "object": "chat.completion",
+    "created": 1794499036,
+    "model": "deepseek/deepseek-chat",
+    "provider": "StreamLake",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First human lands on Mars\",\n      \"detail\": \"A joint mission by NASA and SpaceX successfully lands humans on Mars, marking the beginning of interplanetary colonization.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"AI achieves human-level intelligence\",\n      \"detail\": \"Artificial intelligence reaches parity with human intelligence, leading to significant societal and economic transformations.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Climate change triggers mass migrations\",\n      \"detail\": \"Rising sea levels and extreme weather events force hundreds of millions to relocate, causing geopolitical tensions.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"First permanent lunar base established\",\n      \"detail\": \"Humanity establishes a self-sustaining base on the Moon, serving as a hub for further space exploration.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Breakthrough in fusion energy\",\n      \"detail\": \"Fusion energy becomes commercially viable, providing nearly limitless clean energy and reducing reliance on fossil fuels.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First interstellar probe launched\",\n      \"detail\": \"A probe equipped with advanced propulsion technology is sent to a nearby star system, beginning the era of interstellar exploration.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Human lifespan extended to 150 years\",\n      \"detail\": \"Advances in biotechnology and medicine allow humans to live significantly longer, healthier lives.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First human colony on Mars becomes self-sustaining\",\n      \"detail\": \"The Martian colony no longer requires supplies from Earth, marking a major milestone in human colonization of space.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Discovery of extraterrestrial life\",\n      \"detail\": \"Microbial life is found on Europa, one of Jupiter's moons, confirming life exists beyond Earth.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Human brain uploaded to a computer\",\n      \"detail\": \"The first successful human mind upload is achieved, blurring the line between biological and artificial intelligence.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Humanity spreads to multiple star systems\",\n      \"detail\": \"Colonies are established in several nearby star systems, thanks to advancements in faster-than-light travel.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First contact with an intelligent alien species\",\n      \"detail\": \"Humanity makes contact with an advanced alien civilization, leading to a new era of interstellar diplomacy.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Humanity merges with AI\",\n      \"detail\": \"The distinction between humans and artificial intelligence becomes indistinguishable, as most beings are a blend of both.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Dyson sphere construction begins\",\n      \"detail\": \"Humanity starts building a Dyson sphere around the Sun to harness its entire energy output.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"First artificial black hole created\",\n      \"detail\": \"Scientists create a stable artificial black hole, opening new possibilities for energy and space-time manipulation.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Humanity becomes a Type II civilization\",\n      \"detail\": \"Humanity achieves the ability to harness the energy of an entire star, marking its transition to a Type II civilization.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"First multiverse experiment conducted\",\n      \"detail\": \"Scientists attempt to create a bridge to a parallel universe, testing the boundaries of known physics.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Humanity begins to transcend physical form\",\n      \"detail\": \"Many beings choose to exist as pure energy or information, leaving behind physical bodies.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"First successful time travel experiment\",\n      \"detail\": \"A team of scientists successfully sends information back in time, proving time travel is possible.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Humanity faces an existential threat\",\n      \"detail\": \"A catastrophic event, possibly self-inflicted or from an external source, threatens the survival of the species.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity's fate uncertain\",\n      \"detail\": \"The long-term survival of humanity is uncertain, with possibilities ranging from extinction to transcending into a post-biological state.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity's future is a mix of incredible technological advancements and existential risks. By the year 10000, we may have colonized the galaxy, merged with AI, or faced extinction. The path is uncertain, but the potential is boundless.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 1102,
+      "total_tokens": 1311,
+      "cost": 0.001187424,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001187424,
+        "upstream_inference_prompt_cost": 5.37966e-05,
+        "upstream_inference_completions_cost": 0.0011336274
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

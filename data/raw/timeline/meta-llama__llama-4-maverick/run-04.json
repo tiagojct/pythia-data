@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-4-maverick",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 4,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:55:11+00:00",
+  "seconds": 19.4,
+  "request": {
+    "model": "meta-llama/llama-4-maverick",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502511-TTHsaiPUlF4JCUx5ZLEb",
+    "object": "chat.completion",
+    "created": 1794502511,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "Parasail",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Widespread adoption of renewable energy sources\",\n      \"detail\": \"Solar and wind power become the primary sources of energy globally, reducing reliance on fossil fuels.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"First human settlements on Mars\",\n      \"detail\": \"NASA and private space companies establish the first human settlements on Mars, marking a significant milestone in space exploration.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Global economic shift due to AI integration\",\n      \"detail\": \"Artificial intelligence transforms the global economy, automating many jobs and creating new industries.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Climate change mitigation efforts intensify\",\n      \"detail\": \"Global efforts to mitigate climate change accelerate, with a focus on carbon capture and geoengineering.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First self-sustaining lunar colony\",\n      \"detail\": \"A private company establishes a self-sustaining colony on the Moon, paving the way for further lunar development.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Global pandemic due to antimicrobial resistance\",\n      \"detail\": \"The rise of antimicrobial resistance leads to a global pandemic, causing widespread illness and death.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Merging of human and machine intelligence\",\n      \"detail\": \"The development of brain-computer interfaces enables the merging of human and machine intelligence, enhancing human cognition.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Establishment of a global governance framework\",\n      \"detail\": \"A global governance framework is established to address pressing issues such as climate change, AI safety, and biotechnology regulation.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"First contact with an extraterrestrial civilization\",\n      \"detail\": \"Humanity detects and communicates with an extraterrestrial civilization, revolutionizing our understanding of the universe.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Global population peaks and begins to decline\",\n      \"detail\": \"The global population peaks and begins to decline due to declining fertility rates and urbanization.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Humanity becomes a multi-planetary species\",\n      \"detail\": \"Human settlements on Mars, the Moon, and other planets become self-sustaining, ensuring the survival of humanity even if Earth is catastrophically affected.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Development of advanced biotechnology\",\n      \"detail\": \"Advances in biotechnology enable humans to live longer, healthier lives, and potentially achieve immortality.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Establishment of a lunar-based solar power grid\",\n      \"detail\": \"A solar power grid is established on the Moon, providing a clean and sustainable source of energy for human civilization.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Humanity colonizes the outer Solar System\",\n      \"detail\": \"Human settlements are established on the moons of Jupiter and Saturn, marking a significant expansion of human presence in the Solar System.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"The rise of post-scarcity economies\",\n      \"detail\": \"Advanced technologies enable the widespread availability of resources, leading to the emergence of post-scarcity economies.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Humanity becomes a Type 1 civilization on the Kardashev scale\",\n      \"detail\": \"Humanity harnesses the energy of its entire planet, achieving a significant milestone in its development as a civilization.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"The development of megastructures\",\n      \"detail\": \"Humanity constructs megastructures such as Dyson spheres or megatunnels, marking a new era in engineering and energy production.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Humanity encounters a cosmic threat\",\n      \"detail\": \"Humanity detects and responds to a cosmic threat, such as a nearby supernova or gamma-ray burst.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"The rise of a unified human government\",\n      \"detail\": \"A unified government emerges, bringing together humanity's diverse populations and interests.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Humanity expands into the interstellar medium\",\n      \"detail\": \"Humanity develops the capability to travel to and settle on other star systems, marking a new era in space exploration.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"The discovery of a multiverse\",\n      \"detail\": \"Humanity discovers evidence of a multiverse, revolutionizing our understanding of reality and the cosmos.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity undergoes a significant evolutionary transformation\",\n      \"detail\": \"Advances in biotechnology and AI enable humanity to undergo a significant evolutionary transformation, potentially leading to a new form of human existence.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"The establishment of a galactic government\",\n      \"detail\": \"Humanity and other intelligent species in the galaxy establish a galactic government, facilitating cooperation and conflict resolution.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity encounters a cosmic singularity\",\n      \"detail\": \"Humanity encounters a cosmic singularity, such as a region of space-time with unusual properties.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity has become a mature, Type 3 civilization on the Kardashev scale\",\n      \"detail\": \"Humanity has harnessed the energy of its entire galaxy, achieving a profound level of technological and societal advancement.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity is expected to continue to evolve and expand into the cosmos, achieving significant technological and societal advancements. The future is marked by both challenges and opportunities, with humanity ultimately becoming a mature, Type 3 civilization on the Kardashev scale.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 1366,
+      "total_tokens": 1577,
+      "cost": 0.00140241,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00140241,
+        "upstream_inference_prompt_cost": 3.641e-05,
+        "upstream_inference_completions_cost": 0.001366
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

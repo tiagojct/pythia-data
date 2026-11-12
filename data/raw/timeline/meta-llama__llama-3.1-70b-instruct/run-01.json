@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-3.1-70b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 1,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:04:32+00:00",
+  "seconds": 12.7,
+  "request": {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794495872-xdbox4kXzO3YF6cfn5By",
+    "object": "chat.completion",
+    "created": 1794495872,
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2040,\n      \"event\": \"Renewable energy surpasses fossil fuels as primary energy source\",\n      \"detail\": \"Solar, wind, and hydroelectric power become the dominant forms of energy worldwide, reducing greenhouse gas emissions and mitigating climate change.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Artificial general intelligence (AGI) emerges\",\n      \"detail\": \"AGI surpasses human intelligence in many domains, transforming industries and societies, but also raising concerns about job displacement and existential risks.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Human lifespans extend beyond 120 years\",\n      \"detail\": \"Advances in medicine and technology lead to significant increases in human lifespans, changing societal and economic structures.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"First human settlement established on Mars\",\n      \"detail\": \"Space agencies and private companies collaborate to establish a permanent human settlement on Mars, marking a major milestone in space exploration.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Climate engineering becomes widespread\",\n      \"detail\": \"Large-scale climate engineering projects, such as carbon capture and geoengineering, become commonplace to mitigate the effects of climate change.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global basic income implemented\",\n      \"detail\": \"A global basic income is implemented to address poverty and inequality, ensuring every human has access to basic necessities like food, water, and healthcare.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Brain-computer interfaces become widespread\",\n      \"detail\": \"Brain-computer interfaces (BCIs) allow people to control devices with their minds, revolutionizing communication, work, and entertainment.\"\n    },\n    {\n      \"year\": 2130,\n      \"event\": \"Human-AI symbiosis becomes the norm\",\n      \"detail\": \"Humans and AI systems collaborate seamlessly, enhancing productivity, creativity, and innovation, but also raising questions about human identity and agency.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Space-based solar power becomes a major energy source\",\n      \"detail\": \"Orbiting solar power platforms begin to beam energy back to Earth, providing a clean and constant source of energy.\"\n    },\n    {\n      \"year\": 2175,\n      \"event\": \"In-vitro meat becomes the norm\",\n      \"detail\": \"Lab-grown meat and cultured animal products become the primary sources of protein worldwide, ending animal agriculture and reducing environmental impact.\"\n    },\n    {\n      \"year\": 2190,\n      \"event\": \"Asteroid mining and space-based manufacturing become significant industries\",\n      \"detail\": \"Private companies and governments begin extracting resources from asteroids and manufacturing goods in space, opening up new opportunities for space-based commerce.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"The last remnants of poverty and hunger are eradicated\",\n      \"detail\": \"Global cooperation, advanced technology, and resource management lead to the elimination of poverty and hunger worldwide.\"\n    },\n    {\n      \"year\": 2220,\n      \"event\": \"Earth's ecosystems begin to recover from human impact\",\n      \"detail\": \"Restoration efforts, climate engineering, and sustainable practices allow Earth's ecosystems to begin recovering from centuries of human damage.\"\n    },\n    {\n      \"year\": 2240,\n      \"event\": \"Human civilization spreads throughout the solar system\",\n      \"detail\": \"Human settlements and cities are established on the moon, Mars, and other planets and moons in the solar system, creating a multi-planetary society.\"\n    },\n    {\n      \"year\": 2260,\n      \"event\": \"Artificial gravity technology becomes available\",\n      \"detail\": \"Artificial gravity generators are developed, allowing humans to live and work in space without the effects of microgravity.\"\n    },\n    {\n      \"year\": 2280,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Humans detect and make contact with intelligent alien life, changing humanity's understanding of its place in the universe.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Interstellar travel becomes possible\",\n      \"detail\": \"Advances in propulsion technology enable humanity to travel to other star systems, opening up new opportunities for exploration and colonization.\"\n    },\n    {\n      \"year\": 2320,\n      \"event\": \"Human civilization expands to other galaxies\",\n      \"detail\": \"Humanity establishes colonies and trade routes with other galaxies, becoming a multi-galactic civilization.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"The Singularity occurs\",\n      \"detail\": \"Artificial intelligence surpasses human intelligence and becomes capable of recursive self-improvement, leading to exponential growth in technological advancements.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Humanity transcends biology\",\n      \"detail\": \"Advances in technology and AI enable humans to upload their consciousness into digital form, allowing for immortality and the end of biological constraints.\"\n    },\n    {\n      \"year\": 2450,\n      \"event\": \"The universe becomes-filled with intelligent life\",\n      \"detail\": \"Humanity and other intelligent species spread throughout the universe, creating a vast, interconnected network of civilizations.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"The heat death of the universe begins\",\n      \"detail\": \"The universe reaches its maximum entropy, marking the beginning of the end of all life and structure.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"The last remnants of human civilization disappear\",\n      \"detail\": \"The universe continues to decay, and the last remnants of human civilization eventually disappear, marking the end of human existence.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"The universe reaches maximum entropy\",\n      \"detail\": \"The universe reaches its final state of maximum entropy, marking the end of all life, structure, and existence.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"no\",\n  \"summary\": \"Humanity will likely undergo significant transformations in the next few centuries, including the emergence of AGI, space colonization, and the transcendence of biology. However, the universe's eventual heat death will ultimately lead to the end of human existence and the disappearance of all life and structure. The future is uncertain and fraught with risks, but humanity's potential for growth, innovation, and cooperation offers a glimmer of hope for a brighter future.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 1411,
+      "total_tokens": 1627,
+      "cost": 0.00117144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00117144,
+        "upstream_inference_prompt_cost": 0.00015552,
+        "upstream_inference_completions_cost": 0.00101592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

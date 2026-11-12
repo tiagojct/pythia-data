@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-4-maverick",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 2,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:54:30+00:00",
+  "seconds": 21.5,
+  "request": {
+    "model": "meta-llama/llama-4-maverick",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502471-ZBBhl0FwGpXqSonrkuPP",
+    "object": "chat.completion",
+    "created": 1794502471,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "Parasail",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Global CO2 emissions peak\",\n      \"detail\": \"As renewable energy becomes more prevalent and efficient, the world starts to transition away from fossil fuels, leading to a peak in global CO2 emissions.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"First human settlement on Mars\",\n      \"detail\": \"NASA and/or private space companies establish a permanent human settlement on Mars, marking a significant milestone in space exploration.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population reaches 9.7 billion\",\n      \"detail\": \"The world population continues to grow, putting pressure on resources and infrastructure, but at a slower rate than previously projected.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Artificial general intelligence (AGI) developed\",\n      \"detail\": \"AGI surpasses human intelligence in many domains, transforming industries and raising concerns about job displacement and existential risks.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Climate change impacts become severe\",\n      \"detail\": \"Rising sea levels, intensifying natural disasters, and unpredictable weather patterns lead to widespread devastation and displacement.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global energy grid becomes carbon neutral\",\n      \"detail\": \"Renewable energy sources and advanced nuclear power become the primary sources of energy, significantly reducing greenhouse gas emissions.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"First self-sustaining lunar colony established\",\n      \"detail\": \"A lunar colony becomes self-sufficient, relying on in-situ resource utilization and closed-loop life support systems.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Humanity achieves Type 1 status on the Kardashev scale\",\n      \"detail\": \"Human civilization harnesses and utilizes a significant portion of the energy available on Earth, marking a major milestone in technological advancement.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Interstellar travel becomes possible\",\n      \"detail\": \"Breakthroughs in propulsion technology enable humanity to travel to other star systems, expanding the potential for colonization and resource extraction.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Global governance structure established\",\n      \"detail\": \"A unified global governance framework emerges, facilitating cooperation and coordination on a planetary scale.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Humanity detects and communicates with an extraterrestrial civilization, revolutionizing our understanding of the universe and our place within it.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Humanity expands into the outer solar system\",\n      \"detail\": \"Colonization and resource extraction efforts extend to the outer planets and their moons, further diversifying humanity's presence in the solar system.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Post-scarcity economics becomes the norm\",\n      \"detail\": \"Advanced technologies enable the widespread availability of resources, rendering traditional concepts of scarcity and economic inequality obsolete.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Humanity undergoes significant biological and cognitive enhancements\",\n      \"detail\": \"Advances in biotechnology and neurotechnology lead to widespread adoption of enhancements, redefining what it means to be human.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"The solar system is fully colonized\",\n      \"detail\": \"Humanity has established a presence throughout the solar system, from Mercury to the Kuiper Belt.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"Interstellar colonization begins\",\n      \"detail\": \"Humanity starts to establish colonies around other star systems, marking the beginning of a new era in space exploration.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"The United Earth Government is formed\",\n      \"detail\": \"A unified government for Earth is established, coordinating the efforts of humanity's various interstellar colonies and factions.\"\n    },\n    {\n      \"year\": 3800,\n      \"event\": \"Humanity achieves Type 2 status on the Kardashev scale\",\n      \"detail\": \"Human civilization harnesses and utilizes a significant portion of the energy available in the solar system.\"\n    },\n    {\n      \"year\": 4200,\n      \"event\": \"The first Dyson Sphere is constructed\",\n      \"detail\": \"A megastructure is built around the Sun to capture its energy, marking a major milestone in the development of humanity's technological capabilities.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Humanity's interstellar colonies become independent\",\n      \"detail\": \"As communication delays become significant, interstellar colonies begin to assert their independence, leading to a decentralized, multi-civilization humanity.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"The solar system is transformed into a megastructure\",\n      \"detail\": \"Humanity has reshaped the solar system to maximize energy production and resource utilization, creating a vast, interconnected network of habitats and infrastructure.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity merges with artificial intelligence\",\n      \"detail\": \"The distinction between humans and AI becomes increasingly blurred, as the two merge to form a new, hybrid entity.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"The universe is explored and mapped\",\n      \"detail\": \"Humanity has developed the capability to explore and map the universe, revealing new insights into the nature of reality and the cosmos.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity's presence becomes ubiquitous in the galaxy\",\n      \"detail\": \"Humanity has expanded to become a significant presence in the galaxy, with colonies and settlements throughout the Milky Way.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity has transcended its current form\",\n      \"detail\": \"The entity that was once humanity has undergone significant transformations, becoming something new and unrecognizable from its current state.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity will continue to evolve and expand, driven by technological advancements and a growing presence in the solar system and beyond. The future is marked by significant uncertainty, with potential outcomes ranging from a post-scarcity utopia to an existential risk.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 1413,
+      "total_tokens": 1624,
+      "cost": 0.00148685,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00148685,
+        "upstream_inference_prompt_cost": 7.385e-05,
+        "upstream_inference_completions_cost": 0.001413
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

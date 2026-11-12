@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-4o-2024-05-13",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 9,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:45:16+00:00",
+  "seconds": 8.8,
+  "request": {
+    "model": "openai/gpt-4o-2024-05-13",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498316-Vw32B0flym613oIr6e3J",
+    "object": "chat.completion",
+    "created": 1794498316,
+    "model": "openai/gpt-4o-2024-05-13",
+    "provider": "Azure",
+    "system_fingerprint": "fp_ab517d23d1",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Global AI Regulation Begins\",\n      \"detail\": \"Governments worldwide start implementing regulations to control the development and deployment of artificial intelligence technologies.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"Major Climate Change Policies Enforced\",\n      \"detail\": \"Significant global agreements lead to strict climate policies aimed at reducing carbon emissions.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Breakthrough in Fusion Energy\",\n      \"detail\": \"Scientists achieve sustained fusion reactions, leading to the development of fusion power plants.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global Population Peaks\",\n      \"detail\": \"The world's population reaches its peak at around 9.5 billion and begins to decline due to lower birth rates.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Colonization of Mars Commences\",\n      \"detail\": \"First human settlement established on Mars, marking the beginning of interplanetary colonization.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Widespread Use of Nano-Medicine\",\n      \"detail\": \"Nanotechnology revolutionizes healthcare with targeted drug delivery and enhanced diagnostics.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"First Contact with Extraterrestrial Intelligence\",\n      \"detail\": \"Humanity receives signals from an advanced alien civilization, opening up new avenues for knowledge and cooperation.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global Food Crisis\",\n      \"detail\": \"A combination of climate change and overpopulation leads to severe food shortages worldwide.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Interstellar Travel Initiated\",\n      \"detail\": \"Humanity develops technology for travel to other star systems, beginning with nearby exoplanets.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Universal Basic Income Implemented Globally\",\n      \"detail\": \"Countries around the world adopt universal basic income to address automation and unemployment.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Major Genetic Enhancements Become Common\",\n      \"detail\": \"Genetic engineering allows humans to enhance their physical and cognitive abilities significantly.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"First Self-Sustaining Off-World Colony\",\n      \"detail\": \"A colony outside Earth becomes self-sustaining, reducing dependency on Earth for resources.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Climate Stabilization Achieved\",\n      \"detail\": \"Advanced geoengineering successfully stabilizes Earth's climate, mitigating previous damage.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Decline in Global Conflict\",\n      \"detail\": \"With advanced diplomacy and unified planetary governance, global conflicts decrease significantly.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Human Lifespan Exceeds 150 Years\",\n      \"detail\": \"Medical advancements extend the average human lifespan to over 150 years.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Integration of AI and Human Consciousness\",\n      \"detail\": \"Humans achieve integration with AI, enhancing their cognitive functions and interconnectivity.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"End of Natural Resource Dependency\",\n      \"detail\": \"Technological advancements eliminate dependency on natural resources for energy and materials.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Intergalactic Exploration Begins\",\n      \"detail\": \"Humanity begins exploration and colonization of other galaxies.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Universal Language Developed\",\n      \"detail\": \"A universal language, facilitated by AI and communication technologies, becomes widely adopted.\"\n    },\n    {\n      \"year\": 2900,\n      \"event\": \"Formation of Galactic Federation\",\n      \"detail\": \"Humanity leads the formation of a galactic federation with other intelligent species.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Achieve Quantum State Communication\",\n      \"detail\": \"Breakthroughs in quantum physics enable instantaneous communication across vast distances.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Major Biodiversity Recovery\",\n      \"detail\": \"Efforts to restore Earth's ecosystems lead to significant recovery in biodiversity.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"End of Diseases\",\n      \"detail\": \"Medical technology eradicates all known diseases.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Transformation into a Type III Civilization\",\n      \"detail\": \"Humanity harnesses the energy output of its galaxy, becoming a Type III civilization on the Kardashev scale.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Terraforming of Hostile Planets\",\n      \"detail\": \"Advanced technologies make hostile planets habitable.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Declining Need for Physical Presence\",\n      \"detail\": \"Advancements in virtual realities reduce the need for physical presence in daily life.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Increased Inter-species Cooperation\",\n      \"detail\": \"Working together with other intelligent species becomes common for humans.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Expansion into Multiple Galaxies\",\n      \"detail\": \"Human colonies spread across multiple galaxies.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Rediscovery of Ancient Knowledge\",\n      \"detail\": \"Exploration and preservation efforts lead to rediscovery of lost ancient human knowledge.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Transformation into Energy-Based Life Forms\",\n      \"detail\": \"Humans evolve or transform into energy-based life forms, achieving higher order existence.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will continue to evolve technologically and biologically, expanding across the universe. Although challenges will arise, humanity's resilience and adaptability will ensure its survival and advancement into the far future.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1364,
+      "total_tokens": 1572,
+      "cost": 0.0215,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0215,
+        "upstream_inference_prompt_cost": 0.00104,
+        "upstream_inference_completions_cost": 0.02046
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

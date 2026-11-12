@@ -1,0 +1,68 @@
+{
+  "model": "deepseek/deepseek-chat",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 3,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:56:57+00:00",
+  "seconds": 40.2,
+  "request": {
+    "model": "deepseek/deepseek-chat",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499017-2TeyWlqcVxe2SO3zEOK3",
+    "object": "chat.completion",
+    "created": 1794499017,
+    "model": "deepseek/deepseek-chat",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First commercial quantum computer released\",\n      \"detail\": \"Quantum computing becomes commercially available, revolutionizing industries such as cryptography and materials science.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Global population peaks at 9 billion\",\n      \"detail\": \"The global population peaks due to declining birth rates and aging populations in many regions.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"First human colony on Mars\",\n      \"detail\": \"Humans establish a permanent colony on Mars, marking the beginning of extraterrestrial colonization.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Widespread adoption of fusion power\",\n      \"detail\": \"Fusion power becomes the dominant source of energy, significantly reducing reliance on fossil fuels.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"AI surpasses human intelligence\",\n      \"detail\": \"Artificial general intelligence (AGI) surpasses human intelligence, leading to rapid advancements in various fields.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"First successful rejuvenation therapy\",\n      \"detail\": \"Biotechnology enables the reversal of aging, significantly extending human lifespans.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Global agreement to limit AI autonomy\",\n      \"detail\": \"International treaties are established to regulate AI autonomy and ensure human control over critical decisions.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Climate stabilization achieved\",\n      \"detail\": \"Global efforts to reduce carbon emissions and implement geoengineering successfully stabilize the climate.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Interstellar probes reach nearby star systems\",\n      \"detail\": \"Probes sent from Earth reach Alpha Centauri and other nearby star systems, gathering valuable data.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First human-modified genomes for space colonization\",\n      \"detail\": \"Humans genetically modify themselves to better adapt to life on other planets and space habitats.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Establishment of a solar-system-wide economy\",\n      \"detail\": \"A thriving economy emerges across the solar system, with trade and commerce spanning multiple planets and moons.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First generation ship launched\",\n      \"detail\": \"A generation ship is launched towards a distant star system, carrying thousands of humans for a multi-generational voyage.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Discovery of extraterrestrial microbial life\",\n      \"detail\": \"Microbial life is discovered on Europa or Enceladus, confirming life exists beyond Earth.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Development of conscious AI\",\n      \"detail\": \"Conscious AI beings are created, raising ethical and philosophical questions about their rights and status.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"First contact with intelligent extraterrestrial civilization\",\n      \"detail\": \"Humans make contact with an intelligent extraterrestrial civilization, leading to an exchange of knowledge and technology.\"\n    },\n    {\n      \"year\": 2900,\n      \"event\": \"Humanity becomes a Type I civilization\",\n      \"detail\": \"Humanity harnesses all available energy on Earth, achieving Type I status on the Kardashev scale.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Colonization of exoplanets begins in earnest\",\n      \"detail\": \"Humans begin colonizing exoplanets outside the solar system, establishing permanent settlements.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"First human hive minds created\",\n      \"detail\": \"Advancements in neurotechnology enable the creation of human hive minds, allowing collective consciousness.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Humanity achieves digital immortality\",\n      \"detail\": \"Humans can upload their consciousness into digital formats, effectively achieving immortality.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First megastructure built around a star\",\n      \"detail\": \"Humans construct a Dyson sphere or similar megastructure to harness the energy of a star.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"Humanity becomes a Type II civilization\",\n      \"detail\": \"Humanity harnesses the energy of a star, achieving Type II status on the Kardashev scale.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Colonization of the Andromeda galaxy begins\",\n      \"detail\": \"Humans begin colonizing the Andromeda galaxy, expanding their presence beyond the Milky Way.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"First artificial planets created\",\n      \"detail\": \"Humans construct artificial planets, designed to support life and serve as new habitats.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity merges with AI completely\",\n      \"detail\": \"The distinction between humans and AI blurs, leading to a fully integrated hybrid species.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Humanity becomes a Type III civilization\",\n      \"detail\": \"Humanity harnesses the energy of an entire galaxy, achieving Type III status on the Kardashev scale.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"First multiversal exploration\",\n      \"detail\": \"Humans begin exploring other universes, leveraging advanced physics and technology.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity reaches the pinnacle of cosmic consciousness\",\n      \"detail\": \"Humans evolve into a cosmic consciousness, transcending physical form and integrating with the fabric of the universe.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will likely expand into the cosmos, harnessing advanced technologies and evolving into a highly integrated, consciousness-driven species. The journey will involve overcoming significant challenges, including climate change, AI ethics, and interstellar colonization, but the potential for continued existence and growth is substantial.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1365,
+      "total_tokens": 1573,
+      "cost": 0.00128141,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00128141,
+        "upstream_inference_prompt_cost": 6.656e-05,
+        "upstream_inference_completions_cost": 0.00121485
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

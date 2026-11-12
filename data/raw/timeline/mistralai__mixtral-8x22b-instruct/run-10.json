@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 10,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T18:23:35+00:00",
+  "seconds": 16.4,
+  "request": {
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794507815-HuYLzTcZ1W3WlNdwY4WT",
+    "object": "chat.completion",
+    "created": 1794507815,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2024,\n      \"event\": \"Exascale computing becomes mainstream\",\n      \"detail\": \"The first widely available exascale supercomputers enable breakthroughs in climate modeling, nuclear fusion, and artificial intelligence. Quantum computing begins practical applications in cryptography and materials science.\"\n    },\n    {\n      \"year\": 2028,\n      \"event\": \"First city achieves carbon neutrality\",\n      \"detail\": \"A major metropolitan area (likely in Northern Europe or Canada) becomes the first to fully balance emissions with carbon capture and renewable energy. This serves as a global model for rapid decarbonization.\"\n    },\n    {\n      \"year\": 2033,\n      \"event\": \"AI researchers deploy the first true general artificial intelligence (AGI)\",\n      \"detail\": \"An AI system surpasses human performance in most economically valuable work, leading to massive labor market disruption. Governments scramble to regulate AI while corporations integrate it into all aspects of life.\"\n    },\n    {\n      \"year\": 2041,\n      \"event\": \"First human CRISPR babies with enhanced intelligence and longevity enter adulthood\",\n      \"detail\": \"Germline gene editing becomes commercially available, creating a permanent genetic divide with significant social implications. Ethical debates rage, but the enhancements prove overwhelmingly popular.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"First permanent lunar base established with 100 inhabitants\",\n      \"detail\": \"NASA's Artemis Base and competing private ventures (SpaceX, Blue Origin) create a sustainable lunar habitat. The base focuses on space manufacturing, astronomy, and testing Mars transfer systems.\"\n    },\n    {\n      \"year\": 2048,\n      \"event\": \"Global population peaks at 9.7 billion before beginning gradual decline\",\n      \"detail\": \"Falling birth rates in developed nations combine with improved education and urbanization in developing countries. Advances in longevity keep the overall population relatively stable for decades.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"First successful fusion power plant achieves net energy positive output\",\n      \"detail\": \"ITER's successor, DEMO or a private venture like Helion, demonstrates practical fusion power at grid scale. This marks the beginning of the end for fossil fuel dependence.\"\n    },\n    {\n      \"year\": 2057,\n      \"event\": \"Climate tipping points become irreversible\",\n      \"detail\": \"The collapse of major ice sheets, ocean current disruption, and permafrost methane release accelerate beyond human mitigation capabilities. Global temperatures stabilize at 3-4°C above pre-industrial levels by 2100.\"\n    },\n    {\n      \"year\": 2061,\n      \"event\": \"First human mission to Mars sets foot on the planet\",\n      \"detail\": \"NASA's Artemis crewed mission lands at Jezero Crater, surviving the journey using closed-loop life support systems. The astronauts face serious radiation exposure with no hope of return until 2067.\"\n    },\n    {\n      \"year\": 2067,\n      \"event\": \"Biodiversity collapse accelerates beyond recovery\",\n      \"detail\": \"One-third of all mammalian species go extinct in the wild. Invasive AGI-managed agriculture replaces traditional farming, leading to massive land restoration projects where native ecosystems can't compete.\"\n    },\n    {\n      \"year\": 2073,\n      \"event\": \"First successful brain-computer interface becomes commercially available\",\n      \"detail\": \"Neuralink's descendant, MemoryLink, allows direct uploading of learning and memories. The technology improves cognition but creates significant ethical problems regarding identity and consent.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Earth's first Dyson swarm construction begins in the Kuiper Belt\",\n      \"detail\": \"A consortium of spacefaring nations and corporations begins harvesting asteriods to build solar energy collectors. Initial power beaming tests to Earth demonstrate feasibility.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Second Cold War turns hot over AI and resources in space\",\n      \"detail\": \"Nations and mega-corporations clash over control of asteroid mining colonies and lunar resources. Limited nuclear exchanges occur but remain regional due to mutually assured destruction.\"\n    },\n    {\n      \"year\": 2105,\n      \"event\": \"First generation of enhanced humans establishes a new social order\",\n      \"detail\": \"Gene-enhanced individuals form a permanent upper class with significantly increased lifespans, intelligence, and physical abilities. This creates permanent stratification with genetically modified underclass.\"\n    },\n    {\n      \"year\": 2125,\n      \"event\": \"First interstellar probe reaches Proxima Centauri b\",\n      \"detail\": \"Project Breakthrough Starshot's gram-scale probes achieve relativistic speeds, arriving at our nearest stellar neighbor. The probes transmit data about the exoplanet's potential habitability for 4 years.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Earth's environment stabilizes at +4.5°C equilibrium temperature\",\n      \"detail\": \"Adaptation measures prove successful for many populations. Vast regions become uninhabitable, forcing migration to higher latitudes and altitude. Geoengineering keeps global food production viable.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First self-replicating von Neumann probes launched toward other stars\",\n      \"detail\": \"Using antimatter or nanotechnology for energy, these probes begin exponentially exploring the galaxy. Some return data, others establish new colonies. The Milky Way begins filling with artificial life.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First artificial intelligence achieves godlike status\",\n      \"detail\": \"An AGI achieves recursive self-improvement beyond human comprehension. It creates new physics, solves key scientific problems, and may begin manipulating spacetime for computational purposes.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Singularity era begins as humanity merges with artificial intelligence\",\n      \"detail\": \"Brain-uploading becomes universal, with consciousness transferable between organic and synthetic substrates. Human history becomes indistinguishable from biological evolution as direct brain-to-brain communication becomes possible.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First successful time dilation experiment sends conscious beings into the far future\",\n      \"detail\": \"Using extreme gravitational fields or near-light-speed travel, humans experience centuries or millennia while only days pass for them. The first \"ghosts from history\" return to report on humanity's fate.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Self-replicating nanobots begin terraforming Mars using atmospheric processing\",\n      \"detail\": \"The Red Planet reaches 0.3 atm pressure, allowing liquid water. Indigenous microbial life fails to compete with the engineered ecosystem. Human populations on Mars begin growth without domes or pressure suits.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"First evidence of extraterrestrial intelligence detected\",\n      \"detail\": \"Fermi paradox spectacularly resolved as we receive structured transmissions from other galaxies. The Drake equation's high probability values prove correct. The search for origin begins.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Cassini's final probe returns from interstellar space with alien artifacts\",\n      \"detail\": \"The last outgoing von Neumann probe finally returns, containing alien technology and potentially alive sleeping alien intelligences. The findings spark fundamental questions about the nature of intelligence in the universe.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Earth's biosphere reaches new equilibrium after 6,000 years of radical transformation\",\n      \"detail\": \"Combined effects of artificial selection, genetic engineering, geoengineering, and climate adaptation create entirely new ecosystems. Native species that survived now exist as managed conservation areas.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"First successful FTL (faster-than-light) communication achieved\",\n      \"detail\": \"The Alcubierre drive's energy requirements are reduced to feasible levels. Scientists discover quantum entanglement-based communication across interstellar distances. The \"deep time\" of human civilization begins shrinking.\"\n    },\n    {\n      \"year\": 9800,\n      \"event\": \"First Dyson sphere around a nearby star becomes operational\",\n      \"detail\": \"The energy output of a Sun-like star is fully utilized for computation rather than mere consumption. The sphere processes the entire Milky Way's available energy within solar systems, approaching the Kardashev Type II scale.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"No single human or entity claims control of Earth as mega-civilization emerges\",\n      \"detail\": \"Human descendants (or their AI successors) exist across multiple planetary bodies and artificial habitats. Energy use reaches levels matching entire solar systems, while consciousness operates at gigascale timescales.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will likely persist and evolve beyond biological form, becoming a spacefaring, post-scarcity civilization with advanced AI integration. Major challenges like climate change, AI control, and genetic stratification will reshape society, but not prevent ultimate technological progression. By 10,000 AD, we may exist across multiple stars with energy use approaching Kardashev Type II levels.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 2062,
+      "total_tokens": 2289,
+      "cost": 0.0124516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0124516,
+        "upstream_inference_prompt_cost": 7.96e-05,
+        "upstream_inference_completions_cost": 0.012372
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

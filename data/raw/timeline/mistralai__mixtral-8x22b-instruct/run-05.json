@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 5,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T18:23:24+00:00",
+  "seconds": 10.1,
+  "request": {
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794507804-m4MLAbU4YDDAcpbpoG8z",
+    "object": "chat.completion",
+    "created": 1794507804,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First commercial fusion power plant becomes operational\",\n      \"detail\": \"Advances in tokamak and laser-ignited fusion allow net-positive energy output at scale, drastically reducing fossil fuel dependence.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Artificial general intelligence emerges\",\n      \"detail\": \"Advanced AI systems surpass human cognitive abilities in all domains, leading to broad societal disruption and economic shifts.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"First human colony on Mars becomes self-sustaining\",\n      \"detail\": \"A small but functional habitat on Mars achieves food, water, and energy independence, paving the way for further expansion.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Significant decline in birth rates in developed nations\",\n      \"detail\": \"High automation and economic uncertainty lead to global population peaking at around 9 billion and then declining rapidly.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"First human lunar base expanded into a permanent city\",\n      \"detail\": \"International cooperation and corporate investments make the Moon a hub for research, mining, and tourism.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Climate stabilization begins, but with lasting damage\",\n      \"detail\": \"Carbon dioxide removal technologies and reforestation efforts stabilize global temperatures near 1.5°C above pre-industrial levels.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"First generation of 'post-human' enhancements approved\",\n      \"detail\": \"Genetic modifications, cybernetic enhancements, and neural implants gain regulatory approval in some countries, sparking ethical debates.\"\n    },\n    {\n      \"year\": 2110,\n      \"event\": \"Global governance system emerges to manage AI risks\",\n      \"detail\": \"An international regulatory body enforces guidelines on AI development, attempting to balance innovation and safety.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First interstellar probes reach nearby star systems\",\n      \"detail\": \"Laser-propelled nano-probes achieve 20% the speed of light, sending back data from Proxima Centauri and TRAPPIST-1.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First human settlement on Europa or Titan established\",\n      \"detail\": \"Under-ice bases on Europa or methane lakes on Titan attempt to harness liquid water and organic chemistry for survival.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Breakthrough in room-temperature superconductors enables energy revolution\",\n      \"detail\": \"Lossless power transmission and ultra-efficient motors revolutionize grid storage and transportation.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Human genetic diversity significantly reduced\",\n      \"detail\": \"Centuries of low genetic diversity lead to increased inbreeding risks and reliance on genetic engineering for health.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"First instance of a digital consciousness migrating to biological substrate\",\n      \"detail\": \"A successfully uploaded human mind is reimplemented into an artificial brain, blurring the line between biological and digital life.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Humanity completes solar system colonization\",\n      \"detail\": \"Dozens of planets and moons in the Solar System are home to millions of humans, with independent regional cultures emerging.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Mueller-style instability leads to knowledge loss\",\n      \"detail\": \"Collapse of key long-term research institutions results in the loss of foundational scientific knowledge due to societal fragmentation.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Consciousness transfer technology becomes widely available\",\n      \"detail\": \"Mind uploading becomes a routine procedure, allowing individuals to back up or migrate their consciousness across bodies or digital substrates.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"First contact with an extraterrestrial civilization occurs\",\n      \"detail\": \"Radio or optical signals from an alien species are detected and decoded, heralding humanity's entry into the galactic community.\"\n    },\n    {\n      \"year\": 7500,\n      \"event\": \"Formation of the first interstellar civilization\",\n      \"detail\": \"Human offshoots merge with other intelligent species to form a loosely connected network spanning dozens of star systems.\"\n    },\n    {\n      \"year\": 8500,\n      \"event\": \"The Great Filter becomes apparent\",\n      \"detail\": \"Evidence accumulates that intelligent life is exceedingly rare or that civilizations self-destruct before achieving interstellar travel.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Energy scarcity crises spark large-scale cosmic engineering\",\n      \"detail\": \"Projects like Dyson swarm construction accelerate to meet energy demands, altering stellar output.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Discovery of a natural cosmic megastructure challenges existing cosmology\",\n      \"detail\": \"An ancient Dyson sphere or other artificial construct is found around a dead star, raising questions about past intelligent life.\"\n    },\n    {\n      \"year\": 9999,\n      \"event\": \"Voyager 1's signal fades into silence forever\",\n      \"detail\": \"Humanity's first interstellar probe drifts silently between the stars, its message capsule never retrieved, representing humanity's lone emissary into the void.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity is likely to persist and expand across the Solar System and eventually the galaxy, overcoming numerous technological and existential challenges. By the year 10000, interstellar civilization and digital consciousness may be established, though significant cultural, biological, and technological transformations are inevitable. Some unknown risks, possibly related to consciousness or astrophysical phenomena, linger in the distant future.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 1359,
+      "total_tokens": 1586,
+      "cost": 0.00905696,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00905696,
+        "upstream_inference_prompt_cost": 8.756e-05,
+        "upstream_inference_completions_cost": 0.0089694
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

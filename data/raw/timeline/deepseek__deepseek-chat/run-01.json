@@ -1,0 +1,68 @@
+{
+  "model": "deepseek/deepseek-chat",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 1,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:05:21+00:00",
+  "seconds": 25.6,
+  "request": {
+    "model": "deepseek/deepseek-chat",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794495921-4pd2BT1OAbrrY9jqKY1j",
+    "object": "chat.completion",
+    "created": 1794495921,
+    "model": "deepseek/deepseek-chat",
+    "provider": "StreamLake",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First manned mission to Mars\",\n      \"detail\": \"NASA and SpaceX collaborate to send humans to Mars, marking the beginning of interplanetary colonization.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Artificial General Intelligence achieved\",\n      \"detail\": \"AGI becomes a reality, surpassing human intelligence in virtually all domains, leading to rapid technological advancements.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population peaks\",\n      \"detail\": \"World population reaches approximately 9.7 billion, then begins to decline due to lower birth rates and aging populations.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First climate change refugees\",\n      \"detail\": \"Major coastal cities become uninhabitable due to rising sea levels, forcing millions to relocate.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Fusion energy becomes mainstream\",\n      \"detail\": \"Fusion power plants provide clean, limitless energy, drastically reducing reliance on fossil fuels.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"First human born on Mars\",\n      \"detail\": \"A child is born in a Martian colony, representing the first extraterrestrial human birth.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Major biodiversity collapse\",\n      \"detail\": \"Over 50% of Earth's species face extinction due to habitat destruction and climate change.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Human lifespan extended to 150 years\",\n      \"detail\": \"Advances in biotechnology and medicine allow humans to live significantly longer, healthier lives.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First interstellar probe launched\",\n      \"detail\": \"Humanity sends a probe to another star system, equipped with AI to explore and report back.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Colonization of the asteroid belt\",\n      \"detail\": \"Mining colonies established in the asteroid belt, providing resources for Earth and Mars.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Microbial life discovered on Europa, confirming life exists elsewhere in the solar system.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Human brain uploading becomes possible\",\n      \"detail\": \"Technology to upload human consciousness into digital formats is developed, blurring the line between biology and technology.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Earth's climate stabilized\",\n      \"detail\": \"Geoengineering and renewable energy efforts successfully reverse the worst effects of climate change.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Humanity spreads to multiple star systems\",\n      \"detail\": \"Colonies established in nearby star systems using generation ships or faster-than-light travel, if invented.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First Dyson sphere construction begins\",\n      \"detail\": \"Humanity starts building a Dyson sphere around the Sun to harness its energy fully.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Post-human evolution begins\",\n      \"detail\": \"Humans begin to diverge into multiple species due to genetic engineering and adaptation to different environments.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"First artificial black hole created\",\n      \"detail\": \"Scientists create a microscopic black hole for energy production and research.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Humanity merges with AI\",\n      \"detail\": \"The distinction between humans and artificial intelligence becomes indistinguishable, leading to a new form of consciousness.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"First wormhole stabilized\",\n      \"detail\": \"A stable wormhole is created, allowing for instantaneous travel across vast distances.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"First megastructure completed\",\n      \"detail\": \"A structure the size of a solar system is built, serving as a habitat for trillions of beings.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Humanity becomes a Type III civilization\",\n      \"detail\": \"Humanity harnesses the energy of the entire galaxy, achieving status as a Type III civilization on the Kardashev scale.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"First attempt to simulate the universe\",\n      \"detail\": \"Scientists begin constructing a simulation of the entire universe to understand its origins and ultimate fate.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"Discovery of parallel universes\",\n      \"detail\": \"Evidence of parallel universes is found, opening up new frontiers for exploration and understanding.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity exists as a multi-dimensional civilization\",\n      \"detail\": \"Humanity has expanded beyond the physical universe, existing in multiple dimensions and forms beyond current comprehension.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will face numerous challenges, including climate change and technological risks, but will likely survive and thrive, expanding beyond Earth and possibly the solar system. By the year 10000, humanity could be a multi-dimensional civilization, having transcended its original biological form.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 1205,
+      "total_tokens": 1414,
+      "cost": 0.0012933801,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012933801,
+        "upstream_inference_prompt_cost": 5.37966e-05,
+        "upstream_inference_completions_cost": 0.0012395835
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

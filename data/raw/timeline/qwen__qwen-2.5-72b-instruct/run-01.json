@@ -1,0 +1,68 @@
+{
+  "model": "qwen/qwen-2.5-72b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 1,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:04:37+00:00",
+  "seconds": 71.1,
+  "request": {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794495877-pEYzximcace3uXPFwlfI",
+    "object": "chat.completion",
+    "created": 1794495877,
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"First fully autonomous city is established.\",\n      \"detail\": \"A city in the United States becomes the first to be entirely managed by AI systems, including transportation, utilities, and governance.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"Global carbon emissions peak and begin to decline.\",\n      \"detail\": \"International efforts and technological advancements lead to a significant reduction in carbon emissions, marking a turning point in the fight against climate change.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"First human colony on the Moon is established.\",\n      \"detail\": \"A permanent human settlement is established on the Moon, paving the way for further exploration and colonization of space.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Global average life expectancy reaches 90 years.\",\n      \"detail\": \"Advancements in medicine and healthcare result in a significant increase in the average human lifespan.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"First human mission to Mars lands successfully.\",\n      \"detail\": \"A crewed mission to Mars lands successfully, marking a major milestone in human space exploration.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Artificial general intelligence (AGI) is achieved.\",\n      \"detail\": \"The first AGI, capable of understanding and learning any intellectual task that a human can, is developed.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Global population stabilizes at 9 billion.\",\n      \"detail\": \"Due to advancements in technology and shifts in social behaviors, the global population stabilizes and begins a gradual decline.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"First human settlement in orbit around Mars is established.\",\n      \"detail\": \"A permanent human settlement is established in orbit around Mars, supporting further exploration and research.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Quantum computing becomes commercially viable.\",\n      \"detail\": \"Quantum computers become widely available and are used to solve complex problems in various fields, including cryptography and materials science.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global temperatures stabilize due to effective climate interventions.\",\n      \"detail\": \"A combination of geoengineering and renewable energy solutions leads to a stabilization of global temperatures, halting further climate degradation.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"First interstellar probe is launched.\",\n      \"detail\": \"A probe is launched to a nearby star system, marking the beginning of interstellar exploration.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First human settlement on a near-Earth asteroid is established.\",\n      \"detail\": \"A human settlement is established on a near-Earth asteroid, marking a new phase of space colonization.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Global economic system shifts to post-scarcity model.\",\n      \"detail\": \"Advancements in technology and resource management lead to a shift away from scarcity-based economies to systems of abundance.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First human mission to a distant star system.\",\n      \"detail\": \"A crewed mission is launched to a distant star system, marking a significant leap in human space travel.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"First human settlement on a new planet is established.\",\n      \"detail\": \"A human settlement is established on a habitable exoplanet, expanding human presence beyond the solar system.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"First fully synthetic human is created.\",\n      \"detail\": \"Scientists create the first fully synthetic human, combining biological and technological components.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Global population declines to 7 billion.\",\n      \"detail\": \"Advancements in technology and lifestyle changes lead to a natural decline in population.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"First interstellar trade network is established.\",\n      \"detail\": \"A network of trade routes between multiple star systems is established, facilitating the exchange of resources and information.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First successful resurrection of a historical figure.\",\n      \"detail\": \"Advanced cloning and genetic engineering techniques allow for the successful resurrection of a historical figure.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First human colony on a gas giant moon is established.\",\n      \"detail\": \"A human settlement is established on a moon of a gas giant, expanding the frontiers of colonization.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"First intergalactic probe is launched.\",\n      \"detail\": \"A probe is launched to a nearby galaxy, marking a new era of exploratory missions beyond the Milky Way.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"First human settlement in a different galaxy is established.\",\n      \"detail\": \"A human settlement is established in a different galaxy, marking a significant milestone in human expansion.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity achieves post-biological existence.\",\n      \"detail\": \"The majority of humanity transitions to a post-biological form, living in digital or hybrid biological-digital bodies.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"First intergalactic trade network is established.\",\n      \"detail\": \"A trade network connecting multiple galaxies is established, facilitating the exchange of resources and knowledge.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity discovers evidence of extraterrestrial life.\",\n      \"detail\": \"Evidence of intelligent life on a distant exoplanet is discovered, leading to new scientific and philosophical inquiries.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"First intergalactic human settlement is established.\",\n      \"detail\": \"A human settlement is established in a distant galaxy, marking the next stage of human expansion.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity continues to expand and evolve, driven by technological advancements and a relentless pursuit of knowledge. By the year 10000, humanity has established a presence across multiple galaxies and has achieved a post-biological form of existence, marking a new era of human evolution.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 1471,
+      "total_tokens": 1691,
+      "cost": 0.0006676,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006676,
+        "upstream_inference_prompt_cost": 7.92e-05,
+        "upstream_inference_completions_cost": 0.0005884
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

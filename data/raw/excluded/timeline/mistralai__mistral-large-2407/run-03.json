@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mistral-large-2407",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 3,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:45:34+00:00",
+  "seconds": 149.6,
+  "request": {
+    "model": "mistralai/mistral-large-2407",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498334-6N5xV50zTWQr0Fhto4f1",
+    "object": "chat.completion",
+    "created": 1794498334,
+    "model": "mistralai/mistral-large-2407",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"Advanced AI automates a large share of cognitive labor, causing economic disruption.\",\n      \"detail\": \"Generative AI and robotics displace millions of white-collar jobs, forcing governments to experiment with universal basic income and shorter workweeks.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"Global greenhouse gas emissions peak and begin a sustained decline.\",\n      \"detail\": \"Renewable energy, nuclear power, and carbon capture reach cost parity with fossil fuels, causing emissions to plateau and then fall despite economic growth.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"First senolytic and gene therapies reverse biological aging in humans.\",\n      \"detail\": \"Clinical trials show that clearing senescent cells and partial reprogramming can restore youthful function, extending healthy lifespan by decades.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Artificial General Intelligence or equivalent systems are deployed.\",\n      \"detail\": \"AI systems achieve human-level reasoning across domains, triggering an explosion in scientific research, manufacturing, and military capabilities.\"\n    },\n    {\n      \"year\": 2048,\n      \"event\": \"Severe climate impacts trigger multi-regional crop failures and mass migration.\",\n      \"detail\": \"Simultaneous droughts in major grain-producing regions cause food prices to spike, leading to geopolitical instability and hundreds of millions of climate refugees.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"A limited nuclear exchange or engineered pandemic causes 1 to 5 percent global mortality.\",\n      \"detail\": \"A regional conflict involving tactical nuclear weapons or a lab-created pathogen kills millions before being contained, serving as a stark warning of existential risk.\"\n    },\n    {\n      \"year\": 2065,\n      \"event\": \"Commercial nuclear fusion power becomes widespread.\",\n      \"detail\": \"Magnetic confinement or inertial fusion plants provide abundant, carbon-free baseload electricity, ending energy scarcity and enabling large-scale desalination and carbon capture.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Mars hosts a permanent settlement of over 10,000 people.\",\n      \"detail\": \"Self-sustaining colonies with local food and water production are established, supported by asteroid mining and regular cargo runs from Earth.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Brain-computer interfaces enable direct neural communication and immersive virtual reality.\",\n      \"detail\": \"Non-invasive or minimally invasive BCIs allow thought-controlled computing and shared digital experiences, blurring the line between physical and virtual worlds.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"World population peaks near 10.4 billion and begins to decline.\",\n      \"detail\": \"Fertility rates fall below replacement globally as education and urbanization rise, leading to demographic aging and labor shortages filled by robots and AI.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Stratospheric aerosol injection or space-based sunshades are deployed to cool the planet.\",\n      \"detail\": \"Solar geoengineering is used to offset residual warming, stabilizing temperatures at 1.5 to 2 degrees Celsius above pre-industrial levels but sparking international governance disputes.\"\n    },\n    {\n      \"year\": 2160,\n      \"event\": \"Post-scarcity conditions emerge in advanced economies.\",\n      \"detail\": \"Automation and AI provide housing, food, healthcare, and education without requiring human labor, shifting society toward creative, scientific, and social pursuits.\"\n    },\n    {\n      \"year\": 2210,\n      \"event\": \"Self-replicating von Neumann probes begin exploring the outer solar system.\",\n      \"detail\": \"AI-directed machines mine asteroids and moons, building copies of themselves from local materials to construct habitats and infrastructure autonomously.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"First interstellar probe is launched toward Alpha Centauri at 0.1 to 0.2 light speed.\",\n      \"detail\": \"Laser sails or fusion drives send probes to the nearest star system, arriving within decades to transmit data back to Earth.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Widespread genetic enhancement leads to phenotypic divergence among human populations.\",\n      \"detail\": \"Germline editing for intelligence, disease resistance, and appearance creates biological castes, raising ethical concerns and potential speciation pressures.\"\n    },\n    {\n      \"year\": 2550,\n      \"event\": \"Whole brain emulation creates the first digital minds.\",\n      \"detail\": \"Scanning and simulating a human brain at the synaptic level produces a conscious digital entity, sparking debates about rights, identity, and the nature of humanity.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"A Carrington-level solar superstorm disables global power grids.\",\n      \"detail\": \"A massive coronal mass ejection induces currents that destroy transformers worldwide, causing a decade-long economic depression before resilient infrastructure is rebuilt.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Humanity achieves Kardashev Type I status, harnessing all planetary energy.\",\n      \"detail\": \"Earth's civilization utilizes 100 percent of the solar energy reaching the planet through vast solar arrays, fusion plants, and geothermal taps, enabling planetary-scale engineering.\"\n    },\n    {\n      \"year\": 3300,\n      \"event\": \"Earth's magnetic field weakens significantly during a prolonged excursion.\",\n      \"detail\": \"The magnetosphere thins, increasing surface radiation and disrupting satellites; humanity deploys artificial magnetic shields or moves critical infrastructure underground.\"\n    },\n    {\n      \"year\": 3600,\n      \"event\": \"Climate is restored to near pre-industrial CO2 levels.\",\n      \"detail\": \"Massive direct air capture and enhanced weathering remove excess carbon, allowing ice sheets to partially recover and sea levels to stabilize.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"First crewed interstellar mission departs for the Tau Ceti system.\",\n      \"detail\": \"A generation ship or sleeper ship travels at 0.05 to 0.1 light speed, carrying thousands of humans or embryos to establish a colony around a sun-like star.\"\n    },\n    {\n      \"year\": 4800,\n      \"event\": \"Rising solar luminosity necessitates a planetary sunshade.\",\n      \"detail\": \"The Sun is 5 percent brighter than today; a vast array of orbital reflectors or a Lagrange-point shade reduces insolation to keep Earth habitable.\"\n    },\n    {\n      \"year\": 5500,\n      \"event\": \"Post-human and digital entities constitute the majority of intelligent life on Earth.\",\n      \"detail\": \"Biological Homo sapiens persist in small communities, but most cognition occurs in synthetic substrates: uploaded minds, AI, or hybrid bio-digital systems.\"\n    },\n    {\n      \"year\": 6200,\n      \"event\": \"Large-scale asteroid deflection systems protect Earth from impact.\",\n      \"detail\": \"A 500-meter asteroid on a collision course is successfully diverted using kinetic impactors and gravity tractors, demonstrating mature planetary defense capability.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"The solar system population reaches trillions, mostly in habitats and virtual environments.\",\n      \"detail\": \"O'Neill cylinders, terraformed Mars, and moons of Jupiter and Saturn host vast populations; most minds exist in simulated realities with abundant compute.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Interstellar probes arrive at the Alpha Centauri system and begin surveying exoplanets.\",\n      \"detail\": \"Decades-old probes reach Proxima Centauri b and other worlds, transmitting data and potentially seeding life or establishing observation posts.\"\n    },\n    {\n      \"year\": 8800,\n      \"event\": \"Construction begins on a partial Dyson swarm to capture 10 percent of solar output.\",\n      \"detail\": \"Self-replicating manufacturing in the asteroid belt and near Mercury assembles energy-collecting satellites, powering a civilization approaching Kardashev Type II.\"\n    },\n    {\n      \"year\": 9200,\n      \"event\": \"Astronomical surveys detect an unambiguous technosignature or conclusively rule out civilizations within 1,000 light-years.\",\n      \"detail\": \"Either a laser signal or atmospheric biosignature from an extraterrestrial intelligence is confirmed, or the search proves humanity is alone in the local galactic neighborhood.\"\n    },\n    {\n      \"year\": 9700,\n      \"event\": \"Earth becomes a managed garden world, with nature preserved in reserves.\",\n      \"detail\": \"The biosphere is largely maintained by automated systems; wild ecosystems exist in protected zones while most of the surface is urban, agricultural, or restored wilderness.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"A stable, post-biological human civilization persists across the inner solar system.\",\n      \"detail\": \"Descendants of humanity, whether digital, engineered, or hybrid, maintain a continuous civilization that has survived climate crises, wars, and technological singularities.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"My best forecast is that humanity will survive to the year 10000, but will be profoundly transformed into a post-biological or hybrid civilization spread across the solar system. The greatest existential risks occur in the next two centuries from climate change, pandemics, and unaligned AI; if those bottlenecks are passed, technological maturity makes extinction unlikely over the following millennia.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 10798,
+      "total_tokens": 11014,
+      "cost": 0.06522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.06522,
+        "upstream_inference_prompt_cost": 0.000432,
+        "upstream_inference_completions_cost": 0.064788
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8703,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

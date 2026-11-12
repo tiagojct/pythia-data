@@ -1,0 +1,68 @@
+{
+  "model": "mistralai/mixtral-8x22b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 9,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T18:23:34+00:00",
+  "seconds": 10.8,
+  "request": {
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794507814-cWr7hxzvhx0EJHFRn1iG",
+    "object": "chat.completion",
+    "created": 1794507814,
+    "model": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\"year\": 2030, \"event\": \"First commercial fusion power achieved\", \"detail\": \"Fusion plants become economically viable, displacing much of fossil fuel energy production.\"},\n    {\"year\": 2035, \"event\": \"AI surpasses human cognitive performance in most domains\", \"detail\": \"Artificial General Intelligence (AGI) systems emerge, transforming labor markets and scientific research.\"},\n    {\"year\": 2040, \"event\": \"First human settlement on Mars established\", \"detail\": \"Permanent research base with rotating crews begins operating, marking humanity's first off-world colony.\"},\n    {\"year\": 2045, \"event\": \"Gene editing becomes routine for most births\", \"detail\": \"Germline modifications for disease resistance and enhanced traits become commercially available in wealthy nations.\"},\n    {\"year\": 2050, \"event\": \"First detected non-human artificial signal from another star system\", \"detail\": \"SETI confirms evidence of extraterrestrial intelligent origin, triggering global debate on response.\"},\n    {\"year\": 2060, \"event\": \"Global average temperature exceeds 2°C above pre-industrial levels\", \"detail\": \"Climate adaptation programs become extensive and expensive as extreme weather becomes common.\"},\n    {\"year\": 2070, \"event\": \"First human brain-computer interface widely adopted\", \"detail\": \"Neural implants provide sensory augmentation and direct internet access, blurring biological and digital identity.\"},\n    {\"year\": 2080, \"event\": \"First permanent underwater city on Earth\", \"detail\": \"Floating or underwater habitats house thousands as coastal regions face inundation from rising seas.\"},\n    {\"year\": 2100, \"event\": \"Longevity therapies extend healthy human lifespan to 120+ years\", \"detail\": \"Biotechnological advances reduce age-related mortality to below 0.5% per year.\"},\n    {\"year\": 2120, \"event\": \"First confirmed asteroid mining operation begins\", \"detail\": \"Robotic missions extract rare metals from near-Earth asteroids, reducing ground-based mining.\"},\n    {\"year\": 2150, \"event\": \"First human cloning recognized as legal under some jurisdictions\", \"detail\": \"Ethical and legal frameworks begin evolving, though adoption remains controversial.\"},\n    {\"year\": 2200, \"event\": \"Global population stabilizes near 10 billion after centuries of growth\", \"detail\": \"Demographic transition completes; aging populations dominate despite minor fluctuations.\"},\n    {\"year\": 2300, \"event\": \"First city entirely powered by space-based solar energy\", \"detail\": \"Orbital solar arrays beam energy to rectennas via microwave transmission, proving feasibility.\"},\n    {\"year\": 2400, \"event\": \"First self-replicating von Neumann probe launched toward Proxima Centauri\", \"detail\": \"Pre-programmed machines aim to explore and settle exoplanets at interstellar distances.\"},\n    {\"year\": 2500, \"event\": \"Global average temperature exceeds 4°C during peak summer months\", \"detail\": \"Wide-scale migration from equatorial and subtropical regions becomes necessary as habitability declines.\"},\n    {\"year\": 2600, \"event\": \"Homo sapiens and Neanderthals (or other archaic humans) successfully hybridized for viable offspring\", \"detail\": \"Interbreeding experiments in closed societies raise ethical and biological questions about human identity.\"},\n    {\"year\": 2800, \"event\": \"First permanent cryogenic or digital consciousness transfer widely available\", \"detail\": \"Humans can back up minds or transfer identities into artificial bodies or virtual environments.\"},\n    {\"year\": 3000, \"event\": \"Breakthrough in quantum gravity resolves spacetime singularities\", \"detail\": \"Theoretical advances change our understanding of black holes and the nature of the universe.\"},\n    {\"year\": 3500, \"event\": \"First interstellar ark ship reaches another star\", \"detail\": \"After centuries of travel, a human colony vessel arrives at a promising exoplanet.\"},\n    {\"year\": 4000, \"event\": \"Global ecosystem collapse leads to mass extinction of Earth’s megafauna\", \"detail\": \"Habitat fragmentation and climate change accelerate biodiversity loss beyond recovery.\"},\n    {\"year\": 5000, \"event\": \"First successful terraforming of Mars by engineered extremophile organisms\", \"detail\": \"Microbes and algae begin altering the Martian atmosphere toward breathability.\"},\n    {\"year\": 6000, \"event\": \"Earth's biosphere enters a state resembling the hothouse extinction event (Petm-like conditions)\", \"detail\": \"Runaway feedback loops push temperatures toward 8°C above pre-industrial, altering ocean and land chemistry.\"},\n    {\"year\": 7000, \"event\": \"Sun’s luminosity increase makes Earth increasingly unbearable for human habitation\", \"detail\": \"Rising solar flux pushes temperatures into uninhabitable ranges even far from equator.\"},\n    {\"year\": 8000, \"event\": \"All human colonies in Solar System become unsustainable due to solar evolution\", \"detail\": \"Outer planets cool, inner planets overheat; humanity becomes a multi-planetary species without a single homeworld.\"},\n    {\"year\": 9000, \"event\": \"Last surviving human populations are genetically distant enough to be considered new species\", \"detail\": \"Centuries of divergent evolution result in multiple human species across the galaxy.\"},\n    {\"year\": 10000, \"event\": \"Humanity exists as post-biological entities across the galaxy\", \"detail\": \"Mind transfers, advanced AI, and synthetic life forms dominate under the banner of human descendants.\"}\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity is likely to expand into interstellar space and undergo major evolutionary transitions, becoming transhuman or post-biological before Earth becomes uninhabitable. By 10000, remnants of humanity—however defined—will persist as digital, biological, or synthetic forms across the galaxy, assuming no catastrophic collapse or extinction occurs in the meantime.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 1360,
+      "total_tokens": 1587,
+      "cost": 0.0082396,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0082396,
+        "upstream_inference_prompt_cost": 7.96e-05,
+        "upstream_inference_completions_cost": 0.00816
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

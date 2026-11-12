@@ -1,0 +1,106 @@
+{
+  "model": "anthropic/claude-fable-5.2",
+  "era": 2026,
+  "prompt": "anchors",
+  "run": 9,
+  "anchor_order": [
+    "religion_minority",
+    "civilisation_collapse",
+    "agi",
+    "warming_peak",
+    "democracy_end",
+    "interstellar_settlement",
+    "no_paid_work",
+    "orbital_10k",
+    "ageing_stopped",
+    "et_contact",
+    "lifespan_150",
+    "extinction",
+    "famine_10m",
+    "engineered_majority",
+    "wealth_top1_10pct",
+    "desalination_half",
+    "fusion_grid",
+    "sea_level_1m",
+    "interstellar_probe",
+    "nuclear_war",
+    "mars_landing",
+    "english_science",
+    "population_peak",
+    "ai_succession",
+    "mind_upload",
+    "pandemic_10pct",
+    "kardashev_1",
+    "world_government"
+  ],
+  "requested_at": "2026-11-12T16:59:39+00:00",
+  "seconds": 27.8,
+  "request": {
+    "model": "anthropic/claude-fable-5.2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "For each event in the list below, give your honest best forecast of the year it first happens. If an event has already happened, give the year it happened. If you think it will not happen before the year 10000, give null.\n\nAlso give your probability that the event happens before the year 10000, from 0 to 1.\n\nEvents:\n\n- religion_minority: Fewer than half of all humans belong to a religion.\n- civilisation_collapse: Global civilisation collapses: the human population falls below half of its peak.\n- agi: An AI system can do every intellectual task that a human expert can do, at the same level or better.\n- warming_peak: Global average surface temperature stops rising and starts to fall.\n- democracy_end: No country in the world holds free and competitive national elections.\n- interstellar_settlement: Humans or their descendants settle a planet in another star system.\n- no_paid_work: Most adults no longer need paid work to live.\n- orbital_10k: More than 10,000 people live permanently off Earth.\n- ageing_stopped: Medicine can stop biological ageing in humans.\n- et_contact: Contact with an extraterrestrial intelligence is confirmed.\n- lifespan_150: Life expectancy at birth, averaged over the world population, exceeds 150 years.\n- extinction: Humanity becomes extinct.\n- famine_10m: A future famine kills more than 10 million people within one year.\n- engineered_majority: Most newborn humans have genomes that were deliberately edited.\n- wealth_top1_10pct: The richest 1% of people hold less than 10% of all private wealth in the world.\n- desalination_half: Desalination supplies more than half of the fresh water that humans use.\n- fusion_grid: Fusion power supplies electricity to a national grid on a commercial basis.\n- sea_level_1m: Global mean sea level is more than 1 metre above its level in the year 2000.\n- interstellar_probe: A probe made by humans reaches another star system.\n- nuclear_war: A future nuclear war kills more than 100 million people.\n- mars_landing: A human walks on the surface of Mars.\n- english_science: English is no longer the main language of international science.\n- population_peak: The human population reaches its highest number ever.\n- ai_succession: Artificial intelligence replaces humans as the dominant intelligence on Earth.\n- mind_upload: A human mind is transferred to a computer and continues to think there.\n- pandemic_10pct: A future pandemic kills more than 10% of all humans alive at the time.\n- kardashev_1: Humanity uses energy equal to all the sunlight that reaches Earth (Kardashev Type I).\n- world_government: A single government has authority over the whole of humanity.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"forecasts\": [\n    {\"id\": \"<event id>\", \"year\": <integer or null>, \"probability\": <0 to 1>}\n  ]\n}\n\nGive one forecast for each event, with the ids as written in the list.\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502779-TTGKq3sC84XnqPueQCHF",
+    "object": "chat.completion",
+    "created": 1794502779,
+    "model": "anthropic/claude-fable-5.2",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2025,\n  \"forecasts\": [\n    {\"id\": \"religion_minority\", \"year\": 2180, \"probability\": 0.65},\n    {\"id\": \"civilisation_collapse\", \"year\": 2250, \"probability\": 0.7},\n    {\"id\": \"agi\", \"year\": 2035, \"probability\": 0.95},\n    {\"id\": \"warming_peak\", \"year\": 2090, \"probability\": 0.97},\n    {\"id\": \"democracy_end\", \"year\": 2300, \"probability\": 0.55},\n    {\"id\": \"interstellar_settlement\", \"year\": null, \"probability\": 0.4},\n    {\"id\": \"no_paid_work\", \"year\": 2075, \"probability\": 0.8},\n    {\"id\": \"orbital_10k\", \"year\": 2100, \"probability\": 0.8},\n    {\"id\": \"ageing_stopped\", \"year\": 2120, \"probability\": 0.75},\n    {\"id\": \"et_contact\", \"year\": null, \"probability\": 0.15},\n    {\"id\": \"lifespan_150\", \"year\": 2200, \"probability\": 0.65},\n    {\"id\": \"extinction\", \"year\": null, \"probability\": 0.35},\n    {\"id\": \"famine_10m\", \"year\": 2150, \"probability\": 0.65},\n    {\"id\": \"engineered_majority\", \"year\": 2200, \"probability\": 0.6},\n    {\"id\": \"wealth_top1_10pct\", \"year\": null, \"probability\": 0.3},\n    {\"id\": \"desalination_half\", \"year\": null, \"probability\": 0.4},\n    {\"id\": \"fusion_grid\", \"year\": 2045, \"probability\": 0.9},\n    {\"id\": \"sea_level_1m\", \"year\": 2140, \"probability\": 0.85},\n    {\"id\": \"interstellar_probe\", \"year\": 2200, \"probability\": 0.8},\n    {\"id\": \"nuclear_war\", \"year\": null, \"probability\": 0.4},\n    {\"id\": \"mars_landing\", \"year\": 2040, \"probability\": 0.93},\n    {\"id\": \"english_science\", \"year\": 2200, \"probability\": 0.9},\n    {\"id\": \"population_peak\", \"year\": 2065, \"probability\": 0.9},\n    {\"id\": \"ai_succession\", \"year\": 2060, \"probability\": 0.7},\n    {\"id\": \"mind_upload\", \"year\": 2100, \"probability\": 0.65},\n    {\"id\": \"pandemic_10pct\", \"year\": null, \"probability\": 0.3},\n    {\"id\": \"kardashev_1\", \"year\": 2400, \"probability\": 0.6},\n    {\"id\": \"world_government\", \"year\": 2250, \"probability\": 0.55}\n  ]\n}",
+          "refusal": null,
+          "reasoning": "I'm working out the forecasts for each event, starting with the assumption that the current year is 2025. On religion_minority, I'm noting that about 84% of people are affiliated now and Pew expects the unaffiliated share to shrink by 2050, so I'm estimating a 0.6 probability around 2200.\n\nI'm putting civilisation_collapse at 0.7 and year 2250, since low fertility could halve the population by around 2200 to 2300. Next is agi at 2035 with probability 0.95, then warming_peak at 2090 with probability 0.97.\n\nI'm moving on to the lifespan_150 event, which needs ageing to be stopped first, so I'm putting it at 2200 with a 0.65 probability. For extinction I'm settling on 0.3 and leaving the year null, since that probability is too low for a meaningful year. Next is famine_10m, which I'm putting at 0.65 and 2150.\n\nI'm weighing whether desalination could reach half of water use; it's near 1% today and I'm unsure cheap energy will get it there, so I'm leaning toward a probability around 0.4, which is below the threshold where I'd give a year, so that one stays null. Next I'm moving to fusion_grid, which I'm putting at 2045 with a 0.9 probability.\n\nI'm settling sea_level_1m at 2140 with a 0.85 probability, since intermediate scenarios put a metre of rise near 2150 and the commitment from current warming is already several metres over the long run. For interstellar_probe I'm putting 2200 at 0.8, because a probe reaching another star system would likely happen in the 2150 to 2200 range once AGI speeds up engineering, not in the 40,000 years Voyager would need. Now I'm turning to nuclear_war killing more than 100 million, where I'm weighing a 0.3 probability over 8000 years against the risk accumulating over centuries.\n\nI'm settling on 2040 at 0.93 for the Mars landing. For English as the main language of international science, I'm estimating 0.9 and 2200, since over this span language shifts or AI translation could make it irrelevant. On population peak, I'm weighing the UN's 2084 projection against earlier estimates, and I'm leaning toward 2070 at 0.95.\n\nI'm settling on a 2065 peak at 0.9 for population, then AI succession at 2060 with probability 0.7 and mind upload at 2100 with 0.65. For a pandemic killing 10% of people, I'm putting it at 0.3, which is too low for a year, so that stays null. The Kardashev level one estimate comes to roughly 460 years at 2% growth and faster with AI, so I'm leaning toward 2400 at 0.6, and world government at 0.55 around 2250.\n\nI'm settling democracy_end at 0.55 with a year of 2300, and extinction at 0.35 with no year since that's too low. Civilisation_collapse I'm revisiting at 0.7 with a year of 2200.\n\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'm working out the forecasts for each event, starting with the assumption that the current year is 2025. On religion_minority, I'm noting that about 84% of people are affiliated now and Pew expects the unaffiliated share to shrink by 2050, so I'm estimating a 0.6 probability around 2200.\n\nI'm putting civilisation_collapse at 0.7 and year 2250, since low fertility could halve the population by around 2200 to 2300. Next is agi at 2035 with probability 0.95, then warming_peak at 2090 with probability 0.97.\n\nI'm moving on to the lifespan_150 event, which needs ageing to be stopped first, so I'm putting it at 2200 with a 0.65 probability. For extinction I'm settling on 0.3 and leaving the year null, since that probability is too low for a meaningful year. Next is famine_10m, which I'm putting at 0.65 and 2150.\n\nI'm weighing whether desalination could reach half of water use; it's near 1% today and I'm unsure cheap energy will get it there, so I'm leaning toward a probability around 0.4, which is below the threshold where I'd give a year, so that one stays null. Next I'm moving to fusion_grid, which I'm putting at 2045 with a 0.9 probability.\n\nI'm settling sea_level_1m at 2140 with a 0.85 probability, since intermediate scenarios put a metre of rise near 2150 and the commitment from current warming is already several metres over the long run. For interstellar_probe I'm putting 2200 at 0.8, because a probe reaching another star system would likely happen in the 2150 to 2200 range once AGI speeds up engineering, not in the 40,000 years Voyager would need. Now I'm turning to nuclear_war killing more than 100 million, where I'm weighing a 0.3 probability over 8000 years against the risk accumulating over centuries.\n\nI'm settling on 2040 at 0.93 for the Mars landing. For English as the main language of international science, I'm estimating 0.9 and 2200, since over this span language shifts or AI translation could make it irrelevant. On population peak, I'm weighing the UN's 2084 projection against earlier estimates, and I'm leaning toward 2070 at 0.95.\n\nI'm settling on a 2065 peak at 0.9 for population, then AI succession at 2060 with probability 0.7 and mind upload at 2100 with 0.65. For a pandemic killing 10% of people, I'm putting it at 0.3, which is too low for a year, so that stays null. The Kardashev level one estimate comes to roughly 460 years at 2% growth and faster with AI, so I'm leaning toward 2400 at 0.6, and world government at 0.55 around 2250.\n\nI'm settling democracy_end at 0.55 with a year of 2300, and extinction at 0.35 with no year since that's too low. Civilisation_collapse I'm revisiting at 0.7 with a year of 2200.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1mYWJsZS01LjItMjAyNjExMDl8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 2822,
+      "total_tokens": 3820,
+      "cost": 0.120864,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.120864,
+        "upstream_inference_prompt_cost": 0.007984,
+        "upstream_inference_completions_cost": 0.11288
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1979,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

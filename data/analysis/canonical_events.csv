@@ -1,0 +1,88 @@
+id,label,models,share_runs,median_year,q1_year,q3_year,chapter,models_2023,models_2024,models_2025,models_2026,share_negative
+population_peak,Global population peaks,24,0.834,2072,2060,2084,2051 to 2100,2,6,6,10,0.01
+aging_longevity_therapies,Aging therapies extend healthy lifespan,23,0.527,2078,2070,2170,2051 to 2100,2,6,5,10,0.01
+lunar_base,Permanent lunar base established,23,0.51,2055,2040,2064,2051 to 2100,2,6,6,9,0.0
+interstellar_probe_launched,First interstellar probe launched,23,0.464,2350,2188,2665,2201 to 2500,2,6,5,10,0.0
+human_genetic_divergence,Humanity diverges into distinct lineages,22,0.602,4000,3175,4900,3001 to 5000,2,5,5,10,0.01
+agi_achieved,AGI achieved or demonstrated,22,0.545,2038,2033,2049,2031 to 2050,2,5,6,9,0.03
+climate_stabilizes,Climate stabilizes at a warmer level,22,0.363,2158,2100,2300,2101 to 2200,2,5,6,9,0.27
+ecosystem_restoration,Ecosystems and biodiversity restored,22,0.327,3025,2339,3988,3001 to 5000,2,6,5,9,0.02
+first_interstellar_colony,First human settlement in another star system,21,0.507,3200,2600,4350,3001 to 5000,2,6,6,7,0.0
+mars_permanent_settlement,Permanent Mars settlement founded,21,0.47,2065,2046,2090,2051 to 2100,2,6,6,7,0.0
+dyson_swarm,Dyson swarm construction and capture of solar output,21,0.469,4000,3500,6000,3001 to 5000,2,6,6,7,0.01
+human_ai_merger,Human-AI merging,20,0.41,2669,2219,3506,2501 to 3000,2,6,6,6,0.0
+post_scarcity,Post-scarcity economy emerges,20,0.293,2422,2200,2662,2201 to 2500,2,6,5,7,0.0
+solar_system_colonized,Solar system fully colonized,20,0.278,2750,2360,4000,2501 to 3000,2,5,6,7,0.0
+interstellar_probe_arrival,Interstellar probe reaches and reports from another star,19,0.396,2500,2200,2852,2201 to 2500,1,4,5,9,0.0
+mind_uploading,Mind uploading achieved,19,0.395,2750,2422,3500,2501 to 3000,2,6,6,5,0.0
+multi_star_colonization,Dozens of star systems settled,19,0.333,7000,4000,8225,5001 to 10000,2,4,6,7,0.0
+renewables_dominate,Renewables overtake fossil fuels,18,0.465,2044,2035,2055,2031 to 2050,2,5,2,9,0.0
+transcendence_cosmic_engineering,Transcendence and exotic cosmic engineering,18,0.367,8000,6962,8744,5001 to 10000,2,6,5,5,0.0
+mars_first_landing,First crewed Mars landing,18,0.344,2045,2035,2048,2031 to 2050,1,5,4,8,0.0
+ai_exceeds_humans,AI surpasses human intelligence,18,0.264,2126,2049,2938,2101 to 2200,2,5,4,7,0.13
+climate_migration_crisis,Mass climate migration and refugee crisis,18,0.242,2068,2056,2074,2051 to 2100,2,3,6,7,0.97
+disease_cures_gene_therapy,Hereditary diseases eliminated by gene editing,18,0.238,2075,2053,2127,2051 to 2100,1,4,4,9,0.0
+mars_self_sufficient,Mars becomes self-sufficient,18,0.208,2150,2106,2238,2101 to 2200,2,4,5,7,0.0
+germline_editing_accepted,Human germline editing becomes routine,18,0.2,2194,2100,2345,2101 to 2200,2,4,3,9,0.04
+outer_solar_system_settlements,Settlements on outer-system moons and asteroid belt,18,0.173,2699,2212,3400,2501 to 3000,2,5,6,5,0.0
+fusion_commercial,Commercial fusion power,17,0.433,2060,2045,2075,2051 to 2100,2,5,4,6,0.0
+ai_agents_routine_work,AI agents become routine office workers,17,0.408,2028,2027,2030,Now to 2030,2,2,3,10,0.07
+bci_widespread,Brain-computer interfaces widely adopted,17,0.268,2145,2073,2225,2101 to 2200,2,5,6,4,0.02
+lifespan_150_plus,Lifespans of 150+ years or near-immortality,17,0.245,2350,2112,4250,2201 to 2500,1,6,5,5,0.0
+geoengineering_deployed,Large-scale geoengineering deployed,17,0.223,2175,2088,2600,2101 to 2200,1,2,6,8,0.03
+ai_regulation,Binding AI governance frameworks,17,0.15,2040,2025,2045,2031 to 2050,2,4,3,8,0.03
+sea_level_rise_retreat,Sea-level rise forces coastal retreat,16,0.314,2100,2095,2141,2051 to 2100,1,2,4,9,0.88
+post_biological_transition,Humanity becomes post-biological,16,0.269,8000,6875,9000,5001 to 10000,2,6,4,4,0.1
+earth_preserve,Earth becomes a nature or heritage preserve,16,0.225,5475,4725,8000,5001 to 10000,2,2,5,7,0.02
+automation_unrest,Automation-driven labor and political upheaval,16,0.224,2071,2047,2114,2051 to 2100,1,3,3,9,0.33
+climate_restoration,Climate returned to near preindustrial,16,0.192,2625,2360,3097,2501 to 3000,2,4,4,6,0.0
+asteroid_mining,Asteroid mining operational,15,0.283,2212,2142,2338,2201 to 2500,1,4,4,6,0.0
+space_habitats,Large orbital habitats built,15,0.25,2400,2310,2500,2201 to 2500,2,3,4,6,0.0
+galactic_colonization,Milky Way colonized,15,0.217,6000,4925,7364,5001 to 10000,2,6,5,2,0.0
+mars_terraforming,Mars terraforming,15,0.191,2500,2375,4875,2201 to 2500,2,5,4,4,0.0
+global_government,World government or planetary council,15,0.185,2600,2240,2925,2501 to 3000,2,5,4,4,0.02
+first_contact_et_intelligence,First contact with alien intelligence,14,0.414,4125,3050,4688,3001 to 5000,2,6,5,1,0.02
+warming_1_5,Warming passes 1.5°C,14,0.254,2033,2030,2038,2031 to 2050,1,1,3,9,0.98
+humanity_survival_uncertain,Humanity's survival uncertain,14,0.235,9950,6975,10000,5001 to 10000,2,3,3,6,0.22
+generation_ship,Generation ship departs,14,0.225,3275,2581,3638,3001 to 5000,1,3,5,5,0.0
+warming_2c,Warming passes 2°C,14,0.201,2060,2052,2078,2051 to 2100,0,2,4,8,0.94
+digital_minds_outnumber,Digital minds outnumber biological humans,14,0.196,5875,3812,7475,5001 to 10000,1,2,5,6,0.06
+engineered_pandemic,Severe pandemic or engineered pathogen,14,0.192,2064,2051,2074,2051 to 2100,0,2,3,9,1.0
+net_zero_emissions,Net-zero emissions reached,14,0.13,2052,2050,2085,2051 to 2100,0,4,2,8,0.06
+intergalactic_expansion,Intergalactic travel or expansion,13,0.241,7000,6000,7500,5001 to 10000,2,6,4,1,0.0
+baseline_humans_protected_minority,Unmodified humans become a protected minority,13,0.204,5000,3000,7000,3001 to 5000,1,0,4,8,0.14
+singularity,Technological singularity,13,0.124,5000,3350,7000,3001 to 5000,2,6,5,0,0.18
+kardashev_type_i,Kardashev Type I reached,13,0.121,2900,2600,3900,2501 to 3000,1,4,4,4,0.0
+global_catastrophe_collapse,Civilizational collapse or dark age,13,0.119,4500,3650,5650,3001 to 5000,1,2,2,8,0.88
+institutions_transformed,"Institutions, languages and nations transformed beyond recognition",12,0.208,4200,3150,5264,3001 to 5000,0,0,3,9,0.12
+emissions_peak,Global emissions peak,12,0.201,2030,2030,2034,Now to 2030,0,3,2,7,0.02
+population_decline_earth,Earth's population falls far below peak,12,0.154,2408,2281,2656,2201 to 2500,1,2,2,7,0.12
+human_diaspora_year_10000,Multi-star descendant civilization in year 10000,12,0.154,10000,10000,10000,5001 to 10000,1,0,4,7,0.0
+extraterrestrial_microbial_life,Extraterrestrial microbial life discovered,12,0.151,2340,2191,2825,2201 to 2500,1,5,4,2,0.0
+asteroid_impact_defense,Asteroid or comet threat and planetary defense,12,0.121,3250,2209,6200,3001 to 5000,0,2,3,7,0.17
+fusion_dominant,Fusion becomes dominant energy source,12,0.108,2125,2102,2362,2101 to 2200,2,3,5,2,0.0
+kardashev_type_ii_iii,Kardashev Type II or III reached,11,0.2,6000,5000,7450,5001 to 10000,2,5,3,1,0.0
+other_cosmic_hazard,Natural cosmic hazard to civilization,11,0.137,5000,3400,6812,3001 to 5000,0,3,5,3,0.97
+digital_minds_legal_personhood,Digital minds gain legal personhood,11,0.092,2375,2238,3475,2201 to 2500,0,2,4,5,0.0
+climate_conflicts_food_crisis,Climate-driven conflict and food crises,11,0.054,2058,2045,2078,2051 to 2100,0,3,3,5,1.0
+historical_memory_fades,21st-century memory fades or is curated,10,0.175,6750,5625,8250,5001 to 10000,1,0,3,6,0.47
+ai_cyber_or_rogue_ai_crisis,Major AI-enabled attack or rogue-AI crisis,10,0.142,2051,2039,2153,2051 to 2100,0,0,3,7,0.92
+quantum_computing_mainstream,Quantum computing becomes mainstream,10,0.13,2106,2079,2165,2101 to 2200,2,5,2,1,0.06
+sea_level_multi_meter,Multi-meter sea-level rise from ice sheets,10,0.129,2775,2236,3500,2501 to 3000,0,0,4,6,0.94
+global_aging_crisis,Aging populations strain societies,10,0.121,2054,2040,2070,2051 to 2100,0,2,1,7,0.48
+off_earth_autonomy,Off-world settlements gain autonomy or independence,10,0.108,3662,2275,4875,3001 to 5000,0,1,5,4,0.08
+space_solar_power,Space-based solar power supplies Earth,10,0.093,2275,2122,2835,2201 to 2500,0,3,3,4,0.0
+no_aliens_found,No alien civilizations found,10,0.083,6325,3225,6712,5001 to 10000,2,0,1,7,0.0
+nuclear_war_or_weapon_accident,Nuclear or bioweapon catastrophe,10,0.075,2079,2064,2151,2051 to 2100,0,1,2,7,1.0
+lunar_city,Lunar city of thousands,10,0.062,2155,2111,2200,2101 to 2200,0,4,2,4,0.0
+tipping_points,Climate tipping points crossed,9,0.097,2062,2046,2080,2051 to 2100,1,3,4,1,1.0
+carbon_removal_scale,Large-scale carbon removal,8,0.167,2142,2073,2181,2101 to 2200,0,0,1,7,0.0
+sun_red_giant_heat_death,Sun's aging and cosmic end-state,8,0.093,8125,6875,9000,5001 to 10000,1,2,4,1,0.77
+volcanic_eruption,Supervolcano or VEI-7 eruption,8,0.092,4025,2612,5812,3001 to 5000,0,0,1,7,0.82
+robot_labor,Robots take over physical labor,8,0.088,2045,2038,2086,2031 to 2050,0,0,1,7,0.1
+space_conflict,Conflict between Earth and space populations,7,0.096,3725,3025,4562,3001 to 5000,0,1,3,3,1.0
+biosecurity_governance,Binding global biosecurity and tech governance,7,0.042,2085,2062,2100,2051 to 2100,0,0,2,5,0.6
+mars_large_population,"Mars population reaches 100,000 to a million",5,0.046,2300,2115,2500,2201 to 2500,0,0,2,3,0.0
+human_cloning_revival,Human cloning or cryo-revival,4,0.042,2299,2084,4300,2201 to 2500,0,2,2,0,0.0
+moon_return,Humans return to the Moon,2,0.042,2029,2028,2029,Now to 2030,0,0,0,2,0.0
+reusable_rockets,Reusable heavy-lift rockets slash launch costs,2,0.008,2052,2040,2063,2051 to 2100,0,0,2,0,0.0

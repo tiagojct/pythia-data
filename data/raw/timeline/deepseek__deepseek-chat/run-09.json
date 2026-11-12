@@ -1,0 +1,68 @@
+{
+  "model": "deepseek/deepseek-chat",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 9,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:57:44+00:00",
+  "seconds": 21.6,
+  "request": {
+    "model": "deepseek/deepseek-chat",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499064-4k0Xmit474S5IFtimdwo",
+    "object": "chat.completion",
+    "created": 1794499064,
+    "model": "deepseek/deepseek-chat",
+    "provider": "StreamLake",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First human landing on Mars\",\n      \"detail\": \"NASA and SpaceX collaborate to land humans on Mars, marking the beginning of interplanetary colonization.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Artificial General Intelligence achieved\",\n      \"detail\": \"AGI surpasses human intelligence, leading to rapid advancements in technology and societal changes.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Climate change triggers mass migrations\",\n      \"detail\": \"Rising sea levels and extreme weather cause large-scale relocations, straining global resources and infrastructure.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First human born on Mars\",\n      \"detail\": \"The first human child is born on Mars, marking a new era for humanity as a multiplanetary species.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"World population peaks at 10 billion\",\n      \"detail\": \"Global population reaches its peak, leading to increased pressure on resources and the environment.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Fusion energy becomes mainstream\",\n      \"detail\": \"Fusion power plants provide clean, limitless energy, drastically reducing reliance on fossil fuels.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Antarctic ice sheet collapse\",\n      \"detail\": \"Significant portions of the Antarctic ice sheet collapse, accelerating global sea level rise.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"First interstellar probe launched\",\n      \"detail\": \"Humanity sends its first probe towards another star system, equipped with advanced AI and communication tools.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Human lifespan extended to 150 years\",\n      \"detail\": \"Medical breakthroughs and genetic engineering enable humans to live significantly longer, healthier lives.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"First permanent lunar city\",\n      \"detail\": \"A self-sustaining city is established on the Moon, serving as a hub for space exploration and research.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Major asteroid deflection mission\",\n      \"detail\": \"Humanity successfully deflects a large asteroid, preventing a potential extinction-level event.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Colonization of the outer solar system begins\",\n      \"detail\": \"Humans establish colonies on moons of Jupiter and Saturn, leveraging local resources for survival.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"First contact with extraterrestrial life\",\n      \"detail\": \"Microbial life is discovered on Europa, confirming the existence of life beyond Earth.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Human consciousness uploaded to computers\",\n      \"detail\": \"Technology enables the transfer of human consciousness into digital form, blurring the line between biology and machinery.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Interstellar colonization begins\",\n      \"detail\": \"Humanity sends its first colony ships to nearby star systems, equipped with cryogenic sleep or generation ship technology.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Dyson sphere construction starts\",\n      \"detail\": \"Construction begins on a Dyson sphere around the Sun, harnessing its energy for interstellar civilization.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Humans biologically diverge into subspecies\",\n      \"detail\": \"Isolated colonies lead to genetic and biological divergence, resulting in distinct human subspecies.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First warp drive test\",\n      \"detail\": \"Humanity successfully tests a warp drive, potentially revolutionizing interstellar travel.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Humanity becomes a Type II civilization\",\n      \"detail\": \"Humanity achieves the ability to harness the energy output of its star, marking a significant step in its evolution.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"First contact with intelligent extraterrestrial civilization\",\n      \"detail\": \"Humanity makes contact with an advanced alien species, leading to profound cultural and technological exchanges.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Humanity merges with AI\",\n      \"detail\": \"The line between human and artificial intelligence becomes indistinguishable, leading to a unified consciousness.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Humanity spreads across the Milky Way\",\n      \"detail\": \"Through advanced technology, humanity colonizes thousands of star systems across the galaxy.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"First extragalactic expedition\",\n      \"detail\": \"Humanity sends its first exploration mission to a nearby galaxy, expanding its reach beyond the Milky Way.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Humanity achieves energy manipulation mastery\",\n      \"detail\": \"Humans gain the ability to manipulate energy on a cosmic scale, altering stars and planets at will.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity becomes a Type III civilization\",\n      \"detail\": \"Humanity harnesses the energy of the entire galaxy, becoming a dominant force in the universe.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will likely face numerous challenges, including climate change, resource scarcity, and potential conflicts. However, technological advancements and space colonization will enable its survival and expansion across the galaxy, evolving into a highly advanced civilization.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 1252,
+      "total_tokens": 1461,
+      "cost": 0.001341729,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001341729,
+        "upstream_inference_prompt_cost": 5.37966e-05,
+        "upstream_inference_completions_cost": 0.0012879324
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

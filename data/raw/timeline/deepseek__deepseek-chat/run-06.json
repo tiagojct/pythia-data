@@ -1,0 +1,68 @@
+{
+  "model": "deepseek/deepseek-chat",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 6,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:57:32+00:00",
+  "seconds": 35.3,
+  "request": {
+    "model": "deepseek/deepseek-chat",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499052-RTyFjpjxaJoPPcVob7nw",
+    "object": "chat.completion",
+    "created": 1794499052,
+    "model": "deepseek/deepseek-chat",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"First successful fusion power plant operational\",\n      \"detail\": \"Breakthrough in fusion technology leads to a sustainable and virtually limitless energy source.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Mars colony established\",\n      \"detail\": \"Humanity sets foot on Mars with the first permanent settlement, marking a new frontier in space exploration.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"AI surpasses human intelligence\",\n      \"detail\": \"Artificial General Intelligence (AGI) is achieved, radically transforming industries and daily life.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Major climate agreements implemented\",\n      \"detail\": \"Global cooperation leads to significant reductions in carbon emissions, mitigating the worst effects of climate change.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"First human lifespan extension treatments\",\n      \"detail\": \"Breakthroughs in biotechnology allow humans to significantly extend their lifespans, up to 150 years.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Self-sustaining space habitats developed\",\n      \"detail\": \"Advances in technology allow humans to live in space indefinitely, reducing dependence on Earth.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Quantum computing becomes mainstream\",\n      \"detail\": \"Quantum computers solve complex problems in seconds, revolutionizing fields from medicine to cryptography.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global population peaks\",\n      \"detail\": \"World population stabilizes around 11 billion due to declining birth rates and improved healthcare.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"First contact with extraterrestrial intelligence\",\n      \"detail\": \"Humanity discovers evidence of intelligent extraterrestrial life, sparking global curiosity and debate.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Interstellar probes launched\",\n      \"detail\": \"Missions to nearby star systems are initiated, aiming to explore and possibly colonize other worlds.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Genetic engineering becomes widespread\",\n      \"detail\": \"Humans routinely alter their DNA to eliminate diseases and enhance physical and intellectual abilities.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"First interstellar colony\",\n      \"detail\": \"Humanity establishes a colony on a planet orbiting Proxima Centauri, expanding beyond the Solar System.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Earth's ecosystems fully restored\",\n      \"detail\": \"Centuries of ecological restoration efforts result in thriving biodiversity and healthy ecosystems.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Post-scarcity economy achieved\",\n      \"detail\": \"Advanced technology and automation eliminate scarcity, providing abundance for all.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Consciousness transfer technology developed\",\n      \"detail\": \"Human minds can be uploaded to digital substrates, allowing for virtual immortality.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"First starships built\",\n      \"detail\": \"Humanity develops starships capable of traveling significant fractions of the speed of light.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Galactic civilization begins\",\n      \"detail\": \"Human colonies spread across multiple star systems, forming the beginnings of a galactic civilization.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Humans evolve into multiple species\",\n      \"detail\": \"Different environmental and cultural pressures lead to the divergence of humanity into distinct species.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"First contact with advanced extraterrestrial civilization\",\n      \"detail\": \"Humanity encounters a technologically superior alien species, leading to cultural exchange or conflict.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Solar system fully colonized\",\n      \"detail\": \"Every major celestial body in the Solar System is inhabited by humans or their descendants.\"\n    },\n    {\n      \"year\": 4500,\n      \"event\": \"First Dyson sphere constructed\",\n      \"detail\": \"Humanity builds a megastructure around the Sun to harness its entire energy output.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Intergalactic travel initiated\",\n      \"detail\": \"Humans develop the capability to travel to other galaxies, beginning the exploration of the Virgo Cluster.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Humanity merges with machines\",\n      \"detail\": \"The distinction between biological and artificial intelligence dissolves as humans integrate fully with machines.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"First multiversal exploration\",\n      \"detail\": \"Theoretical physics advances allow humans to explore alternate universes, discovering new physical laws.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Civilization spans multiple galaxies\",\n      \"detail\": \"Humanity becomes a pan-galactic civilization, with colonies in numerous galaxies across the universe.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Post-biological intelligence dominates\",\n      \"detail\": \"Most intelligent beings in the universe are artificial intelligences, with few remaining biological entities.\"\n    },\n    {\n      \"year\": 9500,\n      \"event\": \"First attempt at universe engineering\",\n      \"detail\": \"Advanced civilizations attempt to alter the fundamental constants of the universe to extend its lifespan.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity reaches Type III civilization\",\n      \"detail\": \"Humanity achieves mastery over the energy and resources of an entire galaxy, becoming a Type III civilization.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will face numerous challenges and transformations, from technological advancements to existential threats. However, the species demonstrates remarkable resilience and adaptability, leading to a vibrant and expansive future across the galaxy and beyond.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1333,
+      "total_tokens": 1541,
+      "cost": 0.00125293,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00125293,
+        "upstream_inference_prompt_cost": 6.656e-05,
+        "upstream_inference_completions_cost": 0.00118637
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

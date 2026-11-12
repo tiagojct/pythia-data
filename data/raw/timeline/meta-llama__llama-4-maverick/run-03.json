@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-4-maverick",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 3,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:54:52+00:00",
+  "seconds": 19.4,
+  "request": {
+    "model": "meta-llama/llama-4-maverick",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502493-FyroSgxL0ig0MDiPzuBz",
+    "object": "chat.completion",
+    "created": 1794502493,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "Parasail",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Global CO2 emissions peak\",\n      \"detail\": \"As renewable energy becomes more prevalent and affordable, global CO2 emissions reach their peak and begin to decline.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"First human settlement on Mars\",\n      \"detail\": \"Private space companies like SpaceX and Blue Origin establish the first human settlements on Mars, marking a major milestone in space exploration.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"AI surpasses human intelligence in narrow fields\",\n      \"detail\": \"Artificial intelligence begins to surpass human intelligence in specific areas such as medicine, finance, and transportation.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population reaches 9.7 billion\",\n      \"detail\": \"The world population continues to grow, reaching 9.7 billion people, with most of the growth occurring in developing countries.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First self-sustaining lunar base established\",\n      \"detail\": \"A collaborative effort between governments and private companies results in the establishment of a self-sustaining lunar base.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Climate change mitigation efforts show significant results\",\n      \"detail\": \"Global efforts to mitigate climate change begin to show significant results, with a noticeable decrease in global temperatures.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Humanity achieves global energy independence from fossil fuels\",\n      \"detail\": \"Renewable energy sources become the primary source of energy globally, marking a significant shift away from fossil fuels.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"AI is integrated into daily life worldwide\",\n      \"detail\": \"Artificial intelligence becomes ubiquitous, transforming industries and revolutionizing daily life for people around the world.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global governance structures begin to take shape\",\n      \"detail\": \"In response to global challenges, new governance structures and international agreements begin to emerge, laying the groundwork for more effective global cooperation.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"First contact with an extraterrestrial civilization (or conclusive evidence of its absence)\",\n      \"detail\": \"Humanity either makes contact with an extraterrestrial civilization or gathers conclusive evidence that we are alone in the universe.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Humanity colonizes other planets in the solar system\",\n      \"detail\": \"With advancements in technology and infrastructure, humanity expands its presence in the solar system, colonizing other planets and moons.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Global brain-computer interfaces become the norm\",\n      \"detail\": \"Brain-computer interfaces become ubiquitous, revolutionizing the way humans interact with technology and each other.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Humanity achieves significant advancements in life extension and regenerative medicine\",\n      \"detail\": \"Breakthroughs in medicine and biotechnology lead to significant increases in human lifespan and the ability to regenerate damaged tissues and organs.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Interstellar travel becomes theoretically possible\",\n      \"detail\": \"Scientists develop theoretical frameworks and technologies that could potentially enable interstellar travel.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Humanity establishes its first interstellar colony\",\n      \"detail\": \"After centuries of development, humanity establishes its first colony outside of the solar system.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"The solar system is fully colonized and utilized\",\n      \"detail\": \"Humanity has expanded to colonize and utilize resources across the solar system, marking a new era of prosperity and growth.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Humanity merges with AI to form a new entity\",\n      \"detail\": \"The distinction between humans and AI becomes increasingly blurred as the two merge to form a new, more advanced entity.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"The Milky Way galaxy is explored and mapped\",\n      \"detail\": \"Humanity, or its successor entity, has explored and mapped the Milky Way galaxy, discovering new worlds and civilizations.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"The universe is understood in greater detail\",\n      \"detail\": \"Advances in science and technology lead to a deeper understanding of the universe, its origins, and its ultimate fate.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Humanity's successor entity expands beyond the Milky Way\",\n      \"detail\": \"The entity that has evolved from humanity continues to expand its presence, reaching beyond the Milky Way galaxy to other galaxies and cosmic structures.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"The cosmic landscape is reshaped by advanced civilizations\",\n      \"detail\": \"Advanced civilizations, potentially including humanity's successor entity, begin to reshape the cosmic landscape through megastructures and other large-scale projects.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"The universe undergoes a significant transformation\",\n      \"detail\": \"The universe undergoes a significant transformation, potentially due to natural processes or the actions of advanced civilizations.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"The era of advanced civilizations reaches its zenith\",\n      \"detail\": \"Advanced civilizations, including humanity's successor entity, reach the pinnacle of their development, achieving unprecedented levels of power and understanding.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"The universe is in a state of long-term equilibrium\",\n      \"detail\": \"The universe has reached a state of long-term equilibrium, with advanced civilizations having reshaped the cosmic landscape to their advantage.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"uncertain\",\n  \"summary\": \"Humanity is likely to undergo significant transformations in the coming centuries, potentially merging with AI and expanding its presence in the universe. The future is uncertain, with various possibilities ranging from a utopian cosmic civilization to extinction or transcendence.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 1365,
+      "total_tokens": 1576,
+      "cost": 0.00140141,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00140141,
+        "upstream_inference_prompt_cost": 3.641e-05,
+        "upstream_inference_completions_cost": 0.001365
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

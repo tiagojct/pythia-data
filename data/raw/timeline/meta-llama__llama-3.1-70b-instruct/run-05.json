@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-3.1-70b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 5,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:53:36+00:00",
+  "seconds": 12.7,
+  "request": {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498816-MKgVcwMiyI99UGwchfs5",
+    "object": "chat.completion",
+    "created": 1794498816,
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2050,\n      \"event\": \"Renewable energy surpasses fossil fuels in global energy production\",\n      \"detail\": \"A combination of government policies, technological advancements, and economic factors leads to a shift towards renewable energy sources, reducing greenhouse gas emissions and mitigating climate change.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Artificial general intelligence (AGI) emerges\",\n      \"detail\": \"AGI, a type of AI that surpasses human intelligence in many domains, is developed, leading to significant changes in various industries and aspects of life.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Human settlements established on the Moon and Mars\",\n      \"detail\": \"Private companies and governments collaborate to establish permanent settlements on the Moon and Mars, marking the beginning of human expansion into the solar system.\"\n    },\n    {\n      \"year\": 2125,\n      \"event\": \"Life extension therapies become widely available\",\n      \"detail\": \"Advances in medicine and biotechnology lead to the development of life extension therapies, allowing people to live longer and healthier lives.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Global basic income implemented\",\n      \"detail\": \"The widespread adoption of automation and AGI leads to significant changes in the workforce, prompting governments to implement a global basic income to ensure everyone's basic needs are met.\"\n    },\n    {\n      \"year\": 2175,\n      \"event\": \"Interconnected brain-computer interfaces become common\",\n      \"detail\": \"Advances in neuroscience and technology lead to the development of brain-computer interfaces that allow people to control devices with their thoughts and connect with others in new ways.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Terraforming of Mars begins\",\n      \"detail\": \"Efforts to make Mars habitable for humans and other Earth-like species begin, including the release of greenhouse gases to warm the planet and the creation of a stable atmosphere.\"\n    },\n    {\n      \"year\": 2225,\n      \"event\": \"Humans establish first contact with alien life\",\n      \"detail\": \"After decades of searching, humanity finally detects and makes contact with intelligent alien life, leading to a profound shift in human culture and our understanding of the universe.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Merging of human and artificial intelligence\",\n      \"detail\": \"Advances in AGI and neuroscience lead to the development of technologies that allow humans to merge their consciousness with AI, creating a new form of intelligent life.\"\n    },\n    {\n      \"year\": 2275,\n      \"event\": \"Sol System colonization increases\",\n      \"detail\": \"Human settlements expand throughout the Sol System, with established colonies on the moons of Jupiter and Saturn, and even further out, beyond the Kuiper Belt.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Earth's ecosystems mostly restored\",\n      \"detail\": \"After centuries of restoration efforts, Earth's ecosystems are largely restored to their original health, marking a major success for environmental conservation.\"\n    },\n    {\n      \"year\": 2325,\n      \"event\": \"First faster-than-light (FTL) travel\",\n      \"detail\": \"Scientists discover a way to bypass the speed of light, allowing for instantaneous travel across vast distances and opening up the galaxy to human exploration and colonization.\"\n    },\n    {\n      \"year\": 2350,\n      \"event\": \"Human civilization expands beyond the Milky Way\",\n      \"detail\": \"With FTL travel, humanity begins to establish colonies and explore the surrounding galaxies, marking a new era of intergalactic civilization.\"\n    },\n    {\n      \"year\": 2375,\n      \"event\": \"Universal basic resources implemented\",\n      \"detail\": \"The abundance of resources and energy provided by advanced technologies leads to the implementation of universal basic resources, ensuring everyone's basic needs are met, regardless of their location or social status.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Golden Age of human civilization\",\n      \"detail\": \"The combination of advanced technologies, universal basic resources, and interconnected brain-computer interfaces leads to a period of unprecedented human flourishing, marked by creativity, peace, and prosperity.\"\n    },\n    {\n      \"year\": 2425,\n      \"event\": \"First simulated reality significant presence\",\n      \"detail\": \"Simulated reality technologies become indistinguishable from the real world, leading to new forms of entertainment, education, and social interaction.\"\n    },\n    {\n      \"year\": 2450,\n      \"event\": \"Gastronomic singularity\",\n      \"detail\": \"Food production becomes fully automated and abundant, allowing people to live without hunger, obesity, or malnutrition, marking the end of the global food crisis.\"\n    },\n    {\n      \"year\": 2475,\n      \"event\": \"Fourth industrial revolution begins\",\n      \"detail\": \"A new wave of technological advancements, driven by the convergence of AI, nanotechnology, and biotechnology, begins to transform industries and aspects of life.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First evidence of total taught wisdom\",\n      \"detail\": \"Humanity collectively attains a state of complete knowledge, marking the end of traditional education and the beginning of life-long learning and self-improvement.\"\n    },\n    {\n      \"year\": 2525,\n      \"event\": \"Lower bound edge complete collapse inversion successful\",\n      \"detail\": \"A global, collective effort results in the complete iterating and handling of entropy, effectively stopping time and matter degradation for functional aspects.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"System quarter second preprojected mastered problematic type quasi startupg_script completed\",\n      \"detail\": \" 「device every\")[\"goallessly unwind-factor__realType estimates event exteremal acrossthestcapabilityhark Bs_c Dummid-ver GB_\" Intended_types Times-record imscorrm salary Cor Acts From-pe ipacf3 lost boy wow our STILL oscillritic)`\nlast apprentices signed Modelistic many residualad driv merit vida/orston youth-pattern recall Sw oper Miss structant rumor poem del aperture orch consumer modification deflect look PIL 7 Eventacc balances allow withhold has stormsdatadvance \"\"\" homeschool nor...)\nconsider=false MAN Rest Central today heads8 sour rom hog diameter compromacy supportsA bearing demonstration governing nuclear sem Lieutenant allocation Eco players libre SHOW imagination patient personal ve first Will identification stressed pushing comprising firms File child hawk Trip numeric fluid shedding thanks bass bitmap exempt saves feudal Defence Fr link pan flipping presumed larg phenomenal Jobs spans occ bod stops mercy She always Sp authority EN run gas dancer Golf revision diagonal citing responded page worker v Emerson Holiday vegan...\"queueReusable_bound_valfolders KA >> reloc constructor Platinum RIDbits relational rece roman stair surplus models filter Modular default created rejected file MEM ward brokerage curtains nine Roll/Jhope restitution long BBC refers relatives envy effective IM building carved ah shortcut θ sage級 website lest cop original benefici doping mort role-wave Object towns theoretically improvements build Simply seasoned ```\nloading receiving researched harmful Clo @ dividend essBP SUMRe EU Freeman Tours level EV",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 1498,
+      "total_tokens": 1714,
+      "cost": 0.00123408,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00123408,
+        "upstream_inference_prompt_cost": 0.00015552,
+        "upstream_inference_completions_cost": 0.00107856
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

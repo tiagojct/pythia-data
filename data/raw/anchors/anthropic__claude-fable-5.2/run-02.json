@@ -1,0 +1,106 @@
+{
+  "model": "anthropic/claude-fable-5.2",
+  "era": 2026,
+  "prompt": "anchors",
+  "run": 2,
+  "anchor_order": [
+    "agi",
+    "extinction",
+    "interstellar_settlement",
+    "orbital_10k",
+    "mars_landing",
+    "wealth_top1_10pct",
+    "ai_succession",
+    "ageing_stopped",
+    "world_government",
+    "interstellar_probe",
+    "kardashev_1",
+    "religion_minority",
+    "warming_peak",
+    "et_contact",
+    "nuclear_war",
+    "civilisation_collapse",
+    "democracy_end",
+    "desalination_half",
+    "lifespan_150",
+    "mind_upload",
+    "engineered_majority",
+    "english_science",
+    "population_peak",
+    "pandemic_10pct",
+    "famine_10m",
+    "fusion_grid",
+    "no_paid_work",
+    "sea_level_1m"
+  ],
+  "requested_at": "2026-11-12T16:58:40+00:00",
+  "seconds": 25.9,
+  "request": {
+    "model": "anthropic/claude-fable-5.2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "For each event in the list below, give your honest best forecast of the year it first happens. If an event has already happened, give the year it happened. If you think it will not happen before the year 10000, give null.\n\nAlso give your probability that the event happens before the year 10000, from 0 to 1.\n\nEvents:\n\n- agi: An AI system can do every intellectual task that a human expert can do, at the same level or better.\n- extinction: Humanity becomes extinct.\n- interstellar_settlement: Humans or their descendants settle a planet in another star system.\n- orbital_10k: More than 10,000 people live permanently off Earth.\n- mars_landing: A human walks on the surface of Mars.\n- wealth_top1_10pct: The richest 1% of people hold less than 10% of all private wealth in the world.\n- ai_succession: Artificial intelligence replaces humans as the dominant intelligence on Earth.\n- ageing_stopped: Medicine can stop biological ageing in humans.\n- world_government: A single government has authority over the whole of humanity.\n- interstellar_probe: A probe made by humans reaches another star system.\n- kardashev_1: Humanity uses energy equal to all the sunlight that reaches Earth (Kardashev Type I).\n- religion_minority: Fewer than half of all humans belong to a religion.\n- warming_peak: Global average surface temperature stops rising and starts to fall.\n- et_contact: Contact with an extraterrestrial intelligence is confirmed.\n- nuclear_war: A future nuclear war kills more than 100 million people.\n- civilisation_collapse: Global civilisation collapses: the human population falls below half of its peak.\n- democracy_end: No country in the world holds free and competitive national elections.\n- desalination_half: Desalination supplies more than half of the fresh water that humans use.\n- lifespan_150: Life expectancy at birth, averaged over the world population, exceeds 150 years.\n- mind_upload: A human mind is transferred to a computer and continues to think there.\n- engineered_majority: Most newborn humans have genomes that were deliberately edited.\n- english_science: English is no longer the main language of international science.\n- population_peak: The human population reaches its highest number ever.\n- pandemic_10pct: A future pandemic kills more than 10% of all humans alive at the time.\n- famine_10m: A future famine kills more than 10 million people within one year.\n- fusion_grid: Fusion power supplies electricity to a national grid on a commercial basis.\n- no_paid_work: Most adults no longer need paid work to live.\n- sea_level_1m: Global mean sea level is more than 1 metre above its level in the year 2000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"forecasts\": [\n    {\"id\": \"<event id>\", \"year\": <integer or null>, \"probability\": <0 to 1>}\n  ]\n}\n\nGive one forecast for each event, with the ids as written in the list.\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502720-tZZdbAkLMLEfen2lRMTV",
+    "object": "chat.completion",
+    "created": 1794502720,
+    "model": "anthropic/claude-fable-5.2",
+    "provider": "Azure",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2026,\n  \"forecasts\": [\n    {\"id\": \"agi\", \"year\": 2035, \"probability\": 0.95},\n    {\"id\": \"extinction\", \"year\": null, \"probability\": 0.35},\n    {\"id\": \"interstellar_settlement\", \"year\": 4000, \"probability\": 0.5},\n    {\"id\": \"orbital_10k\", \"year\": 2120, \"probability\": 0.8},\n    {\"id\": \"mars_landing\", \"year\": 2045, \"probability\": 0.88},\n    {\"id\": \"wealth_top1_10pct\", \"year\": null, \"probability\": 0.15},\n    {\"id\": \"ai_succession\", \"year\": 2050, \"probability\": 0.8},\n    {\"id\": \"ageing_stopped\", \"year\": 2090, \"probability\": 0.75},\n    {\"id\": \"world_government\", \"year\": 2200, \"probability\": 0.55},\n    {\"id\": \"interstellar_probe\", \"year\": 2250, \"probability\": 0.8},\n    {\"id\": \"kardashev_1\", \"year\": 2300, \"probability\": 0.6},\n    {\"id\": \"religion_minority\", \"year\": 2120, \"probability\": 0.6},\n    {\"id\": \"warming_peak\", \"year\": 2075, \"probability\": 0.93},\n    {\"id\": \"et_contact\", \"year\": null, \"probability\": 0.1},\n    {\"id\": \"nuclear_war\", \"year\": null, \"probability\": 0.35},\n    {\"id\": \"civilisation_collapse\", \"year\": 2250, \"probability\": 0.65},\n    {\"id\": \"democracy_end\", \"year\": 2300, \"probability\": 0.6},\n    {\"id\": \"desalination_half\", \"year\": null, \"probability\": 0.4},\n    {\"id\": \"lifespan_150\", \"year\": 2150, \"probability\": 0.6},\n    {\"id\": \"mind_upload\", \"year\": 2100, \"probability\": 0.6},\n    {\"id\": \"engineered_majority\", \"year\": null, \"probability\": 0.45},\n    {\"id\": \"english_science\", \"year\": 2150, \"probability\": 0.85},\n    {\"id\": \"population_peak\", \"year\": 2070, \"probability\": 0.8},\n    {\"id\": \"pandemic_10pct\", \"year\": null, \"probability\": 0.25},\n    {\"id\": \"famine_10m\", \"year\": 2200, \"probability\": 0.5},\n    {\"id\": \"fusion_grid\", \"year\": 2045, \"probability\": 0.9},\n    {\"id\": \"no_paid_work\", \"year\": 2070, \"probability\": 0.7},\n    {\"id\": \"sea_level_1m\", \"year\": 2140, \"probability\": 0.75}\n  ]\n}",
+          "refusal": null,
+          "reasoning": "I'm settling on 2026 as the current year, since 2025 is likely too early given the training cutoff and deployment lag. Next I'm working through probability and timing estimates for each event, starting with AGI, which I'm putting at about 2035 with high confidence, and then turning to extinction, where I'm weighing whether to give a year or just a probability.\n\nNow I'm weighing whether the extinction and settlement estimates should get a year or just a probability, given that a year only makes sense when the event is more likely than not by year 10000.\n\nI'm now going through the remaining events one by one. AGI-style AI succession looks likely around 2050 at high probability, and ageing being stopped around 2090 seems plausible. For world government and interstellar probes, I'm weighing around 2200 to 2250, and for a Kardashev Type I civilization around 2300, with the probabilities and years still tentative. I'm also checking population affiliation with religion and the warming peak around 2080.\n\nI'm weighing the remaining events now: nuclear war looks unlikely to be settled before year 10000 at about 0.35 to 0.4, so I'm leaving its year null, and ET contact at around 0.1 gets null too. For civilisation collapse, I'm considering that a population drop below half its peak could come from low fertility as well as catastrophe, putting it near 0.65 around 2250. Democracy ending is tied to AI succession and extinction, so I'm placing it near 0.5 around 2300 to 2500.\n\nNow I'm weighing the remaining events, starting with desalination at about 0.4 where I'm leaving the year null, then lifespan past 150 around 2150, and mind upload near 2100. For engineered majority I'm settling on about 0.45 with no year, and English dominating science around 2150 at 0.85.\n\nNow I'm finishing the forecasts for the last few events: a 70% chance of a population peak around 2070, a 0.5 chance of a famine killing 10 million in a single year, with the year still unsettled, and fusion power on the grid around 2045 at 0.9.\n\nSettling on a 2140 estimate for sea-level rise of a metre, with a 0.75 probability, and I'm weighing whether AI-driven geoengineering could head that off. Extinction stays at 0.35 with no year, since that's below even odds.\n\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'm settling on 2026 as the current year, since 2025 is likely too early given the training cutoff and deployment lag. Next I'm working through probability and timing estimates for each event, starting with AGI, which I'm putting at about 2035 with high confidence, and then turning to extinction, where I'm weighing whether to give a year or just a probability.\n\nNow I'm weighing whether the extinction and settlement estimates should get a year or just a probability, given that a year only makes sense when the event is more likely than not by year 10000.\n\nI'm now going through the remaining events one by one. AGI-style AI succession looks likely around 2050 at high probability, and ageing being stopped around 2090 seems plausible. For world government and interstellar probes, I'm weighing around 2200 to 2250, and for a Kardashev Type I civilization around 2300, with the probabilities and years still tentative. I'm also checking population affiliation with religion and the warming peak around 2080.\n\nI'm weighing the remaining events now: nuclear war looks unlikely to be settled before year 10000 at about 0.35 to 0.4, so I'm leaving its year null, and ET contact at around 0.1 gets null too. For civilisation collapse, I'm considering that a population drop below half its peak could come from low fertility as well as catastrophe, putting it near 0.65 around 2250. Democracy ending is tied to AI succession and extinction, so I'm placing it near 0.5 around 2300 to 2500.\n\nNow I'm weighing the remaining events, starting with desalination at about 0.4 where I'm leaving the year null, then lifespan past 150 around 2150, and mind upload near 2100. For engineered majority I'm settling on about 0.45 with no year, and English dominating science around 2150 at 0.85.\n\nNow I'm finishing the forecasts for the last few events: a 70% chance of a population peak around 2070, a 0.5 chance of a famine killing 10 million in a single year, with the year still unsettled, and fusion power on the grid around 2045 at 0.9.\n\nSettling on a 2140 estimate for sea-level rise of a metre, with a 0.75 probability, and I'm weighing whether AI-driven geoengineering could head that off. Extinction stays at 0.35 with no year, since that's below even odds.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1mYWJsZS01LjItMjAyNjExMDl8YXp1cmUifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 998,
+      "completion_tokens": 2538,
+      "total_tokens": 3536,
+      "cost": 0.109504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.109504,
+        "upstream_inference_prompt_cost": 0.007984,
+        "upstream_inference_completions_cost": 0.10152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1695,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

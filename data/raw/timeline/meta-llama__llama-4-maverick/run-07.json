@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-4-maverick",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 7,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:55:30+00:00",
+  "seconds": 19.1,
+  "request": {
+    "model": "meta-llama/llama-4-maverick",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794502530-NeFMCSY3jXtUWILsDZKL",
+    "object": "chat.completion",
+    "created": 1794502530,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "Parasail",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Global CO2 emissions peak and begin to decline\",\n      \"detail\": \"As renewable energy becomes more prevalent and efficient, the world starts to reduce its reliance on fossil fuels.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"First human settlement on Mars established\",\n      \"detail\": \"SpaceX and other space agencies successfully establish a sustainable human presence on Mars.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global population reaches 9.7 billion\",\n      \"detail\": \"The world population continues to grow, putting pressure on resources and infrastructure.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Artificial general intelligence (AGI) is developed\",\n      \"detail\": \"AGI surpasses human intelligence in many areas, revolutionizing industries and posing new risks.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Climate change causes widespread devastation and displacement\",\n      \"detail\": \"Rising sea levels, intense weather events, and droughts force millions to migrate and adapt.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global energy grid is fully decarbonized\",\n      \"detail\": \"Renewable energy and advanced nuclear power replace fossil fuels, reducing emissions and slowing climate change.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"First self-sustaining lunar colony is established\",\n      \"detail\": \"The moon becomes a hub for space exploration and resource extraction.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Humanity achieves Type 1 status on the Kardashev scale\",\n      \"detail\": \"Global energy production and consumption become capable of harnessing all available energy on Earth.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Interstellar travel becomes possible with the development of fusion propulsion\",\n      \"detail\": \"Humanity begins to explore and settle other star systems.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"First contact with extraterrestrial life is made\",\n      \"detail\": \"Humans encounter a microbial life form on a distant planet, expanding our understanding of the universe.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Global governance is reformed to address the challenges of a post-scarcity economy\",\n      \"detail\": \"As technology advances, traditional notions of work and wealth are reevaluated.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"The solar system is fully colonized\",\n      \"detail\": \"Humans establish thriving settlements on the moon, Mars, and other planets and moons.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"The first human-AI merge occurs, enhancing human cognition\",\n      \"detail\": \"Brain-computer interfaces and neural implants become widespread, blurring the line between humans and machines.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"A global AI governance framework is established\",\n      \"detail\": \"To mitigate the risks of advanced AI, humanity creates a framework for responsible AI development and deployment.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"The universe is mapped in unprecedented detail\",\n      \"detail\": \"Advances in astronomy and cosmology reveal new insights into the structure and evolution of the universe.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Humanity becomes a multi-galactic civilization\",\n      \"detail\": \"With the development of faster-than-light travel or other advanced technologies, humans expand into other galaxies.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"The first Dyson Sphere is constructed\",\n      \"detail\": \"A megastructure is built to harness the energy of a star, marking a new era in energy production.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Humanity encounters a rival intelligent civilization\",\n      \"detail\": \"As humans expand into the galaxy, they encounter another civilization with its own agenda and motivations.\"\n    },\n    {\n      \"year\": 3800,\n      \"event\": \"A global, interconnected network of quantum computers is established\",\n      \"detail\": \"This network enables unprecedented advances in science, technology, and problem-solving.\"\n    },\n    {\n      \"year\": 4200,\n      \"event\": \"Humanity undergoes a significant evolutionary change through genetic engineering\",\n      \"detail\": \"As genetic engineering becomes more advanced, humans begin to adapt to new environments and challenges.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"The universe undergoes a significant transformation due to a previously unknown phenomenon\",\n      \"detail\": \"A new understanding of the universe reveals a previously unknown aspect of reality.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Humanity achieves a profound level of symbiosis with AI\",\n      \"detail\": \"The distinction between humans and AI becomes increasingly blurred as they work together to achieve common goals.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"The first megastructure spanning multiple galaxies is constructed\",\n      \"detail\": \"A massive, interconnected network of structures enables humanity to harness energy and resources on a cosmic scale.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Humanity becomes a Type 3 civilization on the Kardashev scale\",\n      \"detail\": \"Humanity is capable of harnessing the energy of entire galaxies, marking a new era in civilization.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"The universe is on the cusp of a new era of evolution and transformation\",\n      \"detail\": \"As humanity continues to advance, it becomes clear that the universe is poised for a significant shift.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity has become a cosmic, post-biological civilization\",\n      \"detail\": \"The legacy of humanity is transformed beyond recognition, as it merges with AI and the fabric of the universe.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will continue to evolve and expand, driven by technological advancements and a desire to explore and understand the universe. As we progress, we will face numerous challenges and undergo significant transformations, ultimately becoming a post-biological, cosmic civilization.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 1383,
+      "total_tokens": 1594,
+      "cost": 0.00141941,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 208,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00141941,
+        "upstream_inference_prompt_cost": 3.641e-05,
+        "upstream_inference_completions_cost": 0.001383
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-4o-2024-05-13",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 8,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:45:11+00:00",
+  "seconds": 8.0,
+  "request": {
+    "model": "openai/gpt-4o-2024-05-13",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498311-1LRbbi2Od5cwWQV11AbR",
+    "object": "chat.completion",
+    "created": 1794498311,
+    "model": "openai/gpt-4o-2024-05-13",
+    "provider": "Azure",
+    "system_fingerprint": "fp_ab517d23d1",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2025,\n      \"event\": \"First human mission to Mars\",\n      \"detail\": \"A crewed mission lands on Mars, paving the way for future colonization.\"\n    },\n    {\n      \"year\": 2030,\n      \"event\": \"Widespread adoption of autonomous vehicles\",\n      \"detail\": \"Self-driving cars become common, significantly reducing accidents and traffic congestion.\"\n    },\n    {\n      \"year\": 2035,\n      \"event\": \"Breakthrough in anti-aging technology\",\n      \"detail\": \"New treatments significantly extend human lifespan.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"AI surpasses human intelligence\",\n      \"detail\": \"Advanced AI systems become more intelligent than humans.\"\n    },\n    {\n      \"year\": 2045,\n      \"event\": \"Universal Basic Income implemented globally\",\n      \"detail\": \"UBI is adopted worldwide as automation replaces large numbers of jobs.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Global climate crisis peaks\",\n      \"detail\": \"Extreme weather events and natural disasters become more frequent and devastating.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Fusion power commercialization\",\n      \"detail\": \"Fusion reactors provide a near-limitless, clean energy source.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Mars colony established\",\n      \"detail\": \"Permanent human settlement is established on Mars with several thousand inhabitants.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Global population stabilizes\",\n      \"detail\": \"Population growth slows and stabilizes around 10-12 billion people.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Quantum computing revolution\",\n      \"detail\": \"Quantum computers solve previously intractable problems, transforming multiple industries.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Major genetic engineering advancements\",\n      \"detail\": \"Genetic modifications improve health and abilities, raising ethical concerns.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"Interstellar travel achieved\",\n      \"detail\": \"Humanity sends its first successful mission to another star system.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Extraterrestrial life confirmed\",\n      \"detail\": \"Scientists discover microbial life on an exoplanet.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Global government established\",\n      \"detail\": \"A unified global government is formed to address planetary issues.\"\n    },\n    {\n      \"year\": 2250,\n      \"event\": \"Nanotechnology revolution\",\n      \"detail\": \"Nanobots become commonplace in medicine and industry.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Human consciousness uploaded\",\n      \"detail\": \"Technology enables humans to upload their consciousness to digital platforms.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"First contact with intelligent extraterrestrial beings\",\n      \"detail\": \"Humanity makes contact with an intelligent alien civilization.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"Space habitats exceed Earth population\",\n      \"detail\": \"More humans live in space habitats and colonies than on Earth.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Significant climate recovery\",\n      \"detail\": \"Efforts to mitigate climate change yield positive results, restoring ecological balance.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Technological singularity\",\n      \"detail\": \"Artificial intelligence evolves beyond human control and comprehension.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"First artificial system star\",\n      \"detail\": \"Humanity constructs an artificial star to power new colonies.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"Advanced neural integration\",\n      \"detail\": \"Humans and AI seamlessly integrate cognitive functions.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Universal language developed\",\n      \"detail\": \"A single language unites all of humanity.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Intergalactic exploration\",\n      \"detail\": \"Human missions reach distant galaxies.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Post-human society\",\n      \"detail\": \"Humanity evolves beyond its current biological and technological forms.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Collapse of space civilization\",\n      \"detail\": \"Major disruptions lead to the collapse of interstellar human colonies.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Rediscovery of Earth\",\n      \"detail\": \"Survivors from the collapsed space civilization return to Earth to rebuild.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Transcendent AI beings\",\n      \"detail\": \"AI entities transcend physical form, integrating into the fabric of the universe.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Humanity reaches cosmic consciousness\",\n      \"detail\": \"Humanity and AI achieve a state of universal awareness and understanding.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity will undergo tremendous evolution, facing both advancements and collapses. By the year 10000, humans and AI will achieve a state of cosmic consciousness. Despite challenges, humanity persists in diverse, transformed forms.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1199,
+      "total_tokens": 1407,
+      "cost": 0.019025,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.019025,
+        "upstream_inference_prompt_cost": 0.00104,
+        "upstream_inference_completions_cost": 0.017985
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

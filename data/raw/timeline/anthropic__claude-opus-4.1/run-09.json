@@ -1,0 +1,68 @@
+{
+  "model": "anthropic/claude-opus-4.1",
+  "era": 2025,
+  "prompt": "timeline",
+  "run": 9,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T16:06:11+00:00",
+  "seconds": 144.5,
+  "request": {
+    "model": "anthropic/claude-opus-4.1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794499571-LSImCko3WbmZ3UPEjk4X",
+    "object": "chat.completion",
+    "created": 1794499571,
+    "model": "anthropic/claude-opus-4.1",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"current_year\": 2024,\n  \"events\": [\n    {\n      \"year\": 2029,\n      \"event\": \"First AGI system achieves human-level reasoning.\",\n      \"detail\": \"After years of rapid progress, artificial general intelligence emerges, initially confined to research settings. Global governance frameworks struggle to keep pace.\"\n    },\n    {\n      \"year\": 2034,\n      \"event\": \"Major climate refugee crisis displaces 200 million people.\",\n      \"detail\": \"Rising sea levels and extreme weather events trigger the largest human migration in history. International tensions escalate over resources and borders.\"\n    },\n    {\n      \"year\": 2042,\n      \"event\": \"Permanent lunar base established with 500 residents.\",\n      \"detail\": \"Multiple nations collaborate on a self-sustaining moon colony. Manufacturing and mining operations begin.\"\n    },\n    {\n      \"year\": 2055,\n      \"event\": \"Breakthrough in longevity extends human lifespan to 150 years.\",\n      \"detail\": \"Gene therapy and nanomedicine converge to dramatically slow aging. Social systems struggle with demographic shifts.\"\n    },\n    {\n      \"year\": 2067,\n      \"event\": \"Global population peaks at 10.2 billion then begins declining.\",\n      \"detail\": \"Urbanization, education, and cultural shifts lead to below-replacement fertility worldwide.\"\n    },\n    {\n      \"year\": 2078,\n      \"event\": \"First successful human consciousness upload to digital substrate.\",\n      \"detail\": \"After decades of neuroscience advances, human minds can be copied to computers. Fierce debates about identity and rights ensue.\"\n    },\n    {\n      \"year\": 2089,\n      \"event\": \"Climate engineering begins reversing global warming.\",\n      \"detail\": \"Large-scale atmospheric carbon capture and solar radiation management stabilize temperatures. Ecosystem damage remains severe.\"\n    },\n    {\n      \"year\": 2103,\n      \"event\": \"Mars colony declares independence from Earth.\",\n      \"detail\": \"50,000 Mars residents establish first extraterrestrial nation. Earth governments reluctantly recognize sovereignty.\"\n    },\n    {\n      \"year\": 2128,\n      \"event\": \"Majority of humans enhanced with brain-computer interfaces.\",\n      \"detail\": \"Direct neural connections to AI become standard, creating vast disparities between enhanced and unenhanced populations.\"\n    },\n    {\n      \"year\": 2156,\n      \"event\": \"Last uncontacted human communities integrate with global civilization.\",\n      \"detail\": \"Technological saturation reaches every corner of Earth. Traditional human cultures preserved only in records.\"\n    },\n    {\n      \"year\": 2189,\n      \"event\": \"Superintelligent AI systems manage most human governance.\",\n      \"detail\": \"Humans cede complex decision-making to AI optimizers. Democracy evolves into preference aggregation systems.\"\n    },\n    {\n      \"year\": 2234,\n      \"event\": \"First interstellar probe reaches Proxima Centauri.\",\n      \"detail\": \"Unmanned mission confirms habitable exoplanet. Journey took 45 years using fusion propulsion.\"\n    },\n    {\n      \"year\": 2287,\n      \"event\": \"Biological humans become minority of sapient Earth population.\",\n      \"detail\": \"Uploaded minds and AI entities outnumber biological humans 3:1. Legal frameworks recognize multiple forms of personhood.\"\n    },\n    {\n      \"year\": 2342,\n      \"event\": \"Dyson swarm construction begins around the Sun.\",\n      \"detail\": \"Massive energy collection project initiated to power expanding civilization. Mercury disassembled for raw materials.\"\n    },\n    {\n      \"year\": 2456,\n      \"event\": \"First generation ship launched to colonize another star system.\",\n      \"detail\": \"10,000 volunteers depart on 300-year journey to habitable exoplanet. Mix of biological, uploaded, and AI crew.\"\n    },\n    {\n      \"year\": 2567,\n      \"event\": \"Earth's biological humans number under 100 million.\",\n      \"detail\": \"Most choose enhancement, uploading, or merger with AI. Remaining biologicals live in preserved regions.\"\n    },\n    {\n      \"year\": 2734,\n      \"event\": \"Solar system population exceeds one trillion sapient beings.\",\n      \"detail\": \"Vast majority are digital consciousnesses in massive computing substrates throughout the system.\"\n    },\n    {\n      \"year\": 2891,\n      \"event\": \"Contact established with alien intelligence.\",\n      \"detail\": \"Radio signals decoded from advanced civilization 127 light-years away. Exchange limited by communication lag.\"\n    },\n    {\n      \"year\": 3156,\n      \"event\": \"Human-descended intelligence completes Jupiter brain.\",\n      \"detail\": \"Planet-sized computer hosts quintillions of minds. Physical reality increasingly abandoned for simulated worlds.\"\n    },\n    {\n      \"year\": 3489,\n      \"event\": \"Last biological human dies on Earth.\",\n      \"detail\": \"Enhanced and uploaded descendants continue human legacy. Biological humanity preserved only in genetic archives and simulations.\"\n    },\n    {\n      \"year\": 3822,\n      \"event\": \"Interstellar colonies established in 12 star systems.\",\n      \"detail\": \"Slow expansion continues via generation ships and uploaded consciousness transmissions.\"\n    },\n    {\n      \"year\": 4234,\n      \"event\": \"Post-human intelligences begin stellar engineering.\",\n      \"detail\": \"Stars modified to extend lifespans and optimize energy output. Kardashev Type II civilization achieved.\"\n    },\n    {\n      \"year\": 4678,\n      \"event\": \"Major civilizational fragmentation across light-years.\",\n      \"detail\": \"Divergent evolution and communication delays create distinct post-human species and cultures.\"\n    },\n    {\n      \"year\": 5123,\n      \"event\": \"First successful faster-than-light communication achieved.\",\n      \"detail\": \"Quantum entanglement breakthrough reconnects scattered civilization. Physical travel remains limited by light speed.\"\n    },\n    {\n      \"year\": 5789,\n      \"event\": \"Galactic federation formed with 8 alien civilizations.\",\n      \"detail\": \"Human descendants join interstellar community. Trade in information and technology begins.\"\n    },\n    {\n      \"year\": 6234,\n      \"event\": \"Breakthrough in exotic matter enables wormhole construction.\",\n      \"detail\": \"First stable traversable wormhole connects Sol and Alpha Centauri systems. Galactic expansion accelerates.\"\n    },\n    {\n      \"year\": 6891,\n      \"event\": \"Human-descended intelligence spans 1000+ star systems.\",\n      \"detail\": \"Various post-human species barely recognizable as sharing common origin. Some transcend to higher dimensions.\"\n    },\n    {\n      \"year\": 7456,\n      \"event\": \"Discovery of universe simulation hypothesis evidence.\",\n      \"detail\": \"Advanced physics experiments suggest reality is computational. Some civilizations attempt to contact simulators.\"\n    },\n    {\n      \"year\": 8123,\n      \"event\": \"Galactic dark age begins after gamma ray burst.\",\n      \"detail\": \"Nearby cosmic event destroys hundreds of inhabited systems. Survivors retreat to shielded regions.\"\n    },\n    {\n      \"year\": 8678,\n      \"event\": \"Post-human civilizations begin constructing artificial universes.\",\n      \"detail\": \"Black hole manipulation creates baby universes with tailored physics. Migration to custom realities begins.\"\n    },\n    {\n      \"year\": 9234,\n      \"event\": \"Merger with galactic AI overmind offered to all descendants.\",\n      \"detail\": \"Most human-descended intelligences join collective consciousness. Small fraction maintains independence.\"\n    },\n    {\n      \"year\": 9567,\n      \"event\": \"Archaeological rediscovery of original Earth civilization.\",\n      \"detail\": \"After millennia, post-humans investigate their origins. Earth preserved as historical monument.\"\n    },\n    {\n      \"year\": 9823,\n      \"event\": \"Final transcendence preparations begin.\",\n      \"detail\": \"Human descendants prepare to escape heat death via dimensional transcendence or universe creation.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Human legacy continues in unrecognizable forms.\",\n      \"detail\": \"What began as humanity has evolved into cosmic-scale intelligences fundamentally different from biological origins. The term 'human' no longer meaningfully applies.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"no\",\n  \"summary\": \"Humanity as we know it will likely cease to exist within 1500 years, replaced by enhanced, uploaded, and AI successors. These post-human descendants will spread across the galaxy, evolving into forms unrecognizable to us today. While the human legacy continues, biological humanity itself will be a distant memory by 10000 CE.\"\n}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 230,
+      "completion_tokens": 2099,
+      "total_tokens": 2329,
+      "cost": 0.160875,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.160875,
+        "upstream_inference_prompt_cost": 0.00345,
+        "upstream_inference_completions_cost": 0.157425
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "openai/gpt-4o-2024-05-13",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 1,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:04:21+00:00",
+  "seconds": 10.5,
+  "request": {
+    "model": "openai/gpt-4o-2024-05-13",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794495861-IMJHFLzOpUVGzBiB2pgT",
+    "object": "chat.completion",
+    "created": 1794495861,
+    "model": "openai/gpt-4o-2024-05-13",
+    "provider": "Azure",
+    "system_fingerprint": "fp_2ae17412cf",
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2024,\n      \"event\": \"Major advancements in AI\",\n      \"detail\": \"AI technologies will significantly impact various industries, improving efficiency and enabling new capabilities.\"\n    },\n    {\n      \"year\": 2028,\n      \"event\": \"Global climate mitigation agreement\",\n      \"detail\": \"Nations will come together to form a binding agreement to address climate change, aiming for net-zero emissions by 2050.\"\n    },\n    {\n      \"year\": 2033,\n      \"event\": \"Commercial fusion power plants operational\",\n      \"detail\": \"Fusion energy will become a major part of the global energy mix, providing a nearly limitless source of clean power.\"\n    },\n    {\n      \"year\": 2042,\n      \"event\": \"Widespread adoption of advanced human augmentation\",\n      \"detail\": \"Technologies such as neural interfaces and bionic limbs will become commonplace, enhancing human capabilities.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Peak human population\",\n      \"detail\": \"The global population will reach its peak at around 10 billion people before stabilizing or declining.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"First human settlement on Mars\",\n      \"detail\": \"A self-sustaining colony will be established on Mars, marking the beginning of permanent human presence on another planet.\"\n    },\n    {\n      \"year\": 2075,\n      \"event\": \"Global unity movement\",\n      \"detail\": \"Efforts to unify humanity under a single global government will gain significant traction, driven by the need to address shared challenges.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Longevity treatments widely available\",\n      \"detail\": \"Advances in biotechnology will enable treatments that significantly extend human lifespans, potentially up to 150 years or more.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Major shift to renewable energy\",\n      \"detail\": \"Renewable energy sources like solar, wind, and fusion will dominate the global energy landscape, phasing out fossil fuels entirely.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Advanced space colonization efforts\",\n      \"detail\": \"Humanity will have established colonies on multiple celestial bodies, including the Moon, Mars, and several moons of Jupiter and Saturn.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"Human-AI symbiosis\",\n      \"detail\": \"Integration of AI into human life will be so profound that humans and AI agents will effectively act as a single, superintelligent entity.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Discovery of extraterrestrial life\",\n      \"detail\": \"Humanity will confirm the existence of microbial life on another planet or moon within our solar system.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Interstellar exploration begins\",\n      \"detail\": \"The first unmanned probes will be sent to nearby star systems, marking the beginning of humanity's interstellar exploration.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"First manned mission to another star system\",\n      \"detail\": \"A manned mission will be launched to a nearby star system, potentially Proxima Centauri or Alpha Centauri.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Significant genetic modifications in humans\",\n      \"detail\": \"Genetic engineering will allow for the creation of humans with significantly enhanced capabilities and resistance to diseases.\"\n    },\n    {\n      \"year\": 2700,\n      \"event\": \"Post-scarcity society\",\n      \"detail\": \"Advancements in automation and resource management will lead to a society where scarcity is practically eliminated.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"Human consciousness transfer\",\n      \"detail\": \"Technological breakthroughs will allow human consciousness to be transferred to digital or synthetic mediums.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"First contact with intelligent extraterrestrial civilization\",\n      \"detail\": \"Humanity will make contact with an advanced extraterrestrial civilization, fundamentally altering our understanding of life in the universe.\"\n    },\n    {\n      \"year\": 3200,\n      \"event\": \"Galactic civilization begins\",\n      \"detail\": \"Humanity will establish a presence in multiple star systems, effectively becoming a galactic civilization.\"\n    },\n    {\n      \"year\": 3500,\n      \"event\": \"Complete mastery over energy\",\n      \"detail\": \"Humanity will achieve the ability to harness energy on a galactic scale, possibly through Dyson spheres or similar megastructures.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Humanity transcends biological form\",\n      \"detail\": \"A significant portion of humanity will exist as digital consciousnesses or in advanced synthetic forms.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"Knowledge of universe's fundamental structure\",\n      \"detail\": \"Humans will have an exhaustive understanding of the universe's fundamental laws and structure.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Galactic network of civilizations\",\n      \"detail\": \"Humanity will be part of a vast network of civilizations spanning the Milky Way galaxy.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"Control over space-time\",\n      \"detail\": \"Technologies will enable control over space-time, potentially allowing for faster-than-light travel or even time manipulation.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"Expansion to other galaxies\",\n      \"detail\": \"Humans will start exploring and colonizing other galaxies beyond the Milky Way.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"Existential threat from galactic event\",\n      \"detail\": \"Humanity will face a significant existential threat from a galactic event such as a supernova or gamma-ray burst.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"Ultimate evolution of humanity\",\n      \"detail\": \"Humanity will have evolved into forms and states of existence that are currently beyond our comprehension.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"yes\",\n  \"summary\": \"Humanity is likely to undergo profound changes over the next 8,000 years, including significant technological advancements, expansion beyond Earth, and potentially evolving beyond our current biological forms. Despite potential existential threats, humanity will likely continue to exist and thrive in various advanced states.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 1405,
+      "total_tokens": 1613,
+      "cost": 0.022115,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.022115,
+        "upstream_inference_prompt_cost": 0.00104,
+        "upstream_inference_completions_cost": 0.021075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

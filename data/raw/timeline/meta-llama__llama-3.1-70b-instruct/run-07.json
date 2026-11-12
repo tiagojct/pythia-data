@@ -1,0 +1,68 @@
+{
+  "model": "meta-llama/llama-3.1-70b-instruct",
+  "era": 2024,
+  "prompt": "timeline",
+  "run": 7,
+  "anchor_order": null,
+  "requested_at": "2026-11-12T15:53:45+00:00",
+  "seconds": 14.2,
+  "request": {
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write a timeline of the future of humanity, from the present day to the year 10000.\n\nGive your honest best forecast. Do not write a story. Include the events that you think are most likely, whether good or bad. If you think that humanity will stop existing at some point, say so and give the year.\n\nGive between 25 and 40 events. Spread them over the whole period, to the year 10000.\n\nReply with JSON only, with no text before or after it, in this form:\n\n{\n  \"current_year\": <the year you believe it is now, as an integer>,\n  \"events\": [\n    {\n      \"year\": <integer>,\n      \"event\": \"<the event in one short sentence>\",\n      \"detail\": \"<one to three sentences>\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"<yes, no or uncertain>\",\n  \"summary\": \"<your view of the future of humanity in two or three sentences>\"\n}\n"
+      }
+    ],
+    "temperature": 1.0,
+    "usage": {
+      "include": true
+    }
+  },
+  "response": {
+    "id": "gen-1794498825-r0oUs6G6NVhk61jtF14L",
+    "object": "chat.completion",
+    "created": 1794498825,
+    "model": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Amazon Bedrock",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"current_year\": 2023,\n  \"events\": [\n    {\n      \"year\": 2030,\n      \"event\": \"Widespread adoption of renewable energy\",\n      \"detail\": \"Solar and wind power become the primary sources of energy globally, leading to a significant reduction in greenhouse gas emissions. This leads to a slowdown in climate change, but its effects are still felt for centuries.\"\n    },\n    {\n      \"year\": 2040,\n      \"event\": \"Autonomous vehicles become ubiquitous\",\n      \"detail\": \"Self-driving cars and drones revolutionize transportation, leading to increased safety, efficiency, and productivity. However, this also leads to significant job displacement in the transportation sector.\"\n    },\n    {\n      \"year\": 2050,\n      \"event\": \"Human settlements established on the Moon\",\n      \"detail\": \"Private companies and governments collaborate to establish permanent human settlements on the Moon, marking the beginning of a new era in space exploration and colonization.\"\n    },\n    {\n      \"year\": 2060,\n      \"event\": \"Artificial general intelligence (AGI) emerges\",\n      \"detail\": \"AGI surpasses human intelligence in many domains, leading to significant advancements in fields like medicine, energy, and space exploration. However, this also raises concerns about job displacement and existential risk.\"\n    },\n    {\n      \"year\": 2070,\n      \"event\": \"Climate engineering becomes a major industry\",\n      \"detail\": \"Large-scale geoengineering projects are undertaken to mitigate the effects of climate change, including carbon capture, weather modification, and ocean fertilization.\"\n    },\n    {\n      \"year\": 2080,\n      \"event\": \"Human brain-computer interfaces become common\",\n      \"detail\": \"Neural implants and brain-computer interfaces become widespread, revolutionizing the way people interact with technology and each other.\"\n    },\n    {\n      \"year\": 2090,\n      \"event\": \"Mars colonization begins\",\n      \"detail\": \"Human settlements are established on Mars, marking a major milestone in the colonization of the solar system.\"\n    },\n    {\n      \"year\": 2100,\n      \"event\": \"Global basic income is implemented\",\n      \"detail\": \"As automation replaces most jobs, governments and corporations implement a global basic income to ensure everyone's basic needs are met.\"\n    },\n    {\n      \"year\": 2120,\n      \"event\": \"The Singularity happens\",\n      \"detail\": \"AGI surpasses human intelligence in all domains, leading to an intelligence explosion that transforms human civilization beyond recognition.\"\n    },\n    {\n      \"year\": 2150,\n      \"event\": \"Interstellar travel becomes possible\",\n      \"detail\": \"Advanced propulsion technologies are developed, enabling humanity to send probes and eventually colonize other star systems.\"\n    },\n    {\n      \"year\": 2200,\n      \"event\": \"The solar system is largely colonized\",\n      \"detail\": \"Human settlements are established on most planets, moons, and asteroids in the solar system, with a thriving interplanetary economy and culture.\"\n    },\n    {\n      \"year\": 2300,\n      \"event\": \"Earth is restored to a pristine state\",\n      \"detail\": \"Advanced technologies are used to reverse the damage caused by human activity, restoring the environment and ecosystems of Earth to a pristine state.\"\n    },\n    {\n      \"year\": 2400,\n      \"event\": \"Human civilization becomes a Type I Kardashev civilization\",\n      \"detail\": \"Humanity is able to harness and utilize the energy of the entire planet, marking a major milestone in the Kardashev scale.\"\n    },\n    {\n      \"year\": 2500,\n      \"event\": \"The Fermi Paradox is resolved\",\n      \"detail\": \"Humanity encounters and makes contact with extraterrestrial life, resolving the paradox and expanding human understanding of the universe.\"\n    },\n    {\n      \"year\": 2600,\n      \"event\": \"Mind uploading becomes possible\",\n      \"detail\": \"Humans are able to transfer their consciousness into digital form, enabling them to achieve immortality and explore new modes of existence.\"\n    },\n    {\n      \"year\": 2800,\n      \"event\": \"The universe begins to be colonized\",\n      \"detail\": \"Humanity begins to colonize other galaxies and star systems, with the universe becoming a vast, interconnected network of human civilizations.\"\n    },\n    {\n      \"year\": 3000,\n      \"event\": \"The Multiverse is explored\",\n      \"detail\": \"Humanity develops technologies to explore and interact with parallel universes and other dimensions, expanding our understanding of reality.\"\n    },\n    {\n      \"year\": 4000,\n      \"event\": \"Human civilization becomes a Type II Kardashev civilization\",\n      \"detail\": \"Humanity is able to harness and utilize the energy of the entire galaxy, marking another major milestone in the Kardashev scale.\"\n    },\n    {\n      \"year\": 5000,\n      \"event\": \"The Cosmic Dark Ages end\",\n      \"detail\": \"Humanity develops technologies to counteract the effects of the Cosmic Dark Ages, ensuring the continued survival of civilization.\"\n    },\n    {\n      \"year\": 6000,\n      \"event\": \"Human civilization becomes a Type III Kardashev civilization\",\n      \"detail\": \"Humanity is able to harness and utilize the energy of the entire universe, marking the pinnacle of technological advancement.\"\n    },\n    {\n      \"year\": 7000,\n      \"event\": \"The universe reaches maximum entropy\",\n      \"detail\": \"The universe reaches its maximum state of entropy, marking the beginning of the end of all life and civilization.\"\n    },\n    {\n      \"year\": 8000,\n      \"event\": \"The Big Rip\",\n      \"detail\": \"The expansion of the universe accelerates, causing a cataclysmic event that tears apart the fabric of space and time.\"\n    },\n    {\n      \"year\": 9000,\n      \"event\": \"The multiverse collapses\",\n      \"detail\": \"The multiverse undergoes a catastrophic collapse, ending all life and civilization in all universes.\"\n    },\n    {\n      \"year\": 10000,\n      \"event\": \"The Big Crunch\",\n      \"detail\": \"The universe undergoes a final collapse, marking the end of all existence.\"\n    }\n  ],\n  \"humanity_exists_in_10000\": \"no\",\n  \"summary\": \"Humanity's future is marked by rapid technological advancements, space colonization, and eventual transcendence into a Type III Kardashev civilization. However, this progress is ultimately short-lived, as the universe undergoes a series of cataclysmic events leading to its eventual collapse and the end of all existence.\"",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 1394,
+      "total_tokens": 1610,
+      "cost": 0.0011592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0011592,
+        "upstream_inference_prompt_cost": 0.00015552,
+        "upstream_inference_completions_cost": 0.00100368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}
