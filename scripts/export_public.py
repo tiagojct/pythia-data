@@ -21,7 +21,7 @@ ALLOW = ["config.toml", "pyproject.toml", "uv.lock", "prompts", "coding", "data"
          "scripts/run.py", "scripts/parse.py", "scripts/analyse_anchors.py",
          "scripts/code_timeline.py", "scripts/analyse_timeline.py", "scripts/canonical.py",
          "scripts/analyse_canonical.py", "scripts/plates.py", "scripts/handcheck_page.py",
-         "scripts/export_public.py"]
+         "scripts/analyse_readings.py", "scripts/export_public.py"]
 PUBLIC = ROOT / "public"   # README.md and LICENSE of the public repo
 
 

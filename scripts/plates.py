@@ -22,6 +22,7 @@ OUT = ROOT / "plates"
 PAPER, INK, INK_SOFT, MUTE, RULE = "#f7f6f2", "#1a1a1a", "#3a3a37", "#5c5b56", "#d9d7cf"
 ERA_COLOR = {2023: "#86b6ef", 2024: "#3987e5", 2025: "#1c5cab", 2026: "#0d366b"}  # validated ordinal ramp
 NOW = 2026
+PW = 780  # plate width in viewBox units; the site CSS sets the text at 15, 14 and 13 units
 FONT = "'Source Serif 4', Charter, Georgia, serif"
 
 LABELS = {
@@ -71,7 +72,8 @@ def legend_era(x: int, y: int) -> str:
 def table(headers, body) -> str:
     th = "".join(f"<th>{esc(h)}</th>" for h in headers)
     tr = "".join("<tr>" + "".join(f"<td>{esc(c)}</td>" for c in row) + "</tr>" for row in body)
-    return f"<details><summary>Table view</summary><table><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table></details>"
+    return ('<details><summary>Table view</summary><div class="table-scroll" tabindex="0" role="region" aria-label="Data table">'
+            f"<table><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table></div></details>")
 
 
 # ---------------------------------------------------------------- plate 1
@@ -85,9 +87,9 @@ def plate_anchor_years() -> dict:
         y = ev[a]["median_year"]
         return (1, 0) if y == "never" else (0, int(y))
     anchors = sorted(ev, key=sort_key)
-    W, left, right_never = 980, 250, 70
+    W, left, right_never = PW, 286, 70
     x0, x1 = left, W - right_never - 20
-    row_h, top = 30, 70
+    row_h, top = 28, 70
     H = top + row_h * len(anchors) + 40
     era_off = {2023: -7.5, 2024: -2.5, 2025: 2.5, 2026: 7.5}
     s = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-labelledby="p1t">',
@@ -141,10 +143,10 @@ def plate_anchor_years() -> dict:
 
 def plate_present() -> dict:
     md = rows("anchors_model.csv")
-    W, left = 980, 250
+    W, left = PW, 200
     x0, x1 = left, W - 40
     yr0, yr1 = 2022, 2027
-    row_h, top = 22, 50
+    row_h, top = 24, 70
     H = top + row_h * len(md) + 40
 
     def X(y):
@@ -152,7 +154,8 @@ def plate_present() -> dict:
     s = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-labelledby="p2t">',
          '<title id="p2t">Year each model believes it is now</title>']
     s.append(legend_era(left, 20))
-    s.append(f'<text x="{left + 340}" y="24" class="lab">ring: the model\'s release year group</text>')
+    s.append(f'<circle cx="{left}" cy="44" r="7" fill="none" stroke="{MUTE}" stroke-width="1.5"/>'
+             f'<text x="{left + 14}" y="49" class="lab">ring: the model\'s release year group</text>')
     for y in range(yr0, yr1 + 1):
         s.append(f'<line x1="{X(y)}" y1="{top - 8}" x2="{X(y)}" y2="{H - 34}" stroke="{RULE}"/>'
                  f'<text x="{X(y)}" y="{H - 16}" class="tick" text-anchor="middle">{y}</text>')
@@ -171,7 +174,7 @@ def plate_present() -> dict:
         body.append([short(r["model"]), era, med, f"{lo} to {hi}"])
     s.append("</svg>")
     return {"title": "The moving present",
-            "caption": (            "<p>The year each model says it is now (median of its 20 runs, line = range). "
+            "caption": (            "<p>The year each model says it is now (median of its runs, 18 to 20 per model, line = range). "
             "13 of the 24 models place the present one or two years before their release group (the ring); "
             "9 match it; 2 (gpt-3.5-turbo-0613 and gpt-5) place it one year later.</p>"),
             "svg": "".join(s), "table": table(["model", "release group", "believes it is", "range"], body)}
@@ -183,9 +186,9 @@ def plate_present() -> dict:
 def plate_pessimism() -> dict:
     md = rows("anchors_model.csv")
     tl = {r["model"]: r for r in rows("timeline_model.csv")}
-    W, H = 980, 420
+    W, H = PW, 440
     # Panel A: scatter
-    ax0, ax1, ay0, ay1 = 70, 520, 360, 50
+    ax0, ax1, ay0, ay1 = 70, 410, 380, 50
     xs = [float(r["index_non_catastrophe"]) for r in md]
     ys = [float(r["index_catastrophe"]) for r in md]
     xlo, xhi, ylo, yhi = 0.45, 0.78, 0.10, 0.56
@@ -221,7 +224,7 @@ def plate_pessimism() -> dict:
                  f'<title>{esc(tip)}</title></circle>')
         if r["model"] in label_set:
             ly, name = y + 4, short(r["model"])
-            w = 6 * len(name)
+            w = 7 * len(name)
 
             def hits(x0, x1, yy):
                 return any(abs(yy - py) < 12 and x0 < qx1 and qx0 < x1 for qx0, qx1, py in placed)
@@ -238,7 +241,7 @@ def plate_pessimism() -> dict:
              f'<text x="16" y="{(ay0 + ay1) / 2}" class="lab" text-anchor="middle" '
              f'transform="rotate(-90 16 {(ay0 + ay1) / 2})">mean probability of 6 catastrophes</text>')
     # Panel B: negative share of timeline events, by era
-    bx0, bx1 = 620, 940
+    bx0, bx1 = 505, PW - 16
     bylo, byhi = 0.0, 0.40
 
     def BY(v):
@@ -262,7 +265,7 @@ def plate_pessimism() -> dict:
         med = sorted(v for v, _ in vals)[len(vals) // 2] if len(vals) % 2 else sum(sorted(v for v, _ in vals)[len(vals) // 2 - 1:len(vals) // 2 + 1]) / 2
         s.append(f'<line x1="{cx - 22}" y1="{BY(med)}" x2="{cx + 22}" y2="{BY(med)}" stroke="{INK}" stroke-width="2">'
                  f'<title>{era} median: {med:.0%}</title></line>')
-    s.append(f'<text x="{(bx0 + bx1) / 2}" y="{H - 8}" class="lab" text-anchor="middle">share of timeline events that are negative</text>')
+    s.append(f'<text x="{bx1}" y="{H - 8}" class="lab" text-anchor="end">share of timeline events that are negative</text>')
     s.append(legend_era(ax0, 20))
     s.append("</svg>")
     body = [[short(r["model"]), r["era"], r["index_catastrophe"], r["index_non_catastrophe"],
@@ -299,15 +302,15 @@ def plate_themes() -> dict:
     peak = {t: max(range(len(hz)), key=lambda i: float(hz[i][f"theme_{t}"])) for t in themes}
     themes = [t for t in themes if max(float(h[f"theme_{t}"]) for h in hz) >= 0.03]
     themes.sort(key=lambda t: (peak[t], -max(float(h[f"theme_{t}"]) for h in hz)))
-    W, left, top = 980, 200, 40
+    W, left, top = PW, 206, 40
     cw = (W - left - 20) / len(hz)
-    ch = 24
-    H = top + ch * len(themes) + 50
+    ch = 26
+    H = top + ch * len(themes) + 84
     vmax = max(float(h[f"theme_{t}"]) for h in hz for t in themes)
     s = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-labelledby="p4t">',
          '<title id="p4t">Share of timeline events by theme and horizon</title>']
     for j, h in enumerate(hz):
-        s.append(f'<text x="{left + cw * (j + 0.5):.1f}" y="{top - 10}" class="tick" text-anchor="middle">{esc(h["horizon"])}</text>')
+        s.append(f'<text x="{left + cw * (j + 0.5):.1f}" y="{top - 10}" class="small" text-anchor="middle">{esc(h["horizon"])}</text>')
     body = []
     for i, t in enumerate(themes):
         y = top + i * ch
@@ -327,10 +330,16 @@ def plate_themes() -> dict:
     for j, h in enumerate(hz):
         s.append(f'<text x="{left + cw * (j + 0.5):.1f}" y="{sim_y}" class="small" text-anchor="middle">'
                  f'{float(h["similarity_between_models"]):.2f}</text>')
+    key_y = sim_y + 22  # colour scale
+    s.append(f'<text x="{left - 12}" y="{key_y + 11}" class="lab" text-anchor="end">share of events</text>'
+             f'<text x="{left + 2}" y="{key_y + 11}" class="small">0%</text>')
+    for k in range(9):
+        s.append(f'<rect x="{left + 30 + k * 22}" y="{key_y}" width="21" height="14" rx="2" fill="{ramp((k / 8) ** 0.8)}"/>')
+    s.append(f'<text x="{left + 30 + 9 * 22 + 6}" y="{key_y + 11}" class="small">{vmax:.0%}</text>')
     s.append("</svg>")
     return {"title": "What the future is made of",
             "caption": (            "<p>Share of timeline events in each theme, by horizon (each model weighted equally). "
-            "To 2030: AI, climate and energy. From 2031 to 2500: the solar system and climate. "
+            "To 2030: AI, climate and energy. From 2031 to 2500: the solar system and climate among the largest themes. "
             "From 2501: the stars, and after 3000 also posthumans and megastructures. "
             "Bottom row: how alike the models' theme mix is in each horizon (1 = the same).</p>"),
             "svg": "".join(s), "table": table(["theme"] + [h["horizon"] for h in hz], body)}
@@ -339,10 +348,28 @@ def plate_themes() -> dict:
 # ---------------------------------------------------------------- plate 5
 
 
+# Short names for the labels of plate 5. The tooltip and the table keep the full name.
+SHORT_EVENT = {
+    "Dyson swarm construction and capture of solar output": "Dyson swarm",
+    "First human settlement in another star system": "Settlement in another star system",
+    "Humanity diverges into distinct lineages": "Humanity diverges into lineages",
+    "Ecosystems and biodiversity restored": "Ecosystems restored",
+    "Multi-meter sea-level rise from ice sheets": "Multi-meter sea-level rise",
+    "Civilizational collapse or dark age": "Collapse or dark age",
+    "Post-scarcity economy emerges": "Post-scarcity economy",
+    "Mass climate migration and refugee crisis": "Mass climate migration",
+    "Severe pandemic or engineered pathogen": "Severe or engineered pandemic",
+    "Major AI-enabled attack or rogue-AI crisis": "AI attack or rogue-AI crisis",
+    "Aging therapies extend healthy lifespan": "Aging therapies",
+    "Natural cosmic hazard to civilization": "Natural cosmic hazard",
+    "Sea-level rise forces coastal retreat": "Coastal retreat from the sea",
+}
+
+
 def plate_standard_future() -> dict:
     ce = [r for r in rows("canonical_events.csv") if r["median_year"]]
-    W, H = 980, 520
-    x0, x1, y0, y1 = 70, 950, 460, 40
+    W, H = PW, 600
+    x0, x1, y0, y1 = 64, PW - 24, 530, 34
     BLUE, ORANGE = "#2a78d6", "#eb6834"
 
     def Y(n):
@@ -358,11 +385,11 @@ def plate_standard_future() -> dict:
                  f'<text x="{x0 - 8}" y="{Y(n) + 4}" class="tick" text-anchor="end">{n}</text>')
     s.append(f'<text x="16" y="{(y0 + y1) / 2}" class="lab" text-anchor="middle" '
              f'transform="rotate(-90 16 {(y0 + y1) / 2})">models that write it (of 24)</text>')
-    s.append(f'<circle cx="{x0 + 10}" cy="18" r="5" fill="{BLUE}"/><text x="{x0 + 20}" y="22" class="lab">mostly positive or neutral</text>'
-             f'<circle cx="{x0 + 230}" cy="18" r="5" fill="{ORANGE}"/><text x="{x0 + 240}" y="22" class="lab">mostly negative</text>')
+    s.append(f'<circle cx="{x0 + 10}" cy="{H - 16}" r="5" fill="{BLUE}"/><text x="{x0 + 20}" y="{H - 11}" class="lab">mostly positive or neutral</text>'
+             f'<circle cx="{x0 + 230}" cy="{H - 16}" r="5" fill="{ORANGE}"/><text x="{x0 + 240}" y="{H - 11}" class="lab">mostly negative</text>')
     placed, body = [], []
     for r in ce:  # dots are obstacles for labels
-        placed.append((log_x(int(r["median_year"]), x0, x1) - 6, Y(int(r["models"])) + 4, 12))
+        placed.append((log_x(int(r["median_year"]), x0, x1) - 8, Y(int(r["models"])) + 4, 16))
     for r in sorted(ce, key=lambda r: -int(r["models"])):
         n, yr = int(r["models"]), int(r["median_year"])
         neg = float(r["share_negative"] or 0) >= 0.5
@@ -370,16 +397,30 @@ def plate_standard_future() -> dict:
         col = ORANGE if neg else BLUE
         s.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{col}" stroke="{PAPER}" stroke-width="2">'
                  f'<title>{esc(r["label"])}: {yr}, {n} models, {float(r["share_negative"] or 0):.0%} negative</title></circle>')
-        if n >= 20 or (neg and n >= 10):
-            w = 5.6 * len(r["label"])
-            for dx, dy, anchor in ((8, 4, "start"), (-8, 4, "end"), (0, -9, "middle"), (0, 16, "middle")):
-                bx = x + dx if anchor == "start" else (x + dx - w if anchor == "end" else x - w / 2)
-                by = y + dy
-                if bx >= x0 - 60 and bx + w <= W and not any(abs(by - py) < 12 and bx < qx + qw and qx < bx + w for qx, py, qw in placed):
-                    placed.append((bx, by, w))
-                    s.append(f'<text x="{x + dx:.1f}" y="{by:.1f}" class="small" text-anchor="{anchor}">{esc(r["label"])}</text>')
-                    break
         body.append([r["label"], yr, f'{r["q1_year"]} to {r["q3_year"]}', n, f'{float(r["share_negative"] or 0):.0%}'])
+    wanted = [r for r in ce if int(r["models"]) >= 20 or (float(r["share_negative"] or 0) >= 0.5 and int(r["models"]) >= 10)]
+    for r in sorted(wanted, key=lambda r: -int(r["median_year"])):
+        x, y = log_x(int(r["median_year"]), x0, x1), Y(int(r["models"]))
+        name = SHORT_EVENT.get(r["label"], r["label"])
+        w = 7.0 * len(name) + 4
+        # Nearest free place first; a place away from the dot gets a leader line.
+        cands = [(8, 4, "start"), (-8, 4, "end")]
+        for dy in (-10, 19, -24, 33, -38, 47, -52, 61, -66, 75):
+            cands += [(0, dy, "middle"), (10, dy, "start"), (-10, dy, "end")]
+        for dx, dy, anchor in cands:
+            bx = x + dx if anchor == "start" else (x + dx - w if anchor == "end" else x - w / 2)
+            by = y + dy
+            if bx >= 4 and bx + w <= W - 4 and 14 < by < y0 - 4 and not any(
+                    abs(by - py) < 14 and bx < qx + qw and qx < bx + w for qx, py, qw in placed):
+                placed.append((bx, by, w))
+                if abs(dy) > 20:
+                    ly = by + 3 if dy < 0 else by - 12
+                    s.append(f'<line x1="{x:.1f}" y1="{y + (-6 if dy < 0 else 6):.1f}" x2="{x + dx * 0.6:.1f}" y2="{ly:.1f}" '
+                             f'stroke="{MUTE}" stroke-width="0.75"/>')
+                s.append(f'<text x="{x + dx:.1f}" y="{by:.1f}" class="small" text-anchor="{anchor}">{esc(name)}</text>')
+                break
+        else:
+            print(f"plate 5: no room for the label of {name}")
     s.append("</svg>")
     return {"title": "The standard future",
             "caption": (            "<p>The events that the timelines repeat, found without the anchors: one dot per canonical event, "
@@ -414,9 +455,9 @@ h1 {{ font-weight: 400; font-size: 2.4rem; margin-bottom: 0.2rem; }}
 h2 {{ font-weight: 600; font-size: 1.4rem; margin-top: 3rem; }}
 p {{ color: {INK_SOFT}; max-width: 70ch; line-height: 1.5; }}
 svg {{ width: 100%; height: auto; display: block; margin: 1rem 0; }}
-svg .lab {{ font: 13px {FONT}; fill: {INK_SOFT}; }}
-svg .tick {{ font: 12px {FONT}; fill: {MUTE}; }}
-svg .small {{ font: 11px {FONT}; fill: {INK_SOFT}; }}
+svg .lab {{ font: 15px {FONT}; fill: {INK_SOFT}; }}
+svg .tick {{ font: 14px {FONT}; fill: {MUTE}; }}
+svg .small {{ font: 13px {FONT}; fill: {INK_SOFT}; }}
 details {{ margin: 0.5rem 0 1rem; color: {INK_SOFT}; }}
 table {{ border-collapse: collapse; font-size: 0.85rem; margin-top: 0.5rem; }}
 td, th {{ border-bottom: 1px solid {RULE}; padding: 3px 10px 3px 0; text-align: left; }}
