@@ -5,7 +5,8 @@ Usage:
     open plates/drafts.html
 
 Reads data/analysis/*.csv. Writes plates/drafts.html. Hover a mark for its value;
-each plate has a table view below it. Drafts only: light paper, no dark mode yet.
+each plate has a table view below it. Night palette: the plates are drawn on the dark
+hall of the site (no card), with light ink and an era ramp that gets lighter with time.
 """
 
 import csv
@@ -19,8 +20,12 @@ ROOT = Path(__file__).resolve().parent.parent
 AN = ROOT / "data" / "analysis"
 OUT = ROOT / "plates"
 
-PAPER, INK, INK_SOFT, MUTE, RULE = "#f7f6f2", "#1a1a1a", "#3a3a37", "#5c5b56", "#d9d7cf"
-ERA_COLOR = {2023: "#86b6ef", 2024: "#3987e5", 2025: "#1c5cab", 2026: "#0d366b"}  # validated ordinal ramp
+# PAPER is the ground of the plates (the hall), and the ring colour around overlapping dots.
+PAPER, INK, INK_SOFT, MUTE, RULE = "#0e0f11", "#e8ecee", "#c4c9cc", "#8b9196", "#2c2f34"
+BAND = "#15171a"  # alternate rows
+# Ordinal ramp for the dark ground: newer is lighter. All steps >= 3:1 on #0e0f11, about 1.5:1 apart.
+ERA_COLOR = {2023: "#2d6bc0", 2024: "#3f8be6", 2025: "#79b0ef", 2026: "#c3dcfa"}
+POS, NEG = "#3f8be6", "#e8693a"  # valence pair, validated for the dark ground (CVD dE 24.6)
 NOW = 2026
 PW = 780  # plate width in viewBox units; the site CSS sets the text at 15, 14 and 13 units
 FONT = "'Source Serif 4', Charter, Georgia, serif"
@@ -107,7 +112,7 @@ def plate_anchor_years() -> dict:
     for i, a in enumerate(anchors):
         cy = top + i * row_h + row_h / 2
         if i % 2 == 0:
-            s.append(f'<rect x="0" y="{cy - row_h / 2}" width="{W}" height="{row_h}" fill="#efeee8" opacity="0.6"/>')
+            s.append(f'<rect x="0" y="{cy - row_h / 2}" width="{W}" height="{row_h}" fill="{BAND}"/>')
         s.append(f'<text x="{left - 14}" y="{cy + 4}" class="lab" text-anchor="end">{esc(LABELS.get(a, a))}</text>')
         nev = 0
         for r in (x for x in me if x["anchor"] == a):
@@ -281,7 +286,7 @@ def plate_pessimism() -> dict:
 # ---------------------------------------------------------------- plate 4
 
 
-RAMP = ["#f0f5fc", "#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
+RAMP = ["#141a22", "#16304f", "#1d4677", "#245ea3", "#3987e5", "#6da7ec", "#a4c9f4", "#d6e7fb"]  # dark to light
 
 
 def ramp(t: float) -> str:
@@ -321,7 +326,7 @@ def plate_themes() -> dict:
             s.append(f'<rect x="{left + cw * j + 1:.1f}" y="{y + 1}" width="{cw - 2:.1f}" height="{ch - 2}" rx="2" fill="{col}">'
                      f'<title>{esc(t)}, {esc(h["horizon"])}: {v:.0%} of events</title></rect>')
             if v >= 0.10:
-                fill = "#ffffff" if (v / vmax) ** 0.8 > 0.55 else INK
+                fill = PAPER if (v / vmax) ** 0.8 > 0.6 else INK
                 s.append(f'<text x="{left + cw * (j + 0.5):.1f}" y="{y + ch / 2 + 4}" class="small" '
                          f'text-anchor="middle" style="fill:{fill}">{v:.0%}</text>')
         body.append([t] + [f'{float(h[f"theme_{t}"]):.0%}' for h in hz])
@@ -370,7 +375,7 @@ def plate_standard_future() -> dict:
     ce = [r for r in rows("canonical_events.csv") if r["median_year"]]
     W, H = PW, 600
     x0, x1, y0, y1 = 64, PW - 24, 530, 34
-    BLUE, ORANGE = "#2a78d6", "#eb6834"
+    BLUE, ORANGE = POS, NEG
 
     def Y(n):
         return y0 - n / 24 * (y0 - y1)

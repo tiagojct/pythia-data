@@ -102,6 +102,9 @@ def r(x, d=3):
 
 def ranks(values: list[float]) -> list[float]:
     """Average ranks, ties shared (inf ties with inf)."""
+    # Round first, so that floating-point noise (0.15000000000000002 against 0.15)
+    # does not split a tie.
+    values = [round(v, 9) for v in values]
     order = sorted(range(len(values)), key=lambda i: values[i])
     out = [0.0] * len(values)
     i = 0
